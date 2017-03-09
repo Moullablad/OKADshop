@@ -1,0 +1,145 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bankwire\n"
+"POT-Creation-Date: 2016-12-15 11:23+0000\n"
+"PO-Revision-Date: 2016-12-15 11:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: index.php:53
+msgid "Pay by bank wire"
+msgstr "Paiement par virement bancaire"
+
+#: index.php:55
+msgid "Order processing will be longer"
+msgstr "Le traitement des commandes sera plus longue"
+
+#: views/admin/configure.php:3
+msgid "Configure"
+msgstr "Configurer"
+
+#: views/admin/configure.php:9
+msgid "Payment by check"
+msgstr "Paiement par chèque"
+
+#: views/admin/configure.php:17
+msgid "This module allows you to accept secure payments by bank wire."
+msgstr "Ce module vous permet d'accepter des paiements sécurisés par virement bancaire."
+
+#: views/admin/configure.php:18
+msgid "If the client chooses to pay by bank wire, the order's status will change to 'Waiting for Payment.'"
+msgstr "Si le client choisit de payer par virement bancaire, le statut de l'ordre se transforme en «attente de paiement."
+
+#: views/admin/configure.php:19
+msgid "That said, you must manually confirm the order upon receiving the bank wire."
+msgstr "Cela dit, vous devez confirmer manuellement l'ordre lors de la réception du virement bancaire."
+
+#: views/admin/configure.php:23
+msgid "Account owner *"
+msgstr "Propriétaire du compte *"
+
+#: views/admin/configure.php:29
+msgid "Details *"
+msgstr "Détails *"
+
+#: views/admin/configure.php:32
+msgid "Such as bank branch, IBAN number, BIC, etc."
+msgstr "Tels que la branche de la banque, le numéro IBAN, BIC, etc."
+
+#: views/admin/configure.php:36
+msgid "Bank address *"
+msgstr "Adresse de la banque *"
+
+#: views/admin/configure.php:43
+msgid "Save"
+msgstr "sauvegarder"
+
+#: views/front/details.php:2
+msgid "Make your payment directly into your bank account."
+msgstr "Faites votre paiement directement dans votre compte bancaire."
+
+#: views/front/details.php:3
+msgid "Please use your Order ID as the payment reference. Your order cannot be shipped until the funds have cleared in your account."
+msgstr "S'il vous plaît utiliser votre numéro de commande comme référence de paiement. Votre commande ne peut être expédié jusqu'à ce que les fonds ont été transférés dans votre compte."
+
+#: views/front/details.php:6
+msgid "YOUR CHECK MUST INCLUDE"
+msgstr "VOTRE CHEQUE DOIT COMPRENDRE"
+
+#: views/front/details.php:9
+msgid "Please send us a bank wire with"
+msgstr "S'il vous plaît envoyez-nous un virement bancaire avec"
+
+#: views/front/details.php:10
+msgid "Amount"
+msgstr "Montant"
+
+#: views/front/details.php:12
+msgid "Name of account owner"
+msgstr "Nom du titulaire de compte"
+
+#: views/front/details.php:13
+msgid "Include these details"
+msgstr "Inclure ces détails"
+
+#: views/front/details.php:14
+msgid "Bank name"
+msgstr "Nom de banque"
+
+#: views/front/details.php:16
+msgid "Do not forget to include your order reference in the subject of your bank wire."
+msgstr "Ne pas oublier d'inclure votre numéro de commande dans le sujet de votre virement bancaire."
+
+#: views/front/details.php:17
+msgid "An email has been sent to you with this information."
+msgstr "Un e-mail a été envoyé à vous avec cette information."
+
+#: views/front/details.php:18
+msgid "Your order will be sent as soon as we receive your payment."
+msgstr "Votre commande sera envoyée dès réception de votre paiement."
+
+#: views/front/details.php:19
+msgid "If you have questions, comments or concerns, please contact our"
+msgstr "Si vous avez des questions, des commentaires ou des préoccupations, s'il vous plaît contacter notre"
+
+#: views/front/details.php:19
+msgid "customer service department."
+msgstr "service à la clientèle."
+
+#: views/front/payment.php:3
+msgid "BANK-WIRE PAYMENT"
+msgstr "BANK-FIL DE PAIEMENT"
+
+#: views/front/payment.php:6
+msgid "You have chosen to pay by bank wire. Here is a short summary of your order:"
+msgstr "Vous avez choisi de payer par virement bancaire. Voici un bref résumé de votre commande:"
+
+#: views/front/payment.php:7
+msgid "The total amount of your order comes to:"
+msgstr "Le montant total de votre commande vient:"
+
+#: views/front/payment.php:8
+msgid "Bank wire account information will be displayed on the next page."
+msgstr "Banque d'informations de compte de fil sera affiché sur la page suivante."
+
+#: views/front/payment.php:9
+msgid "Please confirm your order by clicking 'I confirm my order'."
+msgstr "S'il vous plaît confirmer votre commande en cliquant sur \"Je confirme ma commande\"."
+
+#: views/front/payment.php:14
+msgid "Other payment methods"
+msgstr "D'autres méthodes de paiement"
+
+#: views/front/payment.php:16
+msgid "I confirm my order"
+msgstr "Je confirme ma commande"

@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Orders\n"
+"POT-Creation-Date: 2016-12-14 10:35+0000\n"
+"PO-Revision-Date: 2016-12-14 10:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+"X-Poedit-SearchPathExcluded-2: config.xml\n"
+
+#: includes/class/order.php:162
+msgid "Your order is not complete."
+msgstr "Ihre Bestellung ist nicht vollständig."
+
+#: includes/class/order.php:201
+msgid "Error saving order data."
+msgstr "Fehler beim Speichern der Auftragsdaten."
+
+#: includes/class/order.php:205
+msgid "Your order is complete."
+msgstr "Ihre Bestellung ist abgeschlossen."
+
+#: includes/tabs/account.php:27
+msgid "Orders"
+msgstr "Bestellungen"
+
+#: includes/tabs/orders.php:27
+msgid "Order Informations"
+msgstr "Bestellinformationen"
+
+#: views/front/tabs/orders.php:6
+msgid "Order history."
+msgstr "Bestellverlauf."
+
+#: views/front/tabs/orders.php:7
+msgid "Here are the orders you've placed since your account was created."
+msgstr "Hier sind die Aufträge, die Sie gestellt haben, da Ihr Konto erstellt wurde."
+
+#: views/front/tabs/orders.php:15
+msgid "Order reference"
+msgstr "Bestellnummer"
+
+#: views/front/tabs/orders.php:16
+msgid "Date"
+msgstr "Datum"
+
+#: views/front/tabs/orders.php:17
+msgid "Total price"
+msgstr "Gesamtpreis"
+
+#: views/front/tabs/orders.php:18
+msgid "Payment"
+msgstr "Zahlung"
+
+#: views/front/tabs/orders.php:19
+msgid "Status"
+msgstr "Status"
+
+#: views/front/tabs/orders.php:20
+msgid "Invoice"
+msgstr "Rechnung"
+
+#: views/front/tabs/orders.php:21
+msgid "Actions"
+msgstr "Aktionen"
+
+#: views/front/tabs/orders.php:36
+msgid "Details"
+msgstr "Einzelheiten"
+
+#: views/front/tabs/orders.php:53
+msgid "You have not placed any orders."
+msgstr "Du hast nichts bestellt."

@@ -1,0 +1,139 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cheque\n"
+"POT-Creation-Date: 2016-12-15 11:40+0000\n"
+"PO-Revision-Date: 2016-12-15 11:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: index.php:48
+msgid "Pay by check"
+msgstr "الدفع عن طريق شيك"
+
+#: index.php:50
+msgid "order processing will be longer"
+msgstr "وتجهيز النظام سيكون لفترة أطول"
+
+#: views/admin/configure.php:3
+msgid "Configure"
+msgstr "تكوين"
+
+#: views/admin/configure.php:9
+msgid "Payment by check"
+msgstr "الدفع عن طريق الشيكات"
+
+#: views/admin/configure.php:17
+msgid "This module allows you to accept payments by check."
+msgstr "هذه الوحدة تسمح لك لقبول المدفوعات عن طريق الشيكات."
+
+#: views/admin/configure.php:18
+msgid "If the client chooses this payment method, the order status will change to 'Waiting for payment.'"
+msgstr "إذا اختار العميل طريقة الدفع هذه، فإن حالة الطلب تغيير إلى \"انتظار الدفع\"."
+
+#: views/admin/configure.php:19
+msgid "You will need to manually confirm the order as soon as you receive a check."
+msgstr "وسوف تحتاج إلى تأكيد يدويا ذلك في أقرب وقت تتلقى الاختيار."
+
+#: views/admin/configure.php:23
+msgid "Pay to the order of (name) *"
+msgstr "دفع لأمر (اسم) *"
+
+#: views/admin/configure.php:29
+msgid "Address"
+msgstr "عنوان"
+
+#: views/admin/configure.php:32
+msgid "Address where the check should be sent to."
+msgstr "العنوان الذي يجب أن ترسل الاختيار ل."
+
+#: views/admin/configure.php:37
+msgid "Save"
+msgstr "حفظ"
+
+#: views/front/check-infos.php:2
+msgid "Make your payment directly into your bank account."
+msgstr "جعل الدفع الخاص بك مباشرة إلى حسابك المصرفي."
+
+#: views/front/check-infos.php:3
+msgid ""
+"Please use your Order ID as the payment reference. Your order cannot be shipped until the funds have "
+"cleared in your account."
+msgstr "الرجاء استخدام الخاص بك معرف طلب كمرجع الدفع. لا يمكن شحنها حتى تطهير الأموال في الحساب الخاص بك."
+
+#: views/front/check-infos.php:6
+msgid "YOUR CHECK MUST INCLUDE"
+msgstr "ك التحقق يجب أن يتضمن"
+
+#: views/front/check-infos.php:9
+msgid "Payment amount."
+msgstr "مبلغ الدفع."
+
+#: views/front/check-infos.php:10
+msgid "Payable to the order of"
+msgstr "تدفع لأمر"
+
+#: views/front/check-infos.php:11
+msgid "Mail to"
+msgstr "البريد الإلكتروني لل"
+
+#: views/front/check-infos.php:12
+msgid "Do not forget to include your order reference."
+msgstr "لا تنسى أن تتضمن إشارة طلبك."
+
+#: views/front/check-infos.php:13
+msgid "An email has been sent to you with this information."
+msgstr "تم ارسال البريد الالكتروني لكم مع هذه المعلومات."
+
+#: views/front/check-infos.php:14
+msgid "our order will be sent as soon as we receive your payment."
+msgstr "سيتم إرسال نظامنا في أقرب وقت نتلقى الدفع الخاص بك."
+
+#: views/front/check-infos.php:15
+msgid "If you have questions, comments or concerns, please contact our"
+msgstr "إذا كان لديك أسئلة أو تعليقات أو استفسارات، يرجى الاتصال بنا"
+
+#: views/front/check-infos.php:15
+msgid "customer service department."
+msgstr "قسم خدمة العملاء."
+
+#: views/front/check-payment.php:3
+msgid "Check payment"
+msgstr "تحقق دفع"
+
+#: views/front/check-payment.php:6
+msgid "You have chosen to pay by check. Here is a short summary of your order:"
+msgstr "لقد اخترت الدفع عن طريق الاختيار. وفيما يلي ملخص قصير من طلبك:"
+
+#: views/front/check-payment.php:7
+msgid "The total amount of your order comes to:"
+msgstr "المبلغ الإجمالي للطلبك يأتي:"
+
+#: views/front/check-payment.php:8
+msgid "We accept several currencies to receive payments by check."
+msgstr "نحن نقبل العديد من العملات لتلقي المدفوعات عن طريق الشيكات."
+
+#: views/front/check-payment.php:9
+msgid "Check owner and address information will be displayed on the next page."
+msgstr "تحقق المالك ومعالجة سيتم عرض المعلومات على الصفحة التالية."
+
+#: views/front/check-payment.php:10
+msgid "Please confirm your order by clicking 'I confirm my order'."
+msgstr "يرجى تأكيد طلبك بالنقر على \"تأكيد طلبي\"."
+
+#: views/front/check-payment.php:15
+msgid "Other payment methods"
+msgstr "طرق الدفع الأخرى"
+
+#: views/front/check-payment.php:17
+msgid "I confirm my order"
+msgstr "أنا أؤكد طلبيتي"

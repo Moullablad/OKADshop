@@ -1,0 +1,208 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Modules\n"
+"POT-Creation-Date: 2016-12-14 10:25+0000\n"
+"PO-Revision-Date: 2016-12-14 10:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+"X-Poedit-SearchPathExcluded-2: config.xml\n"
+
+#: includes/ajax/bulk-actions.php:24
+msgid "Action was executed."
+msgstr ""
+
+#: includes/ajax/bulk-actions.php:30
+msgid "Modules was activated."
+msgstr ""
+
+#: includes/ajax/bulk-actions.php:32
+msgid "Unable to activate modules."
+msgstr ""
+
+#: includes/ajax/bulk-actions.php:37
+msgid "Modules was disabled."
+msgstr ""
+
+#: includes/ajax/bulk-actions.php:39
+msgid "Unable to disable modules."
+msgstr ""
+
+#: includes/ajax/bulk-actions.php:44
+msgid "Modules was deleted."
+msgstr ""
+
+#: includes/ajax/bulk-actions.php:46
+msgid "Unable to delete Modules."
+msgstr ""
+
+#: includes/ajax/delete.php:25
+msgid "Module was deleted."
+msgstr ""
+
+#: includes/ajax/delete.php:27
+msgid "Unable to delete Module."
+msgstr ""
+
+#: includes/ajax/disable.php:25
+msgid "Module was disabled."
+msgstr ""
+
+#: includes/ajax/disable.php:27
+msgid "Unable to disable module."
+msgstr ""
+
+#: includes/ajax/enable.php:25
+msgid "Module was activated."
+msgstr ""
+
+#: includes/ajax/enable.php:27
+msgid "Unable to activate module."
+msgstr ""
+
+#: includes/ajax/filter.php:56
+msgid "Version"
+msgstr ""
+
+#: includes/ajax/filter.php:56
+msgid "By"
+msgstr ""
+
+#: includes/ajax/filter.php:56
+msgid "Category"
+msgstr ""
+
+#: includes/ajax/filter.php:59
+msgid "Website"
+msgstr ""
+
+#: includes/ajax/filter.php:67 includes/ajax/filter.php:85
+msgid "Configuration"
+msgstr ""
+
+#: includes/ajax/filter.php:69 includes/ajax/filter.php:78
+msgid "Disable"
+msgstr ""
+
+#: includes/ajax/filter.php:72
+msgid "Enable"
+msgstr ""
+
+#: includes/ajax/filter.php:80
+msgid "Uninstall"
+msgstr ""
+
+#: includes/ajax/filter.php:82 views/admin/manage.php:93
+msgid "Delete"
+msgstr ""
+
+#: includes/ajax/hook-add.php:40
+msgid "Hook was added."
+msgstr ""
+
+#: includes/ajax/hook-add.php:42
+msgid "Unable to add hook."
+msgstr ""
+
+#: includes/ajax/hook-delete.php:24
+msgid "Hook was deleted."
+msgstr ""
+
+#: includes/ajax/hook-delete.php:26
+msgid "Unable to delete hook."
+msgstr ""
+
+#: includes/ajax/hook-sort.php:30
+msgid "Positions was updated."
+msgstr ""
+
+#: includes/ajax/hook-sort.php:32
+msgid "Unable to update positions."
+msgstr ""
+
+#: includes/ajax/sections.php:30 views/admin/positions.php:85
+msgid "There is no hook in this section."
+msgstr ""
+
+#: includes/ajax/uninstall.php:25
+msgid "Module was uninstalled."
+msgstr ""
+
+#: includes/ajax/uninstall.php:27
+msgid "Unable to uninstall Module."
+msgstr ""
+
+#: index.php:25 index.php:27
+msgid "Modules"
+msgstr ""
+
+#: index.php:28 views/admin/positions.php:18
+msgid "Positions"
+msgstr ""
+
+#: views/admin/manage.php:32
+msgid "Manage"
+msgstr ""
+
+#: views/admin/manage.php:38
+msgid "Here you can manage modules."
+msgstr ""
+
+#: views/admin/manage.php:46
+msgid "Show administration modules"
+msgstr ""
+
+#: views/admin/manage.php:52
+msgid "Choose a category"
+msgstr ""
+
+#: views/admin/manage.php:63
+msgid "Activated & deactivated"
+msgstr ""
+
+#: views/admin/manage.php:64
+msgid "Enabled modules"
+msgstr ""
+
+#: views/admin/manage.php:65
+msgid "Disabled modules"
+msgstr ""
+
+#: views/admin/manage.php:70
+msgid "Choose an author"
+msgstr ""
+
+#: views/admin/manage.php:77
+msgid "Search..."
+msgstr ""
+
+#: views/admin/manage.php:90
+msgid "Bulk Actions"
+msgstr ""
+
+#: views/admin/manage.php:91
+msgid "Activate"
+msgstr ""
+
+#: views/admin/manage.php:92
+msgid "Deactivate"
+msgstr ""
+
+#: views/admin/manage.php:95
+msgid "Apply"
+msgstr ""
+
+#: views/admin/positions.php:25
+msgid "Search hooks and add them to selected section in right side."
+msgstr ""

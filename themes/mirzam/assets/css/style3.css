@@ -1,0 +1,48 @@
+body {
+  margin-bottom: 0px; }
+
+#services i {
+  font-size: 60px; }
+  #services i h3 {
+    color: #fdae44;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold; }
+  #services i p {
+    font-size: 14px; }
+
+footer .widgets .widget-title {
+  color: #fdae44;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 15px; }
+footer .widgets ul li {
+  margin-bottom: 10px; }
+  footer .widgets ul li a {
+    font-size: 14px; }
+    footer .widgets ul li a:hover {
+      color: #fdae44; }
+footer .widgets .social-icons {
+  margin-bottom: 30px; }
+footer .widgets p {
+  font-size: 14px; }
+footer .widgets p.address {
+  margin-bottom: 27px; }
+footer .footer-bottom {
+  /*padding: 25px 0px;*/
+  background-color: #b5b5b5;
+  height: 52px; }
+  footer .footer-bottom p {
+    padding: 25px 0px;
+    font-size: 14px;
+    color: #f0f0e9;
+    margin-bottom: 0px;
+    text-align: left;
+    line-height: 0px; }
+  footer .footer-bottom a {
+    color: red; }
+    footer .footer-bottom a:hover {
+      color: #fdae44; }
+
+/*# sourceMappingURL=ali.css.map */

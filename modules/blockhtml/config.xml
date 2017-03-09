@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>blockhtml</name>
+	<displayName>block html</displayName>
+	<category>front_office_features</category>
+	<version>1.0.0</version>
+	<description>Display block html.</description>
+	<author>Soft High Tech</author>
+	<website>http://softhighttech.com</website>
+	<config>blockhtml_settings</config>
+</module>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>stock</name>
+	<displayName>Stock</displayName>
+	<description>Manage stock.</description>
+	<category>administration</category>
+	<version>1.0.0</version>
+	<author>Soft High Tech</author>
+	<website>http://softhighttech.com</website>
+</module>

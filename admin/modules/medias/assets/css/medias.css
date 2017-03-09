@@ -1,0 +1,10 @@
+.medias-popup{
+    position: relative;
+    background: #FFF;
+    width: auto;
+    width: 950px;
+    margin: 20px auto;
+    padding: 15px 0px;
+    max-width: 100%;
+    display: table;
+}

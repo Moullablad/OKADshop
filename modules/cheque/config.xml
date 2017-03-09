@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>cheque</name>
+	<displayName>Payment by check</displayName>
+	<description>This module allows you to accept payments by check.</description>
+	<category>payments_gateways</category>
+	<version>1.0.0</version>
+	<author>Soft High Tech</author>
+	<website>http://softhighttech.com</website>
+	<config>configure</config>
+</module>

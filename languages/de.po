@@ -1,0 +1,409 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OKADshop Core\n"
+"POT-Creation-Date: 2016-12-14 16:55+0000\n"
+"PO-Revision-Date: 2016-12-14 16:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e\n"
+"X-Poedit-SearchPath-0: controllers\n"
+"X-Poedit-SearchPath-1: includes\n"
+"X-Poedit-SearchPath-2: admin/ajax\n"
+"X-Poedit-SearchPath-3: admin/includes\n"
+"X-Poedit-SearchPath-4: index.php\n"
+
+#: admin/includes/ajax/product/attachment-delete.php:37
+msgid "Attachment was deleted."
+msgstr "Anlage wurde gelöscht."
+
+#: admin/includes/ajax/product/attachment-delete.php:39
+msgid "Unable to delete Attachment."
+msgstr "Nicht imstande Anlage zu löschen."
+
+#: admin/includes/ajax/product/comb-delete.php:50
+msgid "Combinations was deleted."
+msgstr "Kombinationen wurde gelöscht."
+
+#: admin/includes/ajax/product/comb-delete.php:52 admin/includes/ajax/product/comb-save.php:114 admin/includes/ajax/product/upload-image.php:90
+msgid "Error occurred, please try again."
+msgstr "Fehler aufgetreten ist, bitte versuchen Sie es erneut."
+
+#: admin/includes/ajax/product/comb-save.php:65
+msgid "Combinations was updated."
+msgstr "Kombinationen wurde aktualisiert."
+
+#: admin/includes/ajax/product/comb-save.php:73
+msgid "Combinations was created."
+msgstr "Kombinationen erstellt wurde."
+
+#: admin/includes/ajax/product/image-cover.php:43 admin/includes/ajax/product/upload-cover.php:43
+msgid "Cover image was changed."
+msgstr "Titelbild wurde geändert."
+
+#: admin/includes/ajax/product/image-cover.php:45 admin/includes/ajax/product/upload-cover.php:45
+msgid "Unable to change Image cover."
+msgstr "Unfähig Bildabdeckung zu ändern."
+
+#: admin/includes/ajax/product/image-delete.php:39
+msgid "Image was deleted."
+msgstr "Das Bild wurde gelöscht."
+
+#: admin/includes/ajax/product/image-delete.php:41
+msgid "Unable to delete image."
+msgstr "Bild kann nicht gelöscht werden."
+
+#: admin/includes/ajax/product/image-sort.php:36
+msgid "Positions was updated."
+msgstr "Positionen wurde aktualisiert."
+
+#: admin/includes/ajax/product/upload-image.php:87
+msgid "Images was uploaded."
+msgstr "Bilder hochgeladen wurde."
+
+#: admin/includes/plugins/users/login/login.php:32
+msgid "The email address or password you entered is not valid"
+msgstr "Die E-Mail-Adresse oder Passwort, das Sie eingegeben haben, ist nicht gültig"
+
+#: controllers/Controllers/Front/UserController.php:201
+msgid "Reset Password"
+msgstr "Passwort zurücksetzen"
+
+#: controllers/Controllers/Front/UserController.php:202
+msgid "Hi"
+msgstr "Hallo"
+
+#: controllers/Controllers/Front/UserController.php:203
+msgid "Your new password is:"
+msgstr "Ihr neues Passwort lautet:"
+
+#: controllers/Views/404.php:4
+msgid "OPPS, Error 404 !"
+msgstr "OPPS, Fehler 404!"
+
+#: controllers/Views/404.php:7
+msgid "There is some error here, Please try later."
+msgstr "Es gibt einige Fehler hier, bitte versuchen Sie es später."
+
+#: controllers/Views/404.php:13
+msgid "search ..."
+msgstr "Suche ..."
+
+#: controllers/Views/404.php:23
+msgid "Return Website"
+msgstr "Zurück Webseite"
+
+#: controllers/Views/admin/default.php:19 controllers/Views/default.php:3
+msgid "Page not found."
+msgstr "Seite nicht gefunden."
+
+#: controllers/Views/admin/default.php:20 controllers/Views/default.php:4
+msgid "Looks like the page you're trying to visit doesn't exist. Please check the URL and try your luck again."
+msgstr "Sieht aus wie die von Ihnen gesuchte Seite existiert nicht zu besuchen. Bitte überprüfen Sie die URL und versuchen Sie es erneut Ihr Glück."
+
+#: controllers/Views/admin/default.php:21
+msgid "Take Me Dashboard"
+msgstr "Take Me-Dashboard"
+
+#: controllers/Views/default.php:5
+msgid "Go Homepage"
+msgstr "Go Startseite"
+
+#: controllers/Views/front/block-cart.php:26
+msgid "remove"
+msgstr "entfernen"
+
+#: controllers/Views/front/block-cart.php:34 controllers/Views/front/order-steps.php:19 controllers/Views/front/order/steps.php:19
+msgid "Shipping"
+msgstr "Versand"
+
+#: controllers/Views/front/block-cart.php:39 controllers/Views/front/order-detail.php:87 controllers/Views/front/order/details.php:87
+#: controllers/Views/front/shopping-cart.php:124
+msgid "Free shipping"
+msgstr "Kostenloser Versand"
+
+#: controllers/Views/front/block-cart.php:42
+msgid "Total"
+msgstr "Gesamt"
+
+#: controllers/Views/front/block-cart.php:49
+msgid "PROCESS TO CHECK OUT"
+msgstr "VERFAHREN ZUR CHECK OUT"
+
+#: controllers/Views/front/order-detail.php:3 controllers/Views/front/order/details.php:3
+msgid "ORDER RECEIVED"
+msgstr "BESTELLUNG ERHALTEN"
+
+#: controllers/Views/front/order-detail.php:4 controllers/Views/front/order/details.php:4
+msgid "Thank you. Your order has been received"
+msgstr "Vielen Dank. Ihre Bestellung ist eingegangen"
+
+#: controllers/Views/front/order-detail.php:7 controllers/Views/front/order/details.php:7
+msgid "ORDER:"
+msgstr "AUFTRAG:"
+
+#: controllers/Views/front/order-detail.php:8 controllers/Views/front/order/details.php:8
+msgid "DATE:"
+msgstr "DATUM:"
+
+#: controllers/Views/front/order-detail.php:9 controllers/Views/front/order/details.php:9
+msgid "TOTAL:"
+msgstr "GESAMT:"
+
+#: controllers/Views/front/order-detail.php:19 controllers/Views/front/order/details.php:19
+msgid "PAYMENT METHOD:"
+msgstr "BEZAHLVERFAHREN:"
+
+#: controllers/Views/front/order-detail.php:34 controllers/Views/front/order/details.php:34
+msgid "ORDER DETAILS"
+msgstr "BESTELLDETAILS"
+
+#: controllers/Views/front/order-detail.php:38 controllers/Views/front/order/details.php:38 controllers/Views/front/shopping-cart.php:7
+msgid "Product"
+msgstr "Produkt"
+
+#: controllers/Views/front/order-detail.php:39 controllers/Views/front/order/details.php:39 controllers/Views/front/shopping-cart.php:8
+#: controllers/Views/front/shopping-cart.php:77
+msgid "Name"
+msgstr "Name"
+
+#: controllers/Views/front/order-detail.php:40 controllers/Views/front/order/details.php:40 controllers/Views/front/shopping-cart.php:9
+msgid "Quantity"
+msgstr "Menge"
+
+#: controllers/Views/front/order-detail.php:41 controllers/Views/front/order/details.php:41 controllers/Views/front/shopping-cart.php:10
+msgid "Price"
+msgstr "Preis"
+
+#: controllers/Views/front/order-detail.php:76 controllers/Views/front/order/details.php:76
+msgid "Cart subtotal :"
+msgstr "Warenkorb Zwischensumme :"
+
+#: controllers/Views/front/order-detail.php:81 controllers/Views/front/order-detail.php:86 controllers/Views/front/order/details.php:81
+#: controllers/Views/front/order/details.php:86
+msgid "Shipping (tax incl.)"
+msgstr "Versand (inklusive MwSt.)"
+
+#: controllers/Views/front/order-detail.php:91 controllers/Views/front/order/details.php:91
+msgid "Order Total"
+msgstr "Gesamtbestellung"
+
+#: controllers/Views/front/order-detail.php:104 controllers/Views/front/order/details.php:104
+msgid "Go to your order history page"
+msgstr "Gehen Sie zu Ihrer Bestellhistorie"
+
+#: controllers/Views/front/order-detail.php:104 controllers/Views/front/order/details.php:104
+msgid "View your order history"
+msgstr "Sehen Sie Ihre Bestellhistorie"
+
+#: controllers/Views/front/order-fail.php:3 controllers/Views/front/order/fail.php:3
+msgid "Payment failed"
+msgstr "Bezahlung fehlgeschlagen"
+
+#: controllers/Views/front/order-fail.php:4 controllers/Views/front/order/fail.php:4
+msgid "ERROR MESSAGE:"
+msgstr "FEHLERMELDUNG:"
+
+#: controllers/Views/front/order-fail.php:5 controllers/Views/front/order-invalid-gatway.php:4 controllers/Views/front/order/fail.php:5
+#: controllers/Views/front/order/invalid-gatway.php:4
+msgid "Choose another payment gateway."
+msgstr "Wählen Sie eine andere Zahlungsgateway."
+
+#: controllers/Views/front/order-invalid-gatway.php:3 controllers/Views/front/order/invalid-gatway.php:3
+msgid "Invalid payment gatway"
+msgstr "Ungültige Zahlungs gatway"
+
+#: controllers/Views/front/order-steps.php:7 controllers/Views/front/order/steps.php:7
+msgid "Summary"
+msgstr "Zusammenfassung"
+
+#: controllers/Views/front/order-steps.php:11 controllers/Views/front/order/steps.php:11
+msgid "Sign in"
+msgstr "Anmelden"
+
+#: controllers/Views/front/order-steps.php:15 controllers/Views/front/order/steps.php:15
+msgid "Address"
+msgstr "Adresse"
+
+#: controllers/Views/front/order-steps.php:23 controllers/Views/front/order/steps.php:23
+msgid "Payment"
+msgstr "Zahlung"
+
+#: controllers/Views/front/product-item.php:21
+msgid "Add to wishlist"
+msgstr "Zur Wunschliste hinzufügen"
+
+#: controllers/Views/front/product-item.php:27
+msgid "Quick View"
+msgstr "Schnellansicht:"
+
+#: controllers/Views/front/shopping-cart.php:11
+msgid "Total price"
+msgstr "Gesamtpreis"
+
+#: controllers/Views/front/shopping-cart.php:62
+msgid "APPLY COUPON"
+msgstr "GILT COUPON"
+
+#: controllers/Views/front/shopping-cart.php:65
+msgid "Enter your coupon code if you have one."
+msgstr "Geben Sie Ihren Gutschein-Code, wenn Sie eine haben."
+
+#: controllers/Views/front/shopping-cart.php:78
+msgid "Code"
+msgstr "Code"
+
+#: controllers/Views/front/shopping-cart.php:79
+msgid "Amount"
+msgstr "Menge"
+
+#: controllers/Views/front/shopping-cart.php:80
+msgid "Action"
+msgstr "Aktion"
+
+#: controllers/Views/front/shopping-cart.php:88
+msgid "Delete Coupon"
+msgstr "löschen Coupon"
+
+#: controllers/Views/front/shopping-cart.php:101
+msgid "Total products (tax incl.) :"
+msgstr "Insgesamt Produkte (inklusive MwSt.):"
+
+#: controllers/Views/front/shopping-cart.php:106
+msgid "Total coupon codes (tax incl.) :"
+msgstr "Insgesamt Gutscheincodes (inklusive MwSt.):"
+
+#: controllers/Views/front/shopping-cart.php:112
+msgid "Total discount (tax incl.) :"
+msgstr "Gesamtdiskont (inklusive MwSt.):"
+
+#: controllers/Views/front/shopping-cart.php:118 controllers/Views/front/shopping-cart.php:123
+msgid "Total shipping (tax incl.) :"
+msgstr "Gesamt Versand (inklusive MwSt.):"
+
+#: controllers/Views/front/shopping-cart.php:128
+msgid "Total (tax excl.) :"
+msgstr "Total (ohne MwSt.):"
+
+#: controllers/Views/front/shopping-cart.php:133
+msgid "Total tax :"
+msgstr "Gesamtsteuer:"
+
+#: controllers/Views/front/shopping-cart.php:138
+msgid "Total (tax incl.) :"
+msgstr "Insgesamt (inklusive MwSt.):"
+
+#: controllers/Views/product-list.php:9
+msgid "No product available!"
+msgstr "Kein Produkt verfügbar!"
+
+#: controllers/Views/tabs/content.php:13
+msgid "Cancel"
+msgstr "Stornieren"
+
+#: controllers/Views/tabs/content.php:14
+msgid "Save"
+msgstr "sparen"
+
+#: controllers/Views/tabs/notfound.php:6
+msgid "Tab not found !"
+msgstr "Tab wurde nicht gefunden!"
+
+#: controllers/Views/tabs/notfound.php:7
+msgid "This tab is not registered."
+msgstr "Dieses Register ist nicht registriert."
+
+#: includes/ajax/product/combination.php:53
+msgid "This product is no longer in stock with those attributes but is available with others."
+msgstr "Dieses Produkt ist nicht mehr auf Lager mit diesen Attributen ist aber mit anderen zur Verfügung."
+
+#: includes/functions/modules.php:47
+msgid "Administration"
+msgstr "Verwaltung"
+
+#: includes/functions/modules.php:48
+msgid "Advertising and Marketing"
+msgstr "Werbung und Marketing"
+
+#: includes/functions/modules.php:49
+msgid "Analytics and Stats"
+msgstr "Analytik und Statistik"
+
+#: includes/functions/modules.php:50
+msgid "Checkout"
+msgstr "Auschecken"
+
+#: includes/functions/modules.php:51
+msgid "Comparison site &amp; Feed management"
+msgstr "Vergleich Website & amp; Futtermanagement"
+
+#: includes/functions/modules.php:52
+msgid "Dashboard"
+msgstr "Instrumententafel"
+
+#: includes/functions/modules.php:53
+msgid "Emailing &amp; SMS"
+msgstr "Emailing & amp; SMS"
+
+#: includes/functions/modules.php:54
+msgid "Export"
+msgstr "Export"
+
+#: includes/functions/modules.php:55
+msgid "Front office Feature"
+msgstr "Front-Office-Feature"
+
+#: includes/functions/modules.php:56
+msgid "Marketplace"
+msgstr "Marktplatz"
+
+#: includes/functions/modules.php:57
+msgid "Merchandising"
+msgstr "Handel"
+
+#: includes/functions/modules.php:58
+msgid "Migration Tools"
+msgstr "Migrationstools"
+
+#: includes/functions/modules.php:59
+msgid "Payments and Gateways"
+msgstr "Zahlungen und Gateways"
+
+#: includes/functions/modules.php:60
+msgid "Pricing and Promotion"
+msgstr "Preise und Promotion"
+
+#: includes/functions/modules.php:61
+msgid "Quick / Bulk update"
+msgstr "Schnell / Bulk-Update"
+
+#: includes/functions/modules.php:62
+msgid "SEO"
+msgstr "SEO"
+
+#: includes/functions/modules.php:63
+msgid "Shipping and Logistics"
+msgstr "Versand und Logistik"
+
+#: includes/functions/modules.php:64
+msgid "Slideshows"
+msgstr "Diashows"
+
+#: includes/functions/modules.php:65
+msgid "Taxes &amp; Invoicing"
+msgstr "Steuern & amp; Fakturierung"
+
+#: includes/functions/modules.php:66
+msgid "Translation"
+msgstr "Übersetzung"
+
+#: includes/functions/modules.php:67
+msgid "Other Modules"
+msgstr "Andere Module"

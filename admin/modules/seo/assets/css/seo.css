@@ -1,0 +1,12 @@
+#general .panel-body {
+    padding-top: 0px;
+}
+a[data-tab="meta-tags"]:before{
+	content: "\f02c";
+	font-family: FontAwesome;
+	margin-right: 5px;
+}
+
+#show_content{
+	display: none;
+}

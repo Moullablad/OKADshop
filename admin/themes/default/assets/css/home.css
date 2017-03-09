@@ -1,0 +1,82 @@
+/*Top menu*/
+#content,#top-menu{
+	padding: 0;
+	margin: 0;
+}
+.top-menu{
+  background-color: #fff;
+  display: block;
+  overflow: hidden;
+  z-index: 99;
+  top: 0;
+  margin-left: -13px;
+  right: 0px;
+  width: 101.5%;
+}
+.top-menu .top-menu-title{float: left;}
+
+.top-menu .top-menu-title i{color: #798c9c;font-size: 25px;padding-left: 15px;}
+.top-menu .top-menu-button{right: 15px;position: relative;top:6px;float: right;}
+.top-menu .top-menu-button .btn{
+  border-left-width: 1px !important;
+  /*color: #fff;*/
+  border-radius: 0px;
+  padding: 7px 12px;
+  margin: 0px;
+}
+
+/*admin-home*/
+#admin-home .center-block .jumbotron{
+	background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#admin-home .right-block{background-color: #F5F6F7;height: 1024px;}
+.home-blocks {width: 90%;margin: auto;margin-top: -60px;}
+.home-blocks .home-block1 label{
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0 0 10px;
+	color: #798c9c;
+	line-height: 1.2em;
+	display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-blocks .home-block1 p.value{
+	font-size: 30px;
+	font-weight: 200;
+	color: #212529;
+	margin: 0;
+	display: block;
+  overflow: hidden;
+  float: left;
+  clear: both;
+}
+.home-blocks .home-block1 i{float: right;}
+.home-blocks .home-block1 i.fa-shopping-basket{color: #1ABD93;}
+.home-blocks .home-block1 i.fa-users{color: #A867E8;}
+.home-blocks .home-block1 i.fa-credit-card{color: #F05050;}
+.home-blocks .home-block1 i.fa-truck{color: #23b7e5;}
+.home-blocks .home-block1 i.fa-pencil-square-o{color: #27C24C;}
+.home-blocks .home-block1 i.fa-list-alt{color: #7266ba;}
+/*block2*/
+.home-blocks .home-block2 p {padding: 0px 20px;margin: 0;font-size: 15px;}
+.home-blocks .home-block2 i{color: #479ccf;padding-right: 15px;font-size: 10px;}

@@ -1,0 +1,51 @@
+/* stock tabs */
+div[data-group="stock"] {
+
+	/* items */
+	table#items{
+		.fa-sort{
+		    font-size: 16px;
+		    margin-left: 1px;
+		    cursor: move;
+		}
+
+	}
+
+	table#totals{
+		width: auto;
+	}
+
+
+
+	#footer-tabs{
+		.nav-tabs{
+			background: transparent;
+			border-bottom: 2px solid $gray-light !important;
+			li {
+				margin-bottom: -3px;
+				a:hover{
+					background-color: transparent !important; 
+					color: $purple;
+				}
+				&.active {
+					border-bottom: 3px solid $purple; 
+					a{
+						color: $gray-dark !important; 
+						background-color: transparent !important; 
+						border: none !important;
+					}
+				}
+			}
+		}
+
+		.tab-content{
+			textarea{
+		   		width: 98.2% !important;
+		   		padding: 6px 8px;
+			}
+		}
+
+	}
+
+
+}

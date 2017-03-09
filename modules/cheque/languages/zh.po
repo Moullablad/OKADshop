@@ -1,0 +1,143 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cheque\n"
+"POT-Creation-Date: 2016-12-15 11:40+0000\n"
+"PO-Revision-Date: 2016-12-15 11:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: index.php:48
+msgid "Pay by check"
+msgstr "用支票付款"
+
+#: index.php:50
+msgid "order processing will be longer"
+msgstr "订单处理会比较长"
+
+#: views/admin/configure.php:3
+msgid "Configure"
+msgstr "配置"
+
+#: views/admin/configure.php:9
+msgid "Payment by check"
+msgstr "支票付款"
+
+#: views/admin/configure.php:17
+msgid "This module allows you to accept payments by check."
+msgstr "这个模块可以让你接受支票付款。"
+
+#: views/admin/configure.php:18
+msgid ""
+"If the client chooses this payment method, the order status will change to "
+"'Waiting for payment.'"
+msgstr "如果客户选择这种付款方式，订单状态将变更为“等待付款。”"
+
+#: views/admin/configure.php:19
+msgid ""
+"You will need to manually confirm the order as soon as you receive a check."
+msgstr "你需要尽快手动确认订单，你收到一张支票。"
+
+#: views/admin/configure.php:23
+msgid "Pay to the order of (name) *"
+msgstr "支付给（名字）的顺序*"
+
+#: views/admin/configure.php:29
+msgid "Address"
+msgstr "地址"
+
+#: views/admin/configure.php:32
+msgid "Address where the check should be sent to."
+msgstr "地址在支票应该被送到。"
+
+#: views/admin/configure.php:37
+msgid "Save"
+msgstr "保存"
+
+#: views/front/check-infos.php:2
+msgid "Make your payment directly into your bank account."
+msgstr "直接让你付款到您的银行帐户。"
+
+#: views/front/check-infos.php:3
+msgid ""
+"Please use your Order ID as the payment reference. Your order cannot be "
+"shipped until the funds have cleared in your account."
+msgstr ""
+"请使用您的订单ID作为付款参考。您的订单无法发货，直到您的帐户资金已清除。"
+
+#: views/front/check-infos.php:6
+msgid "YOUR CHECK MUST INCLUDE"
+msgstr "你的检查必须包括"
+
+#: views/front/check-infos.php:9
+msgid "Payment amount."
+msgstr "支付金额。"
+
+#: views/front/check-infos.php:10
+msgid "Payable to the order of"
+msgstr "支付给顺序"
+
+#: views/front/check-infos.php:11
+msgid "Mail to"
+msgstr "邮件"
+
+#: views/front/check-infos.php:12
+msgid "Do not forget to include your order reference."
+msgstr "不要忘了，包括您的订单参考。"
+
+#: views/front/check-infos.php:13
+msgid "An email has been sent to you with this information."
+msgstr "电子邮件已经发送到你这个信息。"
+
+#: views/front/check-infos.php:14
+msgid "our order will be sent as soon as we receive your payment."
+msgstr "我们的订单将被当我们收到您的付款发送。"
+
+#: views/front/check-infos.php:15
+msgid "If you have questions, comments or concerns, please contact our"
+msgstr "如果您有任何疑问，建议或意见，请联系我们"
+
+#: views/front/check-infos.php:15
+msgid "customer service department."
+msgstr "客户服务部。"
+
+#: views/front/check-payment.php:3
+msgid "Check payment"
+msgstr "支票付款"
+
+#: views/front/check-payment.php:6
+msgid "You have chosen to pay by check. Here is a short summary of your order:"
+msgstr "你选择用支票付款。这是您的订单的简短摘要："
+
+#: views/front/check-payment.php:7
+msgid "The total amount of your order comes to:"
+msgstr "您的订单总金额涉及到："
+
+#: views/front/check-payment.php:8
+msgid "We accept several currencies to receive payments by check."
+msgstr "我们接受多种货币支票接收付款。"
+
+#: views/front/check-payment.php:9
+msgid "Check owner and address information will be displayed on the next page."
+msgstr "检查所有者和信息将在下一个页面上显示的地址。"
+
+#: views/front/check-payment.php:10
+msgid "Please confirm your order by clicking 'I confirm my order'."
+msgstr "通过点击“我确认我的订单'请确认您的订单。"
+
+#: views/front/check-payment.php:15
+msgid "Other payment methods"
+msgstr "其他支付方式"
+
+#: views/front/check-payment.php:17
+msgid "I confirm my order"
+msgstr "我确认我的订单"

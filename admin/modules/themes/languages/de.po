@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Themes\n"
+"POT-Creation-Date: 2016-12-14 11:11+0000\n"
+"PO-Revision-Date: 2016-12-14 11:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+"X-Poedit-SearchPathExcluded-2: config.xml\n"
+
+#: includes/ajax/activate.php:22
+msgid "Theme was enabled."
+msgstr "Theme wurde aktiviert."
+
+#: includes/ajax/activate.php:24 includes/ajax/install.php:61
+msgid "Error occurred, please try again."
+msgstr "Fehler aufgetreten ist, bitte versuchen Sie es erneut."
+
+#: includes/ajax/install.php:59
+msgid "Theme was installed."
+msgstr "Theme wurde installiert."
+
+#: includes/ajax/install.php:65
+msgid ""
+"The folowing files are required to install theme: \n"
+" (index.php, header.php, footer.php, config.xml."
+msgstr "Die Folowing Dateien sind erforderlich Thema zu installieren: \\ n (index.php, header.php, footer.php, config.xml."
+
+#: includes/tabs/customize.php:28
+msgid "Site Identity"
+msgstr "Site-Identität"
+
+#: includes/tabs/customize.php:35
+msgid "Colors"
+msgstr "Farben"
+
+#: includes/tabs/customize.php:77
+msgid "Site identity was Updated"
+msgstr "Site-Identität wurde aktualisiert"
+
+#: includes/tabs/customize.php:132
+msgid "Colors was Updated"
+msgstr "Farben wurde aktualisiert"
+
+#: includes/tabs/themes.php:29
+msgid "Featured"
+msgstr "Hervorgehoben"
+
+#: includes/tabs/themes.php:35
+msgid "Popular"
+msgstr "Beliebt"
+
+#: includes/tabs/themes.php:41
+msgid "Latest"
+msgstr "Neueste"
+
+#: includes/tabs/themes.php:47
+msgid "Upload Theme"
+msgstr "hochladen Theme"
+
+#: index.php:46 index.php:48 views/admin/index.php:18
+msgid "Themes"
+msgstr "Themen"
+
+#: index.php:49 views/admin/install.php:18
+msgid "Install"
+msgstr "Installieren"
+
+#: index.php:50
+msgid "Customize"
+msgstr "Anpassen"
+
+#: views/admin/index.php:21
+msgid "Add new"
+msgstr "Neue hinzufügen"
+
+#: views/admin/index.php:34
+msgid "Active"
+msgstr "Aktiv"
+
+#: views/admin/index.php:38
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: views/admin/tabs/identity.php:2
+msgid "Logo"
+msgstr "Logo"
+
+#: views/admin/tabs/identity.php:8
+msgid "Browse"
+msgstr "blättern"
+
+#: views/admin/tabs/identity.php:24
+msgid "Favicon"
+msgstr "Favicon"
+
+#: views/admin/tabs/identity.php:30
+msgid "Select Image"
+msgstr "Bild auswählen"
+
+#: views/admin/tabs/identity.php:45
+msgid "Site Title"
+msgstr "Seitentitel"
+
+#: views/admin/tabs/identity.php:51
+msgid "Tagline"
+msgstr "Untertitel"

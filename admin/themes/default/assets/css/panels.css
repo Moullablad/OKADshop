@@ -1,0 +1,61 @@
+/* ===============================
+ * Bootstrap panels 
+ * ==============================*/
+.panel{
+	border-bottom: 3px solid #A5245E;
+	border-radius: 0px;
+}
+ 
+.panel .panel-heading {
+  background-color: #fff;
+}
+
+.panel-body {
+  padding-bottom: 10px;
+}
+
+.panel-subheading {
+  font-size: 14px;
+  line-height: 20px;
+  background: #fbfaf6;
+  border-bottom: 1px solid #e5e5e5;
+  color: #757575;
+  padding: 10px;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.panel-heading .btn{
+  margin-top: -5px;
+}
+
+
+.panel-default>.panel-heading .badge {
+  color: #A5245E;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  padding: 5px 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
+/*bootstrap-growl*/
+.bootstrap-growl{
+  border-left: 0px none !important;
+  margin: 0px;
+  padding: 15px;
+  min-height: 25px;
+  min-width: 450px !important;
+}
+.bootstrap-growl:before{
+  content: "" !important;
+}
+
+.bootstrap-growl .close{
+  position: absolute;
+  right: 5px;
+  top: 0px;
+}

@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wishlist\n"
+"POT-Creation-Date: 2016-12-15 11:09+0000\n"
+"PO-Revision-Date: 2016-12-15 11:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: assets/wishlist.js:21
+msgid "Product was added to wishlist."
+msgstr "Das Produkt wurde auf der Wunschliste hinzugefügt."
+
+#: assets/wishlist.js:23
+msgid "Product already exist in wishlist."
+msgstr "Artikel gibt es bereits in der Wunschliste."
+
+#: assets/wishlist.js:33
+msgid "View my wishlist."
+msgstr "Meine Wunschliste."
+
+#: ajax/add.php:40
+msgid "Unable to add product to wishlist."
+msgstr "Können Sie ein Produkt zu Wunschliste hinzuzufügen."
+
+#: includes/wishlist.php:5
+msgid "My Favorites"
+msgstr "Meine Favoriten"
+
+#: views/front/tabs/wishlist.php:3
+msgid "Here all products added to wishlist."
+msgstr "Hier werden alle Produkte hinzugefügt Wunschliste."
+
+#: views/front/tabs/wishlist.php:25
+msgid "Your wishlist is empty."
+msgstr "Deine Wunschliste ist leer."

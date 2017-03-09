@@ -1,0 +1,212 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mirzam\n"
+"POT-Creation-Date: 2016-12-14 16:45+0000\n"
+"PO-Revision-Date: 2016-12-14 16:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+"X-Poedit-SearchPathExcluded-2: config.xml\n"
+
+#: blog-detail.php:26 cms-category.php:46
+msgid "Home"
+msgstr "Accueil"
+
+#: blog-detail.php:27
+msgid "Blog"
+msgstr "Blog"
+
+#: blog-detail.php:52
+msgid "SHARE TO FRIENDS"
+msgstr "PARTAGER AUX AMIS"
+
+#: category.php:46
+msgid "Sort By:"
+msgstr "Trier par:"
+
+#: category.php:48
+msgid "Perpage"
+msgstr "Par page"
+
+#: category.php:54
+msgid "Order products by"
+msgstr "Commande de produits par"
+
+#: category.php:55
+msgid "Price: Lowest first"
+msgstr "Prix: croissant"
+
+#: category.php:56
+msgid "Price: Highest first"
+msgstr "Prix: décroissant"
+
+#: category.php:57
+msgid "In stock"
+msgstr "En stock"
+
+#: category.php:58
+msgid "Reference: Lowest first"
+msgstr "Référence: Plus bas en premier"
+
+#: category.php:59
+msgid "Reference: Highest first"
+msgstr "Référence: Plus haut en premier"
+
+#: category.php:66
+msgid "View:"
+msgstr "Vue:"
+
+#: category.php:95
+msgid "No products available for this category."
+msgstr "Pas de produits disponibles pour cette catégorie."
+
+#: modules/contact-form/views/front/contact.php:4
+msgid "Contact Us"
+msgstr "Contactez nous"
+
+#: modules/contact-form/views/front/contact.php:5
+msgid "Contact information"
+msgstr "Coordonnées"
+
+#: modules/contact-form/views/front/contact.php:10
+msgid "Phone:"
+msgstr "Téléphone:"
+
+#: modules/contact-form/views/front/contact.php:13
+msgid "E-mail:"
+msgstr "Email:"
+
+#: modules/contact-form/views/front/contact.php:20
+msgid "Leave a message"
+msgstr "Laisser un message"
+
+#: modules/contact-form/views/front/contact.php:22
+msgid "Full name"
+msgstr "Nom complet"
+
+#: modules/contact-form/views/front/contact.php:26
+msgid "E-mail"
+msgstr "Email"
+
+#: modules/contact-form/views/front/contact.php:30
+msgid "Website"
+msgstr "Site Internet"
+
+#: modules/contact-form/views/front/contact.php:34
+msgid "Subject"
+msgstr "Assujettir"
+
+#: modules/contact-form/views/front/contact.php:38
+msgid "Content"
+msgstr "Contenu"
+
+#: modules/contact-form/views/front/contact.php:42
+msgid "Send"
+msgstr "Envoyer"
+
+#: order-address.php:8
+msgid "Choose a delivery address:"
+msgstr "Choisissez une adresse de livraison:"
+
+#: order-address.php:10 order-address.php:24
+msgid "Choose an address."
+msgstr "Choisissez une adresse."
+
+#: order-address.php:22
+msgid "Choose a billing address:"
+msgstr "Choisissez une adresse de facturation:"
+
+#: order-address.php:36
+msgid "Use the delivery address as the billing address."
+msgstr "Utilisez l'adresse de livraison que l'adresse de facturation."
+
+#: order-address.php:44
+msgid "Your delivery address"
+msgstr "Votre adresse de livraison"
+
+#: order-address.php:57 order-address.php:76
+msgid "Edit"
+msgstr "modifier"
+
+#: order-address.php:63
+msgid "Your billing address"
+msgstr "Votre adresse de facturation"
+
+#: order-address.php:81
+msgid "Add a new address"
+msgstr "ajouter une nouvelle adresse"
+
+#: order-address.php:87
+msgid "Summary"
+msgstr "Résumé"
+
+#: order-address.php:88 order-shipping.php:54 order-summary.php:11
+msgid "Checkout"
+msgstr "Check-out"
+
+#: order-shipping.php:21
+msgid "Choose a shipping option for this address."
+msgstr "Choisissez une option de livraison pour cette adresse."
+
+#: order-shipping.php:46
+msgid "I agree to the terms of service and will adhere to them unconditionally."
+msgstr "Je suis d'accord sur les termes de service et vais les respecter sans condition."
+
+#: order-shipping.php:53
+msgid "Addresses"
+msgstr "Adresses"
+
+#: order-shipping.php:62
+msgid "No career match your delivery address."
+msgstr "Aucune carrière correspond à votre adresse de livraison."
+
+#: order-shipping.php:64
+msgid "Choose another address"
+msgstr "Choisir une autre adresse"
+
+#: order-summary.php:10 order-summary.php:18
+msgid "Continue shopping"
+msgstr "Continuer vos achats"
+
+#: order-summary.php:16
+msgid "Your shopping cart is empty."
+msgstr "Votre panier est vide."
+
+#: product.php:132
+msgid "Description"
+msgstr "La description"
+
+#: product.php:139
+msgid "Product Features"
+msgstr "caractéristiques du produit"
+
+#: product.php:146
+msgid "Product tags"
+msgstr "Tags des produits"
+
+#: product.php:154
+msgid "Product attachements"
+msgstr "attachements produits"
+
+#: product.php:195
+msgid "File name"
+msgstr "Nom de fichier"
+
+#: product.php:196
+msgid "information"
+msgstr "information"
+
+#: product.php:197
+msgid "Action"
+msgstr "action"

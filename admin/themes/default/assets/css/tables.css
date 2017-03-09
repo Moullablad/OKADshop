@@ -1,0 +1,129 @@
+.table>tbody>tr>td,.table>tbody>tr>th,
+.table>tfoot>tr>td,.table>tfoot>tr>th,
+.table>thead>tr>td,.table>thead>tr>th
+{
+  vertical-align: middle;
+}
+
+.nav-tabs {
+  background: #F5F6F7;
+}
+
+.nav-tabs>li>a {
+  padding: 15px 20px;
+}
+
+.table>thead {
+  background-color: #fff;
+}
+
+.table>tbody>tr:hover {
+  background-color: #EFF9FD;
+}
+
+.table>tfoot>tr>td:hover,.table>tfoot>tr>th:hover,
+.table>thead>tr>td:hover,.table>thead>tr>th:hover 
+{
+  background-color: #EFF9FD;
+  color: #479ccf;
+}
+
+.table>tbody>tr td.product-img img {
+  width: 60px;
+  background-color: #fff;
+  padding: 4px;
+  line-height: 1.42857;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-tabs,.nav-tabs li a {
+  border: inherit !important;
+}
+
+table.Variantes {
+  width: 100%;
+}
+
+table.Variantes td,table.Variantes th {
+  padding: 15px 0;
+  vertical-align: inherit !important;
+}
+
+table.Variantes tr td:first-child input {
+  border-width: 0;
+  background: #fff;
+}
+
+.table-responsive {
+  min-height: .01%;
+  overflow-x: inherit;
+  margin-top: 21px;
+}
+
+.ordertable {
+  margin-top: 20px;
+}
+
+.ordertable>tbody>tr>td {
+  padding: 8px;
+  border: 0 none;
+  text-align: right;
+}
+
+.fa-check {
+  color: #72C279;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+  float: right;
+}
+
+table a[rel="facebox"],
+table a.btn-xs {
+  background: #2F7DB2 !important;
+  color: #fff !important;
+  padding: 5px 17px;
+}
+
+table a[rel="facebox"]:hover,table a.DELETE:hover {
+  color: #2F7DB2 !important;
+  border: 1px solid #2F7DB2 !important;
+}
+
+
+#Products .table>tbody>tr>td{
+  padding: 5px;
+}
+.total>tr>td{
+  text-align:right;
+}
+
+/* order states*/
+tr.current, tr.current:hover{
+  background-color:#dedede !important;
+}
+
+#st1{
+  background-color:#DC143C !important;
+  color:#fff;
+}
+
+#st8{
+  background-color:#4169E1 !important;
+  color:#fff;
+}
+
+#st23{
+  background-color:#32CD32 !important;
+  color:#000;
+}
+
+#total{margin-bottom: 0px;}
+#total>tbody>tr>td, #total>tbody>tr>th{padding: 5px;}

@@ -1,0 +1,9 @@
+cache
+config/database.inc.php
+files
+install
+modules/config.txt
+uploads
+vendor
+composer.json
+composer.lock

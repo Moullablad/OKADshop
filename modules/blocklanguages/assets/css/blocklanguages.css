@@ -1,0 +1,40 @@
+#blocklanguages>a{
+	color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#blocklanguages>a:after{
+    font-family: "FontAwesome";
+    font-size: 11px;
+    content: "\f107";
+    margin-left: 15px;
+}
+
+
+#blocklanguages>a>img{
+	margin-right:5px;
+}
+
+#blocklanguages>ul{
+	margin-top: 14px;
+    border-radius: 0px;
+    padding: 5px 0px;
+}
+
+#blocklanguages>ul>li>a {
+    display: block;
+    padding: 3px 15px;
+}
+
+#blocklanguages>ul>li>a>img {
+    float: right;
+    margin-top: 7px;
+}
+
+#blocklanguages>ul>li>a.current:after{
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    position: absolute;
+    right: 16px;
+}

@@ -1,0 +1,429 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Account\n"
+"POT-Creation-Date: 2016-12-14 09:44+0000\n"
+"PO-Revision-Date: 2016-12-14 09:53+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+"X-Poedit-SearchPathExcluded-2: config.xml\n"
+
+#: class/account.php:85
+msgid "The email address or password you entered is not valid."
+msgstr "عنوان البريد الإلكتروني أو كلمة المرور التي أدخلتها غير صالح."
+
+#: class/account.php:129
+msgid "Email already in use, please try another."
+msgstr "البريد الإلكتروني قيد الاستخدام، يرجى المحاولة آخر."
+
+#: class/account.php:137
+msgid "Unable to save informations, please try again."
+msgstr "غير قادر على حفظ المعلومات، يرجى المحاولة مرة أخرى."
+
+#: class/account.php:142 class/account.php:179 class/account.php:276
+msgid "Fields not match database columns."
+msgstr "الحقول لا تتطابق الأعمدة قاعدة البيانات."
+
+#: class/account.php:175
+msgid "Unable to update informations, please try again."
+msgstr "غير قادر على تحديث المعلومات، يرجى المحاولة مرة أخرى."
+
+#: class/account.php:207
+msgid "An email was sent to your inbox with new password."
+msgstr "تم إرسال رسالة إلكترونية إلى البريد الوارد الخاص بك مع كلمة مرور جديدة."
+
+#: class/account.php:209
+msgid "Unable to send email, please try again later."
+msgstr "غير قادر على إرسال البريد الإلكتروني، يرجى المحاولة مرة أخرى في وقت لاحق."
+
+#: class/account.php:212
+msgid "There is no account registered for this email address."
+msgstr "ليس هناك حساب مسجل لعنوان البريد الإلكتروني هذا."
+
+#: class/account.php:253
+msgid "Unable to update address, please try again."
+msgstr "غير قادر على تحديث عنوان، يرجى المحاولة مرة أخرى."
+
+#: class/account.php:271
+msgid "Unable to insert address, please try again."
+msgstr "غير قادر على إدراج عنوان، يرجى المحاولة مرة أخرى."
+
+#: class/account.php:309 tabs/account.php:65
+msgid "Address was deleted successfully."
+msgstr "تم حذف عنوان بنجاح."
+
+#: class/account.php:311 tabs/account.php:67
+msgid "Unable to remove the address."
+msgstr "غير قادر على إزالة عنوان."
+
+#: index.php:48
+msgid "My Account"
+msgstr "حسابي"
+
+#: index.php:49
+msgid "My Account gives you quick access to settings and tools for managing your dashboard."
+msgstr "حسابي يتيح لك الوصول السريع إلى الإعدادات وأدوات لإدارة لوحة أجهزة القياس الخاصة بك."
+
+#: tabs/account.php:27
+msgid "Dashboard"
+msgstr "لوحة القيادة"
+
+#: tabs/account.php:32
+msgid "Addresses"
+msgstr "عناوين"
+
+#: tabs/account.php:37
+msgid "Credit slips"
+msgstr "قسائم الائتمان"
+
+#: views/front/address.php:6
+msgid "Modify address"
+msgstr "تعديل عنوان"
+
+#: views/front/address.php:8
+msgid "New address"
+msgstr "العنوان الجديد"
+
+#: views/front/address.php:17 views/front/register.php:25 views/front/update.php:25
+msgid "First name"
+msgstr "الاسم الاول"
+
+#: views/front/address.php:21 views/front/register.php:29 views/front/update.php:29
+msgid "Last name"
+msgstr "الكنية"
+
+#: views/front/address.php:26
+msgid "Company name"
+msgstr "اسم الشركة"
+
+#: views/front/address.php:30 views/front/addresses.php:45 views/front/tabs/addresses.php:22
+msgid "Address"
+msgstr "عنوان"
+
+#: views/front/address.php:34
+msgid "Address (Line 2)"
+msgstr "سطر العنوان 2)"
+
+#: views/front/address.php:38
+msgid "Zip/postal code"
+msgstr "الرمز البريدي / الرمز البريدي"
+
+#: views/front/address.php:42 views/front/register.php:49 views/front/update.php:49
+msgid "City"
+msgstr "مدينة"
+
+#: views/front/address.php:46 views/front/addresses.php:52 views/front/register.php:53
+#: views/front/tabs/addresses.php:23 views/front/update.php:53
+msgid "Country"
+msgstr "بلد"
+
+#: views/front/address.php:57 views/front/addresses.php:56
+msgid "Home phone"
+msgstr "هاتف المنزل"
+
+#: views/front/address.php:61 views/front/addresses.php:60
+msgid "Mobile phone"
+msgstr "تليفون محمول"
+
+#: views/front/address.php:65
+msgid "Additional information"
+msgstr "معلومة اضافية"
+
+#: views/front/address.php:69
+msgid "Address title"
+msgstr "عنوان عنوان"
+
+#: views/front/address.php:71
+msgid "Please assign an address title for future reference."
+msgstr "يرجى تعيين عنوان عنوان للرجوع إليها في المستقبل."
+
+#: views/front/address.php:75
+msgid "Back to your addresses"
+msgstr "العودة إلى العناوين"
+
+#: views/front/address.php:78
+msgid "Update address"
+msgstr "عنوان التحديث"
+
+#: views/front/address.php:80
+msgid "Save address"
+msgstr "حفظ عنوان"
+
+#: views/front/addresses.php:9 views/front/tabs/addresses.php:6
+msgid "Your addresses are listed below."
+msgstr "العناوين مدرجة أدناه."
+
+#: views/front/addresses.php:11 views/front/tabs/addresses.php:9
+msgid "Please configure your default billing and delivery addresses when placing an order."
+msgstr "يرجى تكوين الفواتير الافتراضية وعناوين التسليم عندما وضع أمر."
+
+#: views/front/addresses.php:12 views/front/tabs/addresses.php:10
+msgid ""
+"You may also add additional addresses, which can be useful for sending gifts or receiving an order at "
+"your office."
+msgstr "يمكنك أيضا إضافة عناوين إضافية، والتي يمكن أن تكون مفيدة لإرسال الهدايا أو تلقي النظام في مكتبك."
+
+#: views/front/addresses.php:13 views/front/tabs/addresses.php:11
+msgid "Be sure to update your personal information if it has changed."
+msgstr "تأكد من تحديث المعلومات الشخصية الخاصة بك إذا كان قد تغير."
+
+#: views/front/addresses.php:26 views/front/tabs/dashboard.php:64 views/front/update.php:94
+msgid "Update"
+msgstr "تحديث"
+
+#: views/front/addresses.php:30
+msgid "Delete"
+msgstr "حذف"
+
+#: views/front/addresses.php:37
+msgid "Name"
+msgstr "اسم"
+
+#: views/front/addresses.php:41 views/front/tabs/addresses.php:21
+msgid "Company"
+msgstr "شركة"
+
+#: views/front/addresses.php:69
+msgid "Back to your account"
+msgstr "العودة إلى حسابك"
+
+#: views/front/addresses.php:70 views/front/tabs/addresses.php:7
+msgid "Add a new address"
+msgstr "أضف عنوانا جديدا"
+
+#: views/front/addresses.php:76 views/front/tabs/addresses.php:60
+msgid "No address found."
+msgstr "أي عنوان جدت."
+
+#: views/front/addresses.php:78 views/front/tabs/addresses.php:63
+msgid "Add your first address."
+msgstr "إضافة عنوان الخاص بك أولا."
+
+#: views/front/blocks/blocklinks.php:3
+msgid "My account"
+msgstr "حسابي"
+
+#: views/front/blocks/blocklinks.php:4
+msgid "Logout"
+msgstr "خروج"
+
+#: views/front/blocks/blocklinks.php:8 views/front/login.php:11 views/front/login.php:29
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: views/front/blocks/blocklinks.php:9 views/front/login.php:38 views/front/login.php:44
+#: views/front/register.php:6 views/front/register.php:94
+msgid "Register"
+msgstr "تسجيل"
+
+#: views/front/login.php:14
+msgid "Username or email address"
+msgstr "اسم المستخدم أو البريد الالكتروني"
+
+#: views/front/login.php:15
+msgid "Your E-mail or Username..."
+msgstr "البريد الالكتروني الخاص بك أو اسم المستخدم ..."
+
+#: views/front/login.php:18 views/front/register.php:45 views/front/update.php:45
+msgid "Password"
+msgstr "كلمه السر"
+
+#: views/front/login.php:19 views/front/register.php:46 views/front/update.php:46
+msgid "Your Password..."
+msgstr "كلمة السر خاصتك..."
+
+#: views/front/login.php:24
+msgid "Remember me"
+msgstr "تذكرنى"
+
+#: views/front/login.php:26
+msgid "Lost your password?"
+msgstr "فقدت كلمة المرور الخاصة بك؟"
+
+#: views/front/login.php:40 views/front/password.php:13
+msgid "Email address"
+msgstr "عنوان البريد الإلكتروني"
+
+#: views/front/login.php:41 views/front/password.php:14 views/front/register.php:34
+#: views/front/update.php:34
+msgid "Your E-mail..."
+msgstr "بريدك الالكتروني..."
+
+#: views/front/order-details.php:4
+msgid "Order details"
+msgstr "تفاصيل الطلب"
+
+#: views/front/order-details.php:6
+msgid "Follow your order's status step-by-step"
+msgstr "اتبع وضع النظام الخاص بك خطوة بخطوة"
+
+#: views/front/order-details.php:15
+msgid "Reference"
+msgstr "مرجع"
+
+#: views/front/order-details.php:16
+msgid "Product"
+msgstr "المنتج"
+
+#: views/front/order-details.php:17
+msgid "Quantity"
+msgstr "كمية"
+
+#: views/front/order-details.php:18
+msgid "Unit price"
+msgstr "سعر الوحدة"
+
+#: views/front/order-details.php:19
+msgid "Total price"
+msgstr "السعر الاجمالي"
+
+#: views/front/password.php:9
+msgid "Forgot your password?"
+msgstr "نسيت رقمك السري؟"
+
+#: views/front/password.php:10
+msgid "Please enter the email address you used to register. We will then send you a new password."
+msgstr "يرجى إدخال عنوان البريد الإلكتروني الذي استخدمته للتسجيل. سوف نرسل لك ثم كلمة مرور جديدة."
+
+#: views/front/password.php:17
+msgid "Retrieve Password"
+msgstr "استرجاع كلمة السر"
+
+#: views/front/register.php:7 views/front/update.php:7
+msgid "Your personal information"
+msgstr "معلوماتك الشخصية"
+
+#: views/front/register.php:13 views/front/update.php:13
+msgid "Civility"
+msgstr "كياسة"
+
+#: views/front/register.php:16 views/front/update.php:16
+msgid "Mr."
+msgstr "السيد"
+
+#: views/front/register.php:20 views/front/update.php:20
+msgid "Mrs."
+msgstr "السيدة."
+
+#: views/front/register.php:26 views/front/update.php:26
+msgid "Your First name..."
+msgstr "اسمك الأول ..."
+
+#: views/front/register.php:30 views/front/update.php:30
+msgid "Your Last name..."
+msgstr "اسمك الاخير..."
+
+#: views/front/register.php:33 views/front/update.php:33
+msgid "E-mail"
+msgstr "البريد الإلكتروني"
+
+#: views/front/register.php:37 views/front/update.php:37
+msgid "Phone number 1"
+msgstr "رقم الهاتف 1"
+
+#: views/front/register.php:38 views/front/update.php:38
+msgid "Your Phone number 1..."
+msgstr "لديك رقم الهاتف 1 ..."
+
+#: views/front/register.php:41 views/front/update.php:41
+msgid "Phone number 2"
+msgstr "رقم الهاتف 2"
+
+#: views/front/register.php:42 views/front/update.php:42
+msgid "Your Phone number 2..."
+msgstr "لديك رقم الهاتف 2 ..."
+
+#: views/front/register.php:50 views/front/update.php:50
+msgid "Your City..."
+msgstr "مدينتك..."
+
+#: views/front/register.php:55 views/front/update.php:55
+msgid "Your Country..."
+msgstr "بلدك..."
+
+#: views/front/register.php:65 views/front/update.php:65
+msgid "Date of birth"
+msgstr "تاريخ الولادة"
+
+#: views/front/tabs/addresses.php:19
+msgid "Label"
+msgstr "ملصق"
+
+#: views/front/tabs/addresses.php:20
+msgid "Full name"
+msgstr "الاسم الكامل"
+
+#: views/front/tabs/addresses.php:24
+msgid "Phone"
+msgstr "هاتف"
+
+#: views/front/tabs/addresses.php:25
+msgid "Actions"
+msgstr "الإجراءات"
+
+#: views/front/tabs/addresses.php:43
+msgid "Are you sure you want to delete this Address?"
+msgstr "هل أنت متأكد أنك تريد حذف هذا العنوان؟"
+
+#: views/front/tabs/credit-slips.php:4
+msgid "Credit slips you have received after canceled orders."
+msgstr "زلات الائتمان كنت قد تلقيت أوامر بعد إلغاء."
+
+#: views/front/tabs/credit-slips.php:9
+msgid "You have not received any credit slips."
+msgstr "كنت لم تتلق أي زلات الائتمان."
+
+#: views/front/tabs/dashboard.php:5
+msgid "Welcome to your account."
+msgstr "أهلا وسهلا بك إلى حسابك."
+
+#: views/front/tabs/dashboard.php:6
+msgid "Here you can manage all of your personal information and orders."
+msgstr "هنا يمكنك إدارة جميع المعلومات والأوامر الشخصية."
+
+#: views/front/tabs/dashboard.php:10
+msgid "Sign Out"
+msgstr "خروج"
+
+#: views/front/tabs/dashboard.php:17
+msgid "All Orders"
+msgstr "جميع أوامر"
+
+#: views/front/tabs/dashboard.php:21
+msgid "Awaiting payment"
+msgstr "انتظار الدفع"
+
+#: views/front/tabs/dashboard.php:25
+msgid "Awaiting Delivery"
+msgstr "في انتظار تسليم"
+
+#: views/front/tabs/dashboard.php:29
+msgid "Awaiting feedback"
+msgstr "فى انتظار التقييم"
+
+#: views/front/tabs/dashboard.php:33
+msgid "Dispute"
+msgstr "خلاف"
+
+#: views/front/tabs/dashboard.php:37
+msgid "More"
+msgstr "أكثر"
+
+#: views/front/tabs/dashboard.php:51
+msgid "Your Personal information"
+msgstr "معلوماتك الشخصية"
+
+#: views/front/update.php:6
+msgid "Edit profile"
+msgstr "تعديل الملف الشخصي"

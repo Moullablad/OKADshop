@@ -1,0 +1,171 @@
+#blockcart .icon{
+    font-size: 0;
+    position: relative;
+    /*display: inline-block;
+    margin-top: 6px;
+    height: 28px;*/
+}
+#blockcart .icon:before{
+    content: '\f290';
+    width: 29px;
+    height: 28px;
+    display: inline-block;
+    float: left;
+    font-family: 'FontAwesome';
+    font-size: 30px;
+}
+#blockcart .icon .count{
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    background-color: #7e883a;
+    text-align: center;
+    line-height: 15px;
+    display: inline-block;
+    webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    color: #fff;
+}
+#blockcart .blockcart-content{
+    min-width: 370px;
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ececec;
+    padding: 30px;
+    background: #fff;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease, -webkit-transform 0.4s ease, visibility 0.4s linear 0s;
+    -moz-transition: opacity 0.4s ease, -moz-transform 0.4s ease, visibility 0.4s linear 0s;
+    -ms-transition: opacity 0.4s ease, -ms-transform 0.4s ease, visibility 0.4s linear 0s;
+    -o-transition: opacity 0.4s ease, -o-transform 0.4s ease, visibility 0.4s linear 0s;
+    transition: opacity .4s ease, transform .4s ease, visibility .4s linear 0s;
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transform: translateY(50px);
+    text-transform: uppercase;
+}
+#blockcart:hover .blockcart-content{
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+    -webkit-transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
+    -moz-transition: opacity 0.4s ease, -moz-transform 0.4s ease;
+    -ms-transition: opacity 0.4s ease, -ms-transform 0.4s ease;
+    -o-transition: opacity 0.4s ease, -o-transform 0.4s ease;
+    transition: opacity .4s ease, transform .4s ease;
+}
+#blockcart .blockcart-title{
+    text-transform: uppercase;
+}
+#blockcart .cart-products{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border-bottom: 2px solid #ececec;
+    margin-bottom: 5px;
+}
+#blockcart .cart-products li{
+    list-style: none;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+#blockcart .cart-products .product-thumb{
+    width: 100px;
+    float: left;
+}
+#blockcart .cart-products .product-info{
+    margin-left: 115px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+#blockcart .cart-products .product-info span{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    
+}
+#blockcart .cart-products .product-info .price{
+    font-size: 14px;
+    color: #7e883a;
+}
+#blockcart .cart-products .product-name{
+    margin-bottom: 0;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+#blockcart .sub-toal, #blockcart .shipping{
+    text-align: right;
+    font-size: 14px;
+    float: right;
+    color: #7e883a;
+}
+#blockcart .btn-check-out,
+#blockcart .btn-view-cart{
+    height: 40px;
+    line-height: 40px;
+    background:#ececec;
+    color: #303030;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#blockcart .btn-check-out{
+    background: #303030;
+    color: #fff;
+    margin-bottom: 0;
+}
+#blockcart .btn-check-out:hover,
+#blockcart .btn-check-out:focus,
+#blockcart .btn-view-cart:hover,
+#blockcart .btn-view-cart:focus{
+    opacity: 0.8;
+    background: #7e883a;
+    color: #fff;
+}
+#blockcart .remove{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    font-size: 0;
+    color: inherit;
+}
+#blockcart .remove:hover,
+#blockcart .remove:focus{
+    color:red ;
+}
+#blockcart .remove:before{
+    content: "\f00d";
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    height: 9px;
+    width: 9px;
+    display: inline-block;
+    line-height: 24px;
+}
