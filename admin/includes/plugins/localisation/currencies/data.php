@@ -89,7 +89,7 @@ if( $_POST && $_POST['currency']['name'] != "" ){
 			  	<span class="label-tooltip" data-html="true" data-original-title="<?=l("Seuls les lettres et le tiret sont autorisés", "core");?>" data-toggle="tooltip" title=""><?=l("Nom de la devise *", "core");?></span>
 			  </label>
 			  <div class="col-lg-3">
-			    <input class="form-control" id="name" name="currency[name]" required="required" type="text" value="<?php echo $currency[0]['name'];?>" placeholder="<?=l("Euro", "core");?>">
+			    <input class="form-control" id="name" name="currency[name]" required="required" type="text" value="<?=(isset($currency[0]['name'])) ? $currency[0]['name'] : '';?>" placeholder="<?=l("Euro", "core");?>">
 			  </div>
 			</div>
       <div class="form-group">
@@ -97,7 +97,7 @@ if( $_POST && $_POST['currency']['name'] != "" ){
           <span class="label-tooltip" data-html="true" data-original-title="<?=l("Code ISO (ex. : USD pour dollar, EUR pour euro, etc.).", "core");?>" data-toggle="tooltip" title=""><?=l("Code ISO", "core");?></span>
         </label>
         <div class="col-lg-3">
-          <input class="form-control" id="iso_code" maxlength="32" name="currency[iso_code]" required="required" type="text" value="<?php echo $currency[0]['iso_code'];?>" placeholder="<?=l("ex. : USD pour dollar, EUR pour euro, etc.", "core");?>">
+          <input class="form-control" id="iso_code" maxlength="32" name="currency[iso_code]" required="required" type="text" value="<?=(isset($currency[0]['iso_code'])) ? $currency[0]['iso_code'] : '';?>" placeholder="<?=l("ex. : USD pour dollar, EUR pour euro, etc.", "core");?>">
         </div>
       </div>
       <div class="form-group">
@@ -113,7 +113,7 @@ if( $_POST && $_POST['currency']['name'] != "" ){
           <span class="label-tooltip" data-html="true" data-original-title="<?=l("Apparaîtra sur le front-office (ex. : €, $)", "core");?>" data-toggle="tooltip" title=""><?=l("Symbole", "core");?></span>
         </label>
         <div class="col-lg-3">
-          <input class="form-control" id="sign" maxlength="8" name="currency[sign]" required="required" type="text" value="<?php echo $currency[0]['sign'];?>" placeholder="<?=l("ex. : €, $", "core");?>">
+          <input class="form-control" id="sign" maxlength="8" name="currency[sign]" required="required" type="text" value="<?=(isset($currency[0]['sign'])) ? $currency[0]['sign'] : '';?>" placeholder="<?=l("ex. : €, $", "core");?>">
         </div>
       </div>
       <!--div class="form-group">
@@ -127,13 +127,13 @@ if( $_POST && $_POST['currency']['name'] != "" ){
 			<div class="form-group">
 				<label class="col-md-3 control-label"><?=l("Activer", "core");?></label> 
         <div class="col-sm-3">
-          <input type="checkbox" name="currency[active]" class="switch" id="handling" data-on-text="<?=l("OUI", "core");?>" data-off-text="<?=l("NON", "core");?>" value="1" <?= ($currency[0]['active']=="1") ? 'checked' : '';?>/>
+          <input type="checkbox" name="currency[active]" class="switch" id="handling" data-on-text="<?=l("OUI", "core");?>" data-off-text="<?=l("NON", "core");?>" value="1" <?= (isset($currency[0]['active']) && $currency[0]['active']=="1") ? 'checked' : '';?>/>
         </div>
       </div>
       <div class="form-group">
         <label class="col-md-3 control-label"><?=l("Par défaut", "core");?></label> 
         <div class="col-sm-3">
-          <input type="checkbox" name="currency[default_currency]" class="switch" id="handling" data-on-text="<?=l("OUI", "core");?>" data-off-text="<?=l("NON", "core");?>" value="1" <?= ($currency[0]['default_currency']=="1") ? 'checked' : '';?>/>
+          <input type="checkbox" name="currency[default_currency]" class="switch" id="handling" data-on-text="<?=l("OUI", "core");?>" data-off-text="<?=l("NON", "core");?>" value="1" <?= (isset($currency[0]['default_currency']) && $currency[0]['default_currency']=="1") ? 'checked' : '';?>/>
         </div>
       </div>
 
