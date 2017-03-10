@@ -3,6 +3,7 @@ config/database.inc.php
 files
 install
 modules/config.txt
+modules/watermark
 uploads
 vendor
 composer.json
