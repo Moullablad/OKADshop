@@ -38,12 +38,22 @@ add_js('orders-scripts', [
 /**
  * set module admin pages
  */
-function set_stock_admin_pages() {
-	if( get_url_param('module') !== 'stock' ) return;
+/*function set_stock_admin_pages() {
+	// if( get_url_param('module') !== 'stock' ) return;
+	$module = get_url_param('module');
 	$page = get_url_param('page');
-	$className = '\Module\Admin\Stock\\'. ucfirst($page);
+	// $className = '\Module\\'. $location .'\\'. ucfirst($module) .'\\'. ucfirst($page);
+	
+	$module_index = get_module_index($module);
+	$location = (is_core_module($module)) ? 'Admin' : 'Front';
+	$className = '\Module\\'. $location .'\\'. ucfirst($module) .'\\Pages';
+
 	if( class_exists($className) ) {
-		$controller = new $className(); //Get class Instance
+		$controller = new $className(); // Get class Instance
+		return $controller->setAdminPage();
+
+
+	var_dump($controller);exit;
 		$action = get_url_param('action');
 		$buttons = array();
 		if( !$action ) $action = 'index';
@@ -53,14 +63,14 @@ function set_stock_admin_pages() {
 					'label' => trans('Create '. substr(ucfirst($page), 0, -1), 'stk'),
 					'class' => 'btn btn-primary',
 					'icon' => 'fa fa-plus',
-					'link' => get_page_url($page.'&action=add', __FILE__)
+					'link' => get_page_url($page.'&action=add', $module_index)
 				);
 			} else {
 				$buttons[] = array(
 					'label' => trans('View '. ucfirst($page), 'stk'),
 					'class' => 'btn btn-success',
 					'icon' => 'fa fa-arrow-left',
-					'link' => get_page_url($page, __FILE__)
+					'link' => get_page_url($page, $module_index)
 				);
 			}
 		}
@@ -78,7 +88,7 @@ function set_stock_admin_pages() {
 		$page_name = ucfirst($page);
 		if( $action == 'add' ) $page_name = 'Create '. substr(ucfirst($page), 0, -1);
 		if( $action == 'edit' ) $page_name = 'Update '. substr(ucfirst($page), 0, -1);
-		add_admin_page(__FILE__, [
+		add_admin_page($module_index, [
 			'name' => $page, 
 			'title' => trans($page_name, 'stk'), 
 			'function' => array($controller, $action),
@@ -88,4 +98,4 @@ function set_stock_admin_pages() {
 		]);
 	}
 } 
-add_action('init', 'set_stock_admin_pages');
+add_action('init', 'set_stock_admin_pages');*/

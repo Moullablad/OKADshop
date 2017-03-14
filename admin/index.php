@@ -14,7 +14,7 @@ if( $module === '' ) AdminController::getDashboard();
 
 //get page content
 if( isset($_GET['page']) && $_GET['page'] != '' ) {
-	PageController::get($_GET['page']);
+	PageController::render($_GET['page']);
 }
 require 'includes/controller.php';
 require 'includes/views.php';
