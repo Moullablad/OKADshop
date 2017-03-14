@@ -27,6 +27,7 @@ class ModuleController extends Module
      * @var Module $categories
      */
 	private static $categories = [];
+	public static $modules = [];
 
 	
 
@@ -39,6 +40,13 @@ class ModuleController extends Module
 		//Core Modules
         foreach(glob( admin_base('modules/*/index.php'), GLOB_BRACE) as $path) {
         	self::addNamespace('Module\Admin\\', $path);
+
+			$name = \get_module_dirname($path);
+			self::$modules[$name] = array(
+				'type' => 'core',
+				'path' => str_replace('index.php', '', $path)
+			);
+
         	require_once($path);
         }
         //Custom Modules
@@ -48,6 +56,10 @@ class ModuleController extends Module
 				if (0 !== strpos($name, 'core-')) {
 					$modulePath = module_base($name, 'index.php');
 					if( file_exists($modulePath) ){
+						self::$modules[$name] = array(
+							'type' => 'front',
+							'path' => str_replace('index.php', '', $modulePath)
+						);
 						self::addNamespace('Module\Front\\', $modulePath);
 						require_once($modulePath);
 					}
@@ -67,7 +79,7 @@ class ModuleController extends Module
 		// instantiate the loader
 		$loader = new \Core\Psr4AutoloaderClass;
 		$loader->register(); // register the autoloader
-		$classDir = module_base($path, 'includes/class/');
+		$classDir = module_base($path, 'includes/controllers/');
     	$moduleName = get_module_dirname($path);
     	$moduleName = preg_replace("!-|_!", " ", $moduleName);
     	$moduleName = ucwords($moduleName);
