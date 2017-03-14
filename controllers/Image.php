@@ -193,6 +193,13 @@ class Image
                     $layer = ImageWorkshop::initFromPath( $image_path );
                     $layer->resizeInPixel($size[0], $size[1], true, 0, 0, 'MM');
                     $layer->save( $file_target, $image_output, true, null, 95);
+                    $args = array(
+                        'image_name' => $image_name,
+                        'extention' => $extention,
+                        'path' => $file_target . $image_output,
+                        'size' => $size
+                    );
+                    do_action('after_resize_image', $args);
                 }
             }
 

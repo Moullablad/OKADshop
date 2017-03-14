@@ -54,7 +54,7 @@ try {
 
 			//get old position
 			$result = $db->prepare("SELECT position FROM {$db->prefix}product_images WHERE id_product = ? ORDER BY position DESC", [$id_product], true);
-			if( $result->position ){
+			if( isset($result->position) ){
 				$position = intval($result->position) + 1;
 			} else {
 				$position = 1;

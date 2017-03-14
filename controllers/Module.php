@@ -293,16 +293,18 @@ class Module extends Controller
      * @param int $name
      * @return boolean
      */
-    public static function doAction( $name ){
+    public static function doAction( $name, $args=[] ){
         if( !is_empty( self::$actions ) ){
             if ( array_key_exists($name, self::$actions ) ) {
                 $array = self::$actions[$name];
                 $hooks = array_sort($array, 'priority');
                 if( !is_empty( $hooks ) ){
+                            // var_dump($args);exit;
                     foreach ($hooks as $key => $hook) {
                         $hook_function = $hook['function'];
                         if( function_exists($hook_function) ){
-                            print $hook_function();
+                            call_user_func_array($hook_function, [$args]);
+                            // print $hook_function();
                         }
                     }
                 }
