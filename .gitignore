@@ -4,6 +4,7 @@ files
 install
 modules/config.txt
 modules/watermark
+modules/social-auth
 uploads
 vendor
 composer.json
