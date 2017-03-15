@@ -170,6 +170,26 @@ function get_module_index($name){
 	return false;
 }
 
+
+/**
+ * Get module namespace
+ *
+ * @param string $name
+ *
+ * @return $namespace | false
+ */
+function get_module_namespace($name){
+	$modules = get_active_modules();
+	if( isset($modules[$name]) ){
+		return $modules[$name]['namespace'];
+	}
+	return false;
+}
+
+
+
+
+
 /**
  * Tell if is Core module
  *
