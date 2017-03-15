@@ -40,11 +40,6 @@ class PageController extends AdminController
 		self::$with_nav = true;
 		$module_index = get_module_index($module);
 
-		$location = (is_core_module($module)) ? 'Admin' : 'Front';
-		$className = '\Module\\'. $location .'\\'. ucfirst($module) .'\\Pages';
-		$instance = new $className();
-		$class_method = 'page' . self::$title;
-
 		if (0 === strpos(self::$name, 'edit')) {
 			$page_name = str_replace('edit_', '', self::$name);
 			self::$title = trans('Edit '. $page_name, 'core');
@@ -76,7 +71,7 @@ class PageController extends AdminController
 		add_admin_page($module_index, [
 			'name' => self::$name, 
 			'title' => trans(self::$title, 'core'), 
-			'function' => array($instance, $class_method),
+			'function' => array($this, 'page' . self::$title),
 		]);
 	}
 
@@ -89,7 +84,6 @@ class PageController extends AdminController
 	public static function render($name){
 		if( !isset($_GET['module']) ) return;
 		$module = $_GET['module'];
-		// var_dump(Module::$admin_pages[$module]);
 		if( isset(Module::$admin_pages[$module][$name]) ){
 			ob_start(); ob_clean(); // Initiate the output buffer
 			$page = (object) Module::$admin_pages[$module][$name];

@@ -51,12 +51,12 @@ add_action('os_after_order_details', 'order_data_reset');
 function set_stock_admin_pages() {
 	if( ! is_admin() ) return;
 	$module = get_url_param('module');
-	$module_index = get_module_index($module);
-	$location = (is_core_module($module)) ? 'Admin' : 'Front';
-	$className = '\Module\\'. $location .'\\'. ucfirst($module) .'\\Pages';
-	if( class_exists($className) ) {
-		$controller = new $className(); // Get class Instance
-		return $controller->setAdminPage();
+	if( $namespace = get_module_namespace($module) ) {
+		$className = $namespace .'Controllers\\Pages';
+		if( class_exists($className) ) {
+			$controller = new $className(); // Get class Instance
+			return $controller->setAdminPage();
+		}
 	}
 } 
 add_action('init', 'set_stock_admin_pages');

@@ -26,6 +26,7 @@ class ModuleController extends Module
      * Module array
      * @var Module $categories
      */
+	private static $loader;
 	private static $categories = [];
 	public static $modules = [];
 
@@ -37,16 +38,16 @@ class ModuleController extends Module
      * @return void
      */
 	public static function init(){
+		self::$loader = require _BASE_URI_. 'vendor/autoload.php'; 
+
 		//Core Modules
         foreach(glob( admin_base('modules/*/index.php'), GLOB_BRACE) as $path) {
-        	self::addNamespace('Module\Admin\\', $path);
-
 			$name = \get_module_dirname($path);
 			self::$modules[$name] = array(
 				'type' => 'core',
 				'path' => str_replace('index.php', '', $path)
 			);
-
+        	self::addNamespace("CoreModules\\", $path);
         	require_once($path);
         }
         //Custom Modules
@@ -60,12 +61,14 @@ class ModuleController extends Module
 							'type' => 'front',
 							'path' => str_replace('index.php', '', $modulePath)
 						);
-						self::addNamespace('Module\Front\\', $modulePath);
+						self::addNamespace("Modules\\", $modulePath);
 						require_once($modulePath);
 					}
 				}
 			}
 		}
+
+		
 	}
 
 
@@ -76,17 +79,29 @@ class ModuleController extends Module
      * @return void
      */
 	public static function addNamespace($prefix, $path){
-		// instantiate the loader
-		$loader = new \Core\Psr4AutoloaderClass;
-		$loader->register(); // register the autoloader
-		$classDir = module_base($path, 'includes/controllers/');
-    	$moduleName = get_module_dirname($path);
+    	$prefix = self::getNamespace($prefix, $path);
+		self::$loader->setPsr4($prefix, module_base($path, '') );
+    }
+
+
+    /**
+     * get Namespace
+     *
+     * @param string $path
+     *
+     * @return $namespace
+     */
+	public static function getNamespace($prefix, $path){
+		$moduleName = $name = get_module_dirname($path);
     	$moduleName = preg_replace("!-|_!", " ", $moduleName);
     	$moduleName = ucwords($moduleName);
     	$moduleName = str_replace(' ', '_', $moduleName);
-    	$prefix .= $moduleName;
-    	$loader->addNamespace($prefix, $classDir);
-    }
+    	$namespace = $prefix . $moduleName ."\\";
+    	self::$modules[$name]['namespace'] = $namespace;
+    	return $namespace;
+	}
+
+
 
 
 	/**
