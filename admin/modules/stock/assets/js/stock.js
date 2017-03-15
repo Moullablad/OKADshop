@@ -39,13 +39,15 @@ var stock_ajaxurl = admin_dirname('modules/stock/includes/ajax/');
 
 
 	//Get Customers
-	$('#customers').autocomplete({
-	    serviceUrl: stock_ajaxurl + 'customers.php',
-	    onSelect: function (result) {
-	    	console.log(result.id)
-	    	$('#id_customer').val(result.id_customer);
-	    }
-	});
+	if( $('#customers').length > 0 ) {
+		$('#customers').autocomplete({
+		    serviceUrl: stock_ajaxurl + 'customers.php',
+		    onSelect: function (result) {
+		    	console.log(result.id)
+		    	$('#id_customer').val(result.id_customer);
+		    }
+		});
+	}
 
 
 	/* Stock total table */
@@ -100,6 +102,7 @@ function updateQuoteTotal(){
 
 //Auto complete
 function productAutoComplete(){
+	if( $('#customers').length < 1 ) return;
 	$('.product_name').autocomplete({
 	    serviceUrl: stock_ajaxurl+'products.php',
 	    onSelect: function (result) {
