@@ -80,7 +80,7 @@ class ModuleController extends Module
      */
 	public static function addNamespace($prefix, $path){
     	$prefix = self::getNamespace($prefix, $path);
-		self::$loader->setPsr4($prefix, module_base($path, '') );
+		self::$loader->setPsr4($prefix, module_base($path) );
     }
 
 
