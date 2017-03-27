@@ -3,6 +3,13 @@
 	  	<div class="row col-product">
 	    	<div class="col-sm-4">
 		        <div id="carousel" class="carousel slide" data-ride="carousel">
+
+		        <?php if( $product->discount > 0 ) : ?>
+		        	<?php $percent = ($product->discount/$product->sell_price) * 100; ?>
+		        	<div class="percent-saleoff"> <span><label><?php echo intval($percent); ?>%</label></span></div>
+		        <?php endif; ?>
+
+
 		            <div class="carousel-inner">
 		            	<?php $i=0; ?>
 		            	<?php foreach ($images as $key => $image) : ?>
@@ -59,20 +66,14 @@
 		        <p class="product-description"><?= $product->short_description; ?></p>
 
 				<div class="product-price">
-					 <p class="price">
-                        <?php 
-                            $sell_price = number_format($product->sell_price, 2, '.', ''); 
-                            $discount = number_format($product->discount, 2, '.', ''); 
-                        ?>
-                        <?php if( $discount > 0 ) : ?>
-                            <?= $currency; ?> <?= ($sell_price - $discount);?>
-                            <del><span class="old-amount">
-                            	<?php if (isset($currency->sign) && isset($sell_price)): ?>
-                            		<?= $currency->sign; ?> <?= $sell_price; ?>
-                            	<?php endif ?>
-                            </span></del>
+
+                    <p class="price">
+                        <?php
+                         if( $product->discount > 0 ) : ?>
+                            <ins><?=$product->sell_price .' '. $currency;?></ins>
+                            <del><span class="old-amount"><?=$product->old_price .' '. $currency;?></span></del>
                         <?php else : ?>
-                            <?= $currency; ?> <?= $sell_price; ?>
+                            <ins><?=$product->sell_price .' '. $currency;?></ins>
                         <?php endif; ?>
                     </p>
 				</div>
