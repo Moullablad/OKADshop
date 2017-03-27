@@ -18,23 +18,26 @@ $perpage = $paginator->perpage;
         </div><!-- /.left-side -->
 
         <div class="col-md-9">
-            <img src="<?= category_image($category->id, '846x280');?>" class="img-thumbnail img-responsive mb-30">
-            <?php if( !is_empty($shildrens) ) : ?>
-            <div class="mt-40 mb-50">
-                <div class="sub-categories pt-30 pb-15 pl-20 pr-20">
-                       <?php foreach ($shildrens as $key => $shild): ?>
-                        <div class="col-md-3 col-sm-12 col-xs-12">
-                            <div class="cat-block">
-                                <a href="category/<?= $shild->id.'-'.$shild->permalink; ?>" title="<?= $shild->name ?>"> 
-                                   <img alt="<?= $shild->name ?>" src="<?= category_image($shild->id) ;?>" class="img-responsive">
-                                   <strong><?= $shild->name ?></strong>
-                               </a>
+
+            <?php if( isset($display_category_cover) ) : ?>
+                <img src="<?= category_image($category->id, '846x280');?>" class="img-thumbnail img-responsive mb-30">
+                <?php if( !is_empty($shildrens) ) : ?>
+                <div class="mt-40 mb-50">
+                    <div class="sub-categories pt-30 pb-15 pl-20 pr-20">
+                           <?php foreach ($shildrens as $key => $shild): ?>
+                            <div class="col-md-3 col-sm-12 col-xs-12">
+                                <div class="cat-block">
+                                    <a href="category/<?= $shild->id.'-'.$shild->permalink; ?>" title="<?= $shild->name ?>"> 
+                                       <img alt="<?= $shild->name ?>" src="<?= category_image($shild->id) ;?>" class="img-responsive">
+                                       <strong><?= $shild->name ?></strong>
+                                   </a>
+                                </div>
                             </div>
-                        </div>
-                       <?php endforeach; ?>
-                    <div class="clearfix"></div>
-                </div><!-- /.sub-categories -->
-            </div><!-- /.row -->
+                           <?php endforeach; ?>
+                        <div class="clearfix"></div>
+                    </div><!-- /.sub-categories -->
+                </div><!-- /.row -->
+                <?php endif; ?>  
             <?php endif; ?>  
 
 
@@ -51,7 +54,7 @@ $perpage = $paginator->perpage;
                                 <option value="12" <?= ($perpage == 12) ? 'selected' : ''; ?>>12</option>
                                 <option value="24" <?= ($perpage ==  24) ? 'selected' : ''; ?>>24</option>
                             </select>
-                            <select name="orderby" class="productSort">
+                            <select name="orderby" class="productSort" style="float: right;">
                                 <option <?= ($orderby == 'cdate:asc' || $orderby == '') ? 'selected' : ''; ?> value="cdate:asc"><?php trans_e("Order products by", "mirzam"); ?></option>
                                 <option <?= ($orderby == 'sell_price:asc') ? 'selected' : ''; ?> value="sell_price:asc"><?php trans_e("Price: Lowest first", "mirzam"); ?></option>
                                 <option <?= ($orderby == 'sell_price:desc') ? 'selected' : ''; ?> value="sell_price:desc"><?php trans_e("Price: Highest first", "mirzam"); ?></option>
