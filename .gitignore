@@ -1,3 +1,4 @@
+_dev
 cache
 config/database.inc.php
 files
@@ -9,4 +10,3 @@ uploads
 vendor
 composer.json
 composer.lock
-tasks.docx
