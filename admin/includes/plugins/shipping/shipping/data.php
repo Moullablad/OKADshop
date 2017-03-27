@@ -426,7 +426,7 @@ $taxes  = $common->select('taxes', array('id', 'name', 'rate'), "WHERE active=1"
 					          <td class="border_left border_bottom range_sign">&gt;=</td>
 					          <td class="border_bottom">
 					            <div class="input-group fixed-width-md">
-					              <span class="input-group-addon unit"><?= ( $shipping[0]['shipping_method'] == "1" ) ? l("kg") : CURRENCY;?></span>
+					              <span class="input-group-addon unit"><?= ( $shipping[0]['shipping_method'] == "1" ) ? l("kg") : get_currency();?></span>
 					              <input name="shipping[range_inf]" value="<?php echo $shipping[0]['range_inf'];?>" type="number" min="0" step="0.01" placeholder="0.00" autocomplete="off" class="form-control">
 					            </div>
 					          </td>
