@@ -323,3 +323,83 @@ input.gray, select.gray, textarea.gray{
 @media (min-width: 992px) {
 
 }
+
+
+/* percentages */
+.percent-saleoff {
+    background: red none repeat scroll 0 0;
+    color: #fff;
+    height: 30px;
+    left: 10px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: -7px;
+    width: 46px;
+    z-index: 9999 !important;
+}
+
+.percent-saleoff::before {
+    background: rgba(0, 0, 0, 0) url(http://js1.prixfous.ma/wp-content/themes/aloshop/assets/css/images/home1/shape.png) no-repeat scroll center top;
+    content: "";
+    display: block;
+    height: 10px;
+    left: -4px;
+    position: absolute;
+    top: 0px;
+    width: 54px;
+    z-index: 999;
+}
+
+.percent-saleoff span {
+    display: block;
+    font-size: 12px;
+    position: relative;
+    z-index: 99;
+}
+
+
+element.style {
+}
+
+
+.percent-saleoff label {
+    margin: 10px 0 -4px;
+}
+
+
+.percent-saleoff label {
+}
+
+
+.percent-saleoff label {
+    display: block;
+    font-size: 14px;
+    margin: 7px 0 -4px;
+}
+
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+
+.category-product-featured.green-box .percent-saleoff::after {
+    border-top: 12px solid #fe9c00;
+}
+
+
+.percent-saleoff::after {
+    width: 0;
+    height: 0;
+    border-left: 23px solid transparent;
+    border-right: 23px solid transparent;
+    border-top: 12px solid #ED321E;
+    position: absolute;
+    bottom: -12px;
+    content: "";
+    left: 0;
+}

@@ -2,6 +2,10 @@
     <div class="col-product">
         <div class="product-thumb">
             <a href="<?= get_product_url($product->id, $product->link_rewrite); ?>">
+                <?php if( $product->discount > 0 ) : ?>
+                    <?php $percent = ($product->discount/$product->sell_price) * 100; ?>
+                    <div class="percent-saleoff"> <span><label><?php echo intval($percent); ?>%</label></span></div>
+                <?php endif; ?>
                 <img alt="<?=$product->name;?>" src="<?= default_product_image($product->id, '360x360'); ?>" class="img-responsive">
             </a>
         </div>
