@@ -76,8 +76,9 @@ class DBO
 						case 'HTML' :
 						$this->RSQL .= ' \''.preg_replace("(\r\n|\n|\r)","",htmlentities(addslashes($_POST[$this->Value[1]]),ENT_QUOTES,'UTF-8')).'\',';
 						break;
-						case 'TEXT' :												
-						$this->RSQL .= '\''.preg_replace("(\r\n|\n|\r)","",htmlentities(addslashes($_POST[$this->Value[1]]),ENT_QUOTES,'UTF-8')).'\',';
+						case 'TEXT' :	
+						$value = (isset($_POST[$this->Value[1]])) ? $_POST[$this->Value[1]] : '';		
+						$this->RSQL .= '\''.preg_replace("(\r\n|\n|\r)","",htmlentities(addslashes($value),ENT_QUOTES,'UTF-8')).'\',';
 						break;
 						case 'TIME' : 							
 						if($RegX->check_time($_POST[$this->Value[1]]))
