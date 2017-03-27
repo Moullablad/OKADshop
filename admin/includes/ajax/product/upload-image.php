@@ -35,8 +35,12 @@ $db = Database::getInstance();
 
 try {
 
-	ini_set('max_execution_time', 0);
+	error_reporting(E_ALL);
 	set_time_limit(0);
+	ini_set('memory_limit', '20000M');
+	ini_set('max_execution_time', 0);
+	date_default_timezone_set('Europe/London');
+
 
 	$added_images = array();
 
