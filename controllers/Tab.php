@@ -38,7 +38,7 @@ class Tab {
 			$replace = str_replace(site_base(), '', $file);
 			$replace = str_replace('\\', '/', $replace);
 			$replace = str_replace('/', '#', $replace);
-			if (preg_match("/modules#([a-zA-Z0-9_]*)#/", $replace, $match) === 1) {
+			if (preg_match("/modules#([a-zA-Z0-9_-]*)#/", $replace, $match) === 1) {
 				$group = $match[1];
 			}
 		}
