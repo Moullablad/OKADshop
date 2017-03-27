@@ -226,23 +226,17 @@ class Module extends Controller
      *
      */
     public static function PageRender(){
+        ob_start(); // Initiate the output buffer
         $current_page = self::getCurrentPage();
-        $module_page_function = $current_page['function'];
-        /*$page_init = $module_page_function.'_init';
-        if (function_exists($page_init)) {
-            $page_init();
-        }*/
-        if( function_exists($module_page_function) ){
-            ob_start(); // Initiate the output buffer
-            ob_clean();
-            $module_page_function(); //call function
-            $content = ob_get_clean();
-            require_once( Theme::getViewPath('header') );
-            print $content;
-            require_once( Theme::getViewPath('footer') );
-            ob_end_flush(); // Flush the output from the buffer
-            exit;
-        }
+        $method = $current_page['function'];
+        call_user_func_array($method, array());
+        $content = ob_get_clean();
+        // Render page content
+        include Theme::getViewPath('header'); 
+        print $content;
+        include Theme::getViewPath('footer'); 
+        ob_end_flush(); // Flush the output from the buffer
+        exit;
     }
 
 
@@ -294,20 +288,14 @@ class Module extends Controller
      * @return boolean
      */
     public static function doAction( $name, $args=[] ){
-        if( !is_empty( self::$actions ) ){
-            if ( array_key_exists($name, self::$actions ) ) {
-                $array = self::$actions[$name];
-                $hooks = array_sort($array, 'priority');
-                if( !is_empty( $hooks ) ){
-                            // var_dump($args);exit;
-                    foreach ($hooks as $key => $hook) {
-                        $hook_function = $hook['function'];
-                        if( function_exists($hook_function) ){
-                            call_user_func_array($hook_function, [$args]);
-                            // print $hook_function();
-                        }
-                    }
-                }
+        if( empty(self::$actions[$name]) ) return;
+        $hooks = array_sort(self::$actions[$name], 'priority');
+        foreach ($hooks as $key => $hook) {
+            $method = $hook['function'];
+            if( is_array($method) ) {
+                call_user_func_array(array($method[0], $method[1]), [$args]);
+            } else if( function_exists($method) ){
+                call_user_func_array($method, [$args]);
             }
         }
     }
