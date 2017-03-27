@@ -39,7 +39,7 @@ use Core\Image;
 global $common;
 $id_c 	= intval($_POST['id_c']);
 $c_data = $_POST;
-unset($c_data[id_c]);
+unset($c_data['id_c']);
 if( !isset($c_data['hidden']) ) $c_data['hidden'] = 1;
 $c_data['id_lang'] = 1;
 
