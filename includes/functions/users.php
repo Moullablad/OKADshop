@@ -134,3 +134,68 @@ function get_orders($id_user=null){
 	}
 	return OrderController::getOrders($id_user);
 }
+
+
+
+/**
+ * Get User Meta
+ *
+ * @param int $id_user
+ * @param string $meta_key
+ *
+ * @return string $meta_value
+ */
+function get_user_meta($id_user, $meta_key){
+	$metas = getDB()->findByColumns('usermeta', [
+		[
+			'key' => 'id_user',
+			'value' => $id_user,
+			'condition' => 'AND'
+		],
+		[
+			'key' => 'meta_key',
+			'value' =>  $meta_key,
+			'condition' => 'AND'
+		]
+	], true);
+
+	if( isset($metas->meta_value)) {
+		$value = @unserialize($metas->meta_value);
+		if ($value !== false) {
+			return $value;
+		} else {
+			return $metas->meta_value;
+		}
+	}
+
+	return false;
+}
+
+
+/**
+ * Create or update User meta
+ *
+ * @param int $id_user
+ * @param string $meta_key
+ * @param string $meta_value
+ * @param bool $unique
+ *
+ * @return bool
+ */
+function save_user_meta($id_user, $meta_key, $meta_value) {
+	$db = getDB();
+	$table = $db->prefix . 'usermeta';
+	if( get_user_meta($user_id, $meta_key) ) {
+		return $db->prepare("UPDATE {$table} SET `meta_value`=? WHERE `id_user`=? AND `meta_key`=?", [
+			$meta_value,
+			$id_user, 
+			$meta_key
+		]);
+	} else {
+		return $db->create('usermeta', [
+			'id_user' => $id_user, 
+			'meta_key' => $meta_key, 
+			'meta_value' => $meta_value
+		]);
+	}
+}
