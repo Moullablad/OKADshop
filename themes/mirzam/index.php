@@ -1,4 +1,4 @@
-<section id="home_category">
+<section class="mt-20" id="home_category">
     <div class="container">
         <div class="row">
             <div class="col-md-3">

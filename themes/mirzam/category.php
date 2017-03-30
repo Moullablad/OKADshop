@@ -10,7 +10,7 @@
 $orderby = $paginator->orderby;
 $perpage = $paginator->perpage;
 ?>
-<div class="container" id="home_category">
+<div class="container" id="main-container">
     <div class="row">
 
         <div class="col-md-3">
@@ -44,7 +44,7 @@ $perpage = $paginator->perpage;
             <?php if( !is_empty($products) ) : ?>
 
                 <div class="row mb-20">
-                    <div class="col-md-6">
+                    <div class="col-md-9">
                         <div class="sortbar">
                         <form class="osForm" method="post" action="">
                             <label><?php trans_e("Sort By:", "mirzam"); ?></label>
@@ -54,7 +54,7 @@ $perpage = $paginator->perpage;
                                 <option value="12" <?= ($perpage == 12) ? 'selected' : ''; ?>>12</option>
                                 <option value="24" <?= ($perpage ==  24) ? 'selected' : ''; ?>>24</option>
                             </select>
-                            <select name="orderby" class="productSort" style="float: right;">
+                            <select name="orderby" class="productSort">
                                 <option <?= ($orderby == 'cdate:asc' || $orderby == '') ? 'selected' : ''; ?> value="cdate:asc"><?php trans_e("Order products by", "mirzam"); ?></option>
                                 <option <?= ($orderby == 'sell_price:asc') ? 'selected' : ''; ?> value="sell_price:asc"><?php trans_e("Price: Lowest first", "mirzam"); ?></option>
                                 <option <?= ($orderby == 'sell_price:desc') ? 'selected' : ''; ?> value="sell_price:desc"><?php trans_e("Price: Highest first", "mirzam"); ?></option>
@@ -65,7 +65,7 @@ $perpage = $paginator->perpage;
                         </form>
                         </div><!-- /#sortbar -->
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <div class="display-option pull-right mb-30">
                             <span><?php trans_e("View:", "mirzam"); ?></span>
                             <a class="view-as-grid selected" href="#"><i class="fa fa-th-large"></i></a>
@@ -77,21 +77,21 @@ $perpage = $paginator->perpage;
                 <div class="products grid-view">
                 <?php $lastItem = count( $products ); $i=1; foreach ($products as $key => $product) : ?>
 
-                    <?php if( $i==1) : ?><div class="row mb-30"><?php endif; ?>
+                    <?php if( $i==1) : ?><div class="row"><?php endif; ?>
 
                         <?php get_template_view('product-item', array('product' => $product)); ?>
 
                     <?php if( $i == $lastItem) : ?>
                         </div><!-- /.row -->
                     <?php elseif( $i%3 == 0 ) : ?>
-                        </div><!-- /.row --><div class="row mb-30">
+                        </div><!-- /.row --><div class="row">
                     <?php endif; ?>
 
                     <?php $i++; ?>
                 <?php endforeach; ?>
                 </div><!-- /.products -->
 
-                <nav class="pagination">
+                <nav class="text-center">
                     <?php echo $paginator->links; ?>
                 </nav>
 

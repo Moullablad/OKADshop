@@ -190,6 +190,7 @@
 	font-weight: bold;
 	margin-bottom: 16px;
 	height: 28px;
+	display: inline-block;
 }
 
 .col-product .block .price{

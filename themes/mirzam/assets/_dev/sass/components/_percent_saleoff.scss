@@ -1,0 +1,47 @@
+/* percentages */
+.percent-saleoff {
+  background: red none repeat scroll 0 0;
+  color: #fff;
+  height: 30px;
+  left: 20px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: -7px;
+  width: 46px;
+  z-index: 999 !important;
+  &::before {
+    background: rgba(0, 0, 0, 0) url(../img/icons/shape.png) no-repeat scroll center top;
+    content: "";
+    display: block;
+    height: 10px;
+    left: -4px;
+    position: absolute;
+    top: 0px;
+    width: 54px;
+    z-index: 999;
+  }
+  &::after {
+    width: 0;
+    height: 0;
+    border-left: 23px solid transparent;
+    border-right: 23px solid transparent;
+    border-top: 12px solid #ED321E;
+    position: absolute;
+    bottom: -12px;
+    content: "";
+    left: 0;
+  }
+  span {
+    display: block;
+    font-size: 12px;
+    position: relative;
+    z-index: 99;
+  }
+  label {
+    margin: 10px 0 -4px;
+    display: block;
+    font-size: 14px;
+    margin: 7px 0 -4px;
+  }
+}

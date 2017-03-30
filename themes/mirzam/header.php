@@ -65,7 +65,7 @@
     </section>
     
 
-    <section id="main-nav" class="mb-20">
+    <section id="main-nav">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-8">
@@ -95,8 +95,5 @@
             </div>
         </div>        
     </section>
-
-
-  
 
     <div id="site-wrapper">

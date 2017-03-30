@@ -1,0 +1,18 @@
+/* breadcrumbs */
+.breadcrumbs {
+  text-transform: uppercase;
+  margin-top: 22px;
+  line-height: 24px;
+  a {
+    color: #fff;
+    &:hover, &:focus {
+      color: #00aff0;
+    }
+    &:after {
+      font-family: 'FontAwesome';
+      content: "\f105";
+      padding: 0 20px;
+      font-size: 14px;
+    }
+  }
+}

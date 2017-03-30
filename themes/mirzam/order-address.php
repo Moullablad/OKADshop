@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="main-container">
 	<?php get_template_view('order-steps', array('page' => $page)); ?>
 
 	<div class="row">
