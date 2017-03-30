@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Themes\n"
-"POT-Creation-Date: 2016-12-14 11:11+0000\n"
-"PO-Revision-Date: 2016-12-14 11:13+0000\n"
+"POT-Creation-Date: 2017-03-29 04:59+0000\n"
+"PO-Revision-Date: 2017-03-29 05:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: OKADshop <contact@okadshop.com>\n"
 "Language: en\n"
@@ -25,7 +25,7 @@ msgstr "Thème a été activé."
 
 #: includes/ajax/activate.php:24 includes/ajax/install.php:61
 msgid "Error occurred, please try again."
-msgstr "Erreur, s'il vous plaît essayer à nouveau."
+msgstr "Une erreur est survenue, s'il vous plaît essayer à nouveau."
 
 #: includes/ajax/install.php:59
 msgid "Theme was installed."
@@ -43,11 +43,11 @@ msgstr "Identité du site"
 
 #: includes/tabs/customize.php:35
 msgid "Colors"
-msgstr "Les couleurs"
+msgstr "Couleurs"
 
 #: includes/tabs/customize.php:77
 msgid "Site identity was Updated"
-msgstr "l'identité du site a été mise à jour"
+msgstr "identité du site a été mise à jour"
 
 #: includes/tabs/customize.php:132
 msgid "Colors was Updated"
@@ -59,7 +59,7 @@ msgstr "En vedette"
 
 #: includes/tabs/themes.php:35
 msgid "Popular"
-msgstr "populaire"
+msgstr "Populaire"
 
 #: includes/tabs/themes.php:41
 msgid "Latest"
@@ -67,11 +67,11 @@ msgstr "Dernier"
 
 #: includes/tabs/themes.php:47
 msgid "Upload Theme"
-msgstr "Télécharger Theme"
+msgstr "Télécharger Thème"
 
 #: index.php:46 index.php:48 views/admin/index.php:18
 msgid "Themes"
-msgstr "Thèmes"
+msgstr "thèmes"
 
 #: index.php:49 views/admin/install.php:18
 msgid "Install"
@@ -83,7 +83,7 @@ msgstr "Personnaliser"
 
 #: views/admin/index.php:21
 msgid "Add new"
-msgstr "Ajouter un nouveau"
+msgstr "Ajouter un"
 
 #: views/admin/index.php:34
 msgid "Active"
@@ -103,7 +103,7 @@ msgstr "Feuilleter"
 
 #: views/admin/tabs/identity.php:24
 msgid "Favicon"
-msgstr "Favicon"
+msgstr "favicon"
 
 #: views/admin/tabs/identity.php:30
 msgid "Select Image"
@@ -115,4 +115,4 @@ msgstr "Titre du site"
 
 #: views/admin/tabs/identity.php:51
 msgid "Tagline"
-msgstr "Slogan"
+msgstr "tagline"

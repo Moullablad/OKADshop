@@ -12,11 +12,11 @@
     <table class="shop_table cart osTable">
         <thead>
             <tr>
-                <th><?php trans_e("Reference", "mirzam"); ?></th>
-                <th><?php trans_e("Product", "mirzam"); ?></th>
-                <th><?php trans_e("Quantity", "mirzam"); ?></th>
-                <th><?php trans_e("Unit price", "mirzam"); ?></th>
-                <th><?php trans_e("Total price", "mirzam"); ?></th>
+                <th><?php trans_e("Reference", "account"); ?></th>
+                <th><?php trans_e("Product", "account"); ?></th>
+                <th><?php trans_e("Quantity", "account"); ?></th>
+                <th><?php trans_e("Unit price", "account"); ?></th>
+                <th><?php trans_e("Total price", "account"); ?></th>
             </tr>
         </thead>
         <tbody>

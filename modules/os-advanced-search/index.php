@@ -74,7 +74,7 @@ add_admin_page(__FILE__, [
 ]);
 
 add_js('advanced_search_script', ['src' =>  module_url(__FILE__, 'assets/js/script.js')]);
-function advenced_search(){
+function advanced_search(){
 	add_css('animate-css', ['src' =>  module_url(__FILE__, 'assets/css/animate.css')]);
 	$data = array();
 	$db = getDB();
@@ -193,4 +193,4 @@ function advenced_search(){
 	//echo "</pre>";
 	get_view(__FILE__,'front/search',$data);
 }
-add_front_page(__FILE__, 'search', 'advenced_search');
+add_front_page(__FILE__, 'search', 'advanced_search');

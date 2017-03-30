@@ -86,7 +86,7 @@
 	                    <?php foreach ($combinations as $key => $comb): ?>
 	                        <div class="form-group">
 	                            <label for="<?= $comb->attribute->name; ?>"><?= $comb->attribute->name; ?> :</label>
-	                            <select data-id="<?= $comb->attribute->id; ?>" id="<?= $comb->attribute->name; ?>">
+	                            <select class="select_chosen"> data-id="<?= $comb->attribute->id; ?>" id="<?= $comb->attribute->name; ?>">
 	                                <?php foreach ($comb->values as $key => $value): ?>
 	                                    <option value="<?= $value->id; ?>"><?= $value->name; ?></option>
 	                                <?php endforeach ?>

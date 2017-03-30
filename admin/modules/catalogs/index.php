@@ -32,7 +32,7 @@ $catalog = $os_admin_menu->add( trans('Catalogs', 'ctg'), get_page_url('', __FIL
 	$catalog->link->prepend('<span class="fa fa-book"></span>');
 	$catalog->add( trans('Products', 'ctg'), get_page_url('', __FILE__));
 	$catalog->add( l("Catégories", "ctg"), '?module=categories');
-	$catalog->add( l("Manufacturers", "ctg"), '?module=manufacturers');
+	// $catalog->add( l("Manufacturers", "ctg"), '?module=manufacturers');
 	$catalog->add( l("Product Attributes", "ctg"), '?module=attributes');
 	$catalog->add( l("Product Values", "ctg"), '?module=values');
 	$catalog->add( l("Characteristics", "ctg"), '?module=features');

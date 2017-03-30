@@ -7,11 +7,7 @@
                 <?php else : ?>
                     <h2><?php trans_e("New address", "account"); ?></h2>
                 <?php endif; ?>
-
-                <!--div class="mb-20 mt-20">
-                    <?php //get_view(__FILE__, 'alerts', $message); ?>
-                </div-->
-
+                
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label><?php trans_e("First name", "account"); ?> <span class="required">*</span></label>

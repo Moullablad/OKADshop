@@ -1,14 +1,14 @@
 <style type="text/css">
-	#advenced_search .title{
+	#advanced_search .title{
 		color: #202020;
 	    font-size: 18px;
 	    font-weight: 700;
 	    padding-bottom: 20px;
 	}
-	#advenced_search .advenced-search-bloc{
+	#advanced_search .advenced-search-bloc{
 		padding-left: 20px;
 	}
- 	#advenced_search .bloc-title{
+ 	#advanced_search .bloc-title{
 		font-size: 14px;
     	color: #1f1f1f;
 		font-weight: bold;
@@ -148,11 +148,11 @@
 <div class="container"  id="main">
 	<div class="row">
 		<div class="hidden-xs col-sm-4 col-md-3">
-			<div id="advenced_search">
-				<h2 class="title"><span><?= trans('FILTER','advenced_search') ?></span></h2>
+			<div id="advanced_search">
+				<h2 class="title"><span><?= trans('FILTER','advanced_search') ?></span></h2>
 				<?php if (!is_empty($filter_price)): ?>
 					<div class="advenced-search-bloc">
-						<div class="bloc-title"><?= trans('PRICE','advenced_search') ?></div>
+						<div class="bloc-title"><?= trans('PRICE','advanced_search') ?></div>
 						<ul class="price-list">
 						<?php foreach ($filter_price as $key => $value): ?>
 							<li>
@@ -195,22 +195,22 @@
 				<div class="sort-by pull-right">
 					<div class="row">
 						<div class="col-sm-4">
-							<label for="SortBy"><?= trans('Sort by','advenced_search') ?></label>
+							<label for="SortBy"><?= trans('Sort by','advanced_search') ?></label>
 						</div>
 						<div class="col-sm-8">
 							<select class="form-control filter-order" name="sortby" id="sortby">
 								<option></option>
-						        <option value="price-ascending"><?= trans('Price, low to high','advenced_search') ?></option>
-						        <option value="price-descending"><?= trans('Price, high to low','advenced_search') ?></option>
-						        <option value="created-descending"><?= trans('Date, new to old','advenced_search') ?></option>
-						        <option value="created-ascending"><?= trans('Date, old to new','advenced_search') ?></option>
+						        <option value="price-ascending"><?= trans('Price, low to high','advanced_search') ?></option>
+						        <option value="price-descending"><?= trans('Price, high to low','advanced_search') ?></option>
+						        <option value="created-descending"><?= trans('Date, new to old','advanced_search') ?></option>
+						        <option value="created-ascending"><?= trans('Date, old to new','advanced_search') ?></option>
 							</select>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="clearfix"></div>
-			<div class="product-list" id="advenced_search_product_list">
+			<div class="product-list" id="advanced_search_product_list">
 				<?php 
 					$data['products'] = $products;
 					$data['class'] = "col-xs-12 col-sm-6 col-md-4 animated fadeInUp";

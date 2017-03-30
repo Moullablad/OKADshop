@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Modules\n"
-"POT-Creation-Date: 2016-12-14 10:25+0000\n"
-"PO-Revision-Date: 2016-12-14 10:28+0000\n"
+"POT-Creation-Date: 2017-03-29 05:00+0000\n"
+"PO-Revision-Date: 2017-03-29 05:01+0000\n"
 "Last-Translator: \n"
 "Language-Team: OKADshop <contact@okadshop.com>\n"
 "Language: en\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: includes/ajax/bulk-actions.php:24
 msgid "Action was executed."
-msgstr "Action a été exécutée."
+msgstr "L'action a été exécuté."
 
 #: includes/ajax/bulk-actions.php:30
 msgid "Modules was activated."
@@ -29,7 +29,7 @@ msgstr "Les modules ont été activés."
 
 #: includes/ajax/bulk-actions.php:32
 msgid "Unable to activate modules."
-msgstr "Impossible d'activer les modules."
+msgstr "Incapable d'activer les modules."
 
 #: includes/ajax/bulk-actions.php:37
 msgid "Modules was disabled."
@@ -41,7 +41,7 @@ msgstr "Impossible de désactiver les modules."
 
 #: includes/ajax/bulk-actions.php:44
 msgid "Modules was deleted."
-msgstr "Modules a été supprimé."
+msgstr "Les modules ont été supprimés."
 
 #: includes/ajax/bulk-actions.php:46
 msgid "Unable to delete Modules."
@@ -49,7 +49,7 @@ msgstr "Impossible de supprimer les modules."
 
 #: includes/ajax/delete.php:25
 msgid "Module was deleted."
-msgstr "Le module a été supprimé."
+msgstr "Module a été supprimé."
 
 #: includes/ajax/delete.php:27
 msgid "Unable to delete Module."
@@ -93,7 +93,7 @@ msgstr "Configuration"
 
 #: includes/ajax/filter.php:69 includes/ajax/filter.php:78
 msgid "Disable"
-msgstr "Désactiver"
+msgstr "désactiver"
 
 #: includes/ajax/filter.php:72
 msgid "Enable"
@@ -103,7 +103,7 @@ msgstr "Activer"
 msgid "Uninstall"
 msgstr "Désinstaller"
 
-#: includes/ajax/filter.php:82 views/admin/manage.php:93
+#: includes/ajax/filter.php:82 views/admin/manage.php:96
 msgid "Delete"
 msgstr "Effacer"
 
@@ -125,7 +125,7 @@ msgstr "Impossible de supprimer le crochet."
 
 #: includes/ajax/hook-sort.php:30
 msgid "Positions was updated."
-msgstr "Positions a été mis à jour."
+msgstr "Les positions ont été mis à jour."
 
 #: includes/ajax/hook-sort.php:32
 msgid "Unable to update positions."
@@ -137,72 +137,76 @@ msgstr "Il n'y a pas de crochet dans cette section."
 
 #: includes/ajax/uninstall.php:25
 msgid "Module was uninstalled."
-msgstr "Module a été désinstallé."
+msgstr "Module a été désinstallée."
 
 #: includes/ajax/uninstall.php:27
 msgid "Unable to uninstall Module."
 msgstr "Impossible de désinstaller le module."
 
-#: index.php:25 index.php:27
+#: index.php:27 index.php:29
 msgid "Modules"
 msgstr "Modules"
 
-#: index.php:28 views/admin/positions.php:18
+#: index.php:30 views/admin/positions.php:18
 msgid "Positions"
 msgstr "positions"
 
-#: views/admin/manage.php:32
+#: index.php:84
+msgid "We accept"
+msgstr "Nous acceptons"
+
+#: views/admin/manage.php:35
 msgid "Manage"
 msgstr "Gérer"
 
-#: views/admin/manage.php:38
+#: views/admin/manage.php:41
 msgid "Here you can manage modules."
 msgstr "Ici, vous pouvez gérer les modules."
 
-#: views/admin/manage.php:46
+#: views/admin/manage.php:49
 msgid "Show administration modules"
-msgstr "modules d'administration Afficher"
+msgstr "Afficher les modules d'administration"
 
-#: views/admin/manage.php:52
+#: views/admin/manage.php:55
 msgid "Choose a category"
 msgstr "Choisissez une catégorie"
 
-#: views/admin/manage.php:63
+#: views/admin/manage.php:66
 msgid "Activated & deactivated"
 msgstr "Activé et désactivé"
 
-#: views/admin/manage.php:64
+#: views/admin/manage.php:67
 msgid "Enabled modules"
 msgstr "modules activés"
 
-#: views/admin/manage.php:65
+#: views/admin/manage.php:68
 msgid "Disabled modules"
 msgstr "modules handicapés"
 
-#: views/admin/manage.php:70
+#: views/admin/manage.php:73
 msgid "Choose an author"
 msgstr "Choisissez un auteur"
 
-#: views/admin/manage.php:77
+#: views/admin/manage.php:80
 msgid "Search..."
 msgstr "Chercher..."
 
-#: views/admin/manage.php:90
+#: views/admin/manage.php:93
 msgid "Bulk Actions"
 msgstr "Actions en vrac"
 
-#: views/admin/manage.php:91
+#: views/admin/manage.php:94
 msgid "Activate"
 msgstr "Activer"
 
-#: views/admin/manage.php:92
+#: views/admin/manage.php:95
 msgid "Deactivate"
 msgstr "Désactiver"
 
-#: views/admin/manage.php:95
+#: views/admin/manage.php:98
 msgid "Apply"
 msgstr "Appliquer"
 
 #: views/admin/positions.php:25
 msgid "Search hooks and add them to selected section in right side."
-msgstr "Rechercher des crochets et les ajouter à l'article sélectionné dans le côté droit."
+msgstr "crochets de recherche et les ajouter à la section sélectionnée dans le côté droit."

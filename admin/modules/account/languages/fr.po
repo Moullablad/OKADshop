@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Account\n"
-"POT-Creation-Date: 2016-12-14 09:44+0000\n"
-"PO-Revision-Date: 2016-12-14 10:50+0000\n"
+"POT-Creation-Date: 2017-03-30 00:23+0000\n"
+"PO-Revision-Date: 2017-03-30 00:24+0000\n"
 "Last-Translator: \n"
 "Language-Team: OKADshop <contact@okadshop.com>\n"
 "Language: en\n"
@@ -19,35 +19,35 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-1: languages\n"
 "X-Poedit-SearchPathExcluded-2: config.xml\n"
 
-#: class/account.php:85
+#: class/account.php:86
 msgid "The email address or password you entered is not valid."
-msgstr "L'adresse e-mail et mot de passe ne sont pas valides."
+msgstr "L'adresse e-mail ou le mot de passe entré est valide."
 
-#: class/account.php:129
+#: class/account.php:130
 msgid "Email already in use, please try another."
-msgstr "Email déjà utilisé, s'il vous plaît essayer un autre."
+msgstr "Email déjà utilisé, s'il vous plaît essayer une autre."
 
-#: class/account.php:137
+#: class/account.php:138
 msgid "Unable to save informations, please try again."
 msgstr "Impossible d'enregistrer des informations, s'il vous plaît essayer à nouveau."
 
-#: class/account.php:142 class/account.php:179 class/account.php:276
+#: class/account.php:143 class/account.php:180 class/account.php:276
 msgid "Fields not match database columns."
-msgstr "Les champs ne correspondent colonnes de base de données."
+msgstr "Les champs correspondent pas à des colonnes de base de données."
 
-#: class/account.php:175
+#: class/account.php:176
 msgid "Unable to update informations, please try again."
 msgstr "Impossible de mettre à jour des informations, s'il vous plaît essayer à nouveau."
 
-#: class/account.php:207
+#: class/account.php:208
 msgid "An email was sent to your inbox with new password."
-msgstr "Un e-mail a été envoyé à votre boîte de réception avec le nouveau mot de passe."
+msgstr "Un courriel a été envoyé à votre boîte de réception avec le nouveau mot de passe."
 
-#: class/account.php:209
+#: class/account.php:210
 msgid "Unable to send email, please try again later."
 msgstr "Impossible d'envoyer un email, s'il vous plaît réessayer plus tard."
 
-#: class/account.php:212
+#: class/account.php:213
 msgid "There is no account registered for this email address."
 msgstr "Il n'y a pas compte enregistré pour cette adresse e-mail."
 
@@ -59,21 +59,21 @@ msgstr "Impossible de mettre à jour l'adresse, s'il vous plaît essayer à nouv
 msgid "Unable to insert address, please try again."
 msgstr "Impossible d'insérer l'adresse, s'il vous plaît essayer à nouveau."
 
-#: class/account.php:309 tabs/account.php:65
+#: class/account.php:315 tabs/account.php:65
 msgid "Address was deleted successfully."
-msgstr "Adresse a été supprimé."
+msgstr "Adresse a été supprimé avec succès."
 
-#: class/account.php:311 tabs/account.php:67
+#: class/account.php:317 tabs/account.php:67
 msgid "Unable to remove the address."
 msgstr "Impossible de supprimer l'adresse."
 
-#: index.php:48
+#: index.php:55
 msgid "My Account"
 msgstr "Mon compte"
 
-#: index.php:49
+#: index.php:56
 msgid "My Account gives you quick access to settings and tools for managing your dashboard."
-msgstr "Mon compte vous donne un accès rapide aux réglages et outils pour la gestion de votre tableau de bord."
+msgstr "Mon compte vous donne un accès rapide aux paramètres et des outils pour la gestion de votre tableau de bord."
 
 #: tabs/account.php:27
 msgid "Dashboard"
@@ -81,7 +81,7 @@ msgstr "Tableau de bord"
 
 #: tabs/account.php:32
 msgid "Addresses"
-msgstr "Adresses"
+msgstr "adresses"
 
 #: tabs/account.php:37
 msgid "Credit slips"
@@ -89,19 +89,17 @@ msgstr "bordereaux de crédit"
 
 #: views/front/address.php:6
 msgid "Modify address"
-msgstr "Modifier adresse"
+msgstr "modifier adresse"
 
 #: views/front/address.php:8
 msgid "New address"
 msgstr "Nouvelle adresse"
 
-#: views/front/address.php:17 views/front/register.php:25
-#: views/front/update.php:25
+#: views/front/address.php:17 views/front/register.php:25 views/front/update.php:25
 msgid "First name"
 msgstr "Prénom"
 
-#: views/front/address.php:21 views/front/register.php:29
-#: views/front/update.php:29
+#: views/front/address.php:21 views/front/register.php:29 views/front/update.php:29
 msgid "Last name"
 msgstr "Nom de famille"
 
@@ -109,8 +107,7 @@ msgstr "Nom de famille"
 msgid "Company name"
 msgstr "Nom de la compagnie"
 
-#: views/front/address.php:30 views/front/addresses.php:45
-#: views/front/tabs/addresses.php:22
+#: views/front/address.php:30 views/front/addresses.php:45 views/front/tabs/addresses.php:22
 msgid "Address"
 msgstr "Adresse"
 
@@ -122,14 +119,11 @@ msgstr "Adresse Ligne 2)"
 msgid "Zip/postal code"
 msgstr "Zip / code postal"
 
-#: views/front/address.php:42 views/front/register.php:49
-#: views/front/update.php:49
+#: views/front/address.php:42 views/front/register.php:49 views/front/update.php:49
 msgid "City"
 msgstr "Ville"
 
-#: views/front/address.php:46 views/front/addresses.php:52
-#: views/front/register.php:53 views/front/tabs/addresses.php:23
-#: views/front/update.php:53
+#: views/front/address.php:46 views/front/addresses.php:52 views/front/register.php:53 views/front/tabs/addresses.php:23 views/front/update.php:53
 msgid "Country"
 msgstr "Pays"
 
@@ -147,11 +141,11 @@ msgstr "Information additionnelle"
 
 #: views/front/address.php:69
 msgid "Address title"
-msgstr "Titre Adresse"
+msgstr "titre d'adresse"
 
 #: views/front/address.php:71
 msgid "Please assign an address title for future reference."
-msgstr "S'il vous plaît attribuer un titre d'adresse pour référence future."
+msgstr "S'il vous plaît attribuer un titre d'adresse pour référence ultérieure."
 
 #: views/front/address.php:75
 msgid "Back to your addresses"
@@ -159,11 +153,11 @@ msgstr "Retour à vos adresses"
 
 #: views/front/address.php:78
 msgid "Update address"
-msgstr "Adresse de la mise à jour"
+msgstr "Adresse de mise à jour"
 
 #: views/front/address.php:80
 msgid "Save address"
-msgstr "Sauvegarder l'adresse"
+msgstr "adresse Enregistrer"
 
 #: views/front/addresses.php:9 views/front/tabs/addresses.php:6
 msgid "Your addresses are listed below."
@@ -171,18 +165,17 @@ msgstr "Vos adresses sont listées ci-dessous."
 
 #: views/front/addresses.php:11 views/front/tabs/addresses.php:9
 msgid "Please configure your default billing and delivery addresses when placing an order."
-msgstr "S'il vous plaît configurer votre facturation par défaut et les adresses de livraison lors de la commande."
+msgstr "S'il vous plaît configurer votre facturation par défaut et les adresses de livraison lors de votre commande."
 
 #: views/front/addresses.php:12 views/front/tabs/addresses.php:10
 msgid "You may also add additional addresses, which can be useful for sending gifts or receiving an order at your office."
-msgstr "Vous pouvez également ajouter des adresses supplémentaires, qui peuvent être utiles pour l'envoi de cadeaux ou de recevoir une commande à votre bureau."
+msgstr "Vous pouvez également ajouter des adresses supplémentaires, qui peuvent être utiles pour envoyer des cadeaux ou la réception d'une commande à votre bureau."
 
 #: views/front/addresses.php:13 views/front/tabs/addresses.php:11
 msgid "Be sure to update your personal information if it has changed."
 msgstr "Assurez-vous de mettre à jour vos informations personnelles si elle a changé."
 
-#: views/front/addresses.php:26 views/front/tabs/dashboard.php:64
-#: views/front/update.php:94
+#: views/front/addresses.php:26 views/front/tabs/dashboard.php:64 views/front/update.php:94
 msgid "Update"
 msgstr "Mettre à jour"
 
@@ -220,16 +213,13 @@ msgstr "Mon compte"
 
 #: views/front/blocks/blocklinks.php:4
 msgid "Logout"
-msgstr "Se déconnecter"
+msgstr "Connectez - Out"
 
-#: views/front/blocks/blocklinks.php:8 views/front/login.php:11
-#: views/front/login.php:29
+#: views/front/blocks/blocklinks.php:8 views/front/login.php:9 views/front/login.php:29
 msgid "Login"
 msgstr "S'identifier"
 
-#: views/front/blocks/blocklinks.php:9 views/front/login.php:38
-#: views/front/login.php:44 views/front/register.php:6
-#: views/front/register.php:94
+#: views/front/blocks/blocklinks.php:9 views/front/login.php:38 views/front/login.php:44 views/front/register.php:6 views/front/register.php:94
 msgid "Register"
 msgstr "registre"
 
@@ -239,15 +229,13 @@ msgstr "Nom d'utilisateur ou adresse e-mail"
 
 #: views/front/login.php:15
 msgid "Your E-mail or Username..."
-msgstr "Votre E-mail ou nom d'utilisateur ..."
+msgstr "Votre adresse e-mail ou nom d'utilisateur ..."
 
-#: views/front/login.php:18 views/front/register.php:45
-#: views/front/update.php:45
+#: views/front/login.php:18 views/front/register.php:45 views/front/update.php:45
 msgid "Password"
 msgstr "Mot de passe"
 
-#: views/front/login.php:19 views/front/register.php:46
-#: views/front/update.php:46
+#: views/front/login.php:19 views/front/register.php:46 views/front/update.php:46
 msgid "Your Password..."
 msgstr "Votre mot de passe..."
 
@@ -263,10 +251,9 @@ msgstr "Mot de passe perdu?"
 msgid "Email address"
 msgstr "Adresse e-mail"
 
-#: views/front/login.php:41 views/front/password.php:14
-#: views/front/register.php:34 views/front/update.php:34
+#: views/front/login.php:41 views/front/password.php:14 views/front/register.php:34 views/front/update.php:34
 msgid "Your E-mail..."
-msgstr "Votre E-mail ..."
+msgstr "Votre adresse e-mail ..."
 
 #: views/front/order-details.php:4
 msgid "Order details"
@@ -274,7 +261,7 @@ msgstr "Détails de la commande"
 
 #: views/front/order-details.php:6
 msgid "Follow your order's status step-by-step"
-msgstr "Suivez le statut de votre commande étape par étape"
+msgstr "Suivez l'état de votre commande étape par étape"
 
 #: views/front/order-details.php:15
 msgid "Reference"
@@ -290,11 +277,11 @@ msgstr "Quantité"
 
 #: views/front/order-details.php:18
 msgid "Unit price"
-msgstr "Prix unitaire"
+msgstr "Prix ​​unitaire"
 
 #: views/front/order-details.php:19
 msgid "Total price"
-msgstr "Prix total"
+msgstr "Prix ​​total"
 
 #: views/front/password.php:9
 msgid "Forgot your password?"
@@ -382,11 +369,11 @@ msgstr "actes"
 
 #: views/front/tabs/addresses.php:43
 msgid "Are you sure you want to delete this Address?"
-msgstr "Êtes-vous sûr de vouloir supprimer cette adresse?"
+msgstr "Etes-vous sûr de vouloir supprimer cette adresse?"
 
 #: views/front/tabs/credit-slips.php:4
 msgid "Credit slips you have received after canceled orders."
-msgstr "Credit glisse vous avez reçu des commandes après annulées."
+msgstr "bordereaux de crédit que vous avez reçu des commandes après annulées."
 
 #: views/front/tabs/credit-slips.php:9
 msgid "You have not received any credit slips."
@@ -402,7 +389,7 @@ msgstr "Ici, vous pouvez gérer tous vos renseignements personnels et les comman
 
 #: views/front/tabs/dashboard.php:10
 msgid "Sign Out"
-msgstr "Se déconnecter"
+msgstr "Déconnexion"
 
 #: views/front/tabs/dashboard.php:17
 msgid "All Orders"
@@ -414,7 +401,7 @@ msgstr "En attente de paiement"
 
 #: views/front/tabs/dashboard.php:25
 msgid "Awaiting Delivery"
-msgstr "En attente de livraison"
+msgstr "Livraison en attente"
 
 #: views/front/tabs/dashboard.php:29
 msgid "Awaiting feedback"
@@ -422,7 +409,7 @@ msgstr "En attente d'un retour"
 
 #: views/front/tabs/dashboard.php:33
 msgid "Dispute"
-msgstr "Différend"
+msgstr "Contestation"
 
 #: views/front/tabs/dashboard.php:37
 msgid "More"
@@ -434,4 +421,4 @@ msgstr "Vos informations personnelles"
 
 #: views/front/update.php:6
 msgid "Edit profile"
-msgstr "Modifier le profil"
+msgstr "Editer le profil"

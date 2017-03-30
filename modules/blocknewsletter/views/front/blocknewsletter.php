@@ -1,4 +1,3 @@
- 
 <section id="newsletter">
 	<div class="container">
 	    <div class="row">
@@ -20,7 +19,7 @@
 	    	<div class="col-md-6 col-xs-12">
 	    		<form class="form-horizontal" action="" method="POST">
 	    			<div class="input-group pull-right-lg">
-					   <input type="email" class="form-control" placeholder="Your Email..." name="email">
+					   <input type="email" class="form-control" placeholder="<?php trans_e("Your Email...", "blocknewsletter"); ?>" name="email">
 					   <span class="input-group-btn">
 					        <button type="submit" class="btn btn-default" name="submit">
 					        	<i class="fa fa-send"></i>

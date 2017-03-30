@@ -16,9 +16,10 @@
 if (!defined('_OS_VERSION_'))
   exit;
 
-include_once 'includes/tabs.php';
-include_once 'includes/functions.php';
+define('CORE_CART_BASE', dirname(__FILE__));
 
+include_once CORE_CART_BASE . '/includes/tabs.php';
+include_once CORE_CART_BASE . '/includes/functions.php';
 
 
 function cart_install(){

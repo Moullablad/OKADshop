@@ -211,7 +211,7 @@ function generate_metatags(){
     		}
     	}
     }
-    return $output . $newline;
+    print $output;
 }
 add_action('os_head', 'generate_metatags', 0);
 
