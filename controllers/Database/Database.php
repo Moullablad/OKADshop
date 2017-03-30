@@ -203,6 +203,32 @@ class Database{
 		return self::$instance->prepare("SELECT * FROM {$table_name} WHERE {$column} = ?", [$value], $one);
 	}
 
+	/**
+     * Find elements by columns
+     *
+     * @param string $table
+     * @param string $column
+     * @param string $value
+     * @param bool $one
+     *
+     * @return $datas array
+     */
+	public function findByColumns($table, $conditions=[], $one=false){
+		$sql_part = '';
+		$attributes = [];
+		$table = $this->prefix . $table;
+		foreach ($conditions as $k => $v) {
+			if( $k === 0 ) {
+				$sql_part .= 'WHERE `'. $v['key'] .'`=? ';
+
+			} else {
+				$sql_part .= $v['condition'] .' `'. $v['key'] .'`=?';
+			}
+			$attributes[] = $v['value'];
+		}
+		return self::$instance->prepare("SELECT * FROM {$table} $sql_part", $attributes, $one);
+	}
+
 
 	/**
      * GET ALL ELEMENTS FROM TABLE

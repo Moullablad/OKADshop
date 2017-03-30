@@ -20,6 +20,8 @@ use Core\Controllers\Front\ProductController;
 use Core\Controllers\Front\CategoryController;
 
 
+add_domain(__FILE__, 'trending');
+
 function display_trending(){
 	$data = array();
 	$CategoryController = new CategoryController();
@@ -47,9 +49,9 @@ function display_trending(){
 				}
 			}
 			
-			$data['category_trending'] = $category_trending;
+			$data['categories'] = $category_trending;
 			if ($exist) {
-				get_view(__FILE__, 'front/trending',$data);
+				get_view(__FILE__, 'front/trending', $data);
 			}		
 		}
 	}

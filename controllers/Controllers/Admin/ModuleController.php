@@ -39,7 +39,6 @@ class ModuleController extends Module
      */
 	public static function init(){
 		self::$loader = require _BASE_URI_. 'vendor/autoload.php'; 
-
 		//Core Modules
         foreach(glob( admin_base('modules/*/index.php'), GLOB_BRACE) as $path) {
 			$name = \get_module_dirname($path);
@@ -115,6 +114,13 @@ class ModuleController extends Module
 		if( !file_exists($index) ){
 			return false;
 		}
+
+		if (0 !== strpos($name, 'core-')) {
+			self::addNamespace("Modules\\", $index);
+		} else {
+			self::addNamespace("CoreModules\\", $index);
+		}
+
 		require_once($index);
 		$db = getDB();
 		$count = $db->prepare("SELECT COUNT('id') as nbr, MAX(position) as max FROM {$db->prefix}modules WHERE name=?", [$name], true);

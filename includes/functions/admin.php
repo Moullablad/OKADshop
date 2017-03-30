@@ -38,8 +38,8 @@ require_once 'admin-users.php';
  */
 function is_admin(){
     if( is_ajax() ) {
-        $filePath = dirname($_SERVER['HTTP_REFERER']);
-        $dirname = str_replace(site_url(), '', $filePath);
+        $root = $_SERVER['DOCUMENT_ROOT'] .'/';
+        $dirname = str_replace($root, '', site_base());
     } else {
         $physical_uri = get_shop('physical_uri');
         $filename = $_SERVER['SCRIPT_NAME'];
@@ -58,17 +58,15 @@ function is_admin(){
 function get_admin_dirname(){
     global $GLOBALS;
     $siteroot = site_base();
-    $physical_uri = $GLOBALS['os']->physical_uri; //get_shop('physical_uri');
-    if( is_ajax() ) {
-        $filePath = dirname($_SERVER['HTTP_REFERER']);
-        $dirname = str_replace(site_url(), '', $filePath);
-    } else {
+    $physical_uri = $GLOBALS['os']->physical_uri;
+    $dirname = '';
+    if( ! is_ajax() ) {
         $filename = $_SERVER['SCRIPT_NAME'];
         $dirname = preg_replace("!$physical_uri|index.php|/!", "", $filename);
-    }   
+    }
     if( $dirname == '' ){
         foreach(glob( $siteroot . '*/okadshop.admin', GLOB_BRACE) as $path) {
-            $dirname  = preg_replace("!$siteroot|/okadshop.admin!", '', $path);
+            $dirname = preg_replace("!$siteroot|/okadshop.admin!", '', $path);
         }
     }
     return $dirname;
@@ -81,10 +79,7 @@ function get_admin_dirname(){
  * @return directory
  */
 function admin_base($path=''){
-    if( $adminDir = get_admin_dirname() ){
-        return site_base() . $adminDir .'/'. $path;
-    }
-    return false;
+    return site_base($GLOBALS['os']->admin_dirname .'/'. $path);
 }
 
 /**
@@ -93,10 +88,7 @@ function admin_base($path=''){
  * @return $url
  */
 function admin_url($path=''){
-    if( $adminDir = get_admin_dirname() ){
-        return site_url() . $adminDir .'/'. $path;
-    }
-    return false;
+    return site_url($GLOBALS['os']->admin_dirname .'/'. $path);
 }
 
 
@@ -116,7 +108,7 @@ function get_admin_theme(){
  * @return directory
  */
 function get_admin_theme_directory($path=''){
-    return admin_base() .'themes/'. get_admin_theme() .'/'. $path;
+    return admin_base('themes/'. get_admin_theme() .'/'. $path);
 }
 
 
@@ -126,7 +118,7 @@ function get_admin_theme_directory($path=''){
  * @return uri
  */
 function get_admin_theme_url($path=''){
-    return admin_url() .'themes/'. get_admin_theme() .'/'. $path;
+    return admin_url('themes/'. get_admin_theme() .'/'. $path);
 }
 
 

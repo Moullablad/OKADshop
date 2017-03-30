@@ -742,3 +742,11 @@ function get_flash_message(){
 	}
 	return false;
 }
+
+
+function dd($var){
+	echo '<pre>';
+	print_r($var);
+	echo '</pre>';
+	exit;
+}

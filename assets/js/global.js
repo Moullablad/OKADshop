@@ -48,16 +48,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
 //===================
 //===================
 //
@@ -83,7 +73,7 @@ function ajax_get_combinations(json, handle_data){
 
 	// Fire off the request to /form.php
     request = $.ajax({
-        url: "includes/ajax/product/combination.php",
+        url: site_url("includes/ajax/product/combination.php"),
         type: "post",
         data: {
         	attributes:json,
@@ -246,8 +236,10 @@ function site_url(path=''){
     var baseHref = null;
     if (bases.length > 0) {
         baseHref = bases[0].href + path;
+    } else if( $('[rel="website"]').length > 0 ) {
+      baseHref = $('[rel="website"]').prop('href') + path;
     } else {
-      baseHref = $('[rel="website"]').prop('href');
+      baseHref = path;
     }
     return baseHref;
 }

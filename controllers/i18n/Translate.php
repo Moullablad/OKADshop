@@ -84,9 +84,6 @@ class Translate
      */
     public static function addDomain($file, $name){
         if( $modname = get_module_dirname($file) ){
-            /*if (strpos($file, get_admin_dirname()) !== false) {
-                $modname = 'core-'. $modname;
-            }*/
             self::$domains[$name] = $modname;
         }
     }
@@ -113,7 +110,7 @@ class Translate
         //check if language cached
         $cache = self::getCache($iso_code);
         if( !is_empty($cache) ) return $cache;
-
+        
         //get translations strings
         self::modulesTrans($iso_code);
         self::themeTrans($iso_code);
@@ -130,17 +127,11 @@ class Translate
      * @return array $paths
      */
     public static function modulesTrans($iso_code){
-        if( $modules = Module::getActive() ){
-            foreach ($modules as $key => $name) {
-                //check if index file exist
-                $filePath = module_base($name, 'languages/'. $iso_code .'.mo');
-                if( file_exists($filePath) ){
-                    $domain = str_replace('core-', '', $name);
-                    /*if( isset(self::$domains[$domain]) ){
-                        $domain = self::$domains[$domain];
-                    }*/
-                    self::$trans[$domain] = self::parser($filePath);
-                }
+        $modules = get_active_modules();
+        foreach ($modules as $name => $module) {
+            $filePath = $module['path'] . 'languages/'. $iso_code .'.mo';
+            if( file_exists($filePath) ){
+                self::$trans[$name] = self::parser($filePath);
             }
         }
     }
@@ -196,7 +187,7 @@ class Translate
      * @return data array
      */
     public static function getCache($iso_code){
-        $cache_lang = site_base() .'cache/languages/'. $iso_code .'.mo';
+        $cache_lang = site_base('cache/languages/'. $iso_code .'.php');
         if( file_exists($cache_lang) ){
             return unserialize( file_get_contents($cache_lang) );
         }

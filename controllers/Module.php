@@ -226,8 +226,9 @@ class Module extends Controller
      *
      */
     public static function PageRender(){
-        ob_start(); // Initiate the output buffer
         $current_page = self::getCurrentPage();
+        if( ! $current_page ) return;
+        ob_start(); // Initiate the output buffer
         $method = $current_page['function'];
         call_user_func_array($method, array());
         $content = ob_get_clean();
