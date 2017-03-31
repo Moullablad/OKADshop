@@ -166,7 +166,7 @@ class Database{
 	/**
      * select COLOMNS
      * @param string $table
-     * @param string $fields
+     * @param string $columns
      * @param boolean $one
      * @return boolean
      */
@@ -198,9 +198,10 @@ class Database{
      * @param bool $one
      * @return $datas array
      */
-	public function findByColumn($table, $column, $value, $one=false){
+	public function findByColumn($table, $column, $value, $columns=array('*'), $one=false){
 		$table_name = $this->prefix . $table;
-		return self::$instance->prepare("SELECT * FROM {$table_name} WHERE {$column} = ?", [$value], $one);
+		$columns_part = implode(', ', $columns);
+		return self::$instance->prepare("SELECT {$columns_part} FROM {$table_name} WHERE {$column} = ?", [$value], $one);
 	}
 
 	/**
@@ -213,9 +214,10 @@ class Database{
      *
      * @return $datas array
      */
-	public function findByColumns($table, $conditions=[], $one=false){
+	public function findByColumns($table, $conditions=[], $columns=array('*'), $one=false){
 		$sql_part = '';
 		$attributes = [];
+		$columns_part = implode(', ', $columns);
 		$table = $this->prefix . $table;
 		foreach ($conditions as $k => $v) {
 			if( $k === 0 ) {
@@ -226,7 +228,7 @@ class Database{
 			}
 			$attributes[] = $v['value'];
 		}
-		return self::$instance->prepare("SELECT * FROM {$table} $sql_part", $attributes, $one);
+		return self::$instance->prepare("SELECT {$columns_part} FROM {$table} $sql_part", $attributes, $one);
 	}
 
 
@@ -235,21 +237,21 @@ class Database{
      * @param string $table
      * @return datas array
      */
-	public function all($table){
-		return self::$instance->select($table, array('*'));
+	public function all($table, $columns=array('*')){
+		return self::$instance->select($table, $columns);
 	}
 
 
 	/**
      * INSERT A NEW COLOMN
-     * @param string $fields
+     * @param string $columns
      * @return boolean
      */
-	public function create($table, $fields){
+	public function create($table, $columns){
 		$table_name = $this->prefix . $table;
 		$sql_parts = [];
 		$attributes = [];
-		foreach ($fields as $k => $v) {
+		foreach ($columns as $k => $v) {
 			$sql_parts[] = "$k = ?";
 			$attributes[] = $v;
 		}
@@ -271,14 +273,14 @@ class Database{
      * UPDATE COLOMN
      * @param string $table
      * @param int $id
-     * @param array $fields
+     * @param array $columns
      * @return boolean
      */
-	public function update($table, $id, $fields){
+	public function update($table, $id, $columns){
 		$table_name = $this->prefix . $table;
 		$sql_parts = [];
 		$attributes = [];
-		foreach ($fields as $k => $v) {
+		foreach ($columns as $k => $v) {
 			$sql_parts[] = "$k = ? ";
 			$attributes[] = $v;
 		}

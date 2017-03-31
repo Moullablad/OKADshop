@@ -157,7 +157,7 @@ function get_user_meta($id_user, $meta_key){
 			'value' =>  $meta_key,
 			'condition' => 'AND'
 		]
-	], true);
+	], ['meta_value'], true);
 
 	if( isset($metas->meta_value)) {
 		$value = @unserialize($metas->meta_value);

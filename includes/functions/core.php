@@ -47,8 +47,8 @@ function getDB(){
  * @param bool $one
  * @return $datas array
  */
-function findByColumn($table, $column, $value, $one=false){
-	return Database::getInstance()->findByColumn($table, $column, $value, $one);
+function findByColumn($table, $column, $value, $columns=array('*'), $one=false){
+	return Database::getInstance()->findByColumn($table, $column, $value, $columns, $one);
 }
 
 
@@ -749,4 +749,9 @@ function dd($var){
 	print_r($var);
 	echo '</pre>';
 	exit;
+}
+
+
+function isValidateEmail($email) {
+	return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 }

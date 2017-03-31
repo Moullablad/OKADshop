@@ -78,9 +78,9 @@ class Language
             //get user navigator language
             $iso_code = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
             if( $iso_code != '' ){
-                $language = findByColumn('langs', 'iso_code', $iso_code, true);
+                $language = findByColumn('langs', 'iso_code', $iso_code, array('*'), true);
                 if( !$language ){
-                    $language = findByColumn('langs', 'default_lang', 1, true);
+                    $language = findByColumn('langs', 'default_lang', 1, array('*'), true);
                 }
             }
         } else {
