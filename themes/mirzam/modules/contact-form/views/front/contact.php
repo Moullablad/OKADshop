@@ -1,4 +1,4 @@
-<section id="main-container">
+<section class="pb-0" id="main-container">
     <div class="container" id="contact">
         <div class="row">
             <div class="col-sm-3">
@@ -46,4 +46,11 @@
             </div>
         </div>
     </div>
+    <?php if( !is_empty($shop->latitude) && !is_empty($shop->longitude) ) : ?>
+    <div class="google-map">
+        <div id="canvas-for-google-map">
+            <iframe style="border: 0;" src="https://maps.google.com/maps?q=<?=$shop->latitude;?>,<?=$shop->longitude;?>&amp;z=14&amp;output=embed&amp;iwloc=0" width="100%" height="325" frameborder="0"></iframe>
+        </div>
+    </div>
+    <?php endif; ?>
 </section>
