@@ -53,6 +53,15 @@ function findByColumn($table, $column, $value, $columns=array('*'), $one=false){
 
 
 /**
+ * Tell if form submited with post
+ *
+ */
+function form_submited() {
+	return ($_SERVER['REQUEST_METHOD'] == 'POST');
+}
+
+
+/**
  * Tell if a page is being called via Ajax
  *
  */
