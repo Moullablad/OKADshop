@@ -244,6 +244,23 @@ function site_url(path=''){
     return baseHref;
 }
 
+/**
+ * Tell if current page is homepage
+ *
+ * @return bool
+ **/
+function is_home() {
+  if( location.pathname == '/' ) {
+    var home_url = location.href;
+  } else {
+    var iso_code = document.documentElement.lang;
+    var url = location.href;
+    url = url.replace(/\/$/, "");
+    var home_url = url.replace(iso_code, '');
+  }  
+  return site_url() == home_url;
+}
+
 
 
 
