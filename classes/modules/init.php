@@ -44,8 +44,7 @@ $os_shipping = $os_admin_menu->add('<i class="fa fa-truck"></i>'. l("Livraison",
 	$os_shipping->add( l("Ajouter un transport", "core"), '?module=shipping&action=add');
 
 $os_locale = $os_admin_menu->add('<i class="fa fa-globe"></i>'. l("Localisation", "core"), '?module=countries');
-	$os_locale->add( l("Langues", "core"), '?module=langs');
-  $os_locale->add( l("Pays", "core"), '?module=countries');
+	$os_locale->add( l("Pays", "core"), '?module=countries');
 	$os_locale->add( l("Devises", "core"), '?module=currencies');
 	$os_locale->add( l("Zones", "core"), '?module=zones');
 	$os_locale->add( l("Taxes", "core"), '?module=taxes');
