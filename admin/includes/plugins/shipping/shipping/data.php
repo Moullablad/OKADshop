@@ -436,7 +436,7 @@ $taxes  = $common->select('taxes', array('id', 'name', 'rate'), "WHERE active=1"
 					          <td class="border_left range_sign">&lt;</td>
 					          <td class="range_data">
 					            <div class="input-group fixed-width-md">
-					              <span class="input-group-addon unit"><?= ( $shipping[0]['shipping_method'] == "1" ) ? 'kg' : '€';?></span>
+					              <span class="input-group-addon unit"><?= ( $shipping[0]['shipping_method'] == "1" ) ? 'kg' : get_currency();?></span>
 					              <input name="shipping[range_sup]" value="<?php echo $shipping[0]['range_sup'];?>" type="number" min="0" step="0.01" placeholder="0.00" autocomplete="off" class="form-control">
 					            </div>
 					          </td>
@@ -448,7 +448,7 @@ $taxes  = $common->select('taxes', array('id', 'name', 'rate'), "WHERE active=1"
 					          </td>
 					          <td>
 					            <div class="input-group">
-					              <span class="input-group-addon currency_sign">€</span> 
+					              <span class="input-group-addon currency_sign"><?php echo get_currency(); ?></span> 
 					              <input name="all" value="<?=isset($shipping[0]['all']) ? $shipping[0]['all'] : '';?>" autocomplete="off" class="form-control" type="number" min="0" step="0.01" placeholder="0.00">
 					            </div>
 					          </td>
@@ -463,7 +463,7 @@ $taxes  = $common->select('taxes', array('id', 'name', 'rate'), "WHERE active=1"
 							          </td>
 							          <td>
 							            <div class="input-group fixed-width-md">
-							              <span class="input-group-addon">€</span> 
+							              <span class="input-group-addon"><?php echo get_currency(); ?></span> 
 							              <input value="<?php echo $zone['fees']; ?>" autocomplete="off" class="form-control fees" type="number" min="0" step="0.01" placeholder="0.00">
 							            </div>
 							          </td>
@@ -587,7 +587,7 @@ $taxes  = $common->select('taxes', array('id', 'name', 'rate'), "WHERE active=1"
 				<div class="panel-body">
 					<?php if(isset($id_carrier) && $id_carrier > 0) : ?>
 						<?php $key = $common->array_searching($taxes, 'id', $shipping[0]['id_tax']); ?>
-						<?php $unit = ( $shipping[0]['shipping_method'] == "1" ) ? 'kg' : '€';?>
+						<?php $unit = ( $shipping[0]['shipping_method'] == "1" ) ? 'kg' : get_currency();?>
 						<p>
 							<?=l("Le transporteur est", "core");?> <strong><?= ($shipping[0]['is_free']=="1") ? l("Offert", "core") : l("payant", "core"); ?></strong> <?=l("et le délai de livraison affiché est :", "core");?> <strong><?= ($shipping[0]['min_delay']) ? $shipping[0]['min_delay'] : "0"; ?> à <?= (isset($shipping[0]['max_delay'])) ? $shipping[0]['max_delay'] : "0"; ?> <?=l("jours.", "core");?></strong><br>
 							<?=l("Le coût d'envoi est calculé", "core");?> <strong><?= ($shipping[0]['shipping_method']=="1") ? l("en fonction du poids") : l("en fonction du prix", "core"); ?></strong>, <?=l("et la règle de taxe", "core");?> <strong><?= ($shipping[0]['id_tax'] > 0) ? $taxes[ $key ]['name'] : l("Aucune taxe", "core"); ?></strong> <?=l("est appliquée", "core");?> <br>
