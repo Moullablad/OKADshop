@@ -304,6 +304,139 @@ class Database{
 
 
 
+	/**
+	 * Get translation
+	 *
+	 * 
+	 * @param array $args Query arguments
+	 * $args = [
+     *    'table' => [
+     *        'c' => 'categories'
+     *    ],
+     *    'table_trans' => [
+     *        'ct' => 'category_trans'
+     *    ],
+     *    'foreign_key' => 'id_category',
+     *    'columns' => [
+     *        'c' => '*',
+     *        'ct' => '*',
+     *        't2' => [
+     *            'name' => 'parent_name'
+     *        ]
+     *    ],
+     *    'conditions' => [
+     *        [
+     *            'key' => 'c.id_parent',
+     *            'value' => 1,
+     *            'operator' => '<',
+     *            'relation' => 'AND'
+     *        ]
+     *    ],
+     *    'joins' => [
+     *        [
+     *            'type' => 'LEFT JOIN',
+     *            'table' => [
+     *                't2' => 'category_trans'
+     *            ],
+     *            'relation' => 't2.id_category = c.id_parent'
+     *        ]
+     *    ],
+     *    'id_lang' => 1,
+     *    'orderby' => 'c.id',
+     *    'order' => 'DESC',
+     *    'limit' => 1,
+     *    'debug' => true,
+     * ];
+	 *
+	 * @version 1.0.0
+	 * @copyright 2016 OKADshop
+	 *
+	 * @return array $trans | $query
+	 */
+	public function trans(array $args){
+		// Merge default args with current
+		$default = [
+            'table' => [],
+            'table_trans' => [],
+            'foreign_key' => '',
+            'columns' => [],
+            'conditions' => [],
+            'joins' => [],
+            'id_lang' => get_lang()->id,
+            'orderby' => key($args['table']) .'.id',
+            'order' => 'ASC',
+            'limit' => 0,
+            'debug' => false
+        ];
+        $args = array_merge($default, $args);
+
+        // Get tables name with prefix
+		$table_parent = $this->prefix . reset($args['table']);
+		$table_trans = $this->prefix . reset($args['table_trans']);
+		$table_parent_prefix = key($args['table']);
+		$table_trans_prefix = key($args['table_trans']);
+        $foreign_key = $args['foreign_key'];
+
+        // Append table trans joins
+        $args['joins'][] = [
+            'type' => 'LEFT JOIN',
+            'table' => $args['table_trans'],
+            'relation' => $table_trans_prefix .'.'. $foreign_key .' = '. $table_parent_prefix .'.id'
+        ];
+
+        // Test data
+        if( !isAssoc($args['table']) || !isAssoc($args['table_trans']) || trim($foreign_key) == '' )
+        	return false;
+
+		// prepare columns to select
+		$columns_sql = '';
+		if( !empty($args['columns']) ) : 
+			foreach ($args['columns'] as $prefix => $column) :
+				if( is_array($column) ) {
+					$columns_sql .= $prefix .'.'. key($column) .' AS '. reset($column) .', ';
+				} else {
+					$columns_sql .= $prefix .'.'. $column .', ';
+				}
+			endforeach;
+			$columns_sql = rtrim($columns_sql, ', ');
+		else :
+			$columns_sql = '*';
+		endif;
+
+		// Prepare conditions
+		$attributes = array();
+		$conditions_sql = '';
+		if( !empty($args['conditions']) ) : foreach ($args['conditions'] as $k => $v) :
+			$conditions_sql .= $v['relation'] .' '. $v['key'] .' '. $v['operator'] .'? ';
+			$attributes[] = $v['value'];
+		endforeach; endif;
+
+		// Prepare joins
+		$joins_sql = '';
+		if( !empty($args['joins']) ) : foreach ($args['joins'] as $k => $v) :
+			$join_table = $this->prefix . reset($v['table']);
+			$joins_sql .= $v['type'] .' `'. $join_table .'` AS '. key($v['table']) .' ON '. $v['relation'] .' ';
+		endforeach; endif;
+
+		$id_lang = $args['id_lang'];
+		$orderby = 'ORDER BY '. $args['orderby'] .' '. $args['order'];
+		$limit = (intval($args['limit']) > 0) ? ' LIMIT '. $args['limit'] : '';
+		$query  = "SELECT {$columns_sql} FROM `{$table_parent}` AS ". $table_parent_prefix;
+		$query .= " {$joins_sql} WHERE ". $table_trans_prefix .".id_lang = CASE WHEN EXISTS(SELECT 1 FROM `{$table_trans}` AS ". $table_trans_prefix ." WHERE ". $table_trans_prefix .".id_lang = {$id_lang} AND ". $table_trans_prefix .".{$foreign_key} = ". $table_parent_prefix .".id) THEN ({$id_lang}) ELSE ". $table_parent_prefix .".id_lang END {$conditions_sql} {$orderby} {$limit}";
+
+		// Return query string
+		if( $args['debug'] === TRUE) {
+			return $query;
+		}
+
+		// Set query limit
+		$one = false;
+		if(intval($args['limit']) == 1) $one = true;
+
+		// Return query results
+		return $this->prepare($query, $attributes, $one);
+	}
+
 
 
 //END CLASS
