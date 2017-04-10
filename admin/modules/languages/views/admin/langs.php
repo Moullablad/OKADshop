@@ -19,7 +19,7 @@
 	    <tbody>
 	    	<?php foreach ($langs as $key => $lang) : ?>
 	        <tr>
-	            <td width="10"><?php echo $key+1; ?></td>
+	            <td width="10"><?php echo $lang->id; ?></td>
 	            <td><?php echo $lang->name; ?></td>
 	            <td><?php echo $lang->short_name; ?></td>
 	            <td><?php echo $lang->code; ?></td>
@@ -49,8 +49,8 @@
 	            </td>
 	            <td>
 		            <form method="POST" action="">
-	            		<a class="btn btn-default" href="<?php echo get_page_url('edit_lang&id='.$lang->id, __FILE__); ?>"><i class="fa fa-pencil"></i>&nbsp;<?php trans_e("Edit", "lang") ?></a>
-		            	<button type="submit" class="btn btn-danger" value="<?php echo $lang->id; ?>" name="delete_lang"><i class="fa fa-trash"></i>&nbsp;<?php trans_e("Delete", "lang"); ?></button>
+	            		<a class="btn btn-default" href="<?php echo get_page_url('lang&id='.$lang->id, __FILE__); ?>"><i class="fa fa-pencil"></i>&nbsp;<?php trans_e("Edit", "lang") ?></a>
+		            	<button onclick="return confirmMessage();" type="submit" class="btn btn-danger" value="<?php echo $lang->id; ?>" name="delete_lang"><i class="fa fa-trash"></i>&nbsp;<?php trans_e("Delete", "lang"); ?></button>
 		            </form>
 	            </td>
 	        </tr>
