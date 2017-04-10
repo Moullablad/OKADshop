@@ -35,12 +35,6 @@ $(document).ready(function() {
         $(".dismiss").slideUp(500);
     });
 
-
-
-    
-
-
-
 //END DOCUMENT
 });
 
@@ -550,6 +544,21 @@ function intialize_plugins(){
 
 }
 
+var popup_target = '';
+function confirmMessage() {
+  if( event.which ) {
+    event.preventDefault();
+    popup_target = event.target;
+    $.magnificPopup.close();
+    jQuery.magnificPopup.open({
+        tLoading: 'Loading...',
+        type: 'ajax',
+        items:{
+          src: site_url('includes/ajax/popup/confirm-message.php')
+        }
+    });
+  } 
+}
 
 
 function createCookie(name,value,days=365,path='') {
