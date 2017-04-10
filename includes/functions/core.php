@@ -764,3 +764,13 @@ function dd($var){
 function isValidateEmail($email) {
 	return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 }
+
+
+/**
+ * Check if array is associative or sequential?
+ */
+function isAssoc(array $arr)
+{
+    if (array() === $arr) return false;
+    return array_keys($arr) !== range(0, count($arr) - 1);
+}
