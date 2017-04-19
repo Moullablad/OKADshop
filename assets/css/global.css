@@ -132,3 +132,12 @@ img.loader{
 .padding0{padding: 0px !important;}
 .left0{padding-left: 0px !important;}
 .right0{padding-right: 0px !important;}
+
+
+
+.delete-cover{
+  position: absolute;
+  top: -10px;
+  right: 6px;
+  color: red;
+}

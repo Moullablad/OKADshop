@@ -110,7 +110,7 @@ function ajax_get_combinations(json, handle_data){
 function message_notif(message, params={}){
 
   var default_params = {
-    type : "info", 
+    type : "success", 
     delay: 4000, 
     width: "100%", 
     align: "center"
@@ -332,7 +332,6 @@ function ajax_form(form_id, handle_data){
 
 
 /**
- *
  * OKADshop AJAX
  *
  * @param request_url string
@@ -367,8 +366,49 @@ function ajax_handler(ajax_url, ajax_data={}, ajax_type, handle_data){
 }
 
 
+/**
+ * OKADshop AJAX
+ *
+ * @param string action Action name
+ * @param object data
+ * @param stirng ajax_type POST|GET
+ * @param handle_data callback
+ */
+function okad_ajax(action, data={}, ajax_type, handle_data){
+  var ajax_url = site_url('includes/ajax.php');
+  data['action'] = action;
+  ajax_handler(ajax_url, data, ajax_type, function(response){
+    handle_data(response);
+  });
+}
 
 
+/**
+ * Update Multi Lang Fields
+ * Change fields values after changing language
+ *
+ * @param object fields
+ *
+ * @return void
+ */
+function updateMultiLangFields(fields) {
+  $.each(fields, function(id_field, value){
+    var field = $('#'+id_field);
+    var id_lang = $('select#languages option:selected').val();
+    if( field.hasClass('active') ) {
+      field.bootstrapSwitch('state', value);
+    } else if( field.hasClass('tags') ) {
+      field.tagsinput('destroy')
+      field.val(value);
+      field.tagsinput()
+    } else if( field.is('select') ) {
+      field.find('option[value="'+value+'"]').prop('selected', 'true')
+    } else {
+      field.val(value);
+    }
+    $('.current_id_lang').val(id_lang);
+  });
+}
 
 
 
