@@ -1,0 +1,215 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Languages Module\n"
+"POT-Creation-Date: 2017-04-18 10:57+0000\n"
+"PO-Revision-Date: 2017-04-18 10:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: SHT <contact@softhightech.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: languages\n"
+
+#: assets/js/languages.js:12
+msgid "Choose a flag"
+msgstr "اختيار العلم"
+
+#: Controllers/LanguageTabs.php:50
+msgid "Informations"
+msgstr "المعلومات"
+
+#: Controllers/LanguageTabs.php:71 Controllers/LanguageTabs.php:77
+msgid "The language code must be unique."
+msgstr "يجب أن يكون رمز اللغة فريدة من نوعها."
+
+#: Controllers/LanguageTabs.php:86
+msgid "Could not find the requested language."
+msgstr "لا يمكن العثور على اللغة المطلوبة."
+
+#: Controllers/Languages.php:49 Controllers/Languages.php:51 Controllers/Pages.php:26
+#: Controllers/Pages.php:77 views/admin/tabs/infos.php:2
+msgid "Languages"
+msgstr "اللغات"
+
+#: Controllers/Languages.php:52 Controllers/Pages.php:32 Controllers/Pages.php:110
+msgid "Strings translations"
+msgstr "سلاسل ترجمة"
+
+#: Controllers/Languages.php:90
+msgid "String was updated."
+msgstr "تم تحديث سلسلة."
+
+#: Controllers/Languages.php:92
+msgid "Unable to update string."
+msgstr "غير قادر على تحديث سلسلة."
+
+#: Controllers/Languages.php:185
+msgid "Core strings"
+msgstr "سلاسل الأساسية"
+
+#: Controllers/Pages.php:47 Controllers/Pages.php:95
+msgid "Create new Language"
+msgstr "خلق لغة جديدة"
+
+#: Controllers/Pages.php:72
+msgid "The language was deleted."
+msgstr "تم حذف اللغة."
+
+#: Controllers/Pages.php:74
+msgid "Unable to delete language."
+msgstr "غير قادر على حذف اللغة."
+
+#: Controllers/Pages.php:92
+msgid "Edit Language"
+msgstr "تحرير اللغة"
+
+#: Controllers/Pages.php:124
+msgid "Settings"
+msgstr "إعدادات"
+
+#: views/admin/langs.php:6
+msgid "#"
+msgstr "#"
+
+#: views/admin/langs.php:7 views/admin/tabs/infos.php:37
+msgid "Flag"
+msgstr "علم"
+
+#: views/admin/langs.php:8
+msgid "Name"
+msgstr "اسم"
+
+#: views/admin/langs.php:9 views/admin/tabs/infos.php:23
+msgid "Locale"
+msgstr "مكان"
+
+#: views/admin/langs.php:10
+msgid "ISO code"
+msgstr "كود ISO"
+
+#: views/admin/langs.php:11 views/admin/tabs/infos.php:49
+msgid "Date format"
+msgstr "صيغة التاريخ"
+
+#: views/admin/langs.php:12 views/admin/tabs/infos.php:57
+msgid "Datetime format"
+msgstr "شكل التاريخ والوقت"
+
+#: views/admin/langs.php:13
+msgid "Direction"
+msgstr "اتجاه"
+
+#: views/admin/langs.php:14
+msgid "Default"
+msgstr "افتراضي"
+
+#: views/admin/langs.php:15 views/admin/tabs/infos.php:77
+msgid "Active"
+msgstr "نشيط"
+
+#: views/admin/langs.php:16
+msgid "Actions"
+msgstr "أفعال"
+
+#: views/admin/langs.php:52
+msgid "Edit"
+msgstr "تصحيح"
+
+#: views/admin/langs.php:53
+msgid "Delete"
+msgstr "حذف"
+
+#: views/admin/langs.php:63
+msgid "There is no installed languages."
+msgstr "لا يوجد اللغات المثبتة."
+
+#: views/admin/strings.php:14
+msgid "Choose a group"
+msgstr "اختيار مجموعة"
+
+#: views/admin/strings.php:17
+msgid "Core"
+msgstr "النواة"
+
+#: views/admin/strings.php:18
+msgid "Themes"
+msgstr "المواضيع"
+
+#: views/admin/strings.php:19
+msgid "Modules"
+msgstr "وحدات"
+
+#: views/admin/strings.php:31
+msgid "Choose a location"
+msgstr "اختيار موقع"
+
+#: views/admin/strings.php:41
+msgid "Keywords..."
+msgstr "الكلمات الدالة..."
+
+#: views/admin/strings.php:48
+msgid "Source Text"
+msgstr "النص المصدر"
+
+#: views/admin/strings.php:49
+msgid "Translation"
+msgstr "ترجمة"
+
+#: views/admin/tabs/infos.php:5
+msgid "Choose a language"
+msgstr "اختيار اللغة"
+
+#: views/admin/tabs/infos.php:12
+msgid "You can choose a language in the list or directly edit it below."
+msgstr "يمكنك اختيار اللغة في القائمة أو تعديل مباشرة أدناه."
+
+#: views/admin/tabs/infos.php:16
+msgid "Full name"
+msgstr "الاسم الكامل"
+
+#: views/admin/tabs/infos.php:19
+msgid "The name is how it is displayed on your site (for example: English)."
+msgstr "الاسم هو كيف يتم عرضه على موقع الويب الخاص بك (على سبيل المثال: اللغة الانجليزية)."
+
+#: views/admin/tabs/infos.php:26
+msgid ""
+"Locale for the language (for example: en_US). You will need to install the .mo file for "
+"this language."
+msgstr "لغة للغة (على سبيل المثال: en_US). سوف تحتاج إلى تثبيت ملف .mo لهذه اللغة."
+
+#: views/admin/tabs/infos.php:30
+msgid "Language code"
+msgstr "رمز اللغة"
+
+#: views/admin/tabs/infos.php:33
+msgid "Language code - preferably 2-letters ISO 639-1 (for example: en)"
+msgstr "رمز اللغة - ويفضل 2-حروف ISO 639-1 (على سبيل المثال: الإنجليزية)"
+
+#: views/admin/tabs/infos.php:45
+msgid "Choose a flag for the language."
+msgstr "اختيار العلم للغة."
+
+#: views/admin/tabs/infos.php:65
+msgid "Language Right-to-Left"
+msgstr "لغة من اليمين إلى اليسار"
+
+#: views/admin/tabs/infos.php:67 views/admin/tabs/infos.php:73
+#: views/admin/tabs/infos.php:79
+msgid "Yes"
+msgstr "نعم فعلا"
+
+#: views/admin/tabs/infos.php:67 views/admin/tabs/infos.php:73
+#: views/admin/tabs/infos.php:79
+msgid "No"
+msgstr "لا"
+
+#: views/admin/tabs/infos.php:71
+msgid "Default language"
+msgstr "اللغة الافتراضية"

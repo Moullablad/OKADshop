@@ -17,6 +17,8 @@
 if (!defined('_OS_VERSION_'))
   exit;
 
+// Include module functions
+include module_base(__FILE__, 'inc/functions.php');
 
 // Instanciate module
 CoreModules\Languages\Controllers\Languages::getInstance();

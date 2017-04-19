@@ -1,0 +1,212 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Languages Module\n"
+"POT-Creation-Date: 2017-04-18 10:57+0000\n"
+"PO-Revision-Date: 2017-04-18 10:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: SHT <contact@softhightech.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: languages\n"
+
+#: assets/js/languages.js:12
+msgid "Choose a flag"
+msgstr "Choisissez un drapeau"
+
+#: Controllers/LanguageTabs.php:50
+msgid "Informations"
+msgstr "informations"
+
+#: Controllers/LanguageTabs.php:71 Controllers/LanguageTabs.php:77
+msgid "The language code must be unique."
+msgstr "Le code de langue doit être unique."
+
+#: Controllers/LanguageTabs.php:86
+msgid "Could not find the requested language."
+msgstr "Impossible de trouver la langue demandée."
+
+#: Controllers/Languages.php:49 Controllers/Languages.php:51 Controllers/Pages.php:26
+#: Controllers/Pages.php:77 views/admin/tabs/infos.php:2
+msgid "Languages"
+msgstr "langues"
+
+#: Controllers/Languages.php:52 Controllers/Pages.php:32 Controllers/Pages.php:110
+msgid "Strings translations"
+msgstr "traductions Strings"
+
+#: Controllers/Languages.php:90
+msgid "String was updated."
+msgstr "Chaîne a été mis à jour."
+
+#: Controllers/Languages.php:92
+msgid "Unable to update string."
+msgstr "Impossible de mettre à jour la chaîne."
+
+#: Controllers/Languages.php:185
+msgid "Core strings"
+msgstr "chaînes de base"
+
+#: Controllers/Pages.php:47 Controllers/Pages.php:95
+msgid "Create new Language"
+msgstr "Créer un nouveau langage"
+
+#: Controllers/Pages.php:72
+msgid "The language was deleted."
+msgstr "La langue a été supprimée."
+
+#: Controllers/Pages.php:74
+msgid "Unable to delete language."
+msgstr "Impossible de supprimer la langue."
+
+#: Controllers/Pages.php:92
+msgid "Edit Language"
+msgstr "Modifier la langue"
+
+#: Controllers/Pages.php:124
+msgid "Settings"
+msgstr "Paramètres"
+
+#: views/admin/langs.php:6
+msgid "#"
+msgstr "#"
+
+#: views/admin/langs.php:7 views/admin/tabs/infos.php:37
+msgid "Flag"
+msgstr "Drapeau"
+
+#: views/admin/langs.php:8
+msgid "Name"
+msgstr "prénom"
+
+#: views/admin/langs.php:9 views/admin/tabs/infos.php:23
+msgid "Locale"
+msgstr "Lieu"
+
+#: views/admin/langs.php:10
+msgid "ISO code"
+msgstr "code ISO"
+
+#: views/admin/langs.php:11 views/admin/tabs/infos.php:49
+msgid "Date format"
+msgstr "Format de date"
+
+#: views/admin/langs.php:12 views/admin/tabs/infos.php:57
+msgid "Datetime format"
+msgstr "Format datetime"
+
+#: views/admin/langs.php:13
+msgid "Direction"
+msgstr "Direction"
+
+#: views/admin/langs.php:14
+msgid "Default"
+msgstr "Défaut"
+
+#: views/admin/langs.php:15 views/admin/tabs/infos.php:77
+msgid "Active"
+msgstr "actif"
+
+#: views/admin/langs.php:16
+msgid "Actions"
+msgstr "actes"
+
+#: views/admin/langs.php:52
+msgid "Edit"
+msgstr "modifier"
+
+#: views/admin/langs.php:53
+msgid "Delete"
+msgstr "Effacer"
+
+#: views/admin/langs.php:63
+msgid "There is no installed languages."
+msgstr "Il n'y a pas de langues installées."
+
+#: views/admin/strings.php:14
+msgid "Choose a group"
+msgstr "Choisissez un groupe"
+
+#: views/admin/strings.php:17
+msgid "Core"
+msgstr "Coeur"
+
+#: views/admin/strings.php:18
+msgid "Themes"
+msgstr "thèmes"
+
+#: views/admin/strings.php:19
+msgid "Modules"
+msgstr "Modules"
+
+#: views/admin/strings.php:31
+msgid "Choose a location"
+msgstr "Choisissez un emplacement"
+
+#: views/admin/strings.php:41
+msgid "Keywords..."
+msgstr "Mots clés..."
+
+#: views/admin/strings.php:48
+msgid "Source Text"
+msgstr "Texte source"
+
+#: views/admin/strings.php:49
+msgid "Translation"
+msgstr "Traduction"
+
+#: views/admin/tabs/infos.php:5
+msgid "Choose a language"
+msgstr "Choisissez une langue"
+
+#: views/admin/tabs/infos.php:12
+msgid "You can choose a language in the list or directly edit it below."
+msgstr "Vous pouvez choisir une langue dans la liste ou modifier directement ci-dessous."
+
+#: views/admin/tabs/infos.php:16
+msgid "Full name"
+msgstr "Nom complet"
+
+#: views/admin/tabs/infos.php:19
+msgid "The name is how it is displayed on your site (for example: English)."
+msgstr "Le nom est la façon dont il est affiché sur votre site (par exemple: anglais)."
+
+#: views/admin/tabs/infos.php:26
+msgid ""
+"Locale for the language (for example: en_US). You will need to install the .mo file for this language."
+msgstr "Locale pour la langue (par exemple: en_US). Vous devrez installer le fichier .mo pour cette langue."
+
+#: views/admin/tabs/infos.php:30
+msgid "Language code"
+msgstr "Code de la langue"
+
+#: views/admin/tabs/infos.php:33
+msgid "Language code - preferably 2-letters ISO 639-1 (for example: en)"
+msgstr "Code de langue - de préférence de 2 lettres ISO 639-1 (par exemple: en)"
+
+#: views/admin/tabs/infos.php:45
+msgid "Choose a flag for the language."
+msgstr "Choisissez un drapeau pour la langue."
+
+#: views/admin/tabs/infos.php:65
+msgid "Language Right-to-Left"
+msgstr "Langue de droite à gauche"
+
+#: views/admin/tabs/infos.php:67 views/admin/tabs/infos.php:73 views/admin/tabs/infos.php:79
+msgid "Yes"
+msgstr "Oui"
+
+#: views/admin/tabs/infos.php:67 views/admin/tabs/infos.php:73 views/admin/tabs/infos.php:79
+msgid "No"
+msgstr "Non"
+
+#: views/admin/tabs/infos.php:71
+msgid "Default language"
+msgstr "Langage par défaut"

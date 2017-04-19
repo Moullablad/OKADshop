@@ -4,13 +4,13 @@
 	    <thead>
 	        <tr>
 	            <td><?php trans_e("#", "lang"); ?></th>
+				<td><?php trans_e("Flag", "lang"); ?></th>
 				<td><?php trans_e("Name", "lang"); ?></th>
-				<td><?php trans_e("Short name", "lang"); ?></th>
-				<td><?php trans_e("Code", "lang"); ?></th>
+				<td><?php trans_e("Locale", "lang"); ?></th>
 				<td><?php trans_e("ISO code", "lang"); ?></th>
-				<td><?php trans_e("Direction", "lang"); ?></th>
 				<td><?php trans_e("Date format", "lang"); ?></th>
-				<td><?php trans_e("Datetime format", "lang"); ?></th>
+				<td><?php trans_e("Datetime format", "lang"); ?></th>				
+				<td><?php trans_e("Direction", "lang"); ?></th>
 				<td><?php trans_e("Default", "lang"); ?></th>
 				<td><?php trans_e("Active", "lang"); ?></th>
 				<td width="130"><?php trans_e("Actions", "lang"); ?></th>
@@ -20,10 +20,14 @@
 	    	<?php foreach ($langs as $key => $lang) : ?>
 	        <tr>
 	            <td width="10"><?php echo $lang->id; ?></td>
+	            <td width="50" align="center">
+	            	<i class="flagstrap-icon flagstrap-<?php echo strtolower($lang->flag); ?>"></i>
+	            </td>
 	            <td><?php echo $lang->name; ?></td>
-	            <td><?php echo $lang->short_name; ?></td>
-	            <td><?php echo $lang->code; ?></td>
+	            <td><?php echo $lang->locale; ?></td>
 	            <td><?php echo $lang->iso_code; ?></td>
+	            <td><?php echo date($lang->date_format); ?></td>
+	            <td><?php echo date($lang->datetime_format); ?></td>
 	            <td width="50" align="center">
 	            	<?php if( $lang->direction == '0' ) : ?>
 		           		<i class="fa fa-align-left"></i>
@@ -31,13 +35,9 @@
 		           		<i class="fa fa-align-right" style="color: #d9534f;"></i>
 		           	<?php endif; ?>
 	            </td>
-	            <td><?php echo $lang->date_format; ?></td>
-	            <td><?php echo $lang->datetime_format; ?></td>
 	            <td width="50" align="center">
 	            	<?php if( $lang->default_lang == '1' ) : ?>
-		           		<i class="fa fa-check-circle"></i>
-		           	<?php else : ?>
-		           		<i class="fa fa-times" style="color: #d9534f;"></i>
+		           		<i class="fa fa-star" style="color: #A5245E;"></i>
 		           	<?php endif; ?>
 	            </td>
 	            <td width="50" align="center">
