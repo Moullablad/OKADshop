@@ -27,10 +27,6 @@ use Core\Models\Admin\Product;
 
 
 
-require_once 'admin-users.php';
-
-
-
 /**
  * Check if admin area 
  *
@@ -221,7 +217,7 @@ function category_tree($parent=0) {
     $model = new Product();
     $categories = $model->getCategoriesByParent($parent);
     foreach($categories as $key => $category){
-        $children[$category->id.'|'.$category->permalink.'|'.$category->name] = category_tree($category->id);
+        $children[$category->id_category.'|'.$category->link_rewrite.'|'.$category->name] = category_tree($category->id_category);
     }
     return $children;
 }
