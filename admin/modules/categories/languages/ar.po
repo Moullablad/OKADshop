@@ -1,0 +1,149 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Languages Module\n"
+"POT-Creation-Date: 2017-04-18 10:46+0000\n"
+"PO-Revision-Date: 2017-04-18 10:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: Soft High Tech <contact@softhightech.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: assets/js\n"
+"X-Poedit-SearchPathExcluded-0: languages\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+
+#: Controllers/Categories.php:47 Controllers/Pages.php:26
+#: Controllers/Pages.php:68
+msgid "Categories"
+msgstr "الاقسام"
+
+#: Controllers/Categories.php:75
+msgid "Cover was deleted."
+msgstr "تم حذف الغطاء."
+
+#: Controllers/Categories.php:77
+msgid "Unable to delete Cover."
+msgstr "غير قادر على حذف الغلاف."
+
+#: Controllers/CategoryTabs.php:57
+msgid "Informations"
+msgstr "المعلومات"
+
+#: Controllers/CategoryTabs.php:64
+msgid "SEO"
+msgstr "SEO"
+
+#: Controllers/CategoryTabs.php:71 views/admin/categories.php:7
+msgid "Image"
+msgstr "صورة"
+
+#: Controllers/CategoryTabs.php:93
+msgid "Category was created."
+msgstr "تم إنشاء الفئة."
+
+#: Controllers/CategoryTabs.php:104
+msgid "Could not find the requested category."
+msgstr "لا يمكن العثور على الفئة المطلوبة."
+
+#: Controllers/Pages.php:32 Controllers/Pages.php:88
+msgid "Create new Category"
+msgstr "إنشاء فئة جديدة"
+
+#: Controllers/Pages.php:62
+msgid "Category was deleted."
+msgstr "تم حذف الفئة."
+
+#: Controllers/Pages.php:64
+msgid "Unable to delete this Category."
+msgstr "غير قادر على حذف هذه الفئة."
+
+#: Controllers/Pages.php:85
+msgid "Edit Category"
+msgstr "تحرير الفئة"
+
+#: views/admin/categories.php:6
+msgid "#"
+msgstr "#"
+
+#: views/admin/categories.php:8 views/admin/tabs/infos.php:17
+msgid "Name"
+msgstr "اسم"
+
+#: views/admin/categories.php:9 views/admin/tabs/infos.php:23
+msgid "Description"
+msgstr "وصف"
+
+#: views/admin/categories.php:10 views/admin/tabs/infos.php:4
+msgid "Parent"
+msgstr "الأبوين"
+
+#: views/admin/categories.php:11
+msgid "Position"
+msgstr "موضع"
+
+#: views/admin/categories.php:12 views/admin/tabs/infos.php:30
+msgid "Active"
+msgstr "نشيط"
+
+#: views/admin/categories.php:13
+msgid "Actions"
+msgstr "أفعال"
+
+#: views/admin/categories.php:46
+msgid "Edit"
+msgstr "تصحيح"
+
+#: views/admin/categories.php:48
+msgid "Delete"
+msgstr "حذف"
+
+#: views/admin/categories.php:59
+msgid "No records found."
+msgstr "لا توجد سجلات."
+
+#: views/admin/tabs/image.php:4
+msgid "Cover"
+msgstr "غطاء، يغطي"
+
+#: views/admin/tabs/image.php:19
+msgid "You must save this category before adding image."
+msgstr "يجب حفظ هذه الفئة قبل إضافة صورة."
+
+#: views/admin/tabs/infos.php:32
+msgid "Yes"
+msgstr "نعم فعلا"
+
+#: views/admin/tabs/infos.php:32
+msgid "No"
+msgstr "لا"
+
+#: views/admin/tabs/seo.php:4
+msgid "Meta title"
+msgstr "عنوان ميتا"
+
+#: views/admin/tabs/seo.php:13
+msgid "Meta description"
+msgstr "ميتا الوصف"
+
+#: views/admin/tabs/seo.php:22
+msgid "Meta keywords"
+msgstr "كلمات دلالية"
+
+#: views/admin/tabs/seo.php:28
+msgid "Friendly URL"
+msgstr "URL ودية"
+
+#: views/admin/tabs/seo.php:32
+msgid "The category link will look like this"
+msgstr "سوف الرابط فئة تبدو هذه"
+
+#: views/admin/tabs/seo.php:39
+msgid "You must save this category before adding seo."
+msgstr "يجب حفظ هذه الفئة قبل إضافة سيو."
