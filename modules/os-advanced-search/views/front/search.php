@@ -210,13 +210,30 @@
 				</div>
 			</div>
 			<div class="clearfix"></div>
-			<div class="product-list" id="advanced_search_product_list">
-				<?php 
-					$data['products'] = $products;
-					$data['class'] = "col-xs-12 col-sm-6 col-md-4 animated fadeInUp";
-					get_view(__FILE__, 'product-list',$data); 
-				?>
-			</div>
+			<div class="products grid-view">
+            <?php 
+	            $i = 1;
+	            $lastItem = count($products); 
+	            foreach ($products as $key => $product) : 
+
+            	if( $i == 1) : ?><div class="row"><?php endif; ?>
+
+                    <?php 
+                    get_template_view('product-item', [
+						'product' => $product,
+						'class' => 'col-xs-12 col-sm-6 col-md-4 animated fadeInUp'
+					]);
+					?>
+
+                <?php if( $i == $lastItem) : ?>
+                    </div><!-- /.row -->
+                <?php elseif( $i%3 == 0 ) : ?>
+                    </div><!-- /.row --><div class="row">
+                <?php endif; ?>
+
+                <?php $i++; ?>
+            <?php endforeach; ?>
+            </div><!-- /.products -->
 		</div>
 	</div>
 </div>

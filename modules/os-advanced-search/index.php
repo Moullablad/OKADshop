@@ -140,20 +140,26 @@ function advanced_search(){
 
  	//var_dump($_POST['data_attribute_value']);
 
+ 	$product = new Core\Models\Admin\Product();
+
  	if (isset($_POST['sortby_option']) && !is_empty($_POST['sortby_option'])) {
  		$sortby = $_POST['sortby_option'];
  		switch ($sortby) {
  			case 'price-descending':
- 				$custom_condition .= " ORDER BY sell_price DESC";
+	 			$product->query_args['orderby'] = 'p.sell_price';
+	 			$product->query_args['order'] = 'DESC';
  				break;
  			case 'price-ascending':
- 				$custom_condition .= " ORDER BY sell_price ASC";
+ 				$product->query_args['orderby'] = 'p.sell_price';
+	 			$product->query_args['order'] = 'ASC';
  				break;
  			case 'created-descending':
- 				$custom_condition .= " ORDER BY cdate DESC";
+ 				$product->query_args['orderby'] = 'pt.cdate';
+	 			$product->query_args['order'] = 'DESC';
  				break;
  			case 'created-ascending':
- 				$custom_condition .= " ORDER BY cdate ASC";
+ 				$product->query_args['orderby'] = 'pt.cdate';
+	 			$product->query_args['order'] = 'ASC';
  				break;
  			default:
  				# code...
@@ -166,7 +172,7 @@ function advanced_search(){
  	//var_dump($custom_condition);
 
  	$ProductController = new ProductController();
- 	$data['products'] = $ProductController->getProductsByCondition(array(),$custom_condition);
+ 	$data['products'] = $product->all(); //$ProductController->getProductsByCondition(array(),$custom_condition);
 
  	//advanced search attributes
  	$filtre_block = array();
