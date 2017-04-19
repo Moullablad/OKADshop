@@ -38,10 +38,15 @@ function display_trending(){
 			if (!is_empty($category_trending)) {
 				foreach ($category_trending as $key => $cat) {
 
-					$args = array(
-						"id_category_default" => $cat->id
-					);
-					$products = $ProductController->getProductsByCondition( $args);
+					$product = new \Core\Models\Admin\Product();
+					$product->query_args['conditions'][] = array(
+		                'key' => 'p.id_category_default',
+		                'value' => $cat->id,
+		                'operator' => '=',
+		                'relation' => 'AND'
+		            );
+		            $products = $product->all();
+		            
 					if (!is_empty($products)) {
 						$exist = true;
 					}

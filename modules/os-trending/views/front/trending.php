@@ -4,10 +4,17 @@
 			<div class="col-md-12">
 				<h3><?php trans_e("Trending Now", "trending"); ?></h3>
 				<ul class="nav nav-tabs">
-					<?php foreach ($categories as $key => $cat) : 
-						if (is_empty($cat->products)) continue;
+					<?php
+					$firstTab = false;
+					foreach ($categories as $key => $cat) : 
+					if ( is_empty($cat->products) ) {
+						continue;
+					} else if( !$firstTab ) {
+						$active = "in active";
+						$firstTab = true;
+					} else {
 						$active = '';
-						if ($key == 0) $active = "active";
+					}
 					?>
 					<li class="<?= $active ?>">
 						<a data-toggle="tab" href="#cat_<?= $cat->id; ?>"><?= $cat->name; ?></a>
@@ -19,10 +26,17 @@
 	</div>
 
 	<div class="tab-content">
-	<?php foreach ($categories as $key => $cat) : 
-		if (is_empty($cat->products)) continue;
-		$active = '';
-		if ($key == 0) $active = "in active";
+	<?php 
+	$firstTab = false;
+	foreach ($categories as $key => $cat) : 
+		if ( is_empty($cat->products) ) {
+			continue;
+		} else if( !$firstTab ) {
+			$active = "in active";
+			$firstTab = true;
+		} else {
+			$active = '';
+		}
 	?>
 	<div id="cat_<?= $cat->id; ?>" class="tab-pane fade <?= $active; ?>">
 		<div class="col-md-12 products grid-view">
