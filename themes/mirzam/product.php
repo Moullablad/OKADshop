@@ -1,4 +1,4 @@
-<section class="banner bg-parallax" style="background: url('<?= default_product_image($product->id, '570x697') ?>') no-repeat; background-size: cover;">
+<section class="banner bg-parallax" style="background: url('<?= default_product_image($product->id, '570x379') ?>') no-repeat; background-size: cover;">
     <div class="overlay" ></div>
     <div class="container">
         <div class="banner-content text-center">
@@ -20,18 +20,17 @@
             <div class="col-sm-6">
                 <div class="single-images">
                 <?php if( $product->discount > 0 ) : ?>
-                    <?php $percent = ($product->discount/$product->sell_price) * 100; ?>
-                    <div class="percent-saleoff"> <span><label><?php echo intval($percent); ?>%</label></span></div>
+                    <div class="percent-saleoff"> <span><label><?php echo intval($product->discount_percent); ?>%</label></span></div>
                 <?php endif; ?>
                 <?php if( !is_empty($images) ) : ?>
-                    <a class="popup-image" href="<?= default_product_image($product->id, '570x697'); ?>">
-                        <img alt="" class="main-image img-responsive" src="<?= default_product_image($product->id, '570x697'); ?>">
+                    <a class="popup-image" href="<?= default_product_image($product->id, '570x379'); ?>">
+                        <img alt="" class="main-image img-responsive" src="<?= default_product_image($product->id, '570x379'); ?>">
                     </a>
                 <?php endif; ?>
                 </div>
                 <div class="single-product-thumbnails">
                     <?php foreach ($images as $key => $image) : ?>
-                        <a data-name="<?= $image->name; ?>" data-image-full="<?= product_image_by_size($image->name, $product->id, '570x697'); ?>">
+                        <a data-name="<?= $image->name; ?>" data-image-full="<?= product_image_by_size($image->name, $product->id, '570x379'); ?>">
                             <img class="img-thumbnail" src="<?= product_image_by_size($image->name, $product->id, '76x76'); ?>">
                         </a>
                     <?php endforeach; ?>
@@ -41,7 +40,7 @@
                 <div class="summary entry-summary">
                     <h1 class="product_title entry-title"><?= $product->name; ?></h1>
                     <div class="description">
-                        <p><?= $product->short_description; ?></p>
+                        <p><?= $product->excerpt; ?></p>
                     </div>
                     <p class="price">
                         <?php
@@ -120,7 +119,7 @@
         <!-- Product tab -->
         <div class="product-tabs">
             <ul class="nav-tab">
-                <?php if( $product->long_description != "" ) : ?>
+                <?php if( $product->description != "" ) : ?>
                     <li class="active">
                         <a data-toggle="tab" href="#tab_long_desc"><?php trans_e("Description", "frochka"); ?></a>
                     </li>
@@ -137,9 +136,9 @@
                 <?php endif; ?>
             </ul>
             <div class="tab-content">
-                <?php if( $product->long_description != "" ) : ?>
+                <?php if( $product->description != "" ) : ?>
                     <div class="active tab-pane" id="tab_long_desc">
-                        <?= $product->long_description; ?>
+                        <?= $product->description; ?>
                     </div>
                 <?php endif; ?>
                 <?php if( !is_empty($features) ) : ?>

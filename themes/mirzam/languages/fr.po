@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Mirzam\n"
-"POT-Creation-Date: 2017-03-29 04:28+0000\n"
-"PO-Revision-Date: 2017-03-29 04:46+0000\n"
+"POT-Creation-Date: 2017-04-18 10:38+0000\n"
+"PO-Revision-Date: 2017-04-18 10:40+0000\n"
 "Last-Translator: \n"
 "Language-Team: SoftHighTech <contact@softhightech.com>\n"
 "Language: en\n"
@@ -28,7 +28,7 @@ msgstr "Blog"
 
 #: blog-detail.php:30
 msgid "SHARE TO FRIENDS"
-msgstr "PARTAGER DES AMIS"
+msgstr "PARTAGER AUX AMIS"
 
 #: category.php:50
 msgid "Sort By:"
@@ -40,85 +40,101 @@ msgstr "Par page"
 
 #: category.php:58
 msgid "Order products by"
-msgstr "Pour commander les produits par"
+msgstr "Commander des produits par"
 
 #: category.php:59
-msgid "Price: Lowest first"
-msgstr "Prix: croissant"
+msgid "Name: A-Z"
+msgstr "Nom: AZ"
 
 #: category.php:60
-msgid "Price: Highest first"
-msgstr "Prix: Décroissants"
+msgid "Name: Z-A"
+msgstr "Nom: ZA"
 
-#: category.php:61 product.php:90
+#: category.php:61
+msgid "Price: Lowest first"
+msgstr "Prix: moins cher"
+
+#: category.php:62
+msgid "Price: Highest first"
+msgstr "Prix: le plus haut en premier"
+
+#: category.php:63 product.php:90
 msgid "In stock"
 msgstr "En stock"
 
-#: category.php:62
+#: category.php:64
 msgid "Reference: Lowest first"
-msgstr "Référence: Plus bas en premier"
+msgstr "Référence: moins cher"
 
-#: category.php:63
+#: category.php:65
 msgid "Reference: Highest first"
-msgstr "Référence: Décroissants"
+msgstr "Référence: le plus haut en premier"
 
-#: category.php:70
+#: category.php:72
 msgid "View:"
 msgstr "Vue:"
 
-#: category.php:99
+#: category.php:101
 msgid "No products available for this category."
-msgstr "Aucun produit disponible pour cette catégorie."
+msgstr "Aucun produit n'est disponible pour cette catégorie."
 
 #: footer.php:18
 msgid "Powered by"
 msgstr "Alimenté par"
 
+#: header.php:48
+msgid "Search your query here..."
+msgstr "Recherchez votre requête ici ..."
+
+#: header.php:76
+msgid "Toggle navigation"
+msgstr "Toggle navigation"
+
 #: modules/categorypanel/views/front/category.php:3
 msgid "CATEGORIES"
 msgstr "CATÉGORIES"
 
-#: modules/contact-form/views/front/contact.php:4
+#: modules/contact-form/views/front/contact.php:5
 msgid "Contact Us"
 msgstr "Contactez nous"
 
-#: modules/contact-form/views/front/contact.php:5
+#: modules/contact-form/views/front/contact.php:6
 msgid "Contact information"
 msgstr "Informations de contact"
 
-#: modules/contact-form/views/front/contact.php:10
+#: modules/contact-form/views/front/contact.php:11
 msgid "Phone:"
 msgstr "Téléphone:"
 
-#: modules/contact-form/views/front/contact.php:13
+#: modules/contact-form/views/front/contact.php:14
 msgid "E-mail:"
 msgstr "Email:"
 
-#: modules/contact-form/views/front/contact.php:20
+#: modules/contact-form/views/front/contact.php:21
 msgid "Leave a message"
 msgstr "Laisser un message"
 
-#: modules/contact-form/views/front/contact.php:22
+#: modules/contact-form/views/front/contact.php:23
 msgid "Full name"
 msgstr "Nom complet"
 
-#: modules/contact-form/views/front/contact.php:26
+#: modules/contact-form/views/front/contact.php:27
 msgid "E-mail"
 msgstr "Email"
 
-#: modules/contact-form/views/front/contact.php:30
+#: modules/contact-form/views/front/contact.php:31
 msgid "Website"
 msgstr "Site Internet"
 
-#: modules/contact-form/views/front/contact.php:34
+#: modules/contact-form/views/front/contact.php:35
 msgid "Subject"
 msgstr "Assujettir"
 
-#: modules/contact-form/views/front/contact.php:38
+#: modules/contact-form/views/front/contact.php:39
 msgid "Content"
 msgstr "Contenu"
 
-#: modules/contact-form/views/front/contact.php:42
+#: modules/contact-form/views/front/contact.php:43
 msgid "Send"
 msgstr "Envoyer"
 
@@ -136,7 +152,7 @@ msgstr "Choisissez une adresse de facturation:"
 
 #: order-address.php:36
 msgid "Use the delivery address as the billing address."
-msgstr "Utilisez l'adresse de livraison que l'adresse de facturation."
+msgstr "Utilisez l'adresse de livraison comme adresse de facturation."
 
 #: order-address.php:44
 msgid "Your delivery address"
@@ -160,27 +176,27 @@ msgstr "Résumé"
 
 #: order-address.php:88 order-shipping.php:54 order-summary.php:11
 msgid "Checkout"
-msgstr "Passer la commande"
+msgstr "Check-out"
 
 #: order-shipping.php:21
 msgid "Choose a shipping option for this address."
-msgstr "Choisissez une option de livraison pour cette adresse."
+msgstr "Choisissez une option d'expédition pour cette adresse."
 
 #: order-shipping.php:46
 msgid "I agree to the terms of service and will adhere to them unconditionally."
-msgstr "J'accepte les conditions de service et respecteront inconditionnellement."
+msgstr "J'accepte les termes du service et je les respecterai inconditionnellement."
 
 #: order-shipping.php:53
 msgid "Addresses"
-msgstr "adresses"
+msgstr "Adresses"
 
 #: order-shipping.php:62
 msgid "No career match your delivery address."
-msgstr "Aucune carrière correspondent à votre adresse de livraison."
+msgstr "Aucune correspondance professionnelle à votre adresse de livraison."
 
 #: order-shipping.php:64
 msgid "Choose another address"
-msgstr "Choisir une autre adresse"
+msgstr "Choisissez une autre adresse"
 
 #: order-summary.php:10
 msgid "Continue shopping"
@@ -203,8 +219,9 @@ msgid "Item(s)"
 msgstr "Articles)"
 
 #: product.php:92
-msgid "This product is no longer in stock with those attributes but is available with others."
-msgstr "Ce produit n'est plus en stock avec ces attributs mais est disponible avec les autres."
+msgid ""
+"This product is no longer in stock with those attributes but is available with others."
+msgstr "Ce produit n'est plus en stock avec ces attributs mais est disponible avec d'autres."
 
 #: product.php:113
 msgid "Share:"
@@ -220,4 +237,4 @@ msgstr "caractéristiques du produit"
 
 #: product.php:135
 msgid "Product tags"
-msgstr "Tags du produit"
+msgstr "Mots clés du produit"

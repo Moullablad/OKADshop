@@ -56,6 +56,8 @@ $perpage = $paginator->perpage;
                             </select>
                             <select name="orderby" class="productSort">
                                 <option <?= ($orderby == 'cdate:asc' || $orderby == '') ? 'selected' : ''; ?> value="cdate:asc"><?php trans_e("Order products by", "mirzam"); ?></option>
+                                <option <?= ($orderby == 'name:asc') ? 'selected' : ''; ?> value="name:asc"><?php trans_e("Name: A-Z", "mirzam"); ?></option>
+                                <option <?= ($orderby == 'name:desc') ? 'selected' : ''; ?> value="name:desc"><?php trans_e("Name: Z-A", "mirzam"); ?></option>
                                 <option <?= ($orderby == 'sell_price:asc') ? 'selected' : ''; ?> value="sell_price:asc"><?php trans_e("Price: Lowest first", "mirzam"); ?></option>
                                 <option <?= ($orderby == 'sell_price:desc') ? 'selected' : ''; ?> value="sell_price:desc"><?php trans_e("Price: Highest first", "mirzam"); ?></option>
                                 <option <?= ($orderby == 'quantity:des') ? 'selected' : ''; ?> value="quantity:desc"><?php trans_e("In stock", "mirzam"); ?></option>
