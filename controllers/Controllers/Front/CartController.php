@@ -152,7 +152,7 @@ class CartController extends FrontController
                     $total_products += (int) $item['qty'] * $product_data->price;
                     $total_discount += (int) $item['qty'] * $data->discount;
 
-                    $product_data->stock = $data->qty;
+                    $product_data->stock = $data->quantity;
                     $product_data->qty = (int) $item['qty'];
                     $product_data->min_quantity = (int) $data->min_quantity;
                     $product_data->cover = $data->cover;

@@ -29,37 +29,169 @@ class Product extends Model
      * Table int
      * @var Table $table
      */
-    protected $table = "products";
+    private $table = "products";
+    public $query_args = [
+        'multilangues' => [
+            [
+                'table' => [
+                    'p' => 'products'
+                ],
+                'table_trans' => [
+                    'pt' => 'product_trans'
+                ],
+                'foreign_key' => 'id_product'
+            ],
+            [
+                'table' => [
+                    'c' => 'categories'
+                ],
+                'table_trans' => [
+                    'ct' => 'category_trans'
+                ],
+                'foreign_key' => 'id_category'
+            ]
+        ],
+        'columns' => [
+            '*' => ['p', 'pt'],
+            'pi' => [
+                'name' => 'cover'
+            ],
+            'c' => [
+                'id' => 'id_category',
+                'cover' => 'cat_cover'
+            ],
+            'ct' => [
+                'name' => 'category',
+                'link_rewrite' => 'cat_link_rewrite'
+            ]
+        ],
+        'joins' => [
+            [
+                'type' => 'LEFT JOIN',
+                'table' => [
+                    'pi' => 'product_images'
+                ],
+                'relation' => '(pi.id_product=p.id AND pi.futured=1)'
+            ],
+            [
+                'type' => 'LEFT JOIN',
+                'table' => [
+                    'c' => 'categories'
+                ],
+                'relation' => 'c.id = p.id_category_default'
+            ],
+            [
+                'type' => 'LEFT JOIN',
+                'table' => [
+                    'ct' => 'category_trans'
+                ],
+                'relation' => 'ct.id_category = c.id'
+            ]
+        ],
+        // 'debug' => true
+    ];
 
 
-    /**
-     * GET PRODUCTS
-     *
-     * @return $products
-     */
-    public function all($condition=null)
+    public function __construct()
     {
-        $results = array();
-        if( !is_null($condition) ){
-            $table = $this->db->prefix . $this->table;
-            $products = $this->db->query("SELECT * FROM {$table} {$condition}");
-        } else {
-            $products = $this->db->all($this->table);
+        parent::__construct();
+        // Get only active products
+        if( ! is_admin() ){
+            $this->query_args['conditions'][] = array(
+                'key' => 'p.active',
+                'value' => 1,
+                'operator' => '=',
+                'relation' => 'AND'
+            );
         }
-        if( !is_empty($products) ){
-            foreach ($products as $key => $product) {
-                $results[] = $this->getByID($product->id);
-            }
-        }
-        return $results;
     }
 
+
     /**
      * GET PRODUCTS
      *
      * @return $products
      */
-    public function allByIds($ids,$limit = null)
+    public function all($id_lang=null)
+    {
+        $this->query_args['id_lang'] = (!is_null($id_lang)) ? $id_lang : get_lang('id');
+        $products = getDB()->trans($this->query_args);
+        foreach ($products as $key => $product) {
+            self::setProductAssets($product);
+        }
+        return $products;
+    }
+
+
+    /**
+     * GET PRODUCT BY ID
+     *
+     * @param int $id_product
+     * @param int $id_lang
+     * @return object $data
+     */
+    public function getByID($id_product, $id_lang=null, $image_size='76x76'){
+        if( !is_numeric($id_product) || $id_product < 1 ) return false;
+
+        $this->query_args['id_lang'] = (!is_null($id_lang)) ? $id_lang : get_lang('id');
+        $this->query_args['conditions'][] = array(
+            'key' => 'p.id',
+            'value' => $id_product,
+            'operator' => '=',
+            'relation' => 'AND'
+        );
+        $this->query_args['limit'] = 1; 
+
+        $product = getDB()->trans($this->query_args);
+
+        if( is_empty($product) ) return false;
+
+        return self::setProductAssets($product, $id_lang, $image_size);
+    }
+
+
+
+    /**
+     * Set products assets
+     *
+     * @return $product
+     */
+    public static function setProductAssets($product, $id_lang=null, $image_size='75x75')
+    {
+        //check if have discount
+        $product->discount_value = 0;
+        $product->old_price = format_price($product->sell_price);
+        $product->price_tax_excl = format_price($product->sell_price);
+        if( $product->discount > 0 ){
+            $product->discount_percent = get_percentage($product->sell_price, $product->discount, $product->discount_type);
+
+            if( $product->discount_type == 0 ) {
+                $product->discount_amount = get_amount_from_percent($product->sell_price, $product->discount);
+            } else {
+                $product->discount_amount = $product->discount;
+            }
+
+            $product->sell_price = format_price($product->sell_price - $product->discount_amount);
+        } else {
+            $product->sell_price = format_price($product->sell_price);
+        }
+
+        $product->cover = product_image_by_size($product->cover, $product->id, $image_size);
+        $product->link = generate_url('product/' . $product->id .'-'. $product->link_rewrite, $id_lang );
+        if( isset($product->id_category) ) {
+            $product->category_link = generate_url('category/' . $product->id_category .'-'. $product->cat_link_rewrite, $id_lang );
+        }
+        return $product;
+    }
+
+
+
+    /**
+     * GET PRODUCTS
+     *
+     * @return $products
+     */
+    public function allByIds($ids, $limit = null)
     {
         $results = array();
         $sql = "SELECT id FROM {$this->prefix}$this->table WHERE id IN($ids)";
@@ -77,68 +209,7 @@ class Product extends Model
         }
         return $results;
     }
-    
 
-
-    /**
-     * GET PRODUCT BY ID
-     *
-     * @param int $id_product
-     * @param int $id_lang
-     * @return object $data
-     */
-    public function getByID($id_product, $id_lang=null, $image_size='76x76'){
-        if( !is_numeric($id_product) || $id_product < 1 ) return false;
- 
-        if( is_null($id_lang) ) $id_lang = Language::getLanguage()->id;
-
-        $condition ='';
-        if( !is_admin() ){
-            $condition = 'AND p.`active`=1';
-        }
-
-        $product = $this->db->prepare("
-            SELECT p.*, c.`id` as id_category, c.`permalink` as cat_slug, c.`name` as category FROM `{$this->prefix}products` p LEFT JOIN `{$this->prefix}categories` c ON p.id_category_default=c.id WHERE p.`id`=? $condition", 
-            [$id_product], true
-        );
-        if( is_empty($product) ) return false;
-
-        //get translation
-        $default_lang = $product->id_lang;
-        $trans = $this->getTrans($id_product, $id_lang, $default_lang);
-        $product->discount_value = 0;
-        //check if have discount
-        $product->old_price = format_price($product->sell_price);
-        $product->price_tax_excl = format_price($product->sell_price);
-        if( $product->discount > 0 ){
-            $discount = percent_to_amount($product->sell_price, $product->discount, $product->discount_type);
-            $product->discount_value = $discount;
-            $product->sell_price = format_price($product->sell_price - $discount);
-        } else {
-            $product->sell_price = format_price($product->sell_price);
-        }
-
-        //get cover and link
-        $product->cover = default_product_image($product->id, $image_size);
-        $link_rewrite = (isset($trans->link_rewrite)) ? '-'. $trans->link_rewrite : '';
-        // $product->link = get_home_url() . 'product/' . $product->id . $link_rewrite;
-        $path = 'product/' . $product->id . $link_rewrite;
-        $product->link = generate_url( $path, $id_lang );
-
-        $cat_link = 'category/' . $product->id_category .'-'. $product->cat_slug;
-        $product->category_link = generate_url( $cat_link, $id_lang );
-
-        //old version fields
-        $product->permalink = (isset($trans->link_rewrite)) ? $trans->link_rewrite : '';
-        $product->long_description = (isset($trans->description)) ? $trans->description : '';
-        $product->short_description = (isset($trans->excerpt)) ? $trans->excerpt : '';
-        $product->qty = $product->quantity;
-
-        //remove fields
-        unset($trans->id);
-
-        return (object) array_merge((array)$product, (array)$trans);
-    }
 
 
 
@@ -302,9 +373,16 @@ class Product extends Model
      * @param int $parent
      * @return categories
      */
-    public function getCategoriesByParent($parent=0)
+    public function getCategoriesByParent($id_parent=0)
     {
-        return $this->db->prepare("SELECT id, name, permalink FROM `{$this->prefix}categories` WHERE `parent`=?", [$parent]);
+        $object = new Category();
+        $object->args['conditions'][] = array(
+            'key' => 'c.id_parent',
+            'value' => $id_parent,
+            'operator' => '=',
+            'relation' => 'AND'
+        );
+        return $object->getCategories();
     }
 
 

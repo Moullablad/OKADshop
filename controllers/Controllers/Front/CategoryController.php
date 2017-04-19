@@ -35,7 +35,25 @@ class CategoryController extends FrontController
      * Table int
      * @var Table $table
      */
-    protected $table = "categories";
+    private $table = "categories";
+    private $query_args = [
+        'multilangues' => [
+            [
+                'table' => [
+                    'c' => 'categories'
+                ],
+                'table_trans' => [
+                    'ct' => 'category_trans'
+                ],
+                'foreign_key' => 'id_category'
+            ]
+        ],
+        'columns' => [
+            '*' => ['c', 'ct']
+        ],
+        'orderby' => 'c.position',
+        'order' => 'ASC',
+    ];
 
 
     /**
@@ -46,28 +64,23 @@ class CategoryController extends FrontController
      * @return data object
      */
     public function getCategory($id_category){
-        $category = $this->db->find($this->table, $id_category);
-        unset($category->hidden, $category->parent, $category->position, $category->cby, $category->uby, $category->cdate, $category->udate);
-        return $category;
+        $this->query_args['conditions'] = [
+            [
+                'key' => 'c.id',
+                'value' => $id_category,
+                'operator' => '=',
+                'relation' => 'AND'
+            ]
+        ];
+        $this->query_args['limit'] = 1;
+        return getDB()->trans($this->query_args);
     }
 
 
     public function allCategory($condition = "")
     {
-        try {
- 
-            $Category  =  $this->db->prepare("SELECT * FROM `{$this->db->prefix}categories` $condition");
-            
-            if( !is_empty($Category) ){
-
-                return $Category;
-            }
-
-            return false;
-
-        } catch (ControllerException $e) {
-          $this->getException($e);
-        }
+        $category = new \Core\Models\Admin\Category();
+        return $category->getCategories();
     }
 
  
@@ -86,7 +99,8 @@ class CategoryController extends FrontController
         $session = Session::getInstance();
 
         //defaults vars
-        $orderby = "cdate asc";
+        $orderby = "pt.cdate";
+        $order = "ASC";
         $page = 1;
         $perpage = 9;
         $isStartPage = true;
@@ -109,12 +123,40 @@ class CategoryController extends FrontController
         }
 
         //order by
+        $order_method = "cdate:asc";
         if ( isset($_POST['orderby']) && !empty($_POST['orderby']) ) {
-            $orderby = str_replace(':', ' ', $_POST['orderby']);
-            $session->set('orderby', $orderby);
-        } elseif ( $session->get('orderby') ) {
-            $orderby = $session->get('orderby');
+            $order_method = $_POST['orderby'];
+            $session->set('order_method', $order_method);
+        } elseif ( $session->get('order_method') ) {
+            $order_method = $session->get('order_method');
         }
+
+        $implode = explode(":", $order_method);
+        if( isset($implode[1]) && in_array($implode[1], ['asc', 'desc']) )
+            $order = strtoupper($implode[1]);
+
+        switch ($implode[0]) {
+            case 'name':
+                $orderby = "pt.name";
+                break;
+
+            case 'quantity':
+                $orderby = "p.quantity";
+                break;
+
+            case 'reference':
+                $orderby = "p.reference";
+                break;
+
+            case 'sell_price':
+                $orderby = "p.sell_price";
+                break;
+            
+            default:
+                $orderby = "pt.cdate";
+                break;
+        }
+
  
         //default options
         $options = array(
@@ -126,16 +168,23 @@ class CategoryController extends FrontController
 
         //update url
         if( !$isStartPage )
-            $options['url'] = $_GET['Module']."/".$_GET['ID'] .'/*VAR*';
+            $options['url'] = $_GET['Module']."/".$_GET['ID'] .'/*VAR*';        
 
+        $id_lang = get_lang('id');
+        $sql = "
+            SELECT p.*, pt.*, pi.name AS cover FROM `{$this->db->prefix}products` AS p 
 
-        //sql query
-        $sql = "SELECT p.id, p.cdate
-            FROM `{$this->db->prefix}products` p
+            LEFT JOIN `{$this->db->prefix}product_trans` AS pt ON pt.id_product = p.id 
+            LEFT JOIN `{$this->db->prefix}product_images` AS pi ON (pi.id_product=p.id AND pi.futured=1)  
             LEFT JOIN `{$this->db->prefix}product_category` pc ON pc.`id_product` = p.id
-            WHERE pc.`id_category` = $id_category AND p.active=1
-            ORDER BY $orderby";
-          
+
+            WHERE pt.id_lang = CASE WHEN EXISTS(SELECT 1 FROM `{$this->db->prefix}product_trans` AS pt WHERE pt.id_lang = {$id_lang} AND pt.id_product = p.id) THEN ({$id_lang}) ELSE p.id_lang END 
+
+            AND (pc.`id_category`={$id_category} OR p.`id_category_default`={$id_category}) AND p.active=1
+            GROUP BY pc.`id_product`
+            ORDER BY {$orderby} {$order} 
+        ";
+
         try {
 
             $paginator = new Paginator($page, $sql, $options);
@@ -145,19 +194,16 @@ class CategoryController extends FrontController
                 $result->paginator = new \stdClass;
                 $result->paginator->total = $paginator->total_results;
                 $result->paginator->links = $paginator->links_html;
-                $result->paginator->orderby = str_replace(' ', ':', $orderby);
+                $result->paginator->orderby = $order_method;
                 $result->paginator->perpage = $perpage;
 
                 //category products
                 $model = new Product();
-                $products = (object) $paginator->resultset->fetchAll(\PDO::FETCH_OBJ);
+                $products = $paginator->resultset->fetchAll(\PDO::FETCH_OBJ);
                 foreach ($products as $key => $product) {
-                    $result_products[] = $model->getByID($product->id); 
+                    \Core\Models\Admin\Product::setProductAssets($product);
                 }
-                $result->products = $result_products;
-
-                //$controller = new ProductController();
-                //$result->products = $controller->migrateProduct($products);
+                $result->products = $products;                
 
                 return $result;
             }
@@ -180,14 +226,21 @@ class CategoryController extends FrontController
      * @return data object
      */
     public function getChildrens($id_category){
-        $cats =  $this->db->prepare("SELECT * FROM `{$this->db->prefix}categories` WHERE parent = ? AND hidden = 0 ORDER BY position ASC", [$id_category]);
-        foreach ($cats as $key => $cat) {
-            $cat->link = site_url()."category/".$cat->id;
-            if (!is_empty($cat->permalink)) {
-                $cat->link .= "-".$cat->permalink;
-            }
-        }
-        return $cats;
+        $this->query_args['conditions'] = [
+            [
+                'key' => 'c.id_parent',
+                'value' => $id_category,
+                'operator' => '=',
+                'relation' => 'AND'
+            ],
+            [
+                'key' => 'c.active',
+                'value' => 1,
+                'operator' => '=',
+                'relation' => 'AND'
+            ]
+        ];
+        return getDB()->trans($this->query_args);
     }
 
 
@@ -206,10 +259,10 @@ class CategoryController extends FrontController
 
         //image instance
         $db = Database::getInstance();
-        $cover = $db->prepare("SELECT `image_cat` FROM `{$db->prefix}categories` WHERE `id` = ?", [$id_category], true);
-        if( $cover->image_cat !== '' ){
+        $category = $db->prepare("SELECT `cover` FROM `{$db->prefix}categories` WHERE `id` = ?", [$id_category], true);
+        if( isset($category->cover) && $category->cover !== '' ){
             $imageDir = 'files/category/'. $id_category .'/';
-            $image_url = Image::getImageBySize($cover->image_cat, $imageDir, $size);
+            $image_url = Image::getImageBySize($category->cover, $imageDir, $size);
             return $image_url;
         }
 
@@ -232,9 +285,9 @@ class CategoryController extends FrontController
             return false;
 
         $db = Database::getInstance();
-        $cover = $db->prepare("SELECT `image_cat` FROM `{$db->prefix}categories` WHERE `id` = ?", [$id_category], true);
-        if( $cover->image_cat !== '' ){
-            $imageDir = 'files/category/'. $id_category .'/'. $cover->image_cat;
+        $category = $db->prepare("SELECT `cover` FROM `{$db->prefix}categories` WHERE `id` = ?", [$id_category], true);
+        if( $category->cover !== '' ){
+            $imageDir = 'files/category/'. $id_category .'/'. $category->cover;
             if( file_exists($imageDir) ){
                 return Image::resizeImage($imageDir, $sizes);
             }

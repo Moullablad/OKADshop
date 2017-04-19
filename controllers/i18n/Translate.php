@@ -107,17 +107,24 @@ class Translate
      * @return array $trans
      **/
     public static function loadFiles($iso_code){
+        $strings = \CoreModules\Languages\Controllers\Languages::getSavedStrings();
+        $lang_strings = (isset($strings[$iso_code])) ? $strings[$iso_code] : [];
+
+
         //check if language cached
         $cache = self::getCache($iso_code);
-        if( !is_empty($cache) ) return $cache;
-        
-        //get translations strings
-        self::modulesTrans($iso_code);
-        self::themeTrans($iso_code);
-        self::adminTrans($iso_code);
+        if( !is_empty($cache) ) {
+            return array_replace_recursive($cache, $lang_strings);
+        } else {
+            //get translations strings
+            self::modulesTrans($iso_code);
+            self::themeTrans($iso_code);
+            self::adminTrans($iso_code);
 
-        //cache files
-        return self::cacheLanguage(self::$trans, $iso_code);
+            //cache files
+            $cache = self::cacheLanguage(self::$trans, $iso_code);
+            return array_replace_recursive($cache, $lang_strings);
+        }
     }
 
 

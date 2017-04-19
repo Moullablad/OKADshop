@@ -303,6 +303,20 @@ class Database{
 	}
 
 
+	/**
+     * Get max value
+     *
+     * @param string $table
+     * @param string $column
+     *
+     * @return int $max
+     */
+	public function getMax($table, $column){
+		$table_name = $this->prefix . $table;
+		$res = self::$instance->prepare("SELECT MAX({$column}) AS max FROM `{$table_name}`", [], true);
+		return (isset($res->max)) ? $res->max : 0;
+	}
+
 
 	/**
 	 * Get translation
@@ -354,48 +368,56 @@ class Database{
 	 * @return array $trans | $query
 	 */
 	public function trans(array $args){
+		// Exit if empty
+		if( empty($args['multilangues']) ) 
+			return false;
+
+		// Primary table
+		$primary_table = reset($args['multilangues'][0]['table']);
+		$primary_table_prefix = key($args['multilangues'][0]['table']);
+
+		// Primary table trans
+		$primary_trans = reset($args['multilangues'][0]['table_trans']);
+		$primary_trans_prefix = key($args['multilangues'][0]['table_trans']);
+
+		// Foreign key
+		$foreign_key = $args['multilangues'][0]['foreign_key'];
+
 		// Merge default args with current
 		$default = [
-            'table' => [],
-            'table_trans' => [],
-            'foreign_key' => '',
+            'multilangues' => [],
             'columns' => [],
             'conditions' => [],
             'joins' => [],
             'id_lang' => get_lang()->id,
-            'orderby' => key($args['table']) .'.id',
+            'orderby' => $primary_table_prefix .'.id',
             'order' => 'ASC',
             'limit' => 0,
             'debug' => false
         ];
         $args = array_merge($default, $args);
 
-        // Get tables name with prefix
-		$table_parent = $this->prefix . reset($args['table']);
-		$table_trans = $this->prefix . reset($args['table_trans']);
-		$table_parent_prefix = key($args['table']);
-		$table_trans_prefix = key($args['table_trans']);
-        $foreign_key = $args['foreign_key'];
-
         // Append table trans joins
-        $args['joins'][] = [
+        array_unshift($args['joins'], [
             'type' => 'LEFT JOIN',
-            'table' => $args['table_trans'],
-            'relation' => $table_trans_prefix .'.'. $foreign_key .' = '. $table_parent_prefix .'.id'
-        ];
+            'table' => $args['multilangues'][0]['table_trans'],
+            'relation' => $primary_trans_prefix .'.'. $foreign_key .' = '. $primary_table_prefix .'.id'
+        ]);
 
-        // Test data
-        if( !isAssoc($args['table']) || !isAssoc($args['table_trans']) || trim($foreign_key) == '' )
-        	return false;
-
-		// prepare columns to select
+        // prepare columns to select
 		$columns_sql = '';
 		if( !empty($args['columns']) ) : 
-			foreach ($args['columns'] as $prefix => $column) :
-				if( is_array($column) ) {
-					$columns_sql .= $prefix .'.'. key($column) .' AS '. reset($column) .', ';
-				} else {
-					$columns_sql .= $prefix .'.'. $column .', ';
+			foreach ($args['columns'] as $prefix => $cols) :
+				if( is_array($cols) ) {
+					if( $prefix == '*' ) {
+						$columns_sql .= implode('.*, ', $cols) .'.*, ';
+					} elseif( isAssoc($cols) ) {
+						foreach ($cols as $key => $value) {
+							$columns_sql .= $prefix .'.'. $key .' AS '. $value .', ';
+						}
+					} else {
+						$columns_sql .= $prefix .'.'. reset($cols) .', ';
+					}
 				}
 			endforeach;
 			$columns_sql = rtrim($columns_sql, ', ');
@@ -421,8 +443,24 @@ class Database{
 		$id_lang = $args['id_lang'];
 		$orderby = 'ORDER BY '. $args['orderby'] .' '. $args['order'];
 		$limit = (intval($args['limit']) > 0) ? ' LIMIT '. $args['limit'] : '';
-		$query  = "SELECT {$columns_sql} FROM `{$table_parent}` AS ". $table_parent_prefix;
-		$query .= " {$joins_sql} WHERE ". $table_trans_prefix .".id_lang = CASE WHEN EXISTS(SELECT 1 FROM `{$table_trans}` AS ". $table_trans_prefix ." WHERE ". $table_trans_prefix .".id_lang = {$id_lang} AND ". $table_trans_prefix .".{$foreign_key} = ". $table_parent_prefix .".id) THEN ({$id_lang}) ELSE ". $table_parent_prefix .".id_lang END {$conditions_sql} {$orderby} {$limit}";
+
+		// Prepare CASES
+		$cases_sql = '';
+		if( !empty($args['multilangues']) ) : foreach ($args['multilangues'] as $k => $v) :
+			$relation = 'WHERE';
+			if( $k != 0 ) $relation = 'AND';
+
+			$table = reset($v['table']);
+			$table_prefix = key($v['table']);
+			$table_trans = reset($v['table_trans']);
+			$table_trans_prefix = key($v['table_trans']);
+			$foreign_key = $v['foreign_key'];
+
+			$cases_sql .= "{$relation} {$table_trans_prefix}.id_lang = CASE WHEN EXISTS(SELECT 1 FROM `{$this->prefix}{$table_trans}` AS {$table_trans_prefix} WHERE {$table_trans_prefix}.id_lang = {$id_lang} AND {$table_trans_prefix}.{$foreign_key} = {$table_prefix}.id) THEN ({$id_lang}) ELSE {$table_prefix}.id_lang END ";
+
+		endforeach; endif;
+
+		$query  = "SELECT {$columns_sql} FROM `{$this->prefix}{$primary_table}` AS {$primary_table_prefix} {$joins_sql} {$cases_sql} {$conditions_sql} {$orderby} {$limit}";
 
 		// Return query string
 		if( $args['debug'] === TRUE) {
