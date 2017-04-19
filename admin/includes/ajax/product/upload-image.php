@@ -67,7 +67,7 @@ try {
 			foreach ($fileTarget as $key => $image_path) {
 				if( $image_path != "" ){
 					//resize image
-					$image_sizes = array("45x45", "76x76", "80x80", "100x122", "120x45", "200x200", "360x360", "570x697", "828x220");
+					$image_sizes = array("45x45", "76x76", "80x80", "100x122", "120x45", "200x200", "360x360", "570x697", "570x379", "828x220");
 					$resize = Image::resizeImage($image_path, $image_sizes);
 					if( $resize ){
 						$image_name = str_replace( $uploadDir , '', $image_path );

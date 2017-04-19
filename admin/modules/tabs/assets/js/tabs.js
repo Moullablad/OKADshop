@@ -2,6 +2,12 @@ $(document).ready(function() {
 
 	//var ajax_url = admin_dirname() + 'includes/ajax/tabs/';
 
+  $('select#languages').change(function(){
+    var id_lang = $(this).val();
+    createCookie('tabs_selected_lang', id_lang);
+  });
+
+
 
 	 /**
      * Load Tab Contents
