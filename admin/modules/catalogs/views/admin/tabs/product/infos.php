@@ -1,4 +1,4 @@
-<input type="hidden" name="id_product" id="id_product" value="<?=(isset($product->id)) ? $product->id : '';?>">
+<input type="hidden" name="id_product" id="id_product" value="<?=(isset($product->id_product)) ? $product->id_product : '';?>">
 <input type="hidden" name="id_lang" class="id_lang" value="<?=$id_lang;?>">
 
 <div class="form-group">
