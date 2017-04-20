@@ -19,8 +19,8 @@ $dirname = str_replace("\\", "/", dirname(__DIR__));
 $root = $_SERVER['DOCUMENT_ROOT'];
 $physical_uri = '/';
 if ( preg_match("!\\$root(.*)!", $dirname, $matches) === 1 ) {
-	$physical_uri = $matches[1];
-	$physical_uri = ($physical_uri[0]!='/') ? '/' . $physical_uri : $physical_uri;
+	$physical_uri = ($matches[1]!='') ? $matches[1] : '/';
+	$physical_uri = ($physical_uri[0] !='/' ) ? '/' . $physical_uri : $physical_uri;
 	$physical_uri .= (substr($physical_uri, -1) == '/' ? '' : '/');
 }
 $GLOBALS['os'] = new \stdClass;
