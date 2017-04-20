@@ -1,9 +1,9 @@
 _todo
 cache
 config/database.inc.php
-files
+/files
 modules/config.txt
 modules/watermark
 modules/social-auth
 themes/mirzam/assets/_dev/sass/.sass-cache
-uploads
+/uploads
