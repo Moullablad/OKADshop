@@ -7,6 +7,3 @@ modules/watermark
 modules/social-auth
 themes/mirzam/assets/_dev/sass/.sass-cache
 uploads
-vendor
-composer.json
-composer.lock
