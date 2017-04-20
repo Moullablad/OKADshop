@@ -62,18 +62,17 @@ INSERT INTO `%%carrier` (`id`, `id_tax`, `name`, `type`, `description`, `min_del
 --
 -- Contenu de la table `categories`
 --
+INSERT INTO `%%categories` (`id`, `id_lang`, `id_parent`, `cover`, `position`, `active`) VALUES (1, 1, 0, '', 0, 1);
 
-INSERT INTO `%%categories` (`id`, `id_lang`, `name`, `description`, `image_cat`, `permalink`, `meta_title`, `meta_description`, `meta_keywords`, `hidden`, `parent`, `position`) VALUES
-(1, 1, 'Accueil', '', '1.png', 'accueil', '', '', '', 0, 0, 0),
-(2, 1, 'Renault', '', '2.png', 'renault', '', '', '', 0, 1, 0),
-(3, 1, 'Peugeot', '', '3.png', 'peugeot', '', '', '', 0, 1, 0),
-(4, 1, 'Dacia duster', '', '4.png', 'dacia-duster', '', '', '', 0, 1, 0),
-(5, 1, 'Nissan', '', '5.png', 'nissan', '', '', '', 0, 1, 0),
-(6, 1, 'Smart', '', '6.png', 'smart', '', '', '', 0, 1, 0),
-(7, 1, 'Citroen', '', '7.png', 'citroen', '', '', '', 0, 1, 0),
-(8, 1, 'Chevrolet', '', '8.png', 'chevrolet', '', '', '', 0, 1, 0),
-(9, 1, 'BMW', '', '9.png', 'bmw', '', '', '', 0, 1, 0),
-(10, 1, 'Ferrari', '', '10.png', 'ferrari', '', '', '', 0, 1, 0);
+
+--
+-- Dumping data for table `csh_category_trans`
+--
+
+INSERT INTO `csh_category_trans` (`id`, `id_lang`, `id_category`, `name`, `description`, `meta_title`, `meta_description`, `meta_keywords`, `link_rewrite`, `cdate`, `udate`) VALUES
+(1, 1, 1, 'Home', 'Home category', 'Home', 'Home category', 'home', 'home', NOW(), NOW()),
+
+
 
 --
 -- Contenu de la table `countries`

@@ -93,16 +93,19 @@ class Okad_Install {
         global $languages;
         $code = ( isset($_SESSION['default_lang']) ) ? $_SESSION['default_lang'] : 'en_US';
         $lang = $languages[$code];
+        $date = date("Y-m-d H:i:s");
         return $db->create("langs", array(
-            'code' => $code, 
-            'iso_code' => $lang['iso_code'], 
             'name' => $lang['name'], 
-            'short_name' => $lang['short_name'], 
-            'direction' => $lang['direction'], 
+            'locale' => $code, 
+            'iso_code' => $lang['iso_code'], 
+            'flag' => $lang['iso_code'], 
             'date_format' => $lang['date_format'], 
             'datetime_format' => $lang['datetime_format'], 
+            'direction' => $lang['direction'], 
             'default_lang' => 1, 
-            'active' => 1
+            'active' => 1,
+            'cdate' => $date,
+            'udate' => $date           
         ));
     }
 
