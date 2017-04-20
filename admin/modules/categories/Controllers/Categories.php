@@ -99,14 +99,21 @@ class Categories {
             // $output .= '<li><a class="active"><strong>'. trans('Categories', 'cats') .'</strong></a></li>';
             self::$firstKey = false;
         }
+
+        // Set active category
+        $id_category = 0;
+        if( isset($_GET['Module']) && $_GET['Module'] == 'category' ) {
+            $id_category = explode('-', $_GET['ID']);
+            $id_category = $id_category[0];
+        }
         foreach ($cat_tree as $key => $subArray) {
             $key_value = explode('|', $key);
             $cat_ID = $key_value[0];
             $link_rewrite = $key_value[1];
             $cat_name = $key_value[2];
-
+            $active = ''; //($id_category==$cat_ID) ? 'class="active"' : '';
             $output .= '<li class="parent_'.$cat_ID.'">';
-            $output .= '<a href="'. get_category_link($cat_ID, $link_rewrite) .'">'. $cat_name .'</a>';
+            $output .= '<a '. $active .' href="'. get_category_link($cat_ID, $link_rewrite) .'">'. $cat_name .'</a>';
 
             $output .= self::drawCategoriesTree($subArray) . '</li>';
         }
