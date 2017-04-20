@@ -1,0 +1,123 @@
+/* nav bar */
+.navbar-default{
+	    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-size: 16px;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover 
+{
+  background-color: transparent;
+  color: #A5245E;
+}
+
+.navbar-nav>li {
+  margin: 17px 0px;
+}
+
+.logo{
+	margin: 0px 0px 5px 0px;
+}
+
+
+/* wizard-wrap */
+#wizard-wrap{
+	padding: 15px 0px;
+}
+
+#content{
+	margin-top: 15px;
+}
+
+/* steps */
+#steps>li{
+  margin: 15px 0px;
+}
+#steps>li {
+	color: #999999;
+}
+#steps>li.active {
+  font-size: 14px;
+  font-weight: bold;
+  color: #A5245E;
+}
+
+/* achieved */
+#achieved{
+	background-color: #e5e5e5;
+	padding: 5px 0px;
+}
+
+#achieved h1{
+	margin: 5px 0px;
+	color: #3E9E28;
+	font-size: 28px;
+}
+
+#current_step{
+	list-style-type: none;
+	margin-bottom: 0px;
+	margin-top: 8px;
+}
+
+#current_step li {
+  position: relative;
+  float: left;
+  width: 24px;
+  height: 32px;
+  margin-right: 10px;
+  text-align: center;
+  padding: 0px 5px;
+  font-size: 25px;
+  line-height: 32px;
+  background-color: #A5245E;
+  color: #fff;
+  top: -5px;
+  border-radius: 100%;
+  width: 32px;
+}
+
+#current_step li.active{
+	background-color: #3E9E28;
+  color: #fff;
+}
+
+h3{
+	margin-bottom: 25px;
+}
+
+#step_button{
+	margin-top: 30px;
+	padding: 0px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.form-group {
+  margin-bottom: 0px;
+}
+
+.form-horizontal .control-label {
+  text-align: left;
+  font-weight: normal;
+}
+
+.form-control {
+	height: 32px;
+	border-radius: 0px;
+	float: left;
+	width: 96%;
+}
+sup.required {
+	color: red;
+	vertical-align: bottom;
+	margin: 0px 3px;
+}

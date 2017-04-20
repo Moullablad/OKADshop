@@ -1,0 +1,49 @@
+body{
+  font-family: Tahoma, Arial, "Sans serif";
+}
+
+.col-md-3, .col-sm-3, .col-sm-4{
+    float: right;
+}
+
+#achieved .col-sm-4{
+	float: right;
+}
+
+.pull-right {
+    float: left!important;
+}
+
+.navbar .navbar-header {
+    float: right;
+}
+
+.navbar-right {
+    float: left!important;
+        margin-left: -15px;
+}
+
+#steps{
+	    padding: 0px;
+}
+
+#id_lang.form-control {
+    width: 100%;
+}
+
+#set_license{
+	float: right!important;
+}
+label[for=set_license]{
+	float: right!important;
+	margin-right: 8px;
+}
+
+#current_step{
+	display: -webkit-box;
+    flex-direction: column-reverse;
+}
+
+#steps>li,#steps>li.active {
+    font-size: 17px;
+}
