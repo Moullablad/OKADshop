@@ -124,7 +124,7 @@ class Okad_Install {
             $images = $this->getImages($i);
             if( !empty($images) ){
                 foreach ($images as $key => $image) {
-                    $image_path  = '../../files/products/'. $i .'/'. $image->name;
+                    $image_path  = site_base('files/products/'. $i .'/'. $image->name);
                     Image::resizeImage($image_path, $sizes);
                 }
             }
@@ -135,7 +135,7 @@ class Okad_Install {
     public function resizeCategoriesImages(){
         $sizes = array('140x35', '237x65');
         for ($i=1; $i <= 10; $i++) { 
-            $image_path  = '../../files/category/'. $i .'/'. $i .'.png';
+            $image_path  = site_base('uploads/category/'. $i .'/'. $i .'.png');
             Image::resizeImage($image_path, $sizes);
         }
     }

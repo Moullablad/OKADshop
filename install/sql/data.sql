@@ -62,17 +62,34 @@ INSERT INTO `%%carrier` (`id`, `id_tax`, `name`, `type`, `description`, `min_del
 --
 -- Contenu de la table `categories`
 --
-INSERT INTO `%%categories` (`id`, `id_lang`, `id_parent`, `cover`, `position`, `active`) VALUES (1, 1, 0, '', 0, 1);
+INSERT INTO `%%categories`(`id`, `id_lang`, `id_parent`, `cover`, `position`, `active`) VALUES 
+(1, 1, 0, '', 0, 1),
+(2, 1, 1, "uploads/category/2/2.png", 0, 1),
+(3, 1, 1, "uploads/category/3/3.png", 1, 1),
+(4, 1, 1, "uploads/category/4/4.png.png", 2, 1),
+(5, 1, 1, "uploads/category/5/5.png.png", 3, 1),
+(6, 1, 1, "uploads/category/6/6.png.png", 4, 1),
+(7, 1, 1, "uploads/category/7/7.png.png", 5, 1),
+(8, 1, 1, "uploads/category/8/8.png.png", 6, 1),
+(9, 1, 1, "uploads/category/9/9.png.png", 7, 1),
+(10, 1, 1, "uploads/category/10/10.png.png", 8, 1);
+
 
 
 --
 -- Dumping data for table `csh_category_trans`
 --
 
-INSERT INTO `%%category_trans` (`id`, `id_lang`, `id_category`, `name`, `description`, `meta_title`, `meta_description`, `meta_keywords`, `link_rewrite`) VALUES
-(1, 1, 1, 'Home', 'Home category', 'Home', 'Home category', 'home', 'home');
-
-
+INSERT INTO `%%category_trans`(`id_lang`, `id_category`, `name`, `description`, `meta_title`, `meta_description`, `meta_keywords`, `link_rewrite`) VALUES 
+(1,2, "Renault", "", "Renault", "", "", "renault"),
+(1,3, "Peugeot", "", "Peugeot", "", "", "peugeot"),
+(1,4, "Dacia duster", "", "Dacia duster", "", "", "dacia-duster"),
+(1,5, "Nissan", "", "Nissan", "", "", "nissan"),
+(1,6, "Smart", "", "Smart", "", "", "smart"),
+(1,7, "Citroen", "", "Citroen", "", "", "citroen"),
+(1,8, "Chevrolet", "", "Chevrolet", "", "", "chevrolet"),
+(1,9, "BMW", "", "BMW", "", "", "bmw"),
+(1,10, "Ferrari", "", "Ferrari", "", "", "ferrari");
 
 --
 -- Contenu de la table `countries`
