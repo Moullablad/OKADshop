@@ -19,7 +19,7 @@ if (!defined('_OS_VERSION_'))
 use Core\Controllers\Front\ProductController;
 add_domain(__FILE__, 'advanced_search');
 
-function os_advanced_search_install(){
+function advanced_search_install(){
 	$advanced_search_attributes =  array() ;
 	save_meta_value("advanced_search_attributes",json_encode($advanced_search_attributes));
 }

@@ -26,7 +26,7 @@ $os_menu = $os_admin_menu->add('<i class="fa fa-bars"></i>'
 	.l('Menu', "menu"), '?module=modules&slug=menus&page=menu_settings');
 
 
-function os_menu_install(){
+function menus_install(){
 	global $common;
   	$file = module_base(__FILE__,'includes/db.sql') ;
   	$res = $common->run_sql_file( $file );

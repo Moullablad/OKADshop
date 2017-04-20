@@ -75,6 +75,12 @@ if( $savedata && $install->createUser($user) ){
     $install->createLanguage();
     $install->createShop($shop);
     require '../../config/bootstrap.php';
+
+    // Copy files
+    $source = dirname(__DIR__) .'/img/files/';
+    $target = dirname(__DIR__) .'/../';
+    copy_folders($source, $target);
+
     $install->resizeProductsImages();
     $install->resizeCategoriesImages();
     $install->installModules();

@@ -69,8 +69,8 @@ INSERT INTO `%%categories` (`id`, `id_lang`, `id_parent`, `cover`, `position`, `
 -- Dumping data for table `csh_category_trans`
 --
 
-INSERT INTO `csh_category_trans` (`id`, `id_lang`, `id_category`, `name`, `description`, `meta_title`, `meta_description`, `meta_keywords`, `link_rewrite`, `cdate`, `udate`) VALUES
-(1, 1, 1, 'Home', 'Home category', 'Home', 'Home category', 'home', 'home', NOW(), NOW()),
+INSERT INTO `%%category_trans` (`id`, `id_lang`, `id_category`, `name`, `description`, `meta_title`, `meta_description`, `meta_keywords`, `link_rewrite`) VALUES
+(1, 1, 1, 'Home', 'Home category', 'Home', 'Home category', 'home', 'home');
 
 
 

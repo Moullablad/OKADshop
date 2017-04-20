@@ -94,7 +94,7 @@ class Okad_Install {
         $code = ( isset($_SESSION['default_lang']) ) ? $_SESSION['default_lang'] : 'en_US';
         $lang = $languages[$code];
         $date = date("Y-m-d H:i:s");
-        return $db->create("langs", array(
+        return $db->create("languages", array(
             'name' => $lang['name'], 
             'locale' => $code, 
             'iso_code' => $lang['iso_code'], 
@@ -163,7 +163,7 @@ class Okad_Install {
             'blockcart',
             'blockhtml',
             'blocklanguages',
-            'blocksocial'
+            'blocksocial',
             'cheque',
             'contact-form',
             'menus',
