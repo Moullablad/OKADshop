@@ -56,10 +56,11 @@ function get_admin_dirname(){
     $siteroot = site_base();
     $physical_uri = $GLOBALS['os']->physical_uri;
     $dirname = '';
-    if( ! is_ajax() ) {
-        $filename = $_SERVER['SCRIPT_NAME'];
+    $filename = $_SERVER['SCRIPT_NAME'];
+    if( ! is_ajax() && !get_module_dirname($filename) ) {
         $dirname = preg_replace("!$physical_uri|index.php|/!", "", $filename);
     }
+    
     if( $dirname == '' ){
         foreach(glob( $siteroot . '*/okadshop.admin', GLOB_BRACE) as $path) {
             $dirname = preg_replace("!$siteroot|/okadshop.admin!", '', $path);
