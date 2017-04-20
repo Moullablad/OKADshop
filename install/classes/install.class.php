@@ -135,8 +135,9 @@ class Okad_Install {
     public function resizeCategoriesImages(){
         $sizes = array('140x35', '237x65');
         for ($i=1; $i <= 10; $i++) { 
-            $image_path  = site_base('uploads/category/'. $i .'/'. $i .'.png');
-            Image::resizeImage($image_path, $sizes);
+            $image_path  = site_base('files/category/'. $i .'/'. $i .'.png');
+	    $image_target = site_base('uploads/category/'. $i .'/');
+            Image::resizeImage($image_path, $sizes, $image_target);
         }
     }
 
