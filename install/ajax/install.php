@@ -77,9 +77,7 @@ if( $savedata && $install->createUser($user) ){
     require '../../config/bootstrap.php';
 
     // Copy files
-    $source = dirname(__DIR__) .'/img/files/';
-    $target = dirname(__DIR__) .'/../';
-    copy_folders($source, $target);
+    copy_folders(site_base('install/img/files/'), site_base('files'));
 
     $install->resizeProductsImages();
     $install->resizeCategoriesImages();
