@@ -23,7 +23,7 @@ require_once 'functions.php';
 
 global $os_admin_menu;
 $os_menu = $os_admin_menu->add('<i class="fa fa-bars"></i>'
-	.l('Menu', "menu"), '?module=modules&slug=os-menu&page=menu_settings');
+	.l('Menu', "menu"), '?module=modules&slug=menus&page=menu_settings');
 
 
 function os_menu_install(){

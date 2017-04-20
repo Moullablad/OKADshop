@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-	<name>os-menu</name>
-	<displayName>Menus</displayName>
-	<description>Create menus.</description>
+	<name>wishlist</name>
+	<displayName>Wish list</displayName>
 	<category>front_office_features</category>
 	<version>1.0.0</version>
+	<description>Display user Wish list.</description>
 	<author>Soft High Tech</author>
 	<website>http://softhighttech.com</website>
-	<config>menu_settings</config>
 </module>

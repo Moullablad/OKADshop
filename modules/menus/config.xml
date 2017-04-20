@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-	<name>os-quick-view</name>
-	<displayName>Quick View</displayName>
+	<name>menus</name>
+	<displayName>Menus</displayName>
+	<description>Create menus.</description>
 	<category>front_office_features</category>
 	<version>1.0.0</version>
-	<description>Display language block.</description>
 	<author>Soft High Tech</author>
 	<website>http://softhighttech.com</website>
+	<config>menu_settings</config>
 </module>

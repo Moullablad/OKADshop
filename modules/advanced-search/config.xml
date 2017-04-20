@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-	<name>os-wishlist</name>
-	<displayName>Wish list</displayName>
+	<name>advanced-search</name>
+	<displayName>Advanced Search</displayName>
 	<category>front_office_features</category>
 	<version>1.0.0</version>
-	<description>Display user Wish list.</description>
+	<description>Display Advanced Search.</description>
 	<author>Soft High Tech</author>
 	<website>http://softhighttech.com</website>
+	<config>advanced_search_settings</config>
 </module>

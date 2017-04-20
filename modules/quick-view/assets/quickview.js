@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-	var ajax_url = 'modules/os-quick-view/ajax/';
+	var ajax_url = 'modules/quick-view/ajax/';
 
 	$('.quick-view').click(function(event){
 		event.preventDefault();

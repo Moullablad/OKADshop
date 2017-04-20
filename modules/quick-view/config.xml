@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-	<name>os-advanced-search</name>
-	<displayName>Advanced Search</displayName>
+	<name>quick-view</name>
+	<displayName>Quick View</displayName>
 	<category>front_office_features</category>
 	<version>1.0.0</version>
-	<description>Display Advanced Search.</description>
+	<description>Display language block.</description>
 	<author>Soft High Tech</author>
 	<website>http://softhighttech.com</website>
-	<config>advanced_search_settings</config>
 </module>

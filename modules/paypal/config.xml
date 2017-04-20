@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
-	<name>os-paypal</name>
+	<name>paypal</name>
 	<displayName>Paypal</displayName>
 	<description>Paypal payment processing.</description>
 	<category>payments_gateways</category>
