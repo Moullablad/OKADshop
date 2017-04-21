@@ -176,6 +176,7 @@ class Product extends Model
             $product->sell_price = format_price($product->sell_price);
         }
 
+        $product->cover_name = $product->cover;
         $product->cover = product_image_by_size($product->cover, $product->id, $image_size);
         $product->link = generate_url('product/' . $product->id .'-'. $product->link_rewrite, $id_lang );
         if( isset($product->id_category) ) {

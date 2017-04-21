@@ -45,7 +45,7 @@
         <tr>
             <td width="10"><?= $product->id_product; ?></td>
             <td width="80">
-            	<img src="<?= product_image_by_size($product->cover, $product->id, '76x76'); ?>" width="80">
+            	<img src="<?= product_image_by_size($product->cover_name, $product->id_product, '76x76'); ?>" width="80">
             </td>
             <td><?= $product->name; ?></td>
             <td><?= $product->reference; ?></td>

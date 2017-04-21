@@ -1,4 +1,4 @@
-<section class="banner bg-parallax" style="background: url('<?= default_product_image($product->id, '570x379') ?>') no-repeat; background-size: cover;">
+<section class="banner bg-parallax" style="background: url('<?= default_product_image($product->id_product, '570x379') ?>') no-repeat; background-size: cover;">
     <div class="overlay" ></div>
     <div class="container">
         <div class="banner-content text-center">
@@ -23,15 +23,15 @@
                     <div class="percent-saleoff"> <span><label><?php echo intval($product->discount_percent); ?>%</label></span></div>
                 <?php endif; ?>
                 <?php if( !is_empty($images) ) : ?>
-                    <a class="popup-image" href="<?= default_product_image($product->id, '570x379'); ?>">
-                        <img alt="" class="main-image img-responsive" src="<?= default_product_image($product->id, '570x379'); ?>">
+                    <a class="popup-image" href="<?= default_product_image($product->id_product, '570x379'); ?>">
+                        <img alt="" class="main-image img-responsive" src="<?= default_product_image($product->id_product, '570x379'); ?>">
                     </a>
                 <?php endif; ?>
                 </div>
                 <div class="single-product-thumbnails">
                     <?php foreach ($images as $key => $image) : ?>
-                        <a data-name="<?= $image->name; ?>" data-image-full="<?= product_image_by_size($image->name, $product->id, '570x379'); ?>">
-                            <img class="img-thumbnail" src="<?= product_image_by_size($image->name, $product->id, '76x76'); ?>">
+                        <a data-name="<?= $image->name; ?>" data-image-full="<?= product_image_by_size($image->name, $product->id_product, '570x379'); ?>">
+                            <img class="img-thumbnail" src="<?= product_image_by_size($image->name, $product->id_product, '76x76'); ?>">
                         </a>
                     <?php endforeach; ?>
                 </div>
@@ -85,7 +85,7 @@
                             <?php endforeach ?>
                         <?php endif ?>
                         <p id="availability_statut">
-                            <?php if( isset($product->id_comb) || $product->quantity!='0' ) : ?>
+                            <?php if( isset($product->id_product_comb) || $product->quantity!='0' ) : ?>
                                 <span><?=$product->quantity .' '. trans("Item(s)", "core");?></span>&nbsp;&nbsp;<span class="label label-success"><?php trans_e("In stock", "core");?></span>
                             <?php else : ?>
                                 <span id="availability_value" class="label label-warning"><?php trans_e("This product is no longer in stock with those attributes but is available with others.", "core");?></span>
@@ -94,15 +94,15 @@
                     </div>
 
                     <form id="cart_form" action="" method="post" <?=($product->quantity=='0') ? 'style="display:none;"' : '';?>>
-                        <input id="idProduct" name="id_product" type="hidden" value="<?= $product->id; ?>"> 
-                        <input id="idDeclinaison" name="id_declinaison" type="hidden" value="<?=( isset($product->id_comb) ) ? $product->id_comb : '';?>">
+                        <input id="idProduct" name="id_product" type="hidden" value="<?= $product->id_product; ?>"> 
+                        <input id="idDeclinaison" name="id_declinaison" type="hidden" value="<?=( isset($product->id_product_comb) ) ? $product->id_product_comb : '';?>">
                         <div class="single_variation_wrap">
                             <div class="box-qty">
                                 <a class="quantity-plus" href="#"><i class="fa fa-angle-up"></i></a>
                                 <input class="input-text qty text" name="quantity" size="4" step="1" min="<?=$product->min_quantity;?>" title="Qty" type="text" value="<?=$product->min_quantity;?>"> 
                                 <a class="quantity-minus" href="http://192.168.1.40/okadshop/product/8-"><i class="fa fa-angle-down"></i></a>
                             </div>
-                            <button type="submit" id="add_to_cart" class="single_add_to_cart_button"><?=get_cart_label($product->id);?></button> 
+                            <button type="submit" id="add_to_cart" class="single_add_to_cart_button"><?=get_cart_label($product->id_product);?></button> 
                             <!--a class="buttom-wishlist" href="#"><i class="fa fa-heart-o"></i></a-->
                         </div>
                     </form>
