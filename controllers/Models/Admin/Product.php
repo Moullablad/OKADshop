@@ -143,9 +143,9 @@ class Product extends Model
         $this->query_args['limit'] = 1; 
 
         $product = getDB()->trans($this->query_args);
-
+        
         if( is_empty($product) ) return false;
-
+        
         return self::setProductAssets($product, $id_lang, $image_size);
     }
 
