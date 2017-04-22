@@ -1,4 +1,3 @@
-<?php //var_dump($active_tab);exit; ?>
 <div id="<?=$location;?>" class="os-tab-container <?=($args['ajax']) ? 'ajaxTab' : ''; ?>"  data-group="<?=$args['group'];?>">
 	<div class="col-sm-12 padding0" id="os-tabs">
 		<ul class="nav nav-tabs bg-white" data-location="<?=$location;?>">
@@ -14,12 +13,9 @@
 
 			<?php //if($args['multilang']) : ?>
 				<li class="pull-right" style="margin: 5px 5px 0 0;">
-					<select name="trans[id_lang]" class="form-control" id="languages">
+					<select class="form-control" id="languages">
 					<?php foreach (get_languages() as $key => $lang) : ?>
-						<?php
-						$id_lang = read_cookie($location.'_lang');
-						if(!$id_lang) $id_lang = get_lang('id');
-						$selected = ($id_lang == $lang->id) ? 'selected' : ''; ?>
+						<?php $selected = ($id_lang == $lang->id) ? 'selected' : ''; ?>
 						<option value="<?=$lang->id;?>" <?=$selected?>><?=$lang->name;?></option>
 					<?php endforeach; ?>
 					</select>

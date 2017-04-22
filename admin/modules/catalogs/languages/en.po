@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Catalogs\n"
-"POT-Creation-Date: 2016-12-14 10:11+0000\n"
-"PO-Revision-Date: 2016-12-14 10:56+0000\n"
+"POT-Creation-Date: 2017-03-29 04:57+0000\n"
+"PO-Revision-Date: 2017-03-29 04:57+0000\n"
 "Last-Translator: \n"
 "Language-Team: OKADshop <contact@okadshop.com>\n"
 "Language: en\n"
@@ -23,95 +23,95 @@ msgstr ""
 msgid "Informations"
 msgstr ""
 
-#: includes/tabs/product.php:39
+#: includes/tabs/product.php:40
 msgid "Prices"
 msgstr ""
 
-#: includes/tabs/product.php:45
+#: includes/tabs/product.php:46
 msgid "Seo"
 msgstr ""
 
-#: includes/tabs/product.php:51
+#: includes/tabs/product.php:53
 msgid "Associations"
 msgstr ""
 
-#: includes/tabs/product.php:57
+#: includes/tabs/product.php:59
 msgid "Combinations"
 msgstr ""
 
-#: includes/tabs/product.php:63
+#: includes/tabs/product.php:65
 msgid "Quantities"
 msgstr ""
 
-#: includes/tabs/product.php:69
+#: includes/tabs/product.php:71
 msgid "Images"
 msgstr ""
 
-#: includes/tabs/product.php:75
+#: includes/tabs/product.php:77
 msgid "Features"
 msgstr ""
 
-#: includes/tabs/product.php:81
+#: includes/tabs/product.php:83
 msgid "Attachments"
 msgstr ""
 
-#: includes/tabs/product.php:108
+#: includes/tabs/product.php:110
 msgid "Unable to update Product, please try again."
 msgstr ""
 
-#: includes/tabs/product.php:110
+#: includes/tabs/product.php:112
 msgid "Product was Updated"
 msgstr ""
 
-#: includes/tabs/product.php:118
+#: includes/tabs/product.php:123
 msgid "Unable to create Product, please try again."
 msgstr ""
 
-#: includes/tabs/product.php:150
+#: includes/tabs/product.php:155
 msgid "Unable to update Prices, please try again."
 msgstr ""
 
-#: includes/tabs/product.php:152
+#: includes/tabs/product.php:157
 msgid "Prices was Updated"
 msgstr ""
 
-#: includes/tabs/product.php:180
+#: includes/tabs/product.php:185
 msgid "Unable to update Seo, please try again."
 msgstr ""
 
-#: includes/tabs/product.php:182
+#: includes/tabs/product.php:187
 msgid "Seo was Updated"
 msgstr ""
 
-#: includes/tabs/product.php:211
+#: includes/tabs/product.php:216
 msgid "associations was Updated"
 msgstr ""
 
-#: includes/tabs/product.php:214
+#: includes/tabs/product.php:219
 msgid "Unable to update associations, please try again."
 msgstr ""
 
-#: includes/tabs/product.php:260
+#: includes/tabs/product.php:265
 msgid "Quantities was Updated"
 msgstr ""
 
-#: includes/tabs/product.php:263
+#: includes/tabs/product.php:268
 msgid "Unable to update quantities, please try again."
 msgstr ""
 
-#: includes/tabs/product.php:305
+#: includes/tabs/product.php:310
 msgid "Features was Updated"
 msgstr ""
 
-#: includes/tabs/product.php:307
+#: includes/tabs/product.php:312
 msgid "Unable to update features, please try again."
 msgstr ""
 
-#: includes/tabs/product.php:336
+#: includes/tabs/product.php:341
 msgid "Attachment was Uploaded."
 msgstr ""
 
-#: includes/tabs/product.php:339
+#: includes/tabs/product.php:344
 msgid "Unable to upload attachment, please try again."
 msgstr ""
 
@@ -125,10 +125,6 @@ msgstr ""
 
 #: index.php:34
 msgid "Catégories"
-msgstr ""
-
-#: index.php:35
-msgid "Manufacturers"
 msgstr ""
 
 #: index.php:36
@@ -214,10 +210,6 @@ msgstr ""
 
 #: views/admin/product/index.php:69
 msgid "Preview"
-msgstr ""
-
-#: views/admin/product/index.php:72
-msgid "Delete selected item?"
 msgstr ""
 
 #: views/admin/product/index.php:72 views/admin/tabs/product/attachments.php:53

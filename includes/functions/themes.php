@@ -24,6 +24,22 @@ use Core\Theme;
 
 
 /**
+ * Get installed themes
+ *
+ * @return array $themes
+ */
+function get_themes(){
+	$themes = array();
+	foreach(glob( site_base('themes/*/config.xml'), GLOB_BRACE) as $path) {
+        $config = Core\Models\Admin\Module::xml2Array( $path );
+        $themes[$config['name']] = $config;
+    }
+    return $themes;	
+}
+
+
+
+/**
  * Get front theme name
  *
  * @return uri string

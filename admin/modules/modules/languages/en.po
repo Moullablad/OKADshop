@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Modules\n"
-"POT-Creation-Date: 2016-12-14 10:25+0000\n"
-"PO-Revision-Date: 2016-12-14 10:26+0000\n"
+"POT-Creation-Date: 2017-03-29 05:00+0000\n"
+"PO-Revision-Date: 2017-03-29 05:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: OKADshop <contact@okadshop.com>\n"
 "Language: en\n"
@@ -103,7 +103,7 @@ msgstr ""
 msgid "Uninstall"
 msgstr ""
 
-#: includes/ajax/filter.php:82 views/admin/manage.php:93
+#: includes/ajax/filter.php:82 views/admin/manage.php:96
 msgid "Delete"
 msgstr ""
 
@@ -143,63 +143,67 @@ msgstr ""
 msgid "Unable to uninstall Module."
 msgstr ""
 
-#: index.php:25 index.php:27
+#: index.php:27 index.php:29
 msgid "Modules"
 msgstr ""
 
-#: index.php:28 views/admin/positions.php:18
+#: index.php:30 views/admin/positions.php:18
 msgid "Positions"
 msgstr ""
 
-#: views/admin/manage.php:32
+#: index.php:84
+msgid "We accept"
+msgstr ""
+
+#: views/admin/manage.php:35
 msgid "Manage"
 msgstr ""
 
-#: views/admin/manage.php:38
+#: views/admin/manage.php:41
 msgid "Here you can manage modules."
 msgstr ""
 
-#: views/admin/manage.php:46
+#: views/admin/manage.php:49
 msgid "Show administration modules"
 msgstr ""
 
-#: views/admin/manage.php:52
+#: views/admin/manage.php:55
 msgid "Choose a category"
 msgstr ""
 
-#: views/admin/manage.php:63
+#: views/admin/manage.php:66
 msgid "Activated & deactivated"
 msgstr ""
 
-#: views/admin/manage.php:64
+#: views/admin/manage.php:67
 msgid "Enabled modules"
 msgstr ""
 
-#: views/admin/manage.php:65
+#: views/admin/manage.php:68
 msgid "Disabled modules"
 msgstr ""
 
-#: views/admin/manage.php:70
+#: views/admin/manage.php:73
 msgid "Choose an author"
 msgstr ""
 
-#: views/admin/manage.php:77
+#: views/admin/manage.php:80
 msgid "Search..."
 msgstr ""
 
-#: views/admin/manage.php:90
+#: views/admin/manage.php:93
 msgid "Bulk Actions"
 msgstr ""
 
-#: views/admin/manage.php:91
+#: views/admin/manage.php:94
 msgid "Activate"
 msgstr ""
 
-#: views/admin/manage.php:92
+#: views/admin/manage.php:95
 msgid "Deactivate"
 msgstr ""
 
-#: views/admin/manage.php:95
+#: views/admin/manage.php:98
 msgid "Apply"
 msgstr ""
 

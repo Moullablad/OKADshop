@@ -1,11 +1,9 @@
 <?php
-include 'includes/install.php';
-
-
 /**
  * Register theme stylesheets
  */
 add_css('mz-styles', ['src'=> get_theme_url('assets/vendors/bootstrap/css/margin-padding.css') ]);
+add_css('mz-style', ['src'=> get_theme_url('assets/css/style.css') ]);
 add_css('mz-styles', ['src'=> get_theme_url('assets/css/styles.css') ]);
 
 /**
@@ -15,11 +13,6 @@ add_js('mz-product', ['src' => get_theme_url('assets/js/product.js') ]);
 add_js('mz-cart', ['src' => get_theme_url('assets/js/cart.js') ]);
 add_js('mz-order-address', ['src' => get_theme_url('assets/js/order-address.js') ]);
 add_js('mz-scripts', ['src' => get_theme_url('assets/js/scripts.js') ]);
-
-
-
-
-
 
 
 

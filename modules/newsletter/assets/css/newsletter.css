@@ -1,0 +1,139 @@
+/* Popup */
+.white-popup {
+    position: relative;
+    background: #FFF;
+    width: auto;
+    width: 770px;
+    margin: 20px auto;
+}
+
+.newsletter-popup{
+    padding: 80px 100px;
+    color: #141414;
+}
+
+.newsletter-popup h3{
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.newsletter-popup .notice{
+    font-size: 18px;
+    font-family: 'Crimson Text';
+    font-style: italic;
+    margin-bottom: 17px;
+}
+
+.newsletter-popup .popup-title{
+    padding-right: 30px;
+}
+
+.newsletter-popup .nl-popup-form{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.newsletter-popup .nl-popup-form input[type="email"]{
+    width: 100%;
+    padding: 16px 20px;
+    text-transform: normal;
+}
+
+.newsletter-popup .nl-popup-form input[type="email"]:focus{
+    outline: none;
+}
+
+.newsletter-popup .nl-popup-form input[type="email"]::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+.newsletter-popup .nl-popup-form .button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #303030;
+    color: #fff;
+    padding: 16px 22px;
+    border-color: #303030;
+    text-transform: uppercase;
+}
+
+.newsletter-popup .nl-popup-form .button:hover,
+.newsletter-popup .nl-popup-form .button:focus{
+    background-color: #7e883a;
+    border-color: #7e883a;
+    outline: none;
+}
+
+.newsletter-popup .checkbox{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.white-popup .mfp-close:hover{
+    background: none;
+}
+
+.newsletter-popup .nl-popup-form input[type=checkbox] {
+    margin: 7px 0 0 !important;
+}
+
+/* newsletter block */
+.newsletter_block{
+    background-color: #fdae44;
+    padding: 58px 0;
+    margin: 60px auto;
+    margin-bottom: 0;
+}
+
+.newsletter_block h4{
+    line-height: 45px;
+    margin: 0px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.newsletter_block .input-group{
+    max-width: 457px;
+}
+
+.newsletter_block input{
+    height: 45px;
+    box-shadow: none;
+    border-radius: 0px;
+    border: none;
+    color: #c7c7c4;
+    font-size: 14px;
+}
+
+.newsletter_block button{
+    padding: 2px 40px;
+    font-size: 30px;
+    line-height: 41px;
+    border: none;
+    border-radius: 0px;
+    background-color: #f0f0e9;
+    color: #dcdcda;
+}
+
+.newsletter_block button:focus{
+    outline: 0px;
+}
+
+.newsletter_block button:active{
+    box-shadow: none;
+}
+
+.newsletter_block i:focus{
+    outline: 0px;
+}
+
+
+/* datatable pagination */
+#subscribers .pagination {
+    display: flex !important;
+    float: right !important;
+}

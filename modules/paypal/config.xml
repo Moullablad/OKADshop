@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>paypal</name>
+	<displayName>Paypal</displayName>
+	<description>Paypal payment processing.</description>
+	<category>payments_gateways</category>
+	<version>1.0.0</version>
+	<author>Moullablad</author>
+	<website>http://moullablad.com</website>
+	<config>configure</config>
+</module>

@@ -35,24 +35,8 @@ $(document).ready(function() {
         $(".dismiss").slideUp(500);
     });
 
-
-
-    
-
-
-
 //END DOCUMENT
 });
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -83,7 +67,7 @@ function ajax_get_combinations(json, handle_data){
 
 	// Fire off the request to /form.php
     request = $.ajax({
-        url: "includes/ajax/product/combination.php",
+        url: site_url("includes/ajax/product/combination.php"),
         type: "post",
         data: {
         	attributes:json,
@@ -126,7 +110,7 @@ function ajax_get_combinations(json, handle_data){
 function message_notif(message, params={}){
 
   var default_params = {
-    type : "info", 
+    type : "success", 
     delay: 4000, 
     width: "100%", 
     align: "center"
@@ -246,10 +230,29 @@ function site_url(path=''){
     var baseHref = null;
     if (bases.length > 0) {
         baseHref = bases[0].href + path;
+    } else if( $('[rel="website"]').length > 0 ) {
+      baseHref = $('[rel="website"]').prop('href') + path;
     } else {
-      baseHref = $('[rel="website"]').prop('href');
+      baseHref = path;
     }
     return baseHref;
+}
+
+/**
+ * Tell if current page is homepage
+ *
+ * @return bool
+ **/
+function is_home() {
+  if( location.pathname == '/' ) {
+    var home_url = location.href;
+  } else {
+    var iso_code = document.documentElement.lang;
+    var url = location.href;
+    url = url.replace(/\/$/, "");
+    var home_url = url.replace(iso_code, '');
+  }  
+  return site_url() == home_url;
 }
 
 
@@ -329,7 +332,6 @@ function ajax_form(form_id, handle_data){
 
 
 /**
- *
  * OKADshop AJAX
  *
  * @param request_url string
@@ -364,8 +366,49 @@ function ajax_handler(ajax_url, ajax_data={}, ajax_type, handle_data){
 }
 
 
+/**
+ * OKADshop AJAX
+ *
+ * @param string action Action name
+ * @param object data
+ * @param stirng ajax_type POST|GET
+ * @param handle_data callback
+ */
+function okad_ajax(action, data={}, ajax_type, handle_data){
+  var ajax_url = site_url('includes/ajax.php');
+  data['action'] = action;
+  ajax_handler(ajax_url, data, ajax_type, function(response){
+    handle_data(response);
+  });
+}
 
 
+/**
+ * Update Multi Lang Fields
+ * Change fields values after changing language
+ *
+ * @param object fields
+ *
+ * @return void
+ */
+function updateMultiLangFields(fields) {
+  $.each(fields, function(id_field, value){
+    var field = $('#'+id_field);
+    var id_lang = $('select#languages option:selected').val();
+    if( field.hasClass('active') ) {
+      field.bootstrapSwitch('state', value);
+    } else if( field.hasClass('tags') ) {
+      field.tagsinput('destroy')
+      field.val(value);
+      field.tagsinput()
+    } else if( field.is('select') ) {
+      field.find('option[value="'+value+'"]').prop('selected', 'true')
+    } else {
+      field.val(value);
+    }
+    $('.current_id_lang').val(id_lang);
+  });
+}
 
 
 
@@ -541,6 +584,21 @@ function intialize_plugins(){
 
 }
 
+var popup_target = '';
+function confirmMessage() {
+  if( event.which ) {
+    event.preventDefault();
+    popup_target = event.target;
+    $.magnificPopup.close();
+    jQuery.magnificPopup.open({
+        tLoading: 'Loading...',
+        type: 'ajax',
+        items:{
+          src: site_url('includes/ajax/popup/confirm-message.php')
+        }
+    });
+  } 
+}
 
 
 function createCookie(name,value,days=365,path='') {

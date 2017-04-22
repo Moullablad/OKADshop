@@ -106,6 +106,9 @@ class View {
         if( !empty($variables) )
             extract($variables);
 
+        if( $flash = get_flash_message() ) {
+            $message[$flash['type']] = $flash['content'];
+        }
 
         //show notif message
         if( isset($message) && !empty($message) ){

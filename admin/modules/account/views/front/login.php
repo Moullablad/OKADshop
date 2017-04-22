@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="main-container">
     <div class="row">
     	<!-- message notification -->
         <div class="col-sm-12">
@@ -6,9 +6,9 @@
         </div>
 
         <div class="col-sm-4">
+            <h2><?php trans_e("Login", "account"); ?></h2>
             <?php get_section('before_login'); ?>
-        	<form class="osForm"  role="form" method="POST" action="<?= get_url('account/login'); ?>">
-            	<h2><?php trans_e("Login", "account"); ?></h2>
+            <form class="osForm"  role="form" method="POST" action="<?= get_url('account/login'); ?>">
             	<input type="hidden" name="redirect_to" value="<?=$redirect_to;?>">
             	<div class="form-group">
 				    <label for="email"><?php trans_e("Username or email address", "account"); ?> *</label>

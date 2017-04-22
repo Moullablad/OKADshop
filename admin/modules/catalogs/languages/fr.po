@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Catalogs\n"
-"POT-Creation-Date: 2016-12-14 10:11+0000\n"
-"PO-Revision-Date: 2016-12-14 10:59+0000\n"
+"POT-Creation-Date: 2017-03-29 04:57+0000\n"
+"PO-Revision-Date: 2017-03-29 04:58+0000\n"
 "Last-Translator: \n"
 "Language-Team: OKADshop <contact@okadshop.com>\n"
 "Language: en\n"
@@ -21,99 +21,99 @@ msgstr ""
 
 #: includes/tabs/product.php:33
 msgid "Informations"
-msgstr "Informations"
+msgstr "informations"
 
-#: includes/tabs/product.php:39
+#: includes/tabs/product.php:40
 msgid "Prices"
-msgstr "prix"
+msgstr "Des prix"
 
-#: includes/tabs/product.php:45
+#: includes/tabs/product.php:46
 msgid "Seo"
-msgstr "Référencement"
+msgstr "Seo"
 
-#: includes/tabs/product.php:51
+#: includes/tabs/product.php:53
 msgid "Associations"
 msgstr "Les associations"
 
-#: includes/tabs/product.php:57
+#: includes/tabs/product.php:59
 msgid "Combinations"
-msgstr "Combinaisons"
+msgstr "combinaisons"
 
-#: includes/tabs/product.php:63
+#: includes/tabs/product.php:65
 msgid "Quantities"
 msgstr "Quantités"
 
-#: includes/tabs/product.php:69
+#: includes/tabs/product.php:71
 msgid "Images"
 msgstr "Images"
 
-#: includes/tabs/product.php:75
+#: includes/tabs/product.php:77
 msgid "Features"
 msgstr "Caractéristiques"
 
-#: includes/tabs/product.php:81
+#: includes/tabs/product.php:83
 msgid "Attachments"
 msgstr "Pièces jointes"
 
-#: includes/tabs/product.php:108
+#: includes/tabs/product.php:110
 msgid "Unable to update Product, please try again."
 msgstr "Impossible de mettre à jour le produit, s'il vous plaît essayer à nouveau."
 
-#: includes/tabs/product.php:110
+#: includes/tabs/product.php:112
 msgid "Product was Updated"
 msgstr "Le produit a été mise à jour"
 
-#: includes/tabs/product.php:118
+#: includes/tabs/product.php:123
 msgid "Unable to create Product, please try again."
 msgstr "Impossible de créer le produit, s'il vous plaît essayer à nouveau."
 
-#: includes/tabs/product.php:150
+#: includes/tabs/product.php:155
 msgid "Unable to update Prices, please try again."
 msgstr "Impossible de mettre à jour les prix, s'il vous plaît essayer à nouveau."
 
-#: includes/tabs/product.php:152
+#: includes/tabs/product.php:157
 msgid "Prices was Updated"
-msgstr "Les prix ont été Mise à jour"
+msgstr "Prix ​​été mis à jour"
 
-#: includes/tabs/product.php:180
+#: includes/tabs/product.php:185
 msgid "Unable to update Seo, please try again."
 msgstr "Impossible de mettre à jour Seo, s'il vous plaît essayer à nouveau."
 
-#: includes/tabs/product.php:182
+#: includes/tabs/product.php:187
 msgid "Seo was Updated"
 msgstr "Seo a été mise à jour"
 
-#: includes/tabs/product.php:211
+#: includes/tabs/product.php:216
 msgid "associations was Updated"
 msgstr "associations a été Mise à jour"
 
-#: includes/tabs/product.php:214
+#: includes/tabs/product.php:219
 msgid "Unable to update associations, please try again."
 msgstr "Impossible de mettre à jour les associations, s'il vous plaît essayer à nouveau."
 
-#: includes/tabs/product.php:260
+#: includes/tabs/product.php:265
 msgid "Quantities was Updated"
 msgstr "Quantités été mis à jour"
 
-#: includes/tabs/product.php:263
+#: includes/tabs/product.php:268
 msgid "Unable to update quantities, please try again."
-msgstr "Impossible de mettre à jour les quantités, s'il vous plaît essayer à nouveau."
+msgstr "Impossible de mettre à jour des quantités, s'il vous plaît essayer à nouveau."
 
-#: includes/tabs/product.php:305
+#: includes/tabs/product.php:310
 msgid "Features was Updated"
 msgstr "Caractéristiques été mis à jour"
 
-#: includes/tabs/product.php:307
+#: includes/tabs/product.php:312
 msgid "Unable to update features, please try again."
 msgstr "Impossible de mettre à jour des fonctionnalités, s'il vous plaît essayer à nouveau."
 
-#: includes/tabs/product.php:336
+#: includes/tabs/product.php:341
 msgid "Attachment was Uploaded."
-msgstr "Attachment a été Téléchargé."
+msgstr "Pièce jointe a été uploadé."
 
-#: includes/tabs/product.php:339
+#: includes/tabs/product.php:344
 msgid "Unable to upload attachment, please try again."
-msgstr "Impossible de télécharger l'attachement, s'il vous plaît essayer à nouveau."
+msgstr "Impossible de télécharger pièce jointe, s'il vous plaît essayer à nouveau."
 
 #: index.php:31
 msgid "Catalogs"
@@ -121,15 +121,11 @@ msgstr "Catalogues"
 
 #: index.php:33 views/admin/product/index.php:19
 msgid "Products"
-msgstr "Produits"
+msgstr "Des produits"
 
 #: index.php:34
 msgid "Catégories"
-msgstr "Catégories"
-
-#: index.php:35
-msgid "Manufacturers"
-msgstr "Fabricants"
+msgstr "catégories"
 
 #: index.php:36
 msgid "Product Attributes"
@@ -141,7 +137,7 @@ msgstr "Valeurs du produit"
 
 #: index.php:38
 msgid "Characteristics"
-msgstr "Les caractéristiques"
+msgstr "Caractéristiques"
 
 #: index.php:39
 msgid "Keywords (Tags)"
@@ -170,7 +166,7 @@ msgstr "ID"
 #: views/admin/product/index.php:32 views/admin/tabs/product/comb-form.php:104
 #: views/admin/tabs/product/images.php:16
 msgid "Image"
-msgstr "image"
+msgstr "Image"
 
 #: views/admin/product/index.php:33 views/admin/tabs/product/infos.php:16
 msgid "Name"
@@ -191,7 +187,7 @@ msgstr "Prix ​​de vente"
 
 #: views/admin/product/index.php:37
 msgid "Buy price"
-msgstr "Acheter prix"
+msgstr "prix Acheter"
 
 #: views/admin/product/index.php:38 views/admin/tabs/product/comb-form.php:81
 msgid "Quantity"
@@ -199,7 +195,7 @@ msgstr "Quantité"
 
 #: views/admin/product/index.php:39
 msgid "Status"
-msgstr "statut"
+msgstr "Statut"
 
 #: views/admin/product/index.php:40 views/admin/tabs/product/attachments.php:43
 #: views/admin/tabs/product/combinations.php:23
@@ -215,10 +211,6 @@ msgstr "modifier"
 #: views/admin/product/index.php:69
 msgid "Preview"
 msgstr "Aperçu"
-
-#: views/admin/product/index.php:72
-msgid "Delete selected item?"
-msgstr "Supprimer l'élément sélectionné?"
 
 #: views/admin/product/index.php:72 views/admin/tabs/product/attachments.php:53
 #: views/admin/tabs/product/comb-form.php:29
@@ -274,7 +266,7 @@ msgstr "formats autorisés:"
 
 #: views/admin/tabs/product/attachments.php:27
 msgid "Upload attachment"
-msgstr "Ajouter pièce jointe"
+msgstr "Envoyer la pièce jointe"
 
 #: views/admin/tabs/product/attachments.php:35
 msgid "Attached file list."
@@ -286,7 +278,7 @@ msgstr "Nom de fichier"
 
 #: views/admin/tabs/product/attachments.php:61
 msgid "No attachment found."
-msgstr "Aucun attachement trouvé."
+msgstr "Aucune pièce jointe trouvée."
 
 #: views/admin/tabs/product/attachments.php:79
 msgid "You must save this product before adding attachments."
@@ -312,17 +304,17 @@ msgstr "Code de référence"
 #: views/admin/tabs/product/comb-form.php:40
 #: views/admin/tabs/product/infos.php:30
 msgid "EAN-13 or JAN barcode"
-msgstr "EAN-13 ou JAN code à barres"
+msgstr "EAN-13 ou code à barres JAN"
 
 #: views/admin/tabs/product/comb-form.php:46
 #: views/admin/tabs/product/infos.php:37
 msgid "UPC barcode"
-msgstr "UPC code à barres"
+msgstr "code à barres CUP"
 
 #: views/admin/tabs/product/comb-form.php:53
 #: views/admin/tabs/product/combinations.php:17
 msgid "Impact on price"
-msgstr "Impact sur les prix"
+msgstr "Impact sur le prix"
 
 #: views/admin/tabs/product/comb-form.php:56
 #: views/admin/tabs/product/comb-form.php:70
@@ -369,7 +361,7 @@ msgstr "Faire de cette combinaison, la combinaison par défaut pour ce produit."
 
 #: views/admin/tabs/product/combinations.php:6
 msgid "The star icon indicates the default combination."
-msgstr "L'icône de l'étoile indique la combinaison par défaut."
+msgstr "L'icône étoile indique la combinaison par défaut."
 
 #: views/admin/tabs/product/combinations.php:7
 msgid "Each product that has combinations must have one default combination."
@@ -398,7 +390,7 @@ msgstr "AJOUTER OU MODIFIER REGROUPEMENT POUR CE PRODUIT"
 
 #: views/admin/tabs/product/combinations.php:114
 msgid "Cancel modification"
-msgstr "Annuler la modification"
+msgstr "annuler la modification"
 
 #: views/admin/tabs/product/combinations.php:115
 msgid "Save and Close"
@@ -411,7 +403,7 @@ msgstr "Vous devez enregistrer ce produit avant d'ajouter des combinaisons."
 
 #: views/admin/tabs/product/features.php:11
 msgid "Assign features to this product"
-msgstr "Affecter caractéristiques à ce produit"
+msgstr "Affecter des fonctions à ce produit"
 
 #: views/admin/tabs/product/features.php:12
 msgid "Select Predefined values or set your Customized values."
@@ -423,7 +415,7 @@ msgstr "Fonctionnalité"
 
 #: views/admin/tabs/product/features.php:20
 msgid "Pre-defined value"
-msgstr "Pré-défini valeur"
+msgstr "valeur prédéfinie"
 
 #: views/admin/tabs/product/features.php:21
 msgid "or"
@@ -439,7 +431,7 @@ msgstr "Réinitialiser"
 
 #: views/admin/tabs/product/features.php:63
 msgid "You must save this product before adding features."
-msgstr "Vous devez enregistrer ce produit avant l'ajout de fonctionnalités."
+msgstr "Vous devez enregistrer ce produit avant d'ajouter des fonctionnalités."
 
 #: views/admin/tabs/product/images.php:5
 msgid "Upload Images"
@@ -475,11 +467,11 @@ msgstr "produit standard"
 
 #: views/admin/tabs/product/infos.php:9
 msgid "Pack of existing products"
-msgstr "Paquet de produits existants"
+msgstr "Pack de produits existants"
 
 #: views/admin/tabs/product/infos.php:10
 msgid "Virtual product (services, booking, downloadable products, etc.)"
-msgstr "produit virtuel (services, réservation, produits téléchargeables, etc.)"
+msgstr "virtuelle du produit (services, réservation, produits téléchargeables, etc.)"
 
 #: views/admin/tabs/product/infos.php:44
 msgid "Condition"
@@ -515,11 +507,11 @@ msgstr "Brève description"
 
 #: views/admin/tabs/product/infos.php:76
 msgid "Date"
-msgstr "date"
+msgstr "Rendez-vous amoureux"
 
 #: views/admin/tabs/product/prices.php:4
 msgid "Buy price (unit)"
-msgstr "Acheter prix (unité)"
+msgstr "Acheter (unité)"
 
 #: views/admin/tabs/product/prices.php:11
 msgid "Sell price (unit)"
@@ -596,7 +588,7 @@ msgstr "quantités disponibles"
 
 #: views/admin/tabs/product/quantities.php:12
 msgid "Min quantity"
-msgstr "quantité Min"
+msgstr "quantité min"
 
 #: views/admin/tabs/product/quantities.php:53
 msgid "There is 1 warning."
@@ -616,11 +608,11 @@ msgstr "meta mots-clés"
 
 #: views/admin/tabs/product/seo.php:29
 msgid "Friendly URL"
-msgstr "Amical URL"
+msgstr "URL conviviale"
 
 #: views/admin/tabs/product/seo.php:33
 msgid "The product link will look like this"
-msgstr "Le lien du produit ressemblera à ceci"
+msgstr "Le lien produit ressemblera à ceci"
 
 #: views/admin/tabs/product/seo.php:44
 msgid "You must save this product before adding seo."

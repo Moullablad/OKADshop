@@ -15,7 +15,7 @@
 
 		args['title'] = $('#single_product .product_title').text();
 		args['link'] = window.location.href;
-        var img_src = $('.product-thumb.active img').attr('src');
+        var img_src = $('.main-image').attr('src');
 		args['cover'] = get_cover(img_src);
 
 		add_to_cart(args);

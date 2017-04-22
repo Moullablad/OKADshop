@@ -284,6 +284,42 @@ function percent_to_amount($price, $discount, $type=1){
 }
 
 
+/**
+ * Get percentage
+ *
+ * @param float $price
+ * @param float $discount
+ * @param int $type
+ *
+ * @return $percent (float)
+ */
+function get_percentage($price, $discount, $discount_type=1){
+    //if discount or price small than 0
+    if( $price <= 0 || $discount <= 0 ) return 0;
+
+    if( $discount_type == 1 ) {
+        return ($discount/$price) * 100;
+    }
+
+    return $discount;
+}
+
+
+/**
+ * Get amount from percentage
+ *
+ * @param float $price
+ * @param float $discount
+ *
+ * @return $amount (float)
+ */
+function get_amount_from_percent($price, $discount){
+    //if discount or price small than 0
+    if( $price <= 0 || $discount <= 0 ) return 0;
+
+    return $discount * ($price/100);
+}
+
 
 
 /**

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>categories</name>
+	<displayName>Categories</displayName>
+	<description>Manage categories.</description>
+	<category>administration</category>
+	<version>1.0.0</version>
+	<author>Soft High Tech</author>
+	<website>http://softhighttech.com</website>
+	<config>cats</config>
+</module>

@@ -140,6 +140,7 @@ class Media {
             $return['errors'] = $upload['errors'];
         } else if($upload['isComplete']){
             $return['files'] = str_replace($args['uploadDir'], '', $upload['data']['files']);
+            do_action('after_media_upload', ['files' => $upload['data']['files']]);
         }
         return $return;
     }

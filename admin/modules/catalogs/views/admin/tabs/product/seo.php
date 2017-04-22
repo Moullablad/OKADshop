@@ -1,6 +1,6 @@
-<?php if( isset($product->id) ) : ?>
-	<input type="hidden" name="id_product" id="id_product" value="<?=$product->id; ?>">
-	<input type="hidden" name="id_lang" class="id_lang" value="<?=$product->id_lang;?>">
+<?php if( isset($product->id_product) ) : ?>
+	<input type="hidden" name="id_product" id="id_product" value="<?=$product->id_product; ?>">
+	<input type="hidden" name="id_lang" class="id_lang" value="<?=$product->id_product_lang;?>">
 	<div class="form-group">
 		<label class="col-md-3 control-label" for="meta_title"><?php trans_e("Meta title", "default"); ?></label>  
 		<div class="col-md-6">
@@ -31,7 +31,7 @@
 			<input id="link_rewrite" name="trans[link_rewrite]" type="text" value="<?=$product->link_rewrite;?>" class="form-control" required>
 			<div class="alert alert-warning" style="margin-top: 10px;">
 				<p><?php trans_e("The product link will look like this", "default"); ?></p>
-				<strong class="friendly-url"><?=generate_url('product/') . $product->id .'-<span>'. $product->link_rewrite;?></span></strong>
+				<strong class="friendly-url"><?=generate_url('product/') . $product->id_product .'-<span>'. $product->link_rewrite;?></span></strong>
 			</div>
 		</div>
 	</div>

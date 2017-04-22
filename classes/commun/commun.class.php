@@ -1,5 +1,6 @@
 <?php
 use Core\Database\Database;
+use Core\Uploader;
 class OS_Common {
 
   public $os_scripts = array();

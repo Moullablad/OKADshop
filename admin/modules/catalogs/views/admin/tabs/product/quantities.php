@@ -1,5 +1,5 @@
-<?php if( isset($product->id) ) : ?>
-	<input type="hidden" name="id_product" id="id_product" value="<?=$product->id; ?>">
+<?php if( isset($product->id_product) ) : ?>
+	<input type="hidden" name="id_product" id="id_product" value="<?=$product->id_product; ?>">
 	<input type="hidden" id="json_quantities" name="quantities" value="">
 
 	<div class="form-group">

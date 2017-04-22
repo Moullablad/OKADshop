@@ -45,7 +45,7 @@
             <div class="search-form">
               <form class="form-horizontal" id="searchbox" action="<?=get_home_url();?>search" method="post">
                 <div class="input-group pull-right-lg">
-                 <input type="text" name="search_query" class="form-control" placeholder="Search your query here..." value="<?=(isset($_POST['search_query'])) ? htmlentities($_POST['search_query']) : '';?>">
+                 <input type="text" name="search_query" class="form-control" placeholder="<?php trans_e('Search your query here...', 'mirzam'); ?>" value="<?=(isset($_POST['search_query'])) ? htmlentities($_POST['search_query']) : '';?>">
                  <span class="input-group-btn">
                       <button type="submit" class="btn btn-default">
                         <i class="fa fa-search"></i>
@@ -65,7 +65,7 @@
     </section>
     
 
-    <section id="main-nav" class="mb-20">
+    <section id="main-nav">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-8">
@@ -73,7 +73,7 @@
                         <div class="container">
                           <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                              <span class="sr-only">Toggle navigation</span>
+                              <span class="sr-only"><?php trans_e('Toggle navigation', 'mirzam'); ?></span>
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
@@ -95,8 +95,5 @@
             </div>
         </div>        
     </section>
-
-
-  
 
     <div id="site-wrapper">

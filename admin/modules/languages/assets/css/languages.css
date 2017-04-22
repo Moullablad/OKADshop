@@ -1,0 +1,14 @@
+#stringsFilter{
+    background-color: #fff;
+    min-height: 55px;
+    padding: 10px;
+    border-bottom: 2px solid #dedede;
+}
+  
+input.msgstr{
+    width: 100% !important;
+}
+
+#stringsTable_wrapper .row:first-child{
+	display: none;
+}

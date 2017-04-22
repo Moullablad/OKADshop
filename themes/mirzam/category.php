@@ -10,7 +10,7 @@
 $orderby = $paginator->orderby;
 $perpage = $paginator->perpage;
 ?>
-<div class="container" id="home_category">
+<div class="container" id="main-container">
     <div class="row">
 
         <div class="col-md-3">
@@ -18,30 +18,33 @@ $perpage = $paginator->perpage;
         </div><!-- /.left-side -->
 
         <div class="col-md-9">
-            <img src="<?= category_image($category->id, '846x280');?>" class="img-thumbnail img-responsive mb-30">
-            <?php if( !is_empty($shildrens) ) : ?>
-            <div class="mt-40 mb-50">
-                <div class="sub-categories pt-30 pb-15 pl-20 pr-20">
-                       <?php foreach ($shildrens as $key => $shild): ?>
-                        <div class="col-md-3 col-sm-12 col-xs-12">
-                            <div class="cat-block">
-                                <a href="category/<?= $shild->id.'-'.$shild->permalink; ?>" title="<?= $shild->name ?>"> 
-                                   <img alt="<?= $shild->name ?>" src="<?= category_image($shild->id) ;?>" class="img-responsive">
-                                   <strong><?= $shild->name ?></strong>
-                               </a>
+
+            <?php if( isset($display_category_cover) ) : ?>
+                <img src="<?= category_image($category->id, '846x280');?>" class="img-thumbnail img-responsive mb-30">
+                <?php if( !is_empty($shildrens) ) : ?>
+                <div class="mt-40 mb-50">
+                    <div class="sub-categories pt-30 pb-15 pl-20 pr-20">
+                           <?php foreach ($shildrens as $key => $shild): ?>
+                            <div class="col-md-3 col-sm-12 col-xs-12">
+                                <div class="cat-block">
+                                    <a href="category/<?= $shild->id.'-'.$shild->permalink; ?>" title="<?= $shild->name ?>"> 
+                                       <img alt="<?= $shild->name ?>" src="<?= category_image($shild->id) ;?>" class="img-responsive">
+                                       <strong><?= $shild->name ?></strong>
+                                   </a>
+                                </div>
                             </div>
-                        </div>
-                       <?php endforeach; ?>
-                    <div class="clearfix"></div>
-                </div><!-- /.sub-categories -->
-            </div><!-- /.row -->
+                           <?php endforeach; ?>
+                        <div class="clearfix"></div>
+                    </div><!-- /.sub-categories -->
+                </div><!-- /.row -->
+                <?php endif; ?>  
             <?php endif; ?>  
 
 
             <?php if( !is_empty($products) ) : ?>
 
                 <div class="row mb-20">
-                    <div class="col-md-6">
+                    <div class="col-md-9">
                         <div class="sortbar">
                         <form class="osForm" method="post" action="">
                             <label><?php trans_e("Sort By:", "mirzam"); ?></label>
@@ -53,6 +56,8 @@ $perpage = $paginator->perpage;
                             </select>
                             <select name="orderby" class="productSort">
                                 <option <?= ($orderby == 'cdate:asc' || $orderby == '') ? 'selected' : ''; ?> value="cdate:asc"><?php trans_e("Order products by", "mirzam"); ?></option>
+                                <option <?= ($orderby == 'name:asc') ? 'selected' : ''; ?> value="name:asc"><?php trans_e("Name: A-Z", "mirzam"); ?></option>
+                                <option <?= ($orderby == 'name:desc') ? 'selected' : ''; ?> value="name:desc"><?php trans_e("Name: Z-A", "mirzam"); ?></option>
                                 <option <?= ($orderby == 'sell_price:asc') ? 'selected' : ''; ?> value="sell_price:asc"><?php trans_e("Price: Lowest first", "mirzam"); ?></option>
                                 <option <?= ($orderby == 'sell_price:desc') ? 'selected' : ''; ?> value="sell_price:desc"><?php trans_e("Price: Highest first", "mirzam"); ?></option>
                                 <option <?= ($orderby == 'quantity:des') ? 'selected' : ''; ?> value="quantity:desc"><?php trans_e("In stock", "mirzam"); ?></option>
@@ -62,7 +67,7 @@ $perpage = $paginator->perpage;
                         </form>
                         </div><!-- /#sortbar -->
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <div class="display-option pull-right mb-30">
                             <span><?php trans_e("View:", "mirzam"); ?></span>
                             <a class="view-as-grid selected" href="#"><i class="fa fa-th-large"></i></a>
@@ -74,21 +79,21 @@ $perpage = $paginator->perpage;
                 <div class="products grid-view">
                 <?php $lastItem = count( $products ); $i=1; foreach ($products as $key => $product) : ?>
 
-                    <?php if( $i==1) : ?><div class="row mb-30"><?php endif; ?>
+                    <?php if( $i==1) : ?><div class="row"><?php endif; ?>
 
                         <?php get_template_view('product-item', array('product' => $product)); ?>
 
                     <?php if( $i == $lastItem) : ?>
                         </div><!-- /.row -->
                     <?php elseif( $i%3 == 0 ) : ?>
-                        </div><!-- /.row --><div class="row mb-30">
+                        </div><!-- /.row --><div class="row">
                     <?php endif; ?>
 
                     <?php $i++; ?>
                 <?php endforeach; ?>
                 </div><!-- /.products -->
 
-                <nav class="pagination">
+                <nav class="text-center">
                     <?php echo $paginator->links; ?>
                 </nav>
 

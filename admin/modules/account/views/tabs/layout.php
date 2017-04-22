@@ -7,7 +7,7 @@
 				<ul class="nav nav-tabs bg-white" data-location="<?=$location;?>">
 					<?php foreach ($tabs as $key => $tab) : ?>
 						<li <?=($active_tab==$key) ? 'class="active"' : '';?>>
-							<a data-toggle="tab" href="#" data-tab="<?=$key;?>" data-ajax="<?=$data_ajax;?>" data-lang="<?=($tab['multilang']) ? 'yes' : 'no'; ?>"><?php trans_e(ucfirst($tab['name']), "default"); ?></a>
+							<a data-toggle="tab" href="#" data-tab="<?=$key;?>" data-ajax="<?=$data_ajax;?>" data-lang="<?=($tab['multilang']) ? 'yes' : 'no'; ?>"><?php trans_e(ucfirst($tab['name']), "account"); ?></a>
 						</li>
 					<?php endforeach; ?>
 

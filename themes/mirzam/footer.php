@@ -1,6 +1,9 @@
 	</div><!-- /#site-wrapper -->
 
-	<?php get_section('before_footer'); ?>
+	<?php if( is_home() ) : 
+		get_section('before_footer');
+	endif; ?>
+
     <footer id="footer">
 	    <div class="widgets">
 	    	<div class="container">

@@ -221,7 +221,7 @@ function product_associations_tab(){
 		}
 		$selected_lang = Session::get('selected_lang');
 		$id_lang = ($selected_lang) ? $selected_lang : get_lang()->id;
-		$data['product'] = $model->db->prepare("SELECT `id`, `id_category_default` FROM `{$model->db->prefix}products` WHERE id=?", [$id_product], true);
+		$data['product'] = $model->db->prepare("SELECT `id` as id_product, `id_category_default` FROM `{$model->db->prefix}products` WHERE id=?", [$id_product], true);
 		$data['categories'] = $model->getCategories($id_product);
 	}
 	get_view(__FILE__, 'admin/tabs/product/associations', $data);
@@ -268,7 +268,7 @@ function product_quantities_tab(){
 				$data['message']['danger'] = trans("Unable to update quantities, please try again.", "core");
 			}
 		}
-		$data['product'] = $model->db->prepare("SELECT `id`, `quantity`, `min_quantity` FROM `{$model->db->prefix}products` WHERE id=?", [$id_product], true);
+		$data['product'] = $model->db->prepare("SELECT `id` as id_product, `quantity`, `min_quantity` FROM `{$model->db->prefix}products` WHERE id=?", [$id_product], true);
 		$data['combinations'] = $model->getCombinations($id_product);
 	}
 	get_view(__FILE__, 'admin/tabs/product/quantities', $data);

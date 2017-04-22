@@ -1,5 +1,5 @@
 <div class="container" id="register">
-    <div class="row">
+    <div class="row" id="main-container">
         <div class="col-sm-6 col-sm-offset-3">
             <form class="osForm" method="POST" action="<?=get_url('account/register');?>">
 

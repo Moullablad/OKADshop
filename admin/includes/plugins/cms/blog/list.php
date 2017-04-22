@@ -1,11 +1,11 @@
 <?php
 $Args = array(
 	'Select' => array(
-				'id'=> _DB_PREFIX_.'blog.id',
-				'title'=> _DB_PREFIX_.'blog.title',
-				'category'=> _DB_PREFIX_.'blog_categories.title',
-				'lang'=> _DB_PREFIX_.'langs.name'
-		  ),
+		'id'=> _DB_PREFIX_.'blog.id',
+		'title'=> _DB_PREFIX_.'blog.title',
+		'category'=> _DB_PREFIX_.'blog_categories.title',
+		'lang'=> _DB_PREFIX_.'langs.name'
+	),
 	'From' => array( _DB_PREFIX_.'blog'),
 	'Where' => array(),
 	'Join' => array(
@@ -19,12 +19,12 @@ $Args = array(
 		array('Ajouter une page','?module=blog&action=add','add_nw','add button','Ajouter une page','facebox','iconAdd')
 	),
 	'UPLOADFIELDS' => array()
-	);
+);
 $Tables = new Core\Table();
 $DATATABLE = $Tables->GET($Args);
-use Core\Database\Database;
-$db = Database::getInstance();
 
+
+$db = Core\Database\Database::getInstance();
 
 //update blog_style
 if (isset($_POST['submit']) && isset($_POST['blog_style'])) {

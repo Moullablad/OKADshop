@@ -47,8 +47,17 @@ function getDB(){
  * @param bool $one
  * @return $datas array
  */
-function findByColumn($table, $column, $value, $one=false){
-	return Database::getInstance()->findByColumn($table, $column, $value, $one);
+function findByColumn($table, $column, $value, $columns=array('*'), $one=false){
+	return Database::getInstance()->findByColumn($table, $column, $value, $columns, $one);
+}
+
+
+/**
+ * Tell if form submited with post
+ *
+ */
+function form_submited() {
+	return ($_SERVER['REQUEST_METHOD'] == 'POST');
 }
 
 
@@ -741,4 +750,27 @@ function get_flash_message(){
 		return $message;
 	}
 	return false;
+}
+
+
+function dd($var){
+	echo '<pre>';
+	print_r($var);
+	echo '</pre>';
+	exit;
+}
+
+
+function isValidateEmail($email) {
+	return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
+}
+
+
+/**
+ * Check if array is associative or sequential?
+ */
+function isAssoc(array $arr)
+{
+    if (array() === $arr) return false;
+    return array_keys($arr) !== range(0, count($arr) - 1);
 }

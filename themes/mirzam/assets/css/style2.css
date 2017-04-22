@@ -72,55 +72,6 @@
 	color: #51595c;
 }
 
-/* newsletter */
-#newsletter{
-	background-color: #fdae44;
-	padding: 58px 0;
-	margin: 60px auto;
-	margin-bottom: 0;
-}
-
-#newsletter p{
-	color: #fff;
-	font-size: 24px;
-}
-
-#newsletter .input-group{
-    max-width: 457px;
-}
-
-
-#newsletter input{
-	height: 45px;
-	box-shadow: none;
-	border-radius: 0px;
-	border: none;
-	color: #c7c7c4;
-	font-size: 14px;
-}
-
-#newsletter button{
-    padding: 2px 40px;
-    font-size: 30px;
-    line-height: 41px;
-    border: none;
-    border-radius: 0px;
-    background-color: #f0f0e9;
-    color: #dcdcda;
-}
-
-#newsletter button:focus{
-	outline: 0px;
-}
-
-#newsletter button:active{
-	box-shadow: none;
-}
-
-#newsletter i:focus{
-	outline: 0px;
-}
-
 
 /* trending */
 #trending {
@@ -190,6 +141,7 @@
 	font-weight: bold;
 	margin-bottom: 16px;
 	height: 28px;
+	display: inline-block;
 }
 
 .col-product .block .price{

@@ -1,0 +1,279 @@
+.mcd-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #FFF;
+  border-radius: 2px;
+  border: 1px solid #e4e4e4;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+.mcd-menu li {
+  position: relative;
+}
+.mcd-menu li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 18px;
+  color: #777;
+  text-align: left;
+  position: relative;
+  border-bottom: 1px solid #EEE;
+      text-transform: uppercase;
+   font-weight: bold;
+}
+
+.mcd-menu li:hover > a {
+  color: #e67e22;
+}
+
+.mcd-menu li a.active {
+  position: relative;
+  color: #e67e22;
+  border:0;
+  box-shadow: 0 0 5px #DDD;
+  -moz-box-shadow: 0 0 5px #DDD;
+  -webkit-box-shadow: 0 0 5px #DDD;
+  border-left: 4px solid #e67e22;
+  border-right: 4px solid #e67e22;
+  margin: 0 -4px;
+}
+
+.mcd-menu li a.active:before {
+  content: "";
+  position: absolute;
+  top: 42%;
+  left: 0;
+  border-left: 5px solid #e67e22;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.mcd-menu li a.active:after {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: 0;
+  border-right: 5px solid #e67e22;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.mcd-menu li ul,
+.mcd-menu li ul li ul {
+  position: absolute;
+  height: auto;
+  min-width: 200px;
+  padding: 0;
+  margin: 0;
+  background: #FFF;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -webkit-transition: all 300ms linear;
+  z-index: 1000;
+  left:260px;
+  top: 0px;
+  border-left: 4px solid #e67e22;
+}
+
+.mcd-menu li ul:before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -9px;
+  border-right: 5px solid #e67e22;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+}
+.mcd-menu li:hover > ul,
+.mcd-menu li ul li:hover > ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  /*left:270px;*/
+}
+
+.mcd-menu li ul li a {
+  padding: 10px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #EEE;
+  height: auto;
+}
+
+.mcd-menu li ul li a i {
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+.mcd-menu li ul li ul {
+  left: 230px;
+  top: 0;
+  border: 0;
+  border-left: 4px solid #e67e22;
+}  
+
+.mcd-menu li ul li ul:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -9px;
+  border-right: 5px solid #e67e22;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+}
+
+.mcd-menu li ul li:hover > ul {
+  top: 0px;
+  left: 200px;
+}
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  .mcd-menu {
+		margin-left:10px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .mcd-menu {
+		width: 200px;
+	}
+	.mcd-menu li a {
+		height:30px;
+	}
+	
+	.mcd-menu li > ul {
+		min-width:180px;
+	}
+	.mcd-menu li:hover > ul {
+		min-width:180px;
+		left:200px;
+	}
+	.mcd-menu li ul li > ul, .mcd-menu li ul li ul li > ul {
+		min-width:150px;
+	}
+	.mcd-menu li ul li:hover > ul {
+		left:180px;
+		min-width:150px;
+	}
+	.mcd-menu li ul li ul li:hover > ul {
+		left:150px;
+		min-width:150px;
+	}
+	.mcd-menu li ul a {
+		font-size:12px;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.mcd-menu { 
+		width: 50px;
+	}
+	.mcd-menu li a { 
+		position: relative;
+		padding: 12px 16px;
+		height:20px;
+	}
+	
+	.mcd-menu li > ul {
+		min-width:180px;
+		left:70px;
+	}
+	.mcd-menu li:hover > ul {
+		min-width:180px;
+		left:50px;
+	}
+	.mcd-menu li ul li > ul, .mcd-menu li ul li ul li > ul {
+		min-width:150px;
+	}
+	.mcd-menu li ul li:hover > ul {
+		left:180px;
+		min-width:150px;
+	}
+	.mcd-menu li ul li ul li > ul {
+		left:35px;
+		top: 45px;
+		border:0;
+		border-top:4px solid #e67e22;
+	}
+	.mcd-menu li ul li ul li > ul:before {
+		left:30px;
+		top: -9px;
+		border:0;
+		border-bottom:5px solid #e67e22;
+		border-left:5px solid transparent;
+		border-right:5px solid transparent;
+	}
+	.mcd-menu li ul li ul li:hover > ul {
+		left:30px;
+		min-width:150px;
+		top: 35px;
+	}
+	.mcd-menu li ul a {
+		font-size:12px;
+	}
+	.mcd-menu li ul a i {
+		font-size:14px;
+	}
+	
+}
+
+@media only screen and (max-width: 479px) {
+  .mcd-menu { 
+		width: 50px;
+	}
+	.mcd-menu li a { 
+		position: relative;
+		padding: 12px 16px;
+		height:20px;
+	}
+	
+	.mcd-menu li > ul {
+		min-width:180px;
+		left:70px;
+	}
+	.mcd-menu li:hover > ul {
+		min-width:180px;
+		left:50px;
+	}
+	.mcd-menu li ul li > ul, .mcd-menu li ul li ul li > ul {
+		min-width:150px;
+	}
+	.mcd-menu li ul li:hover > ul {
+		left:180px;
+		min-width:150px;
+	}
+	.mcd-menu li ul li ul li > ul {
+		left:35px;
+		top: 45px;
+		border:0;
+		border-top:4px solid #e67e22;
+	}
+	.mcd-menu li ul li ul li > ul:before {
+		left:30px;
+		top: -9px;
+		border:0;
+		border-bottom:5px solid #e67e22;
+		border-left:5px solid transparent;
+		border-right:5px solid transparent;
+	}
+	.mcd-menu li ul li ul li:hover > ul {
+		left:30px;
+		min-width:150px;
+		top: 35px;
+	}
+	.mcd-menu li ul a {
+		font-size:12px;
+	}
+	.mcd-menu li ul a i {
+		font-size:14px;
+	}
+    
+}

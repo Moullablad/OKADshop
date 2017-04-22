@@ -15,8 +15,8 @@
 ?>
 <?php 
 //Navigation
-if( isset($page->with_nav) && $page->with_nav === true ) :
-	get_view(__FILE__, 'admin/navigation', array('name' => $page->title, 'icon' => $page->icon, 'buttons' => $page->buttons)); 
+if( isset($with_nav) && $with_nav === true ) :
+	get_view(__FILE__, 'admin/navigation', array('name' => $title, 'icon' => $icon, 'buttons' => $buttons)); 
 endif;
 
 //Flash message
@@ -24,4 +24,4 @@ if( $msg = get_flash_message() ) :
 	get_view(__FILE__, 'alerts', [$msg['type'] => $msg['content']]);
 endif;
 ?>
-<?php echo $page->content; ?>
+<?php echo $content; ?>

@@ -57,5 +57,14 @@ $(document).ready(function(){
 		return false;
 	});
 
+
+	// popup image
+    if($('.popup-image').length >0 ){
+        $('.popup-image').magnificPopup({type:'image'});
+    }
+    //SELECT CHOSEN
+    $(".select_chosen").chosen();
+
+
 //END DOCUMENT
 });

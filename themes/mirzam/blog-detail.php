@@ -1,44 +1,22 @@
-<?php
-/**
- * The template for displaying blog detail.
- *
- * @link https://okdashop.com
- *
- * @package OKADshop
- *
- *
- * 
- *
- */
-
-//var_dump($blog);
- 
-?>
-
-
-
 <section class="banner bg-parallax" style=" ">
     <div class="overlay"></div>
     <div class="container">
         <div class="banner-content text-center">
             <h2 class="page-title"><?= $blog->title; ?></h2>
             <div class="breadcrumbs">
-                <a href="<?= get_home_url(); ?>"><?php trans_e("Home", "frochka"); ?></a>
-                <a href="<?= get_home_url(); ?>blog"><?php trans_e("Blog", "frochka"); ?></a>
+                <a href="<?= get_home_url(); ?>"><?php trans_e("Home", "mirzam"); ?></a>
+                <a href="<?= get_home_url(); ?>blog"><?php trans_e("Blog", "mirzam"); ?></a>
                 <span><?= $blog->title; ?></span>
             </div>
         </div>
     </div>
 </section>
 
-<div class="maincontainer left-sidebar">
+<div class="left-sidebar" id="main-container">
   <div class="container">
     <div class="row">
       <div class="col-sm-8 col-md-9 main-content">
         <article class="blog-item">
-          <!-- <div class="blog-img">
-            <img src="<?= $blog->cover ;?>" alt="<?= $blog->title; ?>">
-          </div> -->
            <h3><a href="#"><?= $blog->title; ?></a></h3>
            <div class="post-cat"><a href="#"><?= $blog_category->title; ?></a></div>
            <div class="meta-post">
@@ -49,7 +27,7 @@
            </div>
            <div class="bottom-post product-share">
               <div class="groupshare product-share">
-                <strong><?php trans_e("SHARE TO FRIENDS", "frochka"); ?></strong>
+                <strong><?php trans_e("SHARE TO FRIENDS", "mirzam"); ?></strong>
                 <?= get_chare_buttons(); ?>
               </div>
            </div>

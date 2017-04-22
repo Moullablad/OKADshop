@@ -36,13 +36,13 @@ if( $id_product < 1 || $qty < 1 )
 // $db = getDB();
 //check if quantity match min product qty
 if( $id_declinaison > 0 ){
-	$comb = findByColumn('declinaisons', 'id', $id_declinaison, true);
+	$comb = findByColumn('declinaisons', 'id', $id_declinaison, ['min_quantity'], true);
 	if( $qty < $comb->min_quantity ){
 		$min_quantity = $comb->min_quantity;
 		$qty_match = false;
 	}
 } else {
-	$product = findByColumn('products', 'id', $id_product, true);
+	$product = findByColumn('products', 'id', $id_product, ['min_quantity'], true);
 	if( $qty < $product->min_quantity ){
 		$min_quantity = $product->min_quantity;
 		$qty_match = false;

@@ -3,20 +3,18 @@ $(document).ready(function() {
   
 	//sort form
 	$('.productSort').on('change', function(){
-		$('.osForm').submit();
+		$(this).closest('form').submit();
 	});
 
 
 	/**
 	 * sortBar
-	 *
-	 **/
+	 */
 	//get sortBar session
 	var view_as = sessionStorage.getItem('view_items_as');
 	if( view_as === null || view_as === 'grid' ){
 		view_as_grid();
 	} else {
-		//$('.products').removeClass('grid-view');
 		view_as_list();
 	}
 	//view items as grid
@@ -31,33 +29,11 @@ $(document).ready(function() {
 	});
 
 
-	/**
-	 * product quantity change
-	 *
-	 **/
-	 $('.btn-qty').on("click",function(){
-	 	var product_quantity_input = $('#product_quantity');
-	 	var current_quantity = parseInt(product_quantity_input.val());
-	 	if ($(this).hasClass('qty-up')) {
-	 		current_quantity++;
-	 	}else if($(this).hasClass('qty-down')) {
-	 		current_quantity--;
-	 	}
-	 	if (current_quantity>0) {
-	 		product_quantity_input.val(current_quantity);
-	 	}
-	 	return false;
+	$('.product-categories > li').each(function(){
+		if( $(this).has('ul').length ){
+			$(this).addClass('cat-parent');
+		}
 	});
-
-
-
-
-
-
-	
-
-
-
 
 
 	//get product combinations
@@ -131,6 +107,19 @@ $(document).ready(function() {
 		return false;
 	});
 
+
+
+	$(document).on('click','.single-product-thumbnails a',function(){
+        $(this).closest('.single-product-thumbnails').find('a').each(function(){
+            $(this).removeClass('selected');
+        });
+        $(this).addClass('selected');
+        var image_full = $(this).data('image-full');
+        $('.single-images').find('.main-image').attr('src',image_full);
+        $('.single-images').find('.popup-image').attr('href',image_full);
+        
+        return false;
+    })
 	
 
 
@@ -149,10 +138,14 @@ $(document).ready(function() {
 #
 ================================================================================*/
 
+
 /**
  * View items as grid
  */
 function view_as_grid(){
+	if( $('.products').length < 1 )
+		return false;
+	
 	//exit if already grid
 	if( $('.products').hasClass('grid-view') ){
 		$('.products .list').hide();

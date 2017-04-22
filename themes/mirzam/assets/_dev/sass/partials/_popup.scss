@@ -1,0 +1,54 @@
+.popup{
+    position: relative;
+    background: $gray-lighter;
+    color: $gray-dark;
+    margin: 20px auto;
+    padding: 44px  44px 15px;
+    max-width: 100%;
+    display: table;
+}
+
+
+.alert-popup{
+    @extend .popup;
+    padding: 15px;
+    min-width: 300px;
+    h1{
+        font-size: 20px;
+        color: $red;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+}
+
+.cancel-popup{
+    @extend .popup;
+    .mfp-close {
+	    display: none;
+	}
+    .message{
+    	border: 2px solid #a1a09c;
+    	border-left-width: 0px;
+    	border-right-width: 0px;
+    	color: #a1a09c;
+    	font-size: 16px;
+    	padding: 10px 0;
+    	margin-bottom: 10px;
+    }
+    .buttons{
+    	a{
+    		margin-left: 20px;
+    		@include border-radius(0);
+    		&.btn-danger{
+    			background-color: $red;
+    			border-color: $red;
+    		}
+    		&.btn-default{
+    			background-color: $gray-dark;
+    			border-color: $gray-dark;
+    			color: #fff;
+    		}
+    	}
+    }
+}

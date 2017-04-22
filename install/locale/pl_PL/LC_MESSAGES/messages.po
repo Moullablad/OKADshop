@@ -1,0 +1,1344 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OkadShop\n"
+"POT-Creation-Date: 2016-05-30 14:10+0000\n"
+"PO-Revision-Date: 2016-05-30 14:16+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: T_\n"
+"X-Poedit-SearchPath-0: index.php\n"
+"X-Poedit-SearchPath-1: countries_lang.php\n"
+
+#: countries_lang.php:3 index.php:190
+msgid "Merci de choisir une activité"
+msgstr "Dziękuję wybrać działalność"
+
+#: countries_lang.php:4
+msgid "Alimentation et gastronomie"
+msgstr "Food and Dining"
+
+#: countries_lang.php:5
+msgid "Animaux"
+msgstr "Zwierzęta"
+
+#: countries_lang.php:6
+msgid "Articles pour bébé"
+msgstr "pozycji dziecka"
+
+#: countries_lang.php:7
+msgid "Arts et culture"
+msgstr "Sztuka i kultura"
+
+#: countries_lang.php:8
+msgid "Auto et moto"
+msgstr "Auto i motocykli"
+
+#: countries_lang.php:9
+msgid "Bijouterie"
+msgstr "biżuteria"
+
+#: countries_lang.php:10
+msgid "Chaussures et accessoires"
+msgstr "Buty i akcesoria"
+
+#: countries_lang.php:11
+msgid "Fleurs, cadeaux et artisanat"
+msgstr "Kwiaty, prezenty i rzemiosło"
+
+#: countries_lang.php:12
+msgid "Hifi, photo et vidéo"
+msgstr "Hifi, zdjęcia i wideo"
+
+#: countries_lang.php:13
+msgid "Informatique et logiciels"
+msgstr "Komputery i oprogramowanie"
+
+#: countries_lang.php:14
+msgid "Lingerie et Adulte"
+msgstr "Bielizna i dorosłych"
+
+#: countries_lang.php:15
+msgid "Maison et jardin"
+msgstr "Dom i ogród"
+
+#: countries_lang.php:16
+msgid "Mode et accessoires"
+msgstr "Moda i Akcesoria"
+
+#: countries_lang.php:17
+msgid "Santé et beauté"
+msgstr "Zdrowie i Uroda"
+
+#: countries_lang.php:18
+msgid "Services"
+msgstr "usługi"
+
+#: countries_lang.php:19
+msgid "Sports et loisirs"
+msgstr "Sport i Rekreacja"
+
+#: countries_lang.php:20
+msgid "Téléchargement"
+msgstr "ściąganie"
+
+#: countries_lang.php:21
+msgid "Téléphonie et communication"
+msgstr "Telefon i komunikacja"
+
+#: countries_lang.php:22
+msgid "Voyage et tourisme"
+msgstr "Turystyka i podróże"
+
+#: countries_lang.php:23
+msgid "Électroménager"
+msgstr "Wyposażenie"
+
+#: countries_lang.php:24
+msgid "Autre activité ..."
+msgstr "Pozostała działalność ..."
+
+#: countries_lang.php:27 index.php:209
+msgid "Sélectionnez un pays"
+msgstr "Wybierz kraj"
+
+#: countries_lang.php:28
+msgid "Allemagne"
+msgstr "Niemcy"
+
+#: countries_lang.php:29
+msgid "Autriche"
+msgstr "Austria"
+
+#: countries_lang.php:30
+msgid "Belgique"
+msgstr "Belgia"
+
+#: countries_lang.php:31
+msgid "Canada"
+msgstr "Kanada"
+
+#: countries_lang.php:32
+msgid "Chine"
+msgstr "Chiny"
+
+#: countries_lang.php:33
+msgid "Espagne"
+msgstr "Hiszpania"
+
+#: countries_lang.php:34
+msgid "Finlande"
+msgstr "Finlandia"
+
+#: countries_lang.php:35
+msgid "France"
+msgstr "Francja"
+
+#: countries_lang.php:36
+msgid "Grèce"
+msgstr "Grecja"
+
+#: countries_lang.php:37
+msgid "Italie"
+msgstr "Włochy"
+
+#: countries_lang.php:38
+msgid "Japon"
+msgstr "Japonia"
+
+#: countries_lang.php:39
+msgid "Luxembourg"
+msgstr "Luksemburg"
+
+#: countries_lang.php:40
+msgid "Pays-bas"
+msgstr "Niderlandy"
+
+#: countries_lang.php:41
+msgid "Pologne"
+msgstr "Polska"
+
+#: countries_lang.php:42
+msgid "Portugal"
+msgstr "Portugalia"
+
+#: countries_lang.php:43
+msgid "République Tchèque"
+msgstr "Czechy"
+
+#: countries_lang.php:44
+msgid "Royaume-Uni"
+msgstr "UK"
+
+#: countries_lang.php:45
+msgid "Suède"
+msgstr "zamsz"
+
+#: countries_lang.php:46
+msgid "Suisse"
+msgstr "Szwajcaria"
+
+#: countries_lang.php:47
+msgid "Danemark"
+msgstr "Dania"
+
+#: countries_lang.php:48
+msgid "États-Unis"
+msgstr "Stany Zjednoczone"
+
+#: countries_lang.php:49
+msgid "Hong-Kong"
+msgstr "Hongkong"
+
+#: countries_lang.php:50
+msgid "Norvège"
+msgstr "Norwegia"
+
+#: countries_lang.php:51
+msgid "Australie"
+msgstr "Australia"
+
+#: countries_lang.php:52
+msgid "Singapour"
+msgstr "Singapur"
+
+#: countries_lang.php:53
+msgid "Irlande"
+msgstr "Irlandia"
+
+#: countries_lang.php:54
+msgid "Nouvelle-Zélande"
+msgstr "Nowa Zelandia"
+
+#: countries_lang.php:55
+msgid "Corée du Sud"
+msgstr "Korea Południowa"
+
+#: countries_lang.php:56
+msgid "Israël"
+msgstr "Izrael"
+
+#: countries_lang.php:57
+msgid "Afrique du Sud"
+msgstr "Republika Południowej Afryki"
+
+#: countries_lang.php:58
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: countries_lang.php:59
+msgid "Côte d'Ivoire"
+msgstr "Wybrzeże Kości Słoniowej"
+
+#: countries_lang.php:60
+msgid "Togo"
+msgstr "Togo"
+
+#: countries_lang.php:61
+msgid "Bolivie"
+msgstr "Boliwia"
+
+#: countries_lang.php:62
+msgid "Ile Maurice"
+msgstr "Mauritius"
+
+#: countries_lang.php:63
+msgid "Roumanie"
+msgstr "Rumunia"
+
+#: countries_lang.php:64
+msgid "Slovaquie"
+msgstr "Słowacja"
+
+#: countries_lang.php:65
+msgid "Algérie"
+msgstr "Algieria"
+
+#: countries_lang.php:66
+msgid "Samoa Américaines"
+msgstr "Samoa amerykańskie"
+
+#: countries_lang.php:67
+msgid "Andorre"
+msgstr "Andorra"
+
+#: countries_lang.php:68
+msgid "Angola"
+msgstr "Angola"
+
+#: countries_lang.php:69
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: countries_lang.php:70
+msgid "Antigua et Barbuda"
+msgstr "Antigua i Barbuda"
+
+#: countries_lang.php:71
+msgid "Argentine"
+msgstr "Argentyna"
+
+#: countries_lang.php:72
+msgid "Arménie"
+msgstr "Armenia"
+
+#: countries_lang.php:73
+msgid "Aruba"
+msgstr "Aruba"
+
+#: countries_lang.php:74
+msgid "Azerbaïdjan"
+msgstr "Azerbejdżan"
+
+#: countries_lang.php:75
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: countries_lang.php:76
+msgid "Bahreïn"
+msgstr "Bahrajn"
+
+#: countries_lang.php:77
+msgid "Bangladesh"
+msgstr "Bangladesz"
+
+#: countries_lang.php:78
+msgid "Barbade"
+msgstr "Barbados"
+
+#: countries_lang.php:79
+msgid "Bélarus"
+msgstr "Białoruś"
+
+#: countries_lang.php:80
+msgid "Belize"
+msgstr "Belize"
+
+#: countries_lang.php:81
+msgid "Bénin"
+msgstr "Benin"
+
+#: countries_lang.php:82
+msgid "Bermudes"
+msgstr "Bermudy"
+
+#: countries_lang.php:83
+msgid "Bhoutan"
+msgstr "Bhutan"
+
+#: countries_lang.php:84
+msgid "Botswana"
+msgstr "Botswany"
+
+#: countries_lang.php:85
+msgid "Brésil"
+msgstr "Brazylia"
+
+#: countries_lang.php:86
+msgid "Brunéi Darussalam"
+msgstr "Brunei"
+
+#: countries_lang.php:87
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: countries_lang.php:88
+msgid "Burma (Myanmar)"
+msgstr "Birma (Myanmar)"
+
+#: countries_lang.php:89
+msgid "Burundi"
+msgstr "Burundi"
+
+#: countries_lang.php:90
+msgid "Cambodge"
+msgstr "Kambodża"
+
+#: countries_lang.php:91
+msgid "Cameroun"
+msgstr "Kamerun"
+
+#: countries_lang.php:92
+msgid "Cap-Vert"
+msgstr "Wyspy Zielonego przylądka"
+
+#: countries_lang.php:93
+msgid "Centrafricaine, République"
+msgstr "Republika Środkowoafrykańska"
+
+#: countries_lang.php:94
+msgid "Tchad"
+msgstr "Czad"
+
+#: countries_lang.php:95
+msgid "Chili"
+msgstr "Chile"
+
+#: countries_lang.php:96
+msgid "Colombie"
+msgstr "Kolumbia"
+
+#: countries_lang.php:97
+msgid "Comores"
+msgstr "Komory"
+
+#: countries_lang.php:98
+msgid "Congo, Rép. Dém."
+msgstr "Kongo, Demokratyczna. Rep."
+
+#: countries_lang.php:99
+msgid "Congo, Rép."
+msgstr "Kongo, Demokratyczna."
+
+#: countries_lang.php:100
+msgid "Costa Rica"
+msgstr "Kostaryka"
+
+#: countries_lang.php:101
+msgid "Croatie"
+msgstr "Chorwacja"
+
+#: countries_lang.php:102
+msgid "Cuba"
+msgstr "Kuba"
+
+#: countries_lang.php:103
+msgid "Chypre"
+msgstr "Cypr"
+
+#: countries_lang.php:104
+msgid "Djibouti"
+msgstr "Dżibuti"
+
+#: countries_lang.php:105
+msgid "Dominica"
+msgstr "Dominika"
+
+#: countries_lang.php:106
+msgid "République Dominicaine"
+msgstr "Dominikana"
+
+#: countries_lang.php:107
+msgid "Timor oriental"
+msgstr "Timor Wschodni"
+
+#: countries_lang.php:108
+msgid "Équateur"
+msgstr "Ekwador"
+
+#: countries_lang.php:109
+msgid "Égypte"
+msgstr "Egipt"
+
+#: countries_lang.php:110
+msgid "El Salvador"
+msgstr "Salwador"
+
+#: countries_lang.php:111
+msgid "Guinée Équatoriale"
+msgstr "Gwinea Równikowa"
+
+#: countries_lang.php:112
+msgid "Érythrée"
+msgstr "Erytrea"
+
+#: countries_lang.php:113
+msgid "Estonie"
+msgstr "Estonia"
+
+#: countries_lang.php:114
+msgid "Éthiopie"
+msgstr "Etiopia"
+
+#: countries_lang.php:115
+msgid "Falkland, Îles"
+msgstr "Falklandy"
+
+#: countries_lang.php:116
+msgid "Féroé, Îles"
+msgstr "Wyspy Owcze"
+
+#: countries_lang.php:117
+msgid "Fidji"
+msgstr "Fidżi"
+
+#: countries_lang.php:118
+msgid "Gabon"
+msgstr "Gabon"
+
+#: countries_lang.php:119
+msgid "Gambie"
+msgstr "Gambii"
+
+#: countries_lang.php:120
+msgid "Géorgie"
+msgstr "Gruzja"
+
+#: countries_lang.php:121
+msgid "Ghana"
+msgstr "Ghana"
+
+#: countries_lang.php:122
+msgid "Grenade"
+msgstr "granat"
+
+#: countries_lang.php:123
+msgid "Groenland"
+msgstr "Greenland"
+
+#: countries_lang.php:124
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: countries_lang.php:125
+msgid "Guadeloupe"
+msgstr "Gwadelupa"
+
+#: countries_lang.php:126
+msgid "Guam"
+msgstr "Guam"
+
+#: countries_lang.php:127
+msgid "Guatemala"
+msgstr "Gwatemala"
+
+#: countries_lang.php:128
+msgid "Guernesey"
+msgstr "Guernsey"
+
+#: countries_lang.php:129
+msgid "Guinée"
+msgstr "Gwinea"
+
+#: countries_lang.php:130
+msgid "Guinée-Bissau"
+msgstr "Gwinea Bissau"
+
+#: countries_lang.php:131
+msgid "Guyana"
+msgstr "Gujana"
+
+#: countries_lang.php:132
+msgid "Haîti"
+msgstr "Haiti"
+
+#: countries_lang.php:133
+msgid "Heard, Île et Mcdonald, Îles"
+msgstr "Wyspy Heard i McDonalda"
+
+#: countries_lang.php:134
+msgid "Saint-Siege (État de la Cité du Vatican)"
+msgstr "Stolica Apostolska (State of the Vatican City)"
+
+#: countries_lang.php:135
+msgid "Honduras"
+msgstr "Honduras"
+
+#: countries_lang.php:136
+msgid "Islande"
+msgstr "Islandia"
+
+#: countries_lang.php:137
+msgid "Inde"
+msgstr "Indie"
+
+#: countries_lang.php:138
+msgid "Indonésie"
+msgstr "Indonezja"
+
+#: countries_lang.php:139
+msgid "Iran"
+msgstr "Iran"
+
+#: countries_lang.php:140
+msgid "Iraq"
+msgstr "Irak"
+
+#: countries_lang.php:141
+msgid "Man, Île de"
+msgstr "Człowiek, Wyspa"
+
+#: countries_lang.php:142
+msgid "Jamaique"
+msgstr "Jamaica"
+
+#: countries_lang.php:143
+msgid "Jersey"
+msgstr "Jersey"
+
+#: countries_lang.php:144
+msgid "Jordanie"
+msgstr "Jordania"
+
+#: countries_lang.php:145
+msgid "Kazakhstan"
+msgstr "Kazachstan"
+
+#: countries_lang.php:146
+msgid "Kenya"
+msgstr "Kenia"
+
+#: countries_lang.php:147
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: countries_lang.php:148
+msgid "Corée, Rép. Populaire Dém. de"
+msgstr "Korea Rep. Rep Ludowej. z"
+
+#: countries_lang.php:149
+msgid "Koweït"
+msgstr "Kuwejt"
+
+#: countries_lang.php:150
+msgid "Kirghizistan"
+msgstr "Kirgistan"
+
+#: countries_lang.php:151
+msgid "Laos"
+msgstr "Laos"
+
+#: countries_lang.php:152
+msgid "Lettonie"
+msgstr "Łotwa"
+
+#: countries_lang.php:153
+msgid "Liban"
+msgstr "Liban"
+
+#: countries_lang.php:154
+msgid "Lesotho"
+msgstr "Lesoto"
+
+#: countries_lang.php:155
+msgid "Libéria"
+msgstr "Liberia"
+
+#: countries_lang.php:156
+msgid "Libyenne, Jamahiriya Arabe"
+msgstr "Libia"
+
+#: countries_lang.php:157
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: countries_lang.php:158
+msgid "Lituanie"
+msgstr "Litwa"
+
+#: countries_lang.php:159
+msgid "Macao"
+msgstr "Makao"
+
+#: countries_lang.php:160
+msgid "Macédoine"
+msgstr "Macedonia"
+
+#: countries_lang.php:161
+msgid "Madagascar"
+msgstr "Madagaskar"
+
+#: countries_lang.php:162
+msgid "Malawi"
+msgstr "Malawi"
+
+#: countries_lang.php:163
+msgid "Malaisie"
+msgstr "Malezja"
+
+#: countries_lang.php:164
+msgid "Maldives"
+msgstr "Malediwy"
+
+#: countries_lang.php:165
+msgid "Mali"
+msgstr "Mali"
+
+#: countries_lang.php:166
+msgid "Malte"
+msgstr "Malta"
+
+#: countries_lang.php:167
+msgid "Marshall, Îles"
+msgstr "Wyspy Marshalla"
+
+#: countries_lang.php:168
+msgid "Martinique"
+msgstr "Martynika"
+
+#: countries_lang.php:169
+msgid "Mauritanie"
+msgstr "Mauretania"
+
+#: countries_lang.php:170
+msgid "Hongrie"
+msgstr "Węgry"
+
+#: countries_lang.php:171
+msgid "Mayotte"
+msgstr "Majotta"
+
+#: countries_lang.php:172
+msgid "Mexique"
+msgstr "Meksyk"
+
+#: countries_lang.php:173
+msgid "Micronésie"
+msgstr "Mikronezja"
+
+#: countries_lang.php:174
+msgid "Moldova"
+msgstr "Mołdawia"
+
+#: countries_lang.php:175
+msgid "Monaco"
+msgstr "Monaco"
+
+#: countries_lang.php:176
+msgid "Mongolie"
+msgstr "Mongolia"
+
+#: countries_lang.php:177
+msgid "Monténégro"
+msgstr "Czarnogóra"
+
+#: countries_lang.php:178
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: countries_lang.php:179
+msgid "Maroc"
+msgstr "Maroko"
+
+#: countries_lang.php:180
+msgid "Mozambique"
+msgstr "Mozambik"
+
+#: countries_lang.php:181
+msgid "Namibie"
+msgstr "Namibia"
+
+#: countries_lang.php:182
+msgid "Nauru"
+msgstr "Nauru"
+
+#: countries_lang.php:183
+msgid "Népal"
+msgstr "Nepal"
+
+#: countries_lang.php:184
+msgid "Antilles Néerlandaises"
+msgstr "Antyle Holenderskie"
+
+#: countries_lang.php:185
+msgid "Nouvelle-Calédonie"
+msgstr "Nowa Kaledonia"
+
+#: countries_lang.php:186
+msgid "Nicaragua"
+msgstr "Nikaragua"
+
+#: countries_lang.php:187
+msgid "Niger"
+msgstr "Niger"
+
+#: countries_lang.php:188
+msgid "Niué"
+msgstr "Niue"
+
+#: countries_lang.php:189
+msgid "Norfolk, Île"
+msgstr "Wyspa Norfolk"
+
+#: countries_lang.php:190
+msgid "Mariannes du Nord, Îles"
+msgstr "Mariany Północne"
+
+#: countries_lang.php:191
+msgid "Oman"
+msgstr "Oman"
+
+#: countries_lang.php:192
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: countries_lang.php:193
+msgid "Palaos"
+msgstr "Palau"
+
+#: countries_lang.php:194
+msgid "Palestinien Occupé, Territoire"
+msgstr "Palestyna"
+
+#: countries_lang.php:195
+msgid "Panama"
+msgstr "Panama"
+
+#: countries_lang.php:196
+msgid "Papouasie-Nouvelle-Guinée"
+msgstr "Papua-Nowa Gwinea"
+
+#: countries_lang.php:197
+msgid "Paraguay"
+msgstr "Paragwaj"
+
+#: countries_lang.php:198
+msgid "Pérou"
+msgstr "Peru"
+
+#: countries_lang.php:199
+msgid "Philippines"
+msgstr "Filipiny"
+
+#: countries_lang.php:200
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+#: countries_lang.php:201
+msgid "Porto Rico"
+msgstr "Puerto Rico"
+
+#: countries_lang.php:202
+msgid "Qatar"
+msgstr "Katar"
+
+#: countries_lang.php:203
+msgid "Réunion, Île de la"
+msgstr "Reunion"
+
+#: countries_lang.php:204
+msgid "Russie, Fédération de"
+msgstr "Federacja Rosyjska"
+
+#: countries_lang.php:205
+msgid "Rwanda"
+msgstr "Rwandy"
+
+#: countries_lang.php:206
+msgid "Saint-Barthélemy"
+msgstr "Saint-Barthélemy"
+
+#: countries_lang.php:207
+msgid "Saint-Kitts-et-Nevis"
+msgstr "Saint Kitts i Nevis"
+
+#: countries_lang.php:208
+msgid "Sainte-Lucie"
+msgstr "Saint Lucia"
+
+#: countries_lang.php:209
+msgid "Saint-Martin"
+msgstr "Saint-Martin"
+
+#: countries_lang.php:210
+msgid "Saint-Pierre-et-Miquelon"
+msgstr "Saint Pierre i Miquelon"
+
+#: countries_lang.php:211
+msgid "Saint-Vincent-et-Les Grenadines"
+msgstr "Saint Vincent i Grenadyny"
+
+#: countries_lang.php:212
+msgid "Samoa"
+msgstr "samoa"
+
+#: countries_lang.php:213
+msgid "Saint-Marin"
+msgstr "San Marino"
+
+#: countries_lang.php:214
+msgid "Sao Tomé-et-Principe"
+msgstr "Świętego Tomasza i Książęca"
+
+#: countries_lang.php:215
+msgid "Arabie Saoudite"
+msgstr "Arabia Saudyjska"
+
+#: countries_lang.php:216
+msgid "Sénégal"
+msgstr "Senegal"
+
+#: countries_lang.php:217
+msgid "Serbie"
+msgstr "Serbia"
+
+#: countries_lang.php:218
+msgid "Seychelles"
+msgstr "Seszele"
+
+#: countries_lang.php:219
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: countries_lang.php:220
+msgid "Slovénie"
+msgstr "Słowenia"
+
+#: countries_lang.php:221
+msgid "Salomon, Îles"
+msgstr "Wyspy Salomona"
+
+#: countries_lang.php:222
+msgid "Somalie"
+msgstr "Somalia"
+
+#: countries_lang.php:223
+msgid "Géorgie du Sud et les Îles Sandwich du Sud"
+msgstr "Georgia Południowa i Sandwich Południowy"
+
+#: countries_lang.php:224
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: countries_lang.php:225
+msgid "Soudan"
+msgstr "Sudan"
+
+#: countries_lang.php:226
+msgid "Suriname"
+msgstr "Surinam"
+
+#: countries_lang.php:227
+msgid "Svalbard et Île Jan Mayen"
+msgstr "Svalbard i Jan Mayen"
+
+#: countries_lang.php:228
+msgid "Swaziland"
+msgstr "Suazi"
+
+#: countries_lang.php:229
+msgid "Syrienne"
+msgstr "Syryjczyk"
+
+#: countries_lang.php:230
+msgid "Taïwan"
+msgstr "Tajwan"
+
+#: countries_lang.php:231
+msgid "Tadjikistan"
+msgstr "Tadżykistan"
+
+#: countries_lang.php:232
+msgid "Tanzanie"
+msgstr "Tanzania"
+
+#: countries_lang.php:233
+msgid "Thaïlande"
+msgstr "Tajlandia"
+
+#: countries_lang.php:234
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: countries_lang.php:235
+msgid "Tonga"
+msgstr "Tonga"
+
+#: countries_lang.php:236
+msgid "Trinité-et-Tobago"
+msgstr "Trynidad i Tobago"
+
+#: countries_lang.php:237
+msgid "Tunisie"
+msgstr "Tunezja"
+
+#: countries_lang.php:238
+msgid "Turquie"
+msgstr "Turcja"
+
+#: countries_lang.php:239
+msgid "Turkménistan"
+msgstr "Turkmenia"
+
+#: countries_lang.php:240
+msgid "Turks et Caiques, Îles"
+msgstr "Turks i Caicos"
+
+#: countries_lang.php:241
+msgid "Tuvalu"
+msgstr "tuvalu"
+
+#: countries_lang.php:242
+msgid "Ouganda"
+msgstr "Uganda"
+
+#: countries_lang.php:243
+msgid "Ukraine"
+msgstr "Ukraina"
+
+#: countries_lang.php:244
+msgid "Émirats Arabes Unis"
+msgstr "ZEA"
+
+#: countries_lang.php:245
+msgid "Uruguay"
+msgstr "Urugwaj"
+
+#: countries_lang.php:246
+msgid "Ouzbékistan"
+msgstr "Uzbekistan"
+
+#: countries_lang.php:247
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: countries_lang.php:248
+msgid "Venezuela"
+msgstr "Wenezuela"
+
+#: countries_lang.php:249
+msgid "Vietnam"
+msgstr "Wietnam"
+
+#: countries_lang.php:250
+msgid "Îles Vierges Britanniques"
+msgstr "Brytyjskie Wyspy Dziewicze"
+
+#: countries_lang.php:251
+msgid "Îles Vierges des États-Unis"
+msgstr "Stany Zjednoczone Wyspy Dziewicze"
+
+#: countries_lang.php:252
+msgid "Wallis et Futuna"
+msgstr "Wallis i Futuna"
+
+#: countries_lang.php:253
+msgid "Sahara Occidental"
+msgstr "Sahara Zachodnia"
+
+#: countries_lang.php:254
+msgid "Yémen"
+msgstr "Jemen"
+
+#: countries_lang.php:255
+msgid "Zambie"
+msgstr "Zambia"
+
+#: countries_lang.php:256
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: countries_lang.php:257
+msgid "Albanie"
+msgstr "Albania"
+
+#: countries_lang.php:258
+msgid "Afghanistan"
+msgstr "Afganistan"
+
+#: countries_lang.php:259
+msgid "Antarctique"
+msgstr "Antarktyda"
+
+#: countries_lang.php:260
+msgid "Bosnie-Herzégovine"
+msgstr "Bośnia i Hercegowina"
+
+#: countries_lang.php:261
+msgid "Bouvet, Île"
+msgstr "Bouvet Wyspa"
+
+#: countries_lang.php:262
+msgid "Océan Indien, Territoire Britannique de L"
+msgstr "Terytorium Oceanu Indyjskiego Kolumbia L"
+
+#: countries_lang.php:263
+msgid "Bulgarie"
+msgstr "Bułgaria"
+
+#: countries_lang.php:264
+msgid "Caïmans, Îles"
+msgstr "Kajmany"
+
+#: countries_lang.php:265
+msgid "Christmas, Île"
+msgstr "Wyspa Bożego Narodzenia"
+
+#: countries_lang.php:266
+msgid "Cocos (Keeling), Îles"
+msgstr "Cocos (Keeling) Islands"
+
+#: countries_lang.php:267
+msgid "Cook, Îles"
+msgstr "Wyspy Cooka"
+
+#: countries_lang.php:268
+msgid "Guyane Française"
+msgstr "Gujana Francuska"
+
+#: countries_lang.php:269
+msgid "Polynésie Française"
+msgstr "Polinezja Francuska"
+
+#: countries_lang.php:270
+msgid "Terres Australes Françaises"
+msgstr "Francuskie Terytoria Południowe"
+
+#: countries_lang.php:271
+msgid "Åland, Îles"
+msgstr "Wyspy Alandzkie"
+
+#: index.php:43
+msgid "OkadShop Installateur"
+msgstr "OkadShop Instalator"
+
+#: index.php:70
+msgid "Forums"
+msgstr "Forum"
+
+#: index.php:71
+msgid "Blog"
+msgstr "blog"
+
+#: index.php:72
+msgid "Documentation"
+msgstr "dokumentacja"
+
+#: index.php:73
+msgid "Support"
+msgstr "wsparcie"
+
+#: index.php:83
+msgid "Assistant d'installation"
+msgstr "setup Wizard"
+
+#: index.php:104
+msgid "Bienvenue"
+msgstr "powitanie"
+
+#: index.php:105 index.php:143
+msgid "Acceptation des licences"
+msgstr "Akceptacja licencji"
+
+#: index.php:106
+msgid "Compatibilité système"
+msgstr "zgodność z systemem"
+
+#: index.php:107
+msgid "Informations"
+msgstr "informacja"
+
+#: index.php:108
+msgid "Database Configuration"
+msgstr "Konfiguracja bazy danych"
+
+#: index.php:109
+msgid "Installation de la boutique"
+msgstr "Instalacja sklepu"
+
+#: index.php:121
+msgid "Bienvenue sur l'installation de OkadShop 1.0.0"
+msgstr "Zapraszamy do instalacji 1.0.0 OkadShop"
+
+#: index.php:122
+msgid "L'installation de OkadShop est simple et rapide. Dans quelques minutes, vous ferez partie d'une communauté de plus actifs des marchands. Vous êtes sur le point de créer votre propre boutique en ligne, unique en son genre, que vous pourrez gérer très facilement au quotidien."
+msgstr "Instalacja OkadShop jest prosty i szybki. W ciągu kilku minut będziesz częścią społeczności bardziej aktywnych handlowców. Masz zamiar stworzyć swój własny sklep internetowy, unikalne, można łatwo zarządzać codziennie."
+
+#: index.php:123
+msgid "Besoin d'aide ? N'hésitez pas à <a href=\"#\" target=\"_blank\">regarder cette courte vidéo</a>, ou à parcourir notre <a href=\"#\" target=\"_blank\">documentation</a>."
+msgstr "Potrzebujesz pomocy? <a Href=\"#\" target=\"_blank\"> </a> obejrzeć ten krótki film, lub przeglądać naszą <a href = \\ \"# \" target = \\ \"_ blank \\ \"> </a> dokumentacji."
+
+#: index.php:125
+msgid "Continuer l'installation en :"
+msgstr "Kontynuuj instalację:"
+
+#: index.php:128
+msgid "Français"
+msgstr "francuski"
+
+#: index.php:129
+msgid "English"
+msgstr "angielski"
+
+#: index.php:130
+msgid "العربية"
+msgstr "العربية"
+
+#: index.php:131
+msgid "Español"
+msgstr "Español"
+
+#: index.php:132
+msgid "Deutsch"
+msgstr "Deutsch"
+
+#: index.php:133
+msgid "Italiano"
+msgstr "Italiano"
+
+#: index.php:134
+msgid "Portuguese"
+msgstr "portugalski"
+
+#: index.php:135
+msgid "Polish"
+msgstr "polski"
+
+#: index.php:136
+msgid "Dutch"
+msgstr "holenderski"
+
+#: index.php:139
+msgid "Le choix de la langue ci-dessus s'applique à l'assistant d'installation. Une fois votre boutique installée, vous pourrez choisir la langue de votre boutique parmi plus de 60 traductions disponibles gratuitement !"
+msgstr "Wybór języka Powyższe dotyczy kreatora instalacji. Po skonfigurowaniu sklepu, można wybrać język swojego sklepu z ponad 60 dostępnych tłumaczeń za darmo!"
+
+#: index.php:144
+msgid "Afin de profiter gratuitement des nombreuses fonctionnalités qu'offre OkadShop, merci de prendre connaissance des termes des licences ci-dessous. Le coeur de OkadShop est publié sous licence OSL 3.0 tandis que les modules et thèmes sont publiés sous licence AFL 3.0."
+msgstr "Aby korzystać z bezpłatnych wielu funkcji oferowanych OkadShop, dziękuję do zapoznania się z warunkami licencji poniżej. Sercem OkadShop opublikowana jest na licencji OSL 3.0, podczas gdy moduły i tematy są publikowane jako AFL licencji 3.0."
+
+#: index.php:154
+msgid "J'accepte les termes et conditions du contrat ci-dessus."
+msgstr "Akceptuję warunki umowy powyżej."
+
+#: index.php:160
+msgid "Nous vérifions en ce moment la compatibilité de OkadShop avec votre système"
+msgstr "Mamy ponownie weryfikacji zgodności z systemem OkadShop"
+
+#: index.php:161
+msgid "Si vous avez la moindre question, n'hésitez pas à visiter notre <a href=\"#\" target=\"_blank\">documentation</a> et notre <a href=\"#\" target=\"_blank\">forum communautaire</a>."
+msgstr "Jeśli masz jakiekolwiek pytania, zapraszamy do odwiedzenia naszej <a href=\"#\" target=\"_blank\"> </a> dokumentację i naszą <a href = \\ \"# \" target = \\ \"_blank \"> forum społeczności </a>."
+
+#: index.php:162
+msgid "La compatibilité de OkadShop avec votre système a été vérifiée"
+msgstr "Kompatybilność z systemem OkadShop została zweryfikowana"
+
+#: index.php:166
+msgid "Informations à propos de votre boutique"
+msgstr "Informacje o sklepie"
+
+#: index.php:170
+msgid "Nom de la boutique"
+msgstr "Nazwa Shop"
+
+#: index.php:177
+msgid "Lien vers boutique"
+msgstr "Link do sklepu"
+
+#: index.php:183
+msgid "C'est le lien de la page d'acceuil, inclure le sous domain."
+msgstr "To jest link do strony głównej, to domenę podrzędną."
+
+#: index.php:187
+msgid "Activité principale"
+msgstr "Główna działalność"
+
+#: index.php:202
+msgid "Aidez-nous à mieux vous connaitre pour que nous puissions vous orienter et vous proposer les fonctionnalités les plus adaptées à votre activité !"
+msgstr "Pomóż nam poznać lepiej więc możemy poprowadzić Cię i oferują najlepsze możliwości dla Twojej firmy!"
+
+#: index.php:206
+msgid "Pays"
+msgstr "kraj"
+
+#: index.php:223
+msgid "Votre compte"
+msgstr "Twoje konto"
+
+#: index.php:225
+msgid "Prénom"
+msgstr "imię"
+
+#: index.php:232
+msgid "Nom"
+msgstr "nazwa"
+
+#: index.php:239
+msgid "Adresse e-mail"
+msgstr "E-mail"
+
+#: index.php:245
+msgid "Cette adresse e-mail vous servira d'identifiant pour accéder à l'interface de gestion de votre boutique."
+msgstr "Ten adres e-mail będzie Twój login, aby uzyskać dostęp do interfejsu zarządzania sklep."
+
+#: index.php:249
+msgid "Mot de passe"
+msgstr "hasło"
+
+#: index.php:255
+msgid "Minimum 8 caractères"
+msgstr "Minimum 8 znaków"
+
+#: index.php:259
+msgid "Confirmation du mot de passe"
+msgstr "Potwierdzenie hasła"
+
+#: index.php:265
+msgid ""
+"Les informations recueillies font l'objet d’un traitement informatique et statistique, elles sont nécessaires aux membres de la société OkadShop afin de répondre au mieux à votre demande. Ces informations peuvent être communiquées à nos partenaires à des fins de prospection commerciale et être transmises dans "
+"le cadre de nos relations partenariales."
+msgstr "Zgromadzone informacje są objęte i przetwarzania danych statystycznych, są one niezbędne dla członków Towarzystwa OkadShop jak najlepiej odpowiedzieć na Państwa życzenie. Te informacje mogą być przekazywane naszym partnerom w celach marketingowych oraz przekazywane w ramach naszych relacji partnerskich."
+
+#: index.php:272
+msgid "Configurez la connexion à votre base de données en remplissant les champs suivants."
+msgstr "Konfigurowanie połączenia z bazą danych, wypełniając poniższe pola."
+
+#: index.php:275
+msgid "Adresse du serveur de la base"
+msgstr "Adres serwera bazy danych"
+
+#: index.php:282
+msgid "Nom de la base"
+msgstr "Nazwa bazy danych"
+
+#: index.php:289
+msgid "Identifiant de la base"
+msgstr "Identyfikacja bazy"
+
+#: index.php:296
+msgid "Mot de passe de la base"
+msgstr "W oparciu hasło"
+
+#: index.php:303
+msgid "Préfixe des tables"
+msgstr "przedrostek Tabela"
+
+#: index.php:311
+msgid "Tester la connexion à la base de données"
+msgstr "Przetestuj połączenie z bazą danych"
+
+#: index.php:325
+msgid "Allez vers la page d'acceuil."
+msgstr "Przejdź do strony głównej."
+
+#: index.php:326
+msgid "Allez au tableau de board."
+msgstr "Idź na desce stołu."
+
+#: index.php:333
+msgid "Précédent"
+msgstr "poprzedni"
+
+#: index.php:334
+msgid "Suivant"
+msgstr "następujący"
+
+#: index.php:415 index.php:492
+msgid "Prière de remplir tous les champs requis."
+msgstr "Proszę wypełnić wszystkie wymagane pola."
+
+#: index.php:500
+msgid "Format de e-mail n'est pas valide."
+msgstr "Format e-mail jest nieprawidłowy."
+
+#: index.php:505
+msgid "Le mot de passe ne correspond pas."
+msgstr "Hasło nie pasuje."
+
+#: index.php:510
+msgid "Mot de passe est trop court (min 8 caractères requis)."
+msgstr "Hasło jest zbyt krótkie (wymagane min 8 znaków)."
+
+#: index.php:566
+msgid "l\\'installation est complète !"
+msgstr "Instalacja \\ 's jest kompletny!"
+
+#: index.php:571
+msgid "Une erreur est survenue !"
+msgstr "Wystąpił błąd!"

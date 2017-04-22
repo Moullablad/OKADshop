@@ -1,9 +1,9 @@
+_todo
 cache
 config/database.inc.php
-files
-install
+/files
 modules/config.txt
-uploads
-vendor
-composer.json
-composer.lock
+modules/watermark
+modules/social-auth
+themes/mirzam/assets/_dev/sass/.sass-cache
+/uploads

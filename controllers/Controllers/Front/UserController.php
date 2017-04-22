@@ -170,8 +170,7 @@ class UserController extends FrontController
      * @return boolean
      */
     public static function register($data)
-    {
- 
+    {       
         $db = getDB();
         $user = new User();
         $data['clt_number'] = $user->getNumber();
@@ -182,10 +181,10 @@ class UserController extends FrontController
         $id_user = $db->create("users", $data);
         if( $id_user ){
             $data['id'] = $id_user;
-            unset($data[password]);
-            unset($data[active]);
+            unset($data['password']);
+            unset($data['active']);
             if( Session::set('user', (object)$data) ){
-                return true;
+                return $id_user;
             }
         }
         return false;

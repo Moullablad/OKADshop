@@ -1,0 +1,155 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Preferences\n"
+"POT-Creation-Date: 2017-03-30 00:30+0000\n"
+"PO-Revision-Date: 2017-03-30 00:30+0000\n"
+"Last-Translator: \n"
+"Language-Team: SoftHighTEch <contact@softhightech.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+
+#: includes/tabs/shop.php:28
+msgid "Contact details"
+msgstr ""
+
+#: includes/tabs/shop.php:35
+msgid "SEO"
+msgstr ""
+
+#: includes/tabs/shop.php:42
+msgid "URLS"
+msgstr ""
+
+#: index.php:32
+msgid "Preferences"
+msgstr ""
+
+#: index.php:34 views/admin/shop.php:18
+msgid "Shop"
+msgstr ""
+
+#: index.php:36
+msgid "CMS"
+msgstr ""
+
+#: index.php:37
+msgid "Pages"
+msgstr ""
+
+#: index.php:38 index.php:42
+msgid "Catégories"
+msgstr ""
+
+#: index.php:40
+msgid "Blog"
+msgstr ""
+
+#: index.php:41
+msgid "Articles"
+msgstr ""
+
+#: index.php:44
+msgid "Modules"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:2
+msgid "Shop name"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:8
+msgid "Tagline"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:14
+msgid "Address"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:20
+msgid "Address (line 2)"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:26
+msgid "ZIP/Postal code"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:32
+msgid "City"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:38
+msgid "Country"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:41
+msgid "Choose a country"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:50
+msgid "Home phone"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:56
+msgid "Mobile phone"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:62
+msgid "Email"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:68
+msgid "Matriculation"
+msgstr ""
+
+#: views/admin/tabs/shop/details.php:74
+msgid "GPS coordinates"
+msgstr ""
+
+#: views/admin/tabs/shop/seo.php:2
+msgid "Meta title"
+msgstr ""
+
+#: views/admin/tabs/shop/seo.php:11
+msgid "Meta description"
+msgstr ""
+
+#: views/admin/tabs/shop/seo.php:20
+msgid "Meta keywords"
+msgstr ""
+
+#: views/admin/tabs/shop/urls.php:2
+msgid "Home URL"
+msgstr ""
+
+#: views/admin/tabs/shop/urls.php:8
+msgid "Domain"
+msgstr ""
+
+#: views/admin/tabs/shop/urls.php:14
+msgid "Domain SSL"
+msgstr ""
+
+#: views/admin/tabs/shop/urls.php:20
+msgid "SSL Active"
+msgstr ""
+
+#: views/admin/tabs/shop/urls.php:22
+msgid "YES"
+msgstr ""
+
+#: views/admin/tabs/shop/urls.php:22
+msgid "NO"
+msgstr ""
+
+#: views/admin/tabs/shop/urls.php:26
+msgid "Physical URI"
+msgstr ""

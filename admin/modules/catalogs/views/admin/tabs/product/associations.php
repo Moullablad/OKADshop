@@ -1,6 +1,6 @@
 <script src="<?=site_url();?>assets/vendors/multinestedlists/tree.js" type="text/javascript" position="12"></script>
-<?php if( isset($product->id) ) : ?>
-	<input type="hidden" name="id_product" id="id_product" value="<?=$product->id; ?>">
+<?php if( isset($product->id_product) ) : ?>
+	<input type="hidden" name="id_product" id="id_product" value="<?=$product->id_product; ?>">
 	<div class="alert alert-info">
 		<strong><?php trans_e("Radio Button", "core"); ?></strong> for default category and <strong>And Checkbox</strong> for product associations.
 	</div>

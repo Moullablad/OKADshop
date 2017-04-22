@@ -1,5 +1,5 @@
-<?php if( isset($product->id) ) : ?>
-	<input type="hidden" name="id_product" id="id_product" value="<?=$product->id; ?>">
+<?php if( isset($product->id_product) ) : ?>
+	<input type="hidden" name="id_product" id="id_product" value="<?=$product->id_product; ?>">
 	<div class="form-group">
 		<label class="col-sm-3 control-label" for="buy_price"><?php trans_e("Buy price (unit)", "default"); ?></label>  
 		<div class="col-sm-3 col-md-2">
@@ -50,7 +50,7 @@
 				<option value="0" selected><?php trans_e("No Tax", "default"); ?></option>
 				<?php if( !is_empty($taxes) ) : ?>
 					<?php foreach ($taxes as $key => $tax) : ?>
-					<option value="<?=$tax->id;?>" <?= ($product->id_tax==$tax->id ) ? 'selected' : ''; ?> ><?=$tax->name. ' '. $tax->rate .'%'; ?></option>
+					<option value="<?=$tax->id;?>" <?= ($product->id_product_tax==$tax->id ) ? 'selected' : ''; ?> ><?=$tax->name. ' '. $tax->rate .'%'; ?></option>
 					<?php endforeach; ?>
 				<?php endif; ?>
 			</select>

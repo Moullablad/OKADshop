@@ -1,0 +1,591 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "c4c957937e8c5942935d4f40fcc6e892",
+    "content-hash": "c2daba298113afd0a3a136d333f67d83",
+    "packages": [
+        {
+            "name": "alexshelkov/simpleacl",
+            "version": "2.0.23",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexshelkov/SimpleAcl.git",
+                "reference": "3afcd51841215f2918d0edce82e8c3f96bf43116"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alexshelkov/SimpleAcl/zipball/3afcd51841215f2918d0edce82e8c3f96bf43116",
+                "reference": "3afcd51841215f2918d0edce82e8c3f96bf43116",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SimpleAcl": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Shelkovskiy",
+                    "email": "alexshelkov@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple Access Control List (ACL) for PHP.",
+            "homepage": "https://github.com/alexshelkov/SimpleAcl",
+            "keywords": [
+                "acl",
+                "authorization",
+                "permission"
+            ],
+            "time": "2015-10-13 19:41:52"
+        },
+        {
+            "name": "gburtini/acl",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gburtini/PHP-ACL.git",
+                "reference": "1b7f52ea0788cf636479d4c5b1cd82671d89d9dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gburtini/PHP-ACL/zipball/1b7f52ea0788cf636479d4c5b1cd82671d89d9dd",
+                "reference": "1b7f52ea0788cf636479d4c5b1cd82671d89d9dd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "gburtini\\ACL": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Giuseppe Burtini",
+                    "email": "joe@truephp.com",
+                    "homepage": "http://giuseppeburtini.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dependency free, simple access control lists for PHP.",
+            "homepage": "http://github.com/gburtini/PHP-ACL",
+            "keywords": [
+                "access",
+                "access control",
+                "acl",
+                "login",
+                "security",
+                "user"
+            ],
+            "time": "2015-04-10 02:57:21"
+        },
+        {
+            "name": "guzzle/guzzle",
+            "version": "v3.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle3.git",
+                "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/0645b70d953bc1c067bbc8d5bc53194706b628d9",
+                "reference": "0645b70d953bc1c067bbc8d5bc53194706b628d9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.3",
+                "symfony/event-dispatcher": "~2.1"
+            },
+            "replace": {
+                "guzzle/batch": "self.version",
+                "guzzle/cache": "self.version",
+                "guzzle/common": "self.version",
+                "guzzle/http": "self.version",
+                "guzzle/inflection": "self.version",
+                "guzzle/iterator": "self.version",
+                "guzzle/log": "self.version",
+                "guzzle/parser": "self.version",
+                "guzzle/plugin": "self.version",
+                "guzzle/plugin-async": "self.version",
+                "guzzle/plugin-backoff": "self.version",
+                "guzzle/plugin-cache": "self.version",
+                "guzzle/plugin-cookie": "self.version",
+                "guzzle/plugin-curlauth": "self.version",
+                "guzzle/plugin-error-response": "self.version",
+                "guzzle/plugin-history": "self.version",
+                "guzzle/plugin-log": "self.version",
+                "guzzle/plugin-md5": "self.version",
+                "guzzle/plugin-mock": "self.version",
+                "guzzle/plugin-oauth": "self.version",
+                "guzzle/service": "self.version",
+                "guzzle/stream": "self.version"
+            },
+            "require-dev": {
+                "doctrine/cache": "~1.3",
+                "monolog/monolog": "~1.0",
+                "phpunit/phpunit": "3.7.*",
+                "psr/log": "~1.0",
+                "symfony/class-loader": "~2.1",
+                "zendframework/zend-cache": "2.*,<2.3",
+                "zendframework/zend-log": "2.*,<2.3"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "Guzzle 5 has moved to a new package name. The package you have installed, Guzzle 3, is deprecated."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle": "src/",
+                    "Guzzle\\Tests": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Guzzle Community",
+                    "homepage": "https://github.com/guzzle/guzzle/contributors"
+                }
+            ],
+            "description": "PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "abandoned": "guzzlehttp/guzzle",
+            "time": "2015-03-18 18:23:50"
+        },
+        {
+            "name": "omnipay/common",
+            "version": "2.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/omnipay-common.git",
+                "reference": "54910f2ece6b1be64f5e53e2111dd1254d50ee49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/omnipay-common/zipball/54910f2ece6b1be64f5e53e2111dd1254d50ee49",
+                "reference": "54910f2ece6b1be64f5e53e2111dd1254d50ee49",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/guzzle": "~3.9",
+                "php": ">=5.3.2",
+                "symfony/http-foundation": "~2.1|~3.0"
+            },
+            "require-dev": {
+                "omnipay/tests": "~2.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5.x-dev"
+                },
+                "gateways": [
+                    "AuthorizeNet_AIM",
+                    "AuthorizeNet_SIM",
+                    "Buckaroo_CreditCard",
+                    "Buckaroo_Ideal",
+                    "Buckaroo_PayPal",
+                    "CardSave",
+                    "Coinbase",
+                    "Dummy",
+                    "Eway_Rapid",
+                    "FirstData_Connect",
+                    "GoCardless",
+                    "Manual",
+                    "Migs_ThreeParty",
+                    "Migs_TwoParty",
+                    "Mollie",
+                    "MultiSafepay",
+                    "Netaxept",
+                    "NetBanx",
+                    "PayFast",
+                    "Payflow_Pro",
+                    "PaymentExpress_PxPay",
+                    "PaymentExpress_PxPost",
+                    "PayPal_Express",
+                    "PayPal_Pro",
+                    "Pin",
+                    "SagePay_Direct",
+                    "SagePay_Server",
+                    "SecurePay_DirectPost",
+                    "Stripe",
+                    "TargetPay_Directebanking",
+                    "TargetPay_Ideal",
+                    "TargetPay_Mrcash",
+                    "WorldPay"
+                ]
+            },
+            "autoload": {
+                "psr-0": {
+                    "Omnipay\\Common\\": "src/"
+                },
+                "classmap": [
+                    "src/Omnipay/Omnipay.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Macneil",
+                    "email": "adrian@adrianmacneil.com"
+                },
+                {
+                    "name": "Omnipay Contributors",
+                    "homepage": "https://github.com/thephpleague/omnipay-common/contributors"
+                }
+            ],
+            "description": "Common components for Omnipay payment processing library",
+            "homepage": "https://github.com/thephpleague/omnipay-common",
+            "keywords": [
+                "gateway",
+                "merchant",
+                "omnipay",
+                "pay",
+                "payment",
+                "purchase"
+            ],
+            "time": "2016-11-07 06:10:23"
+        },
+        {
+            "name": "omnipay/paypal",
+            "version": "v2.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/omnipay-paypal.git",
+                "reference": "e06c8814deacc793715bb9fd3fcae5995b5d8d6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/omnipay-paypal/zipball/e06c8814deacc793715bb9fd3fcae5995b5d8d6b",
+                "reference": "e06c8814deacc793715bb9fd3fcae5995b5d8d6b",
+                "shasum": ""
+            },
+            "require": {
+                "omnipay/common": "~2.0"
+            },
+            "require-dev": {
+                "omnipay/tests": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Omnipay\\PayPal\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Macneil",
+                    "email": "adrian@adrianmacneil.com"
+                },
+                {
+                    "name": "Omnipay Contributors",
+                    "homepage": "https://github.com/thephpleague/omnipay-paypal/contributors"
+                }
+            ],
+            "description": "PayPal gateway for Omnipay payment processing library",
+            "homepage": "https://github.com/thephpleague/omnipay-paypal",
+            "keywords": [
+                "gateway",
+                "merchant",
+                "omnipay",
+                "pay",
+                "payment",
+                "paypal",
+                "purchase"
+            ],
+            "time": "2016-12-22 12:35:25"
+        },
+        {
+            "name": "sybio/image-workshop",
+            "version": "2.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Sybio/ImageWorkshop.git",
+                "reference": "b7f678b51b21c96049bd0a535382520a596d6526"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Sybio/ImageWorkshop/zipball/b7f678b51b21c96049bd0a535382520a596d6526",
+                "reference": "b7f678b51b21c96049bd0a535382520a596d6526",
+                "shasum": ""
+            },
+            "require": {
+                "ext-exif": "*",
+                "ext-gd": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PHPImageWorkshop": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clément Guillemain",
+                    "homepage": "http://clementguillemain.fr",
+                    "role": "Developer / Freelancer"
+                },
+                {
+                    "name": "ImageWorkshop Community",
+                    "homepage": "https://github.com/Sybio/ImageWorkshop/graphs/contributors"
+                }
+            ],
+            "description": "Powerful PHP class using GD library to work easily with images including layer notion (like Photoshop or GIMP)",
+            "homepage": "http://phpimageworkshop.com",
+            "keywords": [
+                "class",
+                "crop",
+                "gd",
+                "image",
+                "library",
+                "resize",
+                "rotate",
+                "thumbnail",
+                "watermark"
+            ],
+            "time": "2015-07-05 09:09:12"
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "v2.8.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "bb4ec47e8e109c1c1172145732d0aa468d967cd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/bb4ec47e8e109c1c1172145732d0aa468d967cd0",
+                "reference": "bb4ec47e8e109c1c1172145732d0aa468d967cd0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "^2.0.5|~3.0.0",
+                "symfony/dependency-injection": "~2.6|~3.0.0",
+                "symfony/expression-language": "~2.6|~3.0.0",
+                "symfony/stopwatch": "~2.3|~3.0.0"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony EventDispatcher Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-02-21 08:33:48"
+        },
+        {
+            "name": "symfony/http-foundation",
+            "version": "v3.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-foundation.git",
+                "reference": "c57009887010eb4e58bfca2970314a5b820b24b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/c57009887010eb4e58bfca2970314a5b820b24b9",
+                "reference": "c57009887010eb4e58bfca2970314a5b820b24b9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.1"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~2.8|~3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\HttpFoundation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony HttpFoundation Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-03-04 12:23:14"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-11-14 01:06:16"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

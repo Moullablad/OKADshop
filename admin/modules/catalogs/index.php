@@ -31,12 +31,10 @@ global $os_admin_menu;
 $catalog = $os_admin_menu->add( trans('Catalogs', 'ctg'), get_page_url('', __FILE__));
 	$catalog->link->prepend('<span class="fa fa-book"></span>');
 	$catalog->add( trans('Products', 'ctg'), get_page_url('', __FILE__));
-	$catalog->add( l("Catégories", "ctg"), '?module=categories');
-	$catalog->add( l("Manufacturers", "ctg"), '?module=manufacturers');
-	$catalog->add( l("Product Attributes", "ctg"), '?module=attributes');
-	$catalog->add( l("Product Values", "ctg"), '?module=values');
-	$catalog->add( l("Characteristics", "ctg"), '?module=features');
-	$catalog->add( l("Keywords (Tags)", "ctg"), '?module=tags');
+	$catalog->add( trans("Product Attributes", "ctg"), '?module=attributes');
+	$catalog->add( trans("Product Values", "ctg"), '?module=values');
+	$catalog->add( trans("Characteristics", "ctg"), '?module=features');
+	$catalog->add( trans("Keywords (Tags)", "ctg"), '?module=tags');
 
 
 

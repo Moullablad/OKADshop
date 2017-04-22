@@ -43,7 +43,7 @@ $cms_style_class = "col-sm-6 col-md-4";
         <div class="banner-content text-center">
             <h2 class="page-title"><?= $cms_category->title; ?></h2>
             <div class="breadcrumbs">
-                <a href="<?= get_home_url(); ?>"><?php trans_e("Home", "frochka"); ?></a>
+                <a href="<?= get_home_url(); ?>"><?php trans_e("Home", "mirzam"); ?></a>
                 <span><?= $cms_category->title; ?></span>
             </div>
         </div>
@@ -51,7 +51,7 @@ $cms_style_class = "col-sm-6 col-md-4";
 </section>
 
 
-<div class="maincontainer">
+<div id="main-container">
    <div class="container">
       <div class="row">
          <div class="col-md-12 col-sm-12 main-content">

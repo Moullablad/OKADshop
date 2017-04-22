@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Orders\n"
-"POT-Creation-Date: 2016-12-14 10:35+0000\n"
-"PO-Revision-Date: 2016-12-14 10:37+0000\n"
+"POT-Creation-Date: 2017-03-30 00:27+0000\n"
+"PO-Revision-Date: 2017-03-30 00:28+0000\n"
 "Last-Translator: \n"
 "Language-Team: OKADshop <contact@okadshop.com>\n"
 "Language: en\n"
@@ -25,7 +25,7 @@ msgstr "Votre commande est pas complète."
 
 #: includes/class/order.php:201
 msgid "Error saving order data."
-msgstr "l'enregistrement des données de commande Erreur."
+msgstr "Erreur d'enregistrement des données de commande."
 
 #: includes/class/order.php:205
 msgid "Your order is complete."
@@ -37,7 +37,7 @@ msgstr "Ordres"
 
 #: includes/tabs/orders.php:27
 msgid "Order Informations"
-msgstr "Commande Informations"
+msgstr "commande Informations"
 
 #: views/front/tabs/orders.php:6
 msgid "Order history."
@@ -53,7 +53,7 @@ msgstr "Référence de l'achat"
 
 #: views/front/tabs/orders.php:16
 msgid "Date"
-msgstr "date"
+msgstr "Rendez-vous amoureux"
 
 #: views/front/tabs/orders.php:17
 msgid "Total price"
@@ -65,7 +65,7 @@ msgstr "Paiement"
 
 #: views/front/tabs/orders.php:19
 msgid "Status"
-msgstr "statut"
+msgstr "Statut"
 
 #: views/front/tabs/orders.php:20
 msgid "Invoice"

@@ -94,9 +94,9 @@ function add_action( $name, $function_to_add, $priority = 1 ){
  * @param int $name
  * @return boolean
  */
-function do_action($name){
+function do_action($name, $args=[]){
 	if( $name !== '' ) {
-		Module::doAction( $name );
+		Module::doAction( $name, $args );
 	}
 }
 
@@ -162,14 +162,50 @@ function get_module_icon($name){
  * @param string $category
  * @return index
  */
-function get_module_index($name, $category){
-	if( $category != 'administration' ) {
-		$index = module_base($name, 'index.php');
-	} else {
-		$index = admin_base('modules/'. $name . '/index.php');
+function get_module_index($name){
+	$modules = get_active_modules();
+	if( isset($modules[$name]) ){
+		return $modules[$name]['path'] . 'index.php';
 	}
-	return $index;
+	return false;
 }
+
+
+/**
+ * Get module namespace
+ *
+ * @param string $name
+ *
+ * @return $namespace | false
+ */
+function get_module_namespace($name){
+	$modules = get_active_modules();
+	if( isset($modules[$name]) ){
+		return $modules[$name]['namespace'];
+	}
+	return false;
+}
+
+
+
+
+
+/**
+ * Tell if is Core module
+ *
+ * @param $name
+ *
+ * @return bool
+ */
+function is_core_module($name){
+	$modules = get_active_modules();
+	if( isset($modules[$name]) && $modules[$name]['type'] == 'core' ) {
+		return true;
+	}
+	return false;
+}
+
+
 
 
 
@@ -251,7 +287,7 @@ function get_module_by_name($field, $module_name){
  * @return $modules
  */
 function get_active_modules(){
-	return ModuleController::getActive();
+	return ModuleController::$modules;
 }
 
 

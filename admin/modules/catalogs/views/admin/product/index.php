@@ -43,9 +43,9 @@
     <tbody>
     	<?php foreach ($products as $key => $product) : ?>
         <tr>
-            <td width="10"><?= $product->id; ?></td>
+            <td width="10"><?= $product->id_product; ?></td>
             <td width="80">
-            	<img src="<?= $product->cover; ?>" width="80">
+            	<img src="<?= product_image_by_size($product->cover_name, $product->id_product, '76x76'); ?>" width="80">
             </td>
             <td><?= $product->name; ?></td>
             <td><?= $product->reference; ?></td>
@@ -63,13 +63,13 @@
             <td>
             	<div class="btn-group-action">
 				    <div class="btn-group pull-right">
-				        <a class="edit btn btn-default" href="?module=catalogs&page=edit&id=<?= $product->id; ?>" title="Edit"><i class="fa fa-pencil"></i> <?php trans_e("Edit", "default"); ?></a>
+				        <a class="edit btn btn-default" href="?module=catalogs&page=edit&id=<?= $product->id_product; ?>" title="Edit"><i class="fa fa-pencil"></i> <?php trans_e("Edit", "default"); ?></a>
 				        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-down"></i>&nbsp;</button>
 				        <ul class="dropdown-menu">
 				        	<li><a href="<?= $product->link; ?>" title="<?php trans_e("Preview", "default"); ?>" target="_blank"><i class="fa fa-eye"></i> <?php trans_e("Preview", "default"); ?></a></li>
 							<li class="divider"></li>
 				            <li>
-				                <a class="deleteProduct" data-id="<?= $product->id; ?>" href="#" title="<?php trans_e("Delete", "default"); ?>"><i class="fa fa-trash"></i> <?php trans_e("Delete", "default"); ?></a>
+				                <a class="deleteProduct" data-id="<?= $product->id_product; ?>" href="#" title="<?php trans_e("Delete", "default"); ?>"><i class="fa fa-trash"></i> <?php trans_e("Delete", "default"); ?></a>
 				            </li>
 				        </ul>
 				    </div>

@@ -308,7 +308,7 @@ class ProductController extends FrontController
         try{
             $results = new \stdClass;
 
-            $comb = $this->db->prepare("SELECT c.`id` as id_dec, c.`price`, c.`price_impact`, c.`quantity`, c.`images`, p.`id` as id_product, p.`sell_price`, p.`discount`, p.`discount_type`, t.`name` FROM `{$this->db->prefix}declinaisons` c
+            $comb = $this->db->prepare("SELECT c.`id` as id_dec, c.`price`, c.`price_impact`, c.`quantity`, c.`images`, p.`id` as id_product, p.`sell_price`, p.`discount`, p.`discount_type`, t.`name`, t.`link_rewrite` FROM `{$this->db->prefix}declinaisons` c
                 LEFT JOIN `{$this->db->prefix}products` p ON c.id_product = p.id
                 LEFT JOIN `{$this->db->prefix}product_trans` t ON t.id_product = p.id
                 WHERE c.`id` = ?", [$id_combination], true);
@@ -318,6 +318,7 @@ class ProductController extends FrontController
                 $results->id_product = $comb->id_product;
                 $results->id_dec = $comb->id_dec;
                 $results->name = $comb->name;
+                $results->discount = $comb->discount;
 
 
                 //price impact
@@ -356,7 +357,7 @@ class ProductController extends FrontController
 
                 //items in stock
                 $results->stock = $comb->quantity;
-                $results->link = get_shop('home_url') . 'product/' .$id_product . '-' .$comb->permalink;
+                $results->link = get_shop('home_url') . 'product/' .$id_product . '-' .$comb->link_rewrite;
             }
 
             return $results;

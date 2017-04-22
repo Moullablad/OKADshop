@@ -1,6 +1,5 @@
 @import url("style1.css");
 @import url("style2.css");
-@import url("style3.css");
 
 /* footer styles */
 html {
@@ -323,3 +322,5 @@ input.gray, select.gray, textarea.gray{
 @media (min-width: 992px) {
 
 }
+
+

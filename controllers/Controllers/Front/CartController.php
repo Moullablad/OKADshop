@@ -60,11 +60,15 @@ class CartController extends FrontController
 
         //update item quantity
         if( $id_declinaison > 0 ){
-            $old_quantity = intval($cart->items[$id_product][$id_declinaison]);
-            $cart->items[$id_product][$id_declinaison] = $old_quantity + $quantity;
-        } else {// if( isset($cart->items[$id_product]['qty']) )
-            $cart->items[$id_product]['qty'] = array();
-            $cart->items[$id_product]['qty'] = intval($cart->items[$id_product]['qty']) + $quantity;
+            if( !isset($cart->items[$id_product][$id_declinaison]) ) {
+                $cart->items[$id_product][$id_declinaison] = 0;
+            }
+            $cart->items[$id_product][$id_declinaison] += $quantity;
+        } else {
+            if( !isset($cart->items[$id_product]['qty']) ) {
+                $cart->items[$id_product]['qty'] = 0;
+            }
+            $cart->items[$id_product]['qty'] += $quantity;
         }
 
         return Session::set('cart', $cart);
@@ -126,6 +130,7 @@ class CartController extends FrontController
         $items_count = $total_products = $total_discount = $total_tax = 0;
 
         $cart = Session::get('cart');
+        // var_dump($cart->items);exit;
 
         if( isset($cart->items) ){
             foreach ($cart->items as $id_product => $item) {
@@ -133,7 +138,7 @@ class CartController extends FrontController
                 array_push($ids_products, $id_product);
 
                 $product_data = new \stdClass;
-                if( $item['qty'] ){
+                if( isset($item['qty']) ){
                     //get translated product data
                     $data = $product->getProduct($id_product);
 
@@ -147,7 +152,7 @@ class CartController extends FrontController
                     $total_products += (int) $item['qty'] * $product_data->price;
                     $total_discount += (int) $item['qty'] * $data->discount;
 
-                    $product_data->stock = $data->qty;
+                    $product_data->stock = $data->quantity;
                     $product_data->qty = (int) $item['qty'];
                     $product_data->min_quantity = (int) $data->min_quantity;
                     $product_data->cover = $data->cover;
@@ -159,7 +164,7 @@ class CartController extends FrontController
                 } elseif( !empty($item) ) {
                     foreach ($item as $id_combination => $qty) {
                         $data = $product->getCombinationByID($id_product, $id_combination);
-
+                        
                         $items_count += (int) $qty;
                         $total_products += (int) $qty * $data->price;
                         $total_discount += (int) $qty * $data->discount;

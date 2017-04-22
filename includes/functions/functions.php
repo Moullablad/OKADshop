@@ -19,28 +19,30 @@
  */
 
 
-require_once 'core.php';
-require_once 'admin.php';
-require_once 'languages.php';
-require_once 'shop.php';
+include __DIR__ . '/core.php';
+include __DIR__ . '/admin.php';
+include __DIR__ . '/admin-users.php';
+include __DIR__ . '/languages.php';
+include __DIR__ . '/shop.php';
 
-require_once 'modules.php';
-require_once 'actions.php';
-require_once 'hooks.php';
+include __DIR__ . '/modules.php';
+include __DIR__ . '/actions.php';
+include __DIR__ . '/hooks.php';
 
-require_once 'tabs.php';
-require_once 'views.php';
-require_once 'medias.php';
-require_once 'themes.php';
+include __DIR__ . '/tabs.php';
+include __DIR__ . '/views.php';
+include __DIR__ . '/medias.php';
+include __DIR__ . '/themes.php';
 
-require_once 'products.php';
-require_once 'orders.php';
-require_once 'users.php';
+include __DIR__ . '/products.php';
+include __DIR__ . '/category.php';
+include __DIR__ . '/orders.php';
+include __DIR__ . '/users.php';
 
 //old function to remove
-require_once 'functions/functions.php';
-require_once 'functions/cart.php';
-require_once 'functions/geofunction.php';
+include __DIR__ . '/functions/functions.php';
+include __DIR__ . '/functions/cart.php';
+include __DIR__ . '/functions/geofunction.php';
 
 
 

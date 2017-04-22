@@ -19,6 +19,8 @@ use PHPImageWorkshop\ImageWorkshop;
 
 use Core\Uploader;
 
+use Core\Module;
+
 class Image
 {
 
@@ -57,7 +59,7 @@ class Image
     public static function getImageBySize($image_name, $imageDir, $size=null){
         try {
             if( $image_name == "" || $imageDir == "" )
-                return false;
+                return self::defaultImage($size);
 
             //get image extention
             $extention = self::getExtension($image_name);
@@ -65,10 +67,11 @@ class Image
 
             //get image full path
             $full_path = $imageDir . $filename . '-' . $size . '.' . $extention;
+            $orginal_path = $imageDir . $filename . '.' . $extention;
             if( file_exists(site_base($full_path)) ){
                 return site_url($full_path);
-            } else {
-                return site_url($imageDir . $filename . '.' . $extention); //Real image
+            } else if( file_exists(site_base($orginal_path)) ){
+                return site_url($orginal_path); //Original image
             }
 
             //return default image
@@ -193,6 +196,12 @@ class Image
                     $layer = ImageWorkshop::initFromPath( $image_path );
                     $layer->resizeInPixel($size[0], $size[1], true, 0, 0, 'MM');
                     $layer->save( $file_target, $image_output, true, null, 95);
+                    do_action('after_resize_image', [
+                        'image_name' => $image_name,
+                        'extention' => $extention,
+                        'path' => $file_target . $image_output,
+                        'size' => $size
+                    ]);
                 }
             }
 

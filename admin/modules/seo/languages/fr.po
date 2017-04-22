@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SEO\n"
-"POT-Creation-Date: 2016-12-14 11:02+0000\n"
-"PO-Revision-Date: 2016-12-14 11:06+0000\n"
+"POT-Creation-Date: 2017-03-29 04:55+0000\n"
+"PO-Revision-Date: 2017-03-29 04:56+0000\n"
 "Last-Translator: \n"
 "Language-Team: OKADshop <contact@okadshop.com>\n"
 "Language: en\n"
@@ -25,11 +25,11 @@ msgstr "Général"
 
 #: includes/tabs.php:33
 msgid "Webmasters Tools"
-msgstr "webmasters Tools"
+msgstr "Outils pour webmasters"
 
 #: includes/tabs.php:39
 msgid "Open Graph"
-msgstr "Open Graph"
+msgstr "open Graph"
 
 #: includes/tabs.php:45
 msgid "Twitter"
@@ -41,7 +41,7 @@ msgstr "Analytique"
 
 #: includes/tabs.php:57
 msgid "Meta tags"
-msgstr "Les balises mETA"
+msgstr "meta tags"
 
 #: includes/tabs.php:208
 msgid "Meta was saved successfully."
@@ -49,11 +49,11 @@ msgstr "Meta a été enregistré avec succès."
 
 #: includes/tabs.php:215
 msgid "Meta was deleted successfully."
-msgstr "Meta a été supprimé."
+msgstr "Meta a été supprimé avec succès."
 
 #: index.php:28
 msgid "SEO"
-msgstr "référencement"
+msgstr "SEO"
 
 #: views/admin/settings.php:18
 msgid "SEO - Settings"
@@ -61,7 +61,7 @@ msgstr "SEO - Paramètres"
 
 #: views/admin/tabs/analytics.php:2
 msgid "Analytics Code"
-msgstr "code Analytics"
+msgstr "code Analytics,"
 
 #: views/admin/tabs/analytics.php:6
 msgid "EX: UA-XXXXXXXX-X"
@@ -77,15 +77,15 @@ msgstr "Séparateur"
 
 #: views/admin/tabs/general.php:10
 msgid "Chose separator, default:"
-msgstr "Choisissez séparateur, par défaut:"
+msgstr "Choisissez le séparateur, par défaut:"
 
 #: views/admin/tabs/general.php:13 views/admin/tabs/general.php:32
 msgid "Max"
-msgstr "Max"
+msgstr "max"
 
 #: views/admin/tabs/general.php:17
 msgid "Max title length, default:"
-msgstr "Longueur du titre Max, par défaut:"
+msgstr "Longueur maximale du titre, par défaut:"
 
 #: views/admin/tabs/general.php:20
 msgid "Position"
@@ -93,7 +93,7 @@ msgstr "Position"
 
 #: views/admin/tabs/general.php:22
 msgid "Left"
-msgstr "À gauche"
+msgstr "La gauche"
 
 #: views/admin/tabs/general.php:22
 msgid "Right"
@@ -105,7 +105,7 @@ msgstr "La description"
 
 #: views/admin/tabs/general.php:36
 msgid "Max description length, default:"
-msgstr "Max longueur de description, par défaut:"
+msgstr "Longueur maximale de description, par défaut:"
 
 #: views/admin/tabs/general.php:42 views/admin/tabs/general.php:45
 msgid "Keywords"
@@ -129,11 +129,11 @@ msgstr "Non"
 
 #: views/admin/tabs/general.php:63
 msgid "Robots"
-msgstr "Robots"
+msgstr "robots"
 
 #: views/admin/tabs/general.php:69
 msgid "Viewport"
-msgstr "Viewport"
+msgstr "viewport"
 
 #: views/admin/tabs/general.php:75
 msgid "Author"
@@ -145,7 +145,7 @@ msgstr "droits d'auteur"
 
 #: views/admin/tabs/general.php:85
 msgid "Provide author name or link to page contain copyrights."
-msgstr "Fournir le nom de l'auteur ou un lien vers la page contiennent les droits d'auteur."
+msgstr "Indiquez le nom de l'auteur ou lien vers la page contiennent les droits d'auteur."
 
 #: views/admin/tabs/general.php:88
 msgid "Publisher"
@@ -157,7 +157,7 @@ msgstr "VOTRE PERSONNEL G + PROFIL ICI"
 
 #: views/admin/tabs/meta-tags.php:4
 msgid "Type (name, property, http-equiv, charset...)"
-msgstr "Type de (nom, propriété, http-equiv, charset ...)"
+msgstr "Type (nom, propriété, http-equiv, charset ...)"
 
 #: views/admin/tabs/meta-tags.php:7
 msgid "Property"
@@ -197,7 +197,7 @@ msgstr "Feuilleter"
 
 #: views/admin/tabs/open-graph.php:13
 msgid "Image should be at least 200px in both dimensions, with 1500x1500 preferred. (Maximum image size is 5MB.)"
-msgstr "L'image doit être au moins 200px dans les deux dimensions, avec 1500x1500 préféré. (Taille d'image maximale est 5MB.)"
+msgstr "L'image doit être au moins 200px dans les deux dimensions, avec 1500x1500 préféré. (Taille de l'image maximale est 5MB.)"
 
 #: views/admin/tabs/open-graph.php:20 views/admin/tabs/twitter.php:20
 msgid "Enabled"
@@ -209,7 +209,7 @@ msgstr "Type"
 
 #: views/admin/tabs/twitter.php:13
 msgid "Default Image. (Maximum image size is 5MB.)"
-msgstr "Image par défaut. (Taille d'image maximale est 5MB.)"
+msgstr "Image par défaut. (Taille de l'image maximale est 5MB.)"
 
 #: views/admin/tabs/twitter.php:26
 msgid "Prefix"
@@ -221,7 +221,7 @@ msgstr "Carte"
 
 #: views/admin/tabs/twitter.php:36
 msgid "Supported card types : 'app', 'gallery', 'photo', 'player', 'product', 'summary', 'summary_large_image'."
-msgstr "types pris en charge de cartes: 'app', 'gallery', 'photo', 'player', 'product', 'summary', 'summary_large_image'."
+msgstr "Pris en charge les types de cartes: 'app', 'galerie', 'photo', 'joueur', 'produit', 'résumé', 'summary_large_image'."
 
 #: views/admin/tabs/twitter.php:39
 msgid "Site"
@@ -237,15 +237,15 @@ msgstr "Google"
 
 #: views/admin/tabs/webmasters.php:6
 msgid "Google site verification code"
-msgstr "Google code de vérification du site"
+msgstr "Code de vérification Google du site"
 
 #: views/admin/tabs/webmasters.php:9
 msgid "Google client ID"
-msgstr "Google ID client"
+msgstr "ID client Google"
 
 #: views/admin/tabs/webmasters.php:13
 msgid "Google signin client ID"
-msgstr "Google ID client signin"
+msgstr "ID Google client signin"
 
 #: views/admin/tabs/webmasters.php:16
 msgid "Bing"
@@ -253,7 +253,7 @@ msgstr "Bing"
 
 #: views/admin/tabs/webmasters.php:20
 msgid "Bing site verification code"
-msgstr "Site Bing code de vérification"
+msgstr "Code de vérification du site Bing"
 
 #: views/admin/tabs/webmasters.php:23
 msgid "Alexa"
@@ -261,7 +261,7 @@ msgstr "Alexa"
 
 #: views/admin/tabs/webmasters.php:27
 msgid "Alexa site verification code"
-msgstr "Alexa code de vérification du site"
+msgstr "Code de vérification du site Alexa"
 
 #: views/admin/tabs/webmasters.php:30
 msgid "Pinterest"
@@ -269,7 +269,7 @@ msgstr "Pinterest"
 
 #: views/admin/tabs/webmasters.php:33
 msgid "Interest site verification code"
-msgstr "Intérêt code de vérification du site"
+msgstr "Intérêt Code de vérification du site"
 
 #: views/admin/tabs/webmasters.php:36
 msgid "Yandex"

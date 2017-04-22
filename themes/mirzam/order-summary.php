@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="main-container">
 
     <?php if( isset($cart->items) && !is_empty($cart->items) ) : ?>
 

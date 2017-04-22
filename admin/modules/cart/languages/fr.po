@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cart\n"
-"POT-Creation-Date: 2016-12-14 09:58+0000\n"
-"PO-Revision-Date: 2016-12-14 10:08+0000\n"
+"POT-Creation-Date: 2017-03-30 00:25+0000\n"
+"PO-Revision-Date: 2017-03-30 00:26+0000\n"
 "Last-Translator: \n"
 "Language-Team: OKADshop <contact@okadshop.com>\n"
 "Language: en\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: includes/ajax/labels/default.php:32
 msgid "Default label was changed."
-msgstr "étiquette par défaut a été modifié."
+msgstr "étiquette par défaut a été changé."
 
 #: includes/ajax/labels/default.php:34
 msgid "Unable to change default label."
-msgstr "Impossible de modifier l'étiquette par défaut."
+msgstr "Impossible de changer l'étiquette par défaut."
 
 #: includes/functions.php:96
 msgid "Add to Cart"
@@ -33,11 +33,11 @@ msgstr "Ajouter au panier"
 
 #: includes/tabs.php:5
 msgid "Cart labels"
-msgstr "Étiquettes de panier"
+msgstr "Panier étiquettes"
 
 #: includes/tabs.php:36
 msgid "Label was deleted successfully."
-msgstr "Label a été supprimé avec succès."
+msgstr "Étiquette a été supprimé avec succès."
 
 #: views/admin/settings.php:11
 msgid "Label name."

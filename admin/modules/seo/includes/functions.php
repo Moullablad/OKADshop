@@ -139,7 +139,7 @@ function generate_metatags(){
     		if( $lang->iso_code != $iso_code ){
     			$locale_url = get_current_url($lang->iso_code);
     			array_push($og_urls, $locale_url);
-    			$output .= '<link rel="alternate" hreflang="'. str_replace('_', '-', $lang->code) .'" href="'. $locale_url .'" />'. $newline;
+    			$output .= '<link rel="alternate" hreflang="'. str_replace('_', '-', $lang->locale) .'" href="'. $locale_url .'" />'. $newline;
     		}
     	}
     }
@@ -211,7 +211,7 @@ function generate_metatags(){
     		}
     	}
     }
-    return $output . $newline;
+    print $output;
 }
 add_action('os_head', 'generate_metatags', 0);
 

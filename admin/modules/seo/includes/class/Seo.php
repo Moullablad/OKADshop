@@ -181,7 +181,7 @@ class Seo {
 	    self::$metas['og:url']['content'] = self::$url;
 	    self::$metas['og:site_name']['content'] = get_shop('name');
 	    self::$metas['og:type']['content'] = self::$settings['og']['type'];
-	  	$lang = get_lang('code');
+	  	$lang = get_lang('locale');
 	    $locale = str_replace('_', '-', $lang);
 	    self::$metas['og:locale']['content'] = strtolower($locale);
 	}
