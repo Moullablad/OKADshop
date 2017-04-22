@@ -4,7 +4,7 @@ $Args = array(
 		'ID' => _DB_PREFIX_.'countries.id', 
 		'name' => _DB_PREFIX_.'countries.name', 
 		'zones'=> _DB_PREFIX_.'zones.name', 
-		'langs'=> _DB_PREFIX_.'langs.name', 
+		'langs'=> _DB_PREFIX_.'languages.name', 
 		'iso_code' => _DB_PREFIX_.'countries.iso_code', 
 		'active' => _DB_PREFIX_.'countries.active', 
 		'zip_code_format' => 'zip_code_format'
@@ -12,7 +12,7 @@ $Args = array(
 	'From' => array( _DB_PREFIX_.'countries'),
 	'Join' => array(
 		array( _DB_PREFIX_.'zones', _DB_PREFIX_.'zones.id', _DB_PREFIX_.'countries.id_zone'),
-		array( _DB_PREFIX_.'langs', _DB_PREFIX_.'langs.id', _DB_PREFIX_.'countries.id_lang'),
+		array( _DB_PREFIX_.'languages', _DB_PREFIX_.'languages.id', _DB_PREFIX_.'countries.id_lang'),
 	),
 	'Module'=> array('countries','Liste des Pays'),
 	'Operations' => array('edit','delete'),
