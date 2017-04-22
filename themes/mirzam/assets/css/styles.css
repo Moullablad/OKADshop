@@ -170,7 +170,7 @@ i:focus{
     border: none;
 	color: #000;
     font-size: 14px;
-    border: 3px solid #f0f0e9;
+    border: 1px solid #f0f0e9;
 }
 
 .osForm .form-control:not(textarea){
@@ -180,7 +180,7 @@ i:focus{
 .osForm input:focus{
 	outline: 0px;
 	box-shadow: none !important;
-	border: 3px solid #f0f0e9 !important;
+	border: 1px solid #f0f0e9 !important;
 }
 
 input.gray, select.gray, textarea.gray{
