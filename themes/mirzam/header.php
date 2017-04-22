@@ -13,11 +13,9 @@
     <?= os_head(); ?>
 </head>
 <body>
-
     <section id="top-banner">
         <?php get_section('top_banner'); ?>
     </section>
-
     <section id="top-nav">
       <div class="container">
         <div class="row">
@@ -32,13 +30,12 @@
           </div>
       </div>
     </section>
-    
     <section id="header_top">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-4 mb-xs-20">
             <div id="logo">
-              <a href="<?=get_home_url();?>"><img src="<?=get_logo();?>"  alt="logo" height="46" /></a>
+              <a href="<?=get_home_url();?>"><img src="<?=get_logo();?>" alt="logo" height="46" /></a>
             </div>
           </div>
           <div class="col-md-5 col-sm-8">
