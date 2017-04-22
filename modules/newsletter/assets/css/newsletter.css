@@ -62,8 +62,8 @@
 
 .newsletter-popup .nl-popup-form .button:hover,
 .newsletter-popup .nl-popup-form .button:focus{
-    background-color: #7e883a;
-    border-color: #7e883a;
+    border-color: gray;
+    background: gray;
     outline: none;
 }
 
