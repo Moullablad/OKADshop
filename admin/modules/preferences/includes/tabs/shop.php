@@ -74,14 +74,15 @@ function pref_seo_tab(){
 	if(!$id_lang) $id_lang = get_lang('id');
 	$data = array();
 	$settings = get_seo_settings();
-	$data['max_title'] = $settings['general']['title']['max'];
-	$data['max_desc'] = $settings['general']['description']['max'];
+
 	//save details
 	if ( isset($_POST['seo_form']) && !is_ajax() ){
 		$data = $_POST;
 		$model = new Shop();
 		$update = $model->update($data);
 	}
+	$data['max_title'] = $settings['general']['title']['max'];
+	$data['max_desc'] = $settings['general']['description']['max'];
 	$data['shop'] = get_trans('shop', 'shop_trans', 'id_shop', null, $id_lang, true);
 	get_view(__FILE__, 'admin/tabs/shop/seo', $data);
 }
