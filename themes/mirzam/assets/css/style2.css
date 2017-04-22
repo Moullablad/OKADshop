@@ -1072,7 +1072,7 @@ footer{
 }
 
 footer .widgets{
-	padding: 70px 0 50px;
+	padding: 30px 0 20px;
 }
 
 footer .widgets .widget-title{
@@ -1126,7 +1126,6 @@ footer .widgets .social-icons li a i{
 
 
 footer .footer-bottom {
-	height: 70px;
 	background-color: #b5b5b5;
 }
 

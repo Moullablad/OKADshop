@@ -9,9 +9,6 @@
 	padding: 15px 5px;
 }
 
-#account.os-tab-container{
-	background: #7e883a;
-}
 
 #account #os-tabs ul{
 	border-bottom: none; 
@@ -26,8 +23,8 @@
 #account #os-tabs li.active a, 
 #account #os-tabs a:focus, 
 #account #os-tabs a:hover{
-	background-color: #1f1f1f;
-	border-color: #1f1f1f;
+    background-color: #848484;
+    border-color: #b3b3b3;
 	border-radius: 0px;
 	text-decoration: none;
 }
