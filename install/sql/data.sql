@@ -149,10 +149,9 @@ INSERT INTO `%%meta_value` (`name`, `value`) VALUES
 --
 
 INSERT INTO `%%payment_methodes` (`id`, `value`, `description`, `image`) VALUES
-(1, 'Virement bancaire', 'Payer par virement bancaire', 'modules/bankwire/assets/images/bankwire.jpg'),
-(2, 'Mandat Postal', 'Payer par Mandat Postal', 'modules/os-mandatpostal/assets/images/mandatpostal.png'),
-(3, 'PayPal', 'Payer par PayPal', 'modules/paypalexpress/assets/images/paypal.png'),
-(4, 'Western Union', 'Payer par Western Union', 'modules/westernunion/assets/images/western.png');
+(1, 'Bank wire', 'Pay with bank wire', 'modules/bankwire/assets/images/bankwire.jpg'),
+(3, 'PayPal', 'Pay with PayPal', 'modules/paypalexpress/assets/images/paypal.png'),
+(4, 'Western Union', 'Pay with Western Union', 'modules/westernunion/assets/images/western.png');
 
 
 --
@@ -363,27 +362,27 @@ INSERT INTO `%%product_images` (`id`, `id_product`, `name`, `position`, `futured
 --
 
 INSERT INTO `%%shop_activity` (`id`, `name`) VALUES
-(1, 'Alimentation et gastronomie'),
-(2, 'Animaux'),
-(3, 'Articles pour bébé'),
-(4, 'Arts et culture'),
-(5, 'Auto et moto'),
-(6, 'Bijouterie'),
-(7, 'Chaussures et accessoires'),
-(8, 'Fleurs, cadeaux et artisanat'),
-(9, 'Hifi, photo et vidéo'),
-(10, 'Informatique et logiciels'),
+(1, 'Food and gastronomy'),
+(2, 'Animals'),
+(3, 'Baby items'),
+(4, 'Arts and Culture'),
+(5, 'Auto and Moto'),
+(6, 'Jewelry'),
+(7, 'Shoes & Accessories'),
+(8, 'Flowers, gifts and crafts'),
+(9, 'Hifi, photo and video'),
+(10, 'Computer & Software'),
 (11, 'Lingerie et Adulte'),
-(12, 'Maison et jardin'),
-(13, 'Mode et accessoires'),
-(14, 'Santé et beauté'),
+(12, 'Home and Garden'),
+(13, 'Fashion and accessories'),
+(14, 'Health & Beauty'),
 (15, 'Services'),
-(16, 'Sports et loisirs'),
-(17, 'Téléchargement'),
-(18, 'Télé©phonie et communication'),
-(19, 'Voyage et tourisme'),
-(20, 'électromÃ©nager'),
-(21, 'Autre activité ...');
+(16, 'Sports and leisures'),
+(17, 'charities'),
+(18, 'Telephony and communication'),
+(19, 'Travel and Tourism'),
+(20, 'home appliance'),
+(21, 'Other Activities ...');
 
 
 
