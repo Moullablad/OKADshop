@@ -146,6 +146,7 @@ input{
 
 #home_slider {
 	margin-top: 0;
+	float:left;
 }
 #home_slider .carousel-control.right,#home_slider .carousel-control.left{
 	background: none;
