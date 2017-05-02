@@ -1293,7 +1293,7 @@ msgstr "Identifying the base"
 
 #: index.php:296
 msgid "Mot de passe de la base"
-msgstr "Based password"
+msgstr "Database password"
 
 #: index.php:303
 msgid "Préfixe des tables"
