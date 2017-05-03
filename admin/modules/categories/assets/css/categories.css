@@ -173,13 +173,13 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	.mcd-menu { 
+/*	.mcd-menu { 
 		width: 50px;
-	}
+	}*/
 	.mcd-menu li a { 
 		position: relative;
 		padding: 12px 16px;
-		height:20px;
+/*		height:20px;*/
 	}
 	
 	.mcd-menu li > ul {
@@ -226,13 +226,13 @@
 }
 
 @media only screen and (max-width: 479px) {
-  .mcd-menu { 
+/*  .mcd-menu { 
 		width: 50px;
-	}
+	}*/
 	.mcd-menu li a { 
 		position: relative;
 		padding: 12px 16px;
-		height:20px;
+/*		height:20px;*/
 	}
 	
 	.mcd-menu li > ul {
