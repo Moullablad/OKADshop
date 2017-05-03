@@ -304,7 +304,7 @@ input.gray, select.gray, textarea.gray{
 	#header_top .nav, #main_nav .nav {
 		display: table;
 	    margin: 0 auto;
-	    float: none !important;
+	    /*float: none !important;*/
 	}
 
 	    

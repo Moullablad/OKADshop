@@ -87,7 +87,7 @@ input{
 	padding-left: 0;
 }
 #main_nav #main_menu a{
-	padding: 20px 64px;
+	/*padding: 20px 64px;*/
 }
 #main_nav #main_menu a:hover{
 	color: #fe980f;
