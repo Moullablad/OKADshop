@@ -115,8 +115,8 @@
     line-height: 41px;
     border: none;
     border-radius: 0px;
-    background-color: #f0f0e9;
-    color: #dcdcda;
+    background-color: #fe980f;
+    color: #fff;
 }
 
 .newsletter_block button:focus{

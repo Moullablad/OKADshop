@@ -84,8 +84,8 @@ table td{
 }
 
 .btn:hover{
-	background-color: #fe980f !important;
-    color: #fff !important;
+    background-color: #fff !important;
+    color: #fdae44 !important;
 }
 
 .btn-large{
