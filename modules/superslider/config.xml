@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>superslider</name>
+	<displayName>Super Slider</displayName>
+	<description>Display a Slideshows in home page.</description>
+	<category>slideshows</category>
+	<version>1.0.0</version>
+	<author>Moullablad</author>
+	<website>http://moullablad.com</website>
+	<config>slidersettings</config>
+</module>

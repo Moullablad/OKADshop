@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<modules>
+	<name>modules</name>
+	<displayName>Modules</displayName>
+	<category>administration</category>
+	<version>1.0.0</version>
+	<description>Manage modules.</description>
+	<author>Soft High Tech</author>
+	<website>http://softhighttech.com</website>
+</modules>

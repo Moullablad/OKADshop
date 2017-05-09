@@ -1,0 +1,242 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mirzam\n"
+"POT-Creation-Date: 2017-04-18 10:38+0000\n"
+"PO-Revision-Date: 2017-04-18 10:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: SoftHighTech <contact@softhightech.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+
+#: blog-detail.php:7 cms-category.php:46 product.php:7
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+#: blog-detail.php:8
+msgid "Blog"
+msgstr "مدونة"
+
+#: blog-detail.php:30
+msgid "SHARE TO FRIENDS"
+msgstr "حصة للأصدقاء"
+
+#: category.php:50
+msgid "Sort By:"
+msgstr "ترتيب حسب:"
+
+#: category.php:52
+msgid "Perpage"
+msgstr "بيرباج"
+
+#: category.php:58
+msgid "Order products by"
+msgstr "ترتيب المنتجات من قبل"
+
+#: category.php:59
+msgid "Name: A-Z"
+msgstr "الاسم: أز"
+
+#: category.php:60
+msgid "Name: Z-A"
+msgstr "الاسم: زا"
+
+#: category.php:61
+msgid "Price: Lowest first"
+msgstr "السعر: الأقل أولا"
+
+#: category.php:62
+msgid "Price: Highest first"
+msgstr "السعر: الأعلى أولا"
+
+#: category.php:63 product.php:90
+msgid "In stock"
+msgstr "في المخزن"
+
+#: category.php:64
+msgid "Reference: Lowest first"
+msgstr "المرجع: الأقل أولا"
+
+#: category.php:65
+msgid "Reference: Highest first"
+msgstr "المرجع: الأعلى أولا"
+
+#: category.php:72
+msgid "View:"
+msgstr "رأي:"
+
+#: category.php:101
+msgid "No products available for this category."
+msgstr "لا توجد منتجات متوفرة لهذه الفئة."
+
+#: footer.php:18
+msgid "Powered by"
+msgstr "مشغل بواسطة"
+
+#: header.php:48
+msgid "Search your query here..."
+msgstr "البحث في طلب البحث هنا ..."
+
+#: header.php:76
+msgid "Toggle navigation"
+msgstr "تبديل الملاحة"
+
+#: modules/categorypanel/views/front/category.php:3
+msgid "CATEGORIES"
+msgstr "الاقسام"
+
+#: modules/contact-form/views/front/contact.php:5
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+#: modules/contact-form/views/front/contact.php:6
+msgid "Contact information"
+msgstr "معلومات الاتصال"
+
+#: modules/contact-form/views/front/contact.php:11
+msgid "Phone:"
+msgstr "هاتف:"
+
+#: modules/contact-form/views/front/contact.php:14
+msgid "E-mail:"
+msgstr "البريد الإلكتروني:"
+
+#: modules/contact-form/views/front/contact.php:21
+msgid "Leave a message"
+msgstr "اترك رسالة"
+
+#: modules/contact-form/views/front/contact.php:23
+msgid "Full name"
+msgstr "الاسم الكامل"
+
+#: modules/contact-form/views/front/contact.php:27
+msgid "E-mail"
+msgstr "البريد الإلكتروني"
+
+#: modules/contact-form/views/front/contact.php:31
+msgid "Website"
+msgstr "موقع الكتروني"
+
+#: modules/contact-form/views/front/contact.php:35
+msgid "Subject"
+msgstr "موضوع"
+
+#: modules/contact-form/views/front/contact.php:39
+msgid "Content"
+msgstr "يحتوى"
+
+#: modules/contact-form/views/front/contact.php:43
+msgid "Send"
+msgstr "إرسال"
+
+#: order-address.php:8
+msgid "Choose a delivery address:"
+msgstr "اختيار عنوان تسليم:"
+
+#: order-address.php:10 order-address.php:24
+msgid "Choose an address."
+msgstr "اختر عنوانا."
+
+#: order-address.php:22
+msgid "Choose a billing address:"
+msgstr "اختار عنوان للفواتير:"
+
+#: order-address.php:36
+msgid "Use the delivery address as the billing address."
+msgstr "استخدم عنوان التسليم كعنوان إرسال الفواتير."
+
+#: order-address.php:44
+msgid "Your delivery address"
+msgstr "عنوان التسليم"
+
+#: order-address.php:57 order-address.php:76
+msgid "Edit"
+msgstr "تصحيح"
+
+#: order-address.php:63
+msgid "Your billing address"
+msgstr "عنوان ارسال الفواتير الخاص بك"
+
+#: order-address.php:81
+msgid "Add a new address"
+msgstr "أضف عنوانا جديدا"
+
+#: order-address.php:87
+msgid "Summary"
+msgstr "ملخص"
+
+#: order-address.php:88 order-shipping.php:54 order-summary.php:11
+msgid "Checkout"
+msgstr "الدفع"
+
+#: order-shipping.php:21
+msgid "Choose a shipping option for this address."
+msgstr "اختيار خيار الشحن لهذا العنوان."
+
+#: order-shipping.php:46
+msgid ""
+"I agree to the terms of service and will adhere to them unconditionally."
+msgstr "أنا أوافق على شروط الخدمة وسوف تلتزم بها دون قيد أو شرط."
+
+#: order-shipping.php:53
+msgid "Addresses"
+msgstr "عناوين"
+
+#: order-shipping.php:62
+msgid "No career match your delivery address."
+msgstr "لا مباراة الوظيفي عنوان التسليم الخاص بك."
+
+#: order-shipping.php:64
+msgid "Choose another address"
+msgstr "اختر عنوانا آخر"
+
+#: order-summary.php:10
+msgid "Continue shopping"
+msgstr "مواصلة التسوق"
+
+#: product.php:60
+msgid "Reference"
+msgstr "مرجع"
+
+#: product.php:66
+msgid "Condition"
+msgstr "شرط"
+
+#: product.php:80
+msgid "Choose a value"
+msgstr "اختر قيمة"
+
+#: product.php:90
+msgid "Item(s)"
+msgstr "العناصر)"
+
+#: product.php:92
+msgid ""
+"This product is no longer in stock with those attributes but is available "
+"with others."
+msgstr "هذا المنتج لم يعد في المخزون مع تلك السمات ولكن هو متاح مع الآخرين."
+
+#: product.php:113
+msgid "Share:"
+msgstr "شارك:"
+
+#: product.php:125
+msgid "Description"
+msgstr "وصف"
+
+#: product.php:130
+msgid "Product Features"
+msgstr "مواصفات المنتج"
+
+#: product.php:135
+msgid "Product tags"
+msgstr "علامات المنتج"

@@ -1,0 +1,314 @@
+/* ===============================
+ * Admin left Navbar 
+ * ==============================*/
+#os_admin_menu{
+  display: block; 
+  position: static; 
+  margin-bottom: 5px; 
+  width: 100%;
+  box-shadow: none;
+  border: 0px none;
+}
+
+#os_admin_menu{
+  background-color: transparent;
+  padding-top: 0px;
+      margin: 0px;
+}
+
+#os_admin_menu .dropdown-submenu {
+  position: relative;
+}
+#os_admin_menu a[href="./index.php"]{
+  background-color: #425164;
+}
+
+#os_admin_menu a[href="./index.php"].active{
+  background-color: #f5f5f5;
+  border-left: 5px solid #A5245E;
+  color: #000 !important;
+}
+
+#os_admin_menu a,
+#os_admin_menu a:active,
+#os_admin_menu a:focus,
+#os_admin_menu a:hover,
+#os_admin_menu a:visited,
+{
+  color: #fff;
+}
+
+#os_admin_menu a:hover{
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+/*#os_admin_menu li.active{
+  background-color: #f5f5f5;
+  border-left: 5px solid #A5245E;
+  color: #000;
+}*/
+
+.dropdown-menu>.active>a, 
+.dropdown-menu>.active>a:focus, 
+.dropdown-menu>.active>a:hover
+{
+  background-color: #f5f5f5;
+  /*border-left: 5px solid #A5245E;*/
+  color: #000 !important;
+}
+
+#os_admin_menu .dropdown-menu>li>a.active{
+  background-color: #425164;
+  border-left: 0px none;
+  color: #fff;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 5px;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
+  background-color: #31373D;
+  border-radius: 0px;
+
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -5px;
+}
+
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
+
+
+
+
+
+/* =========================================== */
+.navbar-custom {
+  width: inherit;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease,-webkit-transform 200ms ease;
+  background-color: #31373D;
+  border-color: transparent;
+  border-radius: 0px;
+}
+
+.navbar-custom .navbar-header {
+  height: 56px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 20px;
+  background-color: #272c30;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: background-color 200ms ease;
+  transition: background-color 200ms ease;
+}
+
+.navbar-custom .navbar-nav>li>a {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  color: #c3cfd8;
+  -webkit-transition: opacity 200ms ease,-webkit-transform 200ms ease;
+  transition: opacity 200ms ease,-webkit-transform 200ms ease;
+  transition: transform 200ms ease,opacity 200ms ease;
+  transition: transform 200ms ease,opacity 200ms ease,-webkit-transform 200ms ease;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  margin-left: 0;
+}
+
+.navbar-custom .navbar-nav>li>a:hover,
+.navbar-custom .navbar-nav>li>a:focus {
+  color: #fff;
+}
+
+.navbar-custom .navbar-nav>.open>a,
+.navbar-custom .navbar-nav>.open>a:focus,
+.navbar-custom .navbar-nav>.open>a:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-custom .navbar-nav>li>a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navbar-custom .fa {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.navbar-custom .dropdown-menu {
+  position: fixed;
+  height: 100%;
+  float: right;
+  left: 45px;
+  border-radius: 0;
+  top: -1px;
+  background-color: #31373d;
+}
+
+
+
+
+
+
+/*
+.navbar-custom .dropdown-menu> .heading {
+  height: 53px;
+  padding: 0 10px 0 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid #212529;
+  color: #c3cfd8;
+}
+
+.navbar-nav>li>.dropdown-menu{
+  width: 255px;
+}
+
+*/
+
+
+
+
+
+/* sidebar menu */
+.sidebar-menu .dropdown-menu{
+  position: inherit;
+  float: inherit;
+  background-color: transparent;
+  margin: 0px;
+    padding: 0px;
+}
+
+.sidebar-menu .chevron {
+  float: right;
+  margin-top: -1px;
+}
+
+.sidebar-menu .chevron:before {
+  content: "\f054";
+  font-family: 'FontAwesome';
+  font-size: 12px;
+  font-weight: 300;
+}
+
+
+.sidebar-menu .dropdown-menu>li>a {
+  color: #c3cfd8;
+  padding-top: 11.5px;
+  padding-bottom: 12px;
+  background-color: transparent;
+}
+
+.sidebar-menu .dropdown-menu>li>a:hover {
+  color: #fff;
+}
+
+.sidebar-menu .navbar-nav>.active>a,
+.sidebar-menu .navbar-nav>.active>a:focus,
+.sidebar-menu .navbar-nav>.active>a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #454e57;
+}
+
+.sidebar-menu .dropdown-menu>.active>a, 
+.sidebar-menu .dropdown-menu>.active>a:focus, 
+.sidebar-menu .dropdown-menu>.active>a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #454e57;
+  outline: 0;
+}
+.sidebar-menu li li a{padding-left: 30px;}
+    
+
+.sidebar-menu .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0px;
+  vertical-align: middle;
+  border: 0px none;
+  float: right;
+  margin-right: 7px;
+  margin-top: 2px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sidebar-menu .caret:before {
+  content: "\f067";
+  font-family: FontAwesome;
+}
+

@@ -1,0 +1,27 @@
+#themes.panel {
+    border-radius: 0px;
+}
+
+#themes .panel-body {
+    padding: 0px;
+}
+
+#themes .panel-body .icon{
+    width: 100%;
+}
+
+#themes .panel-footer{
+    padding: 11px 8px;
+}
+
+#themes .panel-footer .btn{
+	margin-top: -5px;
+}
+
+#themes .panel-footer .label {
+    padding: 3px 8px;
+}
+
+.jFiler-input-dragDrop {
+    width: 525px !important;
+}

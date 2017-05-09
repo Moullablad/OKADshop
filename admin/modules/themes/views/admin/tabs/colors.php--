@@ -1,0 +1,50 @@
+<!-- <div class="form-group">
+	<label class="col-md-3 control-label" for="bgcolor"><?php trans_e("Background Color", "themes"); ?> *</label><div class="col-md-3">
+		<div class="input-group colorpicker-component colorpicker">
+		    <input type="text" name="bgcolor" value="<?php echo $color->bgcolor;?>" class="form-control" id="bgcolor" />
+		    <span class="input-group-addon"><i></i></span>
+		</div>
+	</div>
+</div>
+<div class="form-group">
+	<label class="col-md-3 control-label" for="link_color"><?php trans_e("Link Color", "themes"); ?> *</label><div class="col-md-3">
+		<div class="input-group colorpicker-component colorpicker">
+		    <input type="text" name="link_color" value="<?php echo $color->link_color;?>" class="form-control" id="link_color" />
+		    <span class="input-group-addon"><i></i></span>
+		</div>
+	</div>
+</div>
+<div class="form-group">
+	<label class="col-md-3 control-label" for="text_colo"><?php trans_e("Text Color", "themes"); ?> *</label><div class="col-md-3">
+		<div class="input-group colorpicker-component colorpicker">
+		    <input type="text" name="text_colo" value="<?php echo $color->text_colo;?>" class="form-control" id="text_colo" />
+		    <span class="input-group-addon"><i></i></span>
+		</div>
+	</div>
+</div>
+
+<div class="form-group">
+	<label class="col-md-3 control-label" for="top_color"><?php trans_e("Top Color", "themes"); ?> </label><div class="col-md-3">
+		<div class="input-group colorpicker-component colorpicker">
+		    <input type="text" name="top_color" value="<?php echo $color->top_color;?>" class="form-control" id="top_color" />
+		    <span class="input-group-addon"><i></i></span>
+		</div>
+	</div> -->
+</div>
+
+<?php foreach ($css as $key => $value): ?>
+	<div class="form-group">
+		<label class="col-md-3 control-label" for="<?= $key ?>"><?= $key ?> </label><div class="col-md-3">
+			<div class="input-group colorpicker-component colorpicker">
+			    <input type="text" name="css[<?= $key; ?>]" value="<?= $value->value; ?>" class="form-control" id="<?= $key; ?>" />
+			    <span class="input-group-addon"><i></i></span>
+			</div>
+		</div>
+	</div>
+<?php endforeach ?>
+
+ <?php 
+ echo "<pre>";
+	//var_dump($css);
+ echo "</pre>";
+  ?>

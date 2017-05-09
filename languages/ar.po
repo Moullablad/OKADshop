@@ -1,0 +1,419 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OKADshop Core\n"
+"POT-Creation-Date: 2016-12-14 16:55+0000\n"
+"PO-Revision-Date: 2016-12-14 16:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e\n"
+"X-Poedit-SearchPath-0: controllers\n"
+"X-Poedit-SearchPath-1: includes\n"
+"X-Poedit-SearchPath-2: admin/ajax\n"
+"X-Poedit-SearchPath-3: admin/includes\n"
+"X-Poedit-SearchPath-4: index.php\n"
+
+#: admin/includes/ajax/product/attachment-delete.php:37
+msgid "Attachment was deleted."
+msgstr "تم حذف المرفق."
+
+#: admin/includes/ajax/product/attachment-delete.php:39
+msgid "Unable to delete Attachment."
+msgstr "غير قادر على حذف المرفق."
+
+#: admin/includes/ajax/product/comb-delete.php:50
+msgid "Combinations was deleted."
+msgstr "تم حذف مجموعات."
+
+#: admin/includes/ajax/product/comb-delete.php:52 admin/includes/ajax/product/comb-save.php:114
+#: admin/includes/ajax/product/upload-image.php:90
+msgid "Error occurred, please try again."
+msgstr "خطأ، يرجى المحاولة مرة أخرى."
+
+#: admin/includes/ajax/product/comb-save.php:65
+msgid "Combinations was updated."
+msgstr "تم تحديث مجموعات."
+
+#: admin/includes/ajax/product/comb-save.php:73
+msgid "Combinations was created."
+msgstr "تم إنشاء مجموعات."
+
+#: admin/includes/ajax/product/image-cover.php:43
+#: admin/includes/ajax/product/upload-cover.php:43
+msgid "Cover image was changed."
+msgstr "تم تغيير صورة الغلاف."
+
+#: admin/includes/ajax/product/image-cover.php:45
+#: admin/includes/ajax/product/upload-cover.php:45
+msgid "Unable to change Image cover."
+msgstr "غير قادر على تغيير صورة الغلاف."
+
+#: admin/includes/ajax/product/image-delete.php:39
+msgid "Image was deleted."
+msgstr "تم حذف الصورة."
+
+#: admin/includes/ajax/product/image-delete.php:41
+msgid "Unable to delete image."
+msgstr "غير قادر على حذف الصورة."
+
+#: admin/includes/ajax/product/image-sort.php:36
+msgid "Positions was updated."
+msgstr "تم تحديث المواقف."
+
+#: admin/includes/ajax/product/upload-image.php:87
+msgid "Images was uploaded."
+msgstr "تم تحميل الصور."
+
+#: admin/includes/plugins/users/login/login.php:32
+msgid "The email address or password you entered is not valid"
+msgstr "عنوان البريد الإلكتروني أو كلمة المرور التي أدخلتها غير صالح"
+
+#: controllers/Controllers/Front/UserController.php:201
+msgid "Reset Password"
+msgstr "اعادة تعيين كلمة السر"
+
+#: controllers/Controllers/Front/UserController.php:202
+msgid "Hi"
+msgstr "مرحبا"
+
+#: controllers/Controllers/Front/UserController.php:203
+msgid "Your new password is:"
+msgstr "كلمة المرور الجديدة:"
+
+#: controllers/Views/404.php:4
+msgid "OPPS, Error 404 !"
+msgstr "انتبه، خطأ 404!"
+
+#: controllers/Views/404.php:7
+msgid "There is some error here, Please try later."
+msgstr "هناك بعض الخطأ هنا، يرجى المحاولة لاحقا."
+
+#: controllers/Views/404.php:13
+msgid "search ..."
+msgstr "بحث ..."
+
+#: controllers/Views/404.php:23
+msgid "Return Website"
+msgstr "عودة موقع"
+
+#: controllers/Views/admin/default.php:19 controllers/Views/default.php:3
+msgid "Page not found."
+msgstr "الصفحة غير موجودة."
+
+#: controllers/Views/admin/default.php:20 controllers/Views/default.php:4
+msgid ""
+"Looks like the page you're trying to visit doesn't exist. Please check the URL and try your "
+"luck again."
+msgstr "يبدو أن الصفحة التي تحاول زيارة غير موجود. يرجى التحقق من عنوان URL ويجرب حظه مرة أخرى."
+
+#: controllers/Views/admin/default.php:21
+msgid "Take Me Dashboard"
+msgstr "خذني لوحة"
+
+#: controllers/Views/default.php:5
+msgid "Go Homepage"
+msgstr "العودة الصفحة الرئيسية"
+
+#: controllers/Views/front/block-cart.php:26
+msgid "remove"
+msgstr "إزالة"
+
+#: controllers/Views/front/block-cart.php:34 controllers/Views/front/order-steps.php:19
+#: controllers/Views/front/order/steps.php:19
+msgid "Shipping"
+msgstr "الشحن"
+
+#: controllers/Views/front/block-cart.php:39 controllers/Views/front/order-detail.php:87
+#: controllers/Views/front/order/details.php:87 controllers/Views/front/shopping-cart.php:124
+msgid "Free shipping"
+msgstr "الشحن مجانا"
+
+#: controllers/Views/front/block-cart.php:42
+msgid "Total"
+msgstr "مجموع"
+
+#: controllers/Views/front/block-cart.php:49
+msgid "PROCESS TO CHECK OUT"
+msgstr "عملية للتحقق من"
+
+#: controllers/Views/front/order-detail.php:3 controllers/Views/front/order/details.php:3
+msgid "ORDER RECEIVED"
+msgstr "طلب وارد"
+
+#: controllers/Views/front/order-detail.php:4 controllers/Views/front/order/details.php:4
+msgid "Thank you. Your order has been received"
+msgstr "شكرا. تم استلام طلبك"
+
+#: controllers/Views/front/order-detail.php:7 controllers/Views/front/order/details.php:7
+msgid "ORDER:"
+msgstr "طلب:"
+
+#: controllers/Views/front/order-detail.php:8 controllers/Views/front/order/details.php:8
+msgid "DATE:"
+msgstr "تاريخ:"
+
+#: controllers/Views/front/order-detail.php:9 controllers/Views/front/order/details.php:9
+msgid "TOTAL:"
+msgstr "مجموع:"
+
+#: controllers/Views/front/order-detail.php:19 controllers/Views/front/order/details.php:19
+msgid "PAYMENT METHOD:"
+msgstr "طريقة الدفع او السداد:"
+
+#: controllers/Views/front/order-detail.php:34 controllers/Views/front/order/details.php:34
+msgid "ORDER DETAILS"
+msgstr "تفاصيل الطلب"
+
+#: controllers/Views/front/order-detail.php:38 controllers/Views/front/order/details.php:38
+#: controllers/Views/front/shopping-cart.php:7
+msgid "Product"
+msgstr "المنتج"
+
+#: controllers/Views/front/order-detail.php:39 controllers/Views/front/order/details.php:39
+#: controllers/Views/front/shopping-cart.php:8 controllers/Views/front/shopping-cart.php:77
+msgid "Name"
+msgstr "اسم"
+
+#: controllers/Views/front/order-detail.php:40 controllers/Views/front/order/details.php:40
+#: controllers/Views/front/shopping-cart.php:9
+msgid "Quantity"
+msgstr "كمية"
+
+#: controllers/Views/front/order-detail.php:41 controllers/Views/front/order/details.php:41
+#: controllers/Views/front/shopping-cart.php:10
+msgid "Price"
+msgstr "السعر"
+
+#: controllers/Views/front/order-detail.php:76 controllers/Views/front/order/details.php:76
+msgid "Cart subtotal :"
+msgstr "عربة المجموع الفرعي:"
+
+#: controllers/Views/front/order-detail.php:81 controllers/Views/front/order-detail.php:86
+#: controllers/Views/front/order/details.php:81 controllers/Views/front/order/details.php:86
+msgid "Shipping (tax incl.)"
+msgstr "الشحن (شاملة الضريبة)."
+
+#: controllers/Views/front/order-detail.php:91 controllers/Views/front/order/details.php:91
+msgid "Order Total"
+msgstr "الطلب الكلي"
+
+#: controllers/Views/front/order-detail.php:104 controllers/Views/front/order/details.php:104
+msgid "Go to your order history page"
+msgstr "الذهاب إلى صفحة تاريخ طلبك"
+
+#: controllers/Views/front/order-detail.php:104 controllers/Views/front/order/details.php:104
+msgid "View your order history"
+msgstr "عرض التاريخ طلبك"
+
+#: controllers/Views/front/order-fail.php:3 controllers/Views/front/order/fail.php:3
+msgid "Payment failed"
+msgstr "عملية الدفع فشلت"
+
+#: controllers/Views/front/order-fail.php:4 controllers/Views/front/order/fail.php:4
+msgid "ERROR MESSAGE:"
+msgstr "رسالة خطأ:"
+
+#: controllers/Views/front/order-fail.php:5 controllers/Views/front/order-invalid-gatway.php:4
+#: controllers/Views/front/order/fail.php:5 controllers/Views/front/order/invalid-gatway.php:4
+msgid "Choose another payment gateway."
+msgstr "اختيار بوابة الدفع آخر."
+
+#: controllers/Views/front/order-invalid-gatway.php:3
+#: controllers/Views/front/order/invalid-gatway.php:3
+msgid "Invalid payment gatway"
+msgstr "gatway دفع صالح"
+
+#: controllers/Views/front/order-steps.php:7 controllers/Views/front/order/steps.php:7
+msgid "Summary"
+msgstr "ملخص"
+
+#: controllers/Views/front/order-steps.php:11 controllers/Views/front/order/steps.php:11
+msgid "Sign in"
+msgstr "تسجيل الدخول"
+
+#: controllers/Views/front/order-steps.php:15 controllers/Views/front/order/steps.php:15
+msgid "Address"
+msgstr "عنوان"
+
+#: controllers/Views/front/order-steps.php:23 controllers/Views/front/order/steps.php:23
+msgid "Payment"
+msgstr "دفع"
+
+#: controllers/Views/front/product-item.php:21
+msgid "Add to wishlist"
+msgstr "أضف إلى سلة"
+
+#: controllers/Views/front/product-item.php:27
+msgid "Quick View"
+msgstr "نظرة سريعة"
+
+#: controllers/Views/front/shopping-cart.php:11
+msgid "Total price"
+msgstr "السعر الكلي"
+
+#: controllers/Views/front/shopping-cart.php:62
+msgid "APPLY COUPON"
+msgstr "تنطبق القسيمة"
+
+#: controllers/Views/front/shopping-cart.php:65
+msgid "Enter your coupon code if you have one."
+msgstr "أدخل رمز القسيمة إذا كان لديك واحد."
+
+#: controllers/Views/front/shopping-cart.php:78
+msgid "Code"
+msgstr "رمز"
+
+#: controllers/Views/front/shopping-cart.php:79
+msgid "Amount"
+msgstr "كمية"
+
+#: controllers/Views/front/shopping-cart.php:80
+msgid "Action"
+msgstr "عمل"
+
+#: controllers/Views/front/shopping-cart.php:88
+msgid "Delete Coupon"
+msgstr "حذف القسيمة"
+
+#: controllers/Views/front/shopping-cart.php:101
+msgid "Total products (tax incl.) :"
+msgstr "مجموع المنتجات (شاملة الضريبة):"
+
+#: controllers/Views/front/shopping-cart.php:106
+msgid "Total coupon codes (tax incl.) :"
+msgstr "مجموع رموز القسيمة (شاملة الضريبة):"
+
+#: controllers/Views/front/shopping-cart.php:112
+msgid "Total discount (tax incl.) :"
+msgstr "إجمالي الخصم (شاملة الضريبة):"
+
+#: controllers/Views/front/shopping-cart.php:118 controllers/Views/front/shopping-cart.php:123
+msgid "Total shipping (tax incl.) :"
+msgstr "إجمالي الشحن (شاملة الضريبة):"
+
+#: controllers/Views/front/shopping-cart.php:128
+msgid "Total (tax excl.) :"
+msgstr "المجموع (باستثناء الضرائب):"
+
+#: controllers/Views/front/shopping-cart.php:133
+msgid "Total tax :"
+msgstr "مجموع الضرائب:"
+
+#: controllers/Views/front/shopping-cart.php:138
+msgid "Total (tax incl.) :"
+msgstr "مجموع (شاملة الضريبة):"
+
+#: controllers/Views/product-list.php:9
+msgid "No product available!"
+msgstr "أي منتج متاح!"
+
+#: controllers/Views/tabs/content.php:13
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: controllers/Views/tabs/content.php:14
+msgid "Save"
+msgstr "حفظ"
+
+#: controllers/Views/tabs/notfound.php:6
+msgid "Tab not found !"
+msgstr "تبويب غير موجود!"
+
+#: controllers/Views/tabs/notfound.php:7
+msgid "This tab is not registered."
+msgstr "لم يتم تسجيل هذا التبويب."
+
+#: includes/ajax/product/combination.php:53
+msgid "This product is no longer in stock with those attributes but is available with others."
+msgstr "هذا المنتج لم يعد في المخزن مع هذه الصفات ولكن يتوفر مع الآخرين."
+
+#: includes/functions/modules.php:47
+msgid "Administration"
+msgstr "إدارة"
+
+#: includes/functions/modules.php:48
+msgid "Advertising and Marketing"
+msgstr "الاعلان والتسويق"
+
+#: includes/functions/modules.php:49
+msgid "Analytics and Stats"
+msgstr "تحليلات واحصائيات"
+
+#: includes/functions/modules.php:50
+msgid "Checkout"
+msgstr "الدفع"
+
+#: includes/functions/modules.php:51
+msgid "Comparison site &amp; Feed management"
+msgstr "موقع مقارنة اند إدارة التغذية"
+
+#: includes/functions/modules.php:52
+msgid "Dashboard"
+msgstr "لوحة القيادة"
+
+#: includes/functions/modules.php:53
+msgid "Emailing &amp; SMS"
+msgstr "البريد الإلكتروني & أمبير؛ رسالة قصيرة"
+
+#: includes/functions/modules.php:54
+msgid "Export"
+msgstr "تصدير"
+
+#: includes/functions/modules.php:55
+msgid "Front office Feature"
+msgstr "المكتب الأمامي ميزة"
+
+#: includes/functions/modules.php:56
+msgid "Marketplace"
+msgstr "السوق"
+
+#: includes/functions/modules.php:57
+msgid "Merchandising"
+msgstr "الترويج"
+
+#: includes/functions/modules.php:58
+msgid "Migration Tools"
+msgstr "أدوات الهجرة"
+
+#: includes/functions/modules.php:59
+msgid "Payments and Gateways"
+msgstr "المدفوعات وبوابات"
+
+#: includes/functions/modules.php:60
+msgid "Pricing and Promotion"
+msgstr "التسعير والترويج"
+
+#: includes/functions/modules.php:61
+msgid "Quick / Bulk update"
+msgstr "سريع / تحديث السائبة"
+
+#: includes/functions/modules.php:62
+msgid "SEO"
+msgstr "كبار المسئولين الاقتصاديين"
+
+#: includes/functions/modules.php:63
+msgid "Shipping and Logistics"
+msgstr "الشحن والخدمات اللوجستية"
+
+#: includes/functions/modules.php:64
+msgid "Slideshows"
+msgstr "عرض الشرائح"
+
+#: includes/functions/modules.php:65
+msgid "Taxes &amp; Invoicing"
+msgstr "الضرائب وأمبير. الفواتير"
+
+#: includes/functions/modules.php:66
+msgid "Translation"
+msgstr "ترجمة"
+
+#: includes/functions/modules.php:67
+msgid "Other Modules"
+msgstr "وحدات أخرى"

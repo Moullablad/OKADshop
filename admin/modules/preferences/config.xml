@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<modules>
+	<name>preferences</name>
+	<displayName>Preferences</displayName>
+	<category>administration</category>
+	<version>1.0.0</version>
+	<description>Shop preferences.</description>
+	<author>Soft High Tech</author>
+	<website>http://softhighttech.com</website>
+</modules>

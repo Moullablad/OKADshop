@@ -1,0 +1,280 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SEO\n"
+"POT-Creation-Date: 2017-03-29 04:55+0000\n"
+"PO-Revision-Date: 2017-03-29 04:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+"X-Poedit-SearchPathExcluded-2: config.xml\n"
+
+#: includes/tabs.php:27
+msgid "General"
+msgstr "Général"
+
+#: includes/tabs.php:33
+msgid "Webmasters Tools"
+msgstr "Outils pour webmasters"
+
+#: includes/tabs.php:39
+msgid "Open Graph"
+msgstr "open Graph"
+
+#: includes/tabs.php:45
+msgid "Twitter"
+msgstr "Gazouillement"
+
+#: includes/tabs.php:51
+msgid "Analytics"
+msgstr "Analytique"
+
+#: includes/tabs.php:57
+msgid "Meta tags"
+msgstr "meta tags"
+
+#: includes/tabs.php:208
+msgid "Meta was saved successfully."
+msgstr "Meta a été enregistré avec succès."
+
+#: includes/tabs.php:215
+msgid "Meta was deleted successfully."
+msgstr "Meta a été supprimé avec succès."
+
+#: index.php:28
+msgid "SEO"
+msgstr "SEO"
+
+#: views/admin/settings.php:18
+msgid "SEO - Settings"
+msgstr "SEO - Paramètres"
+
+#: views/admin/tabs/analytics.php:2
+msgid "Analytics Code"
+msgstr "code Analytics,"
+
+#: views/admin/tabs/analytics.php:6
+msgid "EX: UA-XXXXXXXX-X"
+msgstr "EX: UA-XXXXXXXX-X"
+
+#: views/admin/tabs/general.php:3
+msgid "Title"
+msgstr "Titre"
+
+#: views/admin/tabs/general.php:6
+msgid "Separator"
+msgstr "Séparateur"
+
+#: views/admin/tabs/general.php:10
+msgid "Chose separator, default:"
+msgstr "Choisissez le séparateur, par défaut:"
+
+#: views/admin/tabs/general.php:13 views/admin/tabs/general.php:32
+msgid "Max"
+msgstr "max"
+
+#: views/admin/tabs/general.php:17
+msgid "Max title length, default:"
+msgstr "Longueur maximale du titre, par défaut:"
+
+#: views/admin/tabs/general.php:20
+msgid "Position"
+msgstr "Position"
+
+#: views/admin/tabs/general.php:22
+msgid "Left"
+msgstr "La gauche"
+
+#: views/admin/tabs/general.php:22
+msgid "Right"
+msgstr "Droite"
+
+#: views/admin/tabs/general.php:29
+msgid "Description"
+msgstr "La description"
+
+#: views/admin/tabs/general.php:36
+msgid "Max description length, default:"
+msgstr "Longueur maximale de description, par défaut:"
+
+#: views/admin/tabs/general.php:42 views/admin/tabs/general.php:45
+msgid "Keywords"
+msgstr "Mots clés"
+
+#: views/admin/tabs/general.php:54
+msgid "Miscellaneous"
+msgstr "Divers"
+
+#: views/admin/tabs/general.php:57
+msgid "Canonical"
+msgstr "Canonique"
+
+#: views/admin/tabs/general.php:59 views/admin/tabs/open-graph.php:22 views/admin/tabs/twitter.php:22
+msgid "Yes"
+msgstr "Oui"
+
+#: views/admin/tabs/general.php:59 views/admin/tabs/open-graph.php:22 views/admin/tabs/twitter.php:22
+msgid "No"
+msgstr "Non"
+
+#: views/admin/tabs/general.php:63
+msgid "Robots"
+msgstr "robots"
+
+#: views/admin/tabs/general.php:69
+msgid "Viewport"
+msgstr "viewport"
+
+#: views/admin/tabs/general.php:75
+msgid "Author"
+msgstr "Auteur"
+
+#: views/admin/tabs/general.php:81
+msgid "Copyright"
+msgstr "droits d'auteur"
+
+#: views/admin/tabs/general.php:85
+msgid "Provide author name or link to page contain copyrights."
+msgstr "Indiquez le nom de l'auteur ou lien vers la page contiennent les droits d'auteur."
+
+#: views/admin/tabs/general.php:88
+msgid "Publisher"
+msgstr "Éditeur"
+
+#: views/admin/tabs/general.php:92
+msgid "YOUR PERSONAL G+ PROFILE HERE"
+msgstr "VOTRE PERSONNEL G + PROFIL ICI"
+
+#: views/admin/tabs/meta-tags.php:4
+msgid "Type (name, property, http-equiv, charset...)"
+msgstr "Type (nom, propriété, http-equiv, charset ...)"
+
+#: views/admin/tabs/meta-tags.php:7
+msgid "Property"
+msgstr "Propriété"
+
+#: views/admin/tabs/meta-tags.php:10
+msgid "Content"
+msgstr "Contenu"
+
+#: views/admin/tabs/meta-tags.php:13
+msgid "Save"
+msgstr "sauvegarder"
+
+#: views/admin/tabs/meta-tags.php:42
+msgid "Edit"
+msgstr "modifier"
+
+#: views/admin/tabs/meta-tags.php:43
+msgid "Are you sure?"
+msgstr "Êtes-vous sûr?"
+
+#: views/admin/tabs/meta-tags.php:43
+msgid "Delete"
+msgstr "Effacer"
+
+#: views/admin/tabs/meta-tags.php:52
+msgid "No meta tags found"
+msgstr "Aucune balise meta trouvé"
+
+#: views/admin/tabs/open-graph.php:2 views/admin/tabs/twitter.php:2
+msgid "Default image"
+msgstr "Image par défaut"
+
+#: views/admin/tabs/open-graph.php:8 views/admin/tabs/twitter.php:8
+msgid "Browse"
+msgstr "Feuilleter"
+
+#: views/admin/tabs/open-graph.php:13
+msgid "Image should be at least 200px in both dimensions, with 1500x1500 preferred. (Maximum image size is 5MB.)"
+msgstr "L'image doit être au moins 200px dans les deux dimensions, avec 1500x1500 préféré. (Taille de l'image maximale est 5MB.)"
+
+#: views/admin/tabs/open-graph.php:20 views/admin/tabs/twitter.php:20
+msgid "Enabled"
+msgstr "Activée"
+
+#: views/admin/tabs/open-graph.php:32
+msgid "Type"
+msgstr "Type"
+
+#: views/admin/tabs/twitter.php:13
+msgid "Default Image. (Maximum image size is 5MB.)"
+msgstr "Image par défaut. (Taille de l'image maximale est 5MB.)"
+
+#: views/admin/tabs/twitter.php:26
+msgid "Prefix"
+msgstr "Préfixe"
+
+#: views/admin/tabs/twitter.php:32
+msgid "Card"
+msgstr "Carte"
+
+#: views/admin/tabs/twitter.php:36
+msgid "Supported card types : 'app', 'gallery', 'photo', 'player', 'product', 'summary', 'summary_large_image'."
+msgstr "Pris en charge les types de cartes: 'app', 'galerie', 'photo', 'joueur', 'produit', 'résumé', 'summary_large_image'."
+
+#: views/admin/tabs/twitter.php:39
+msgid "Site"
+msgstr "Site"
+
+#: views/admin/tabs/twitter.php:43
+msgid "Username EX: @okadshop."
+msgstr "Nom d'utilisateur EX: @okadshop."
+
+#: views/admin/tabs/webmasters.php:2
+msgid "Google"
+msgstr "Google"
+
+#: views/admin/tabs/webmasters.php:6
+msgid "Google site verification code"
+msgstr "Code de vérification Google du site"
+
+#: views/admin/tabs/webmasters.php:9
+msgid "Google client ID"
+msgstr "ID client Google"
+
+#: views/admin/tabs/webmasters.php:13
+msgid "Google signin client ID"
+msgstr "ID Google client signin"
+
+#: views/admin/tabs/webmasters.php:16
+msgid "Bing"
+msgstr "Bing"
+
+#: views/admin/tabs/webmasters.php:20
+msgid "Bing site verification code"
+msgstr "Code de vérification du site Bing"
+
+#: views/admin/tabs/webmasters.php:23
+msgid "Alexa"
+msgstr "Alexa"
+
+#: views/admin/tabs/webmasters.php:27
+msgid "Alexa site verification code"
+msgstr "Code de vérification du site Alexa"
+
+#: views/admin/tabs/webmasters.php:30
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: views/admin/tabs/webmasters.php:33
+msgid "Interest site verification code"
+msgstr "Intérêt Code de vérification du site"
+
+#: views/admin/tabs/webmasters.php:36
+msgid "Yandex"
+msgstr "Yandex"
+
+#: views/admin/tabs/webmasters.php:39
+msgid "Yandex site verification code"
+msgstr "Yandex code de vérification du site"

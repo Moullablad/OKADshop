@@ -1,0 +1,240 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mirzam\n"
+"POT-Creation-Date: 2017-04-18 10:38+0000\n"
+"PO-Revision-Date: 2017-04-18 10:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: SoftHighTech <contact@softhightech.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+
+#: blog-detail.php:7 cms-category.php:46 product.php:7
+msgid "Home"
+msgstr "Accueil"
+
+#: blog-detail.php:8
+msgid "Blog"
+msgstr "Blog"
+
+#: blog-detail.php:30
+msgid "SHARE TO FRIENDS"
+msgstr "PARTAGER AUX AMIS"
+
+#: category.php:50
+msgid "Sort By:"
+msgstr "Trier par:"
+
+#: category.php:52
+msgid "Perpage"
+msgstr "Par page"
+
+#: category.php:58
+msgid "Order products by"
+msgstr "Commander des produits par"
+
+#: category.php:59
+msgid "Name: A-Z"
+msgstr "Nom: AZ"
+
+#: category.php:60
+msgid "Name: Z-A"
+msgstr "Nom: ZA"
+
+#: category.php:61
+msgid "Price: Lowest first"
+msgstr "Prix: moins cher"
+
+#: category.php:62
+msgid "Price: Highest first"
+msgstr "Prix: le plus haut en premier"
+
+#: category.php:63 product.php:90
+msgid "In stock"
+msgstr "En stock"
+
+#: category.php:64
+msgid "Reference: Lowest first"
+msgstr "Référence: moins cher"
+
+#: category.php:65
+msgid "Reference: Highest first"
+msgstr "Référence: le plus haut en premier"
+
+#: category.php:72
+msgid "View:"
+msgstr "Vue:"
+
+#: category.php:101
+msgid "No products available for this category."
+msgstr "Aucun produit n'est disponible pour cette catégorie."
+
+#: footer.php:18
+msgid "Powered by"
+msgstr "Alimenté par"
+
+#: header.php:48
+msgid "Search your query here..."
+msgstr "Recherchez votre requête ici ..."
+
+#: header.php:76
+msgid "Toggle navigation"
+msgstr "Toggle navigation"
+
+#: modules/categorypanel/views/front/category.php:3
+msgid "CATEGORIES"
+msgstr "CATÉGORIES"
+
+#: modules/contact-form/views/front/contact.php:5
+msgid "Contact Us"
+msgstr "Contactez nous"
+
+#: modules/contact-form/views/front/contact.php:6
+msgid "Contact information"
+msgstr "Informations de contact"
+
+#: modules/contact-form/views/front/contact.php:11
+msgid "Phone:"
+msgstr "Téléphone:"
+
+#: modules/contact-form/views/front/contact.php:14
+msgid "E-mail:"
+msgstr "Email:"
+
+#: modules/contact-form/views/front/contact.php:21
+msgid "Leave a message"
+msgstr "Laisser un message"
+
+#: modules/contact-form/views/front/contact.php:23
+msgid "Full name"
+msgstr "Nom complet"
+
+#: modules/contact-form/views/front/contact.php:27
+msgid "E-mail"
+msgstr "Email"
+
+#: modules/contact-form/views/front/contact.php:31
+msgid "Website"
+msgstr "Site Internet"
+
+#: modules/contact-form/views/front/contact.php:35
+msgid "Subject"
+msgstr "Assujettir"
+
+#: modules/contact-form/views/front/contact.php:39
+msgid "Content"
+msgstr "Contenu"
+
+#: modules/contact-form/views/front/contact.php:43
+msgid "Send"
+msgstr "Envoyer"
+
+#: order-address.php:8
+msgid "Choose a delivery address:"
+msgstr "Choisissez une adresse de livraison:"
+
+#: order-address.php:10 order-address.php:24
+msgid "Choose an address."
+msgstr "Choisissez une adresse."
+
+#: order-address.php:22
+msgid "Choose a billing address:"
+msgstr "Choisissez une adresse de facturation:"
+
+#: order-address.php:36
+msgid "Use the delivery address as the billing address."
+msgstr "Utilisez l'adresse de livraison comme adresse de facturation."
+
+#: order-address.php:44
+msgid "Your delivery address"
+msgstr "Votre adresse de livraison"
+
+#: order-address.php:57 order-address.php:76
+msgid "Edit"
+msgstr "modifier"
+
+#: order-address.php:63
+msgid "Your billing address"
+msgstr "Votre adresse de facturation"
+
+#: order-address.php:81
+msgid "Add a new address"
+msgstr "ajouter une nouvelle adresse"
+
+#: order-address.php:87
+msgid "Summary"
+msgstr "Résumé"
+
+#: order-address.php:88 order-shipping.php:54 order-summary.php:11
+msgid "Checkout"
+msgstr "Check-out"
+
+#: order-shipping.php:21
+msgid "Choose a shipping option for this address."
+msgstr "Choisissez une option d'expédition pour cette adresse."
+
+#: order-shipping.php:46
+msgid "I agree to the terms of service and will adhere to them unconditionally."
+msgstr "J'accepte les termes du service et je les respecterai inconditionnellement."
+
+#: order-shipping.php:53
+msgid "Addresses"
+msgstr "Adresses"
+
+#: order-shipping.php:62
+msgid "No career match your delivery address."
+msgstr "Aucune correspondance professionnelle à votre adresse de livraison."
+
+#: order-shipping.php:64
+msgid "Choose another address"
+msgstr "Choisissez une autre adresse"
+
+#: order-summary.php:10
+msgid "Continue shopping"
+msgstr "Continuer vos achats"
+
+#: product.php:60
+msgid "Reference"
+msgstr "Référence"
+
+#: product.php:66
+msgid "Condition"
+msgstr "Condition"
+
+#: product.php:80
+msgid "Choose a value"
+msgstr "Choisissez une valeur"
+
+#: product.php:90
+msgid "Item(s)"
+msgstr "Articles)"
+
+#: product.php:92
+msgid ""
+"This product is no longer in stock with those attributes but is available with others."
+msgstr "Ce produit n'est plus en stock avec ces attributs mais est disponible avec d'autres."
+
+#: product.php:113
+msgid "Share:"
+msgstr "Partager:"
+
+#: product.php:125
+msgid "Description"
+msgstr "La description"
+
+#: product.php:130
+msgid "Product Features"
+msgstr "caractéristiques du produit"
+
+#: product.php:135
+msgid "Product tags"
+msgstr "Mots clés du produit"

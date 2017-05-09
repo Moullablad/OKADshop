@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: adv_ser\n"
+"POT-Creation-Date: 2016-12-19 11:53+0000\n"
+"PO-Revision-Date: 2016-12-19 11:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: trans;l;trans_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: views/admin/config.php:12
+msgid "Configure"
+msgstr "Configurer"
+
+#: views/admin/config.php:17
+msgid "Advanced Search Configuration"
+msgstr "Recherche avancée Configuration"
+
+#: views/admin/config.php:20
+msgid "Add product attribute to filter list"
+msgstr "Ajouter attribut du produit pour filtrer la liste"
+
+#: views/admin/config.php:23
+msgid "Chose attribute"
+msgstr "attribut Choisissez"
+
+#: views/admin/config.php:36
+msgid "Add"
+msgstr "Ajouter"
+
+#: views/front/search.php:152
+msgid "FILTER"
+msgstr "Filtrer"
+
+#: views/front/search.php:155
+msgid "PRICE"
+msgstr "PRIX"
+
+#: views/front/search.php:198
+msgid "Sort by"
+msgstr "Trier par"
+
+#: views/front/search.php:203
+msgid "Price, low to high"
+msgstr "Prix ​​- Du plus bas au plus élevé"
+
+#: views/front/search.php:204
+msgid "Price, high to low"
+msgstr "Prix: décroissant"
+
+#: views/front/search.php:205
+msgid "Date, new to old"
+msgstr "Date - Du plus récent au plus ancien"
+
+#: views/front/search.php:206
+msgid "Date, old to new"
+msgstr "Date - Du plus ancien au plus récent"

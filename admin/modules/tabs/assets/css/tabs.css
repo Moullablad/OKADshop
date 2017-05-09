@@ -1,0 +1,48 @@
+#os-tab-contents .tab-pane {
+    display: none;
+}
+
+#os-tab-contents .active {
+    display: block;
+}
+
+
+/* #debug tabs */
+#debug-tabs{
+	margin: 30px auto;
+}
+
+#debug-tabs a{
+	color: #6a6864;
+	font-size: 14px;	
+}
+
+#debug-tabs>li>a{
+	border: 1px solid #6a6864;
+}
+
+#debug-tabs a[data-toggle="collapse"]:before{
+	content: '\f068';
+	font-family: FontAwesome;
+	margin-right: 10px;
+}
+
+#debug-tabs a.collapsed:before{
+	content: '\f067';
+}
+
+#debug-tabs>li>ul>li{
+    margin: 0px 0 0px 25px;
+    padding: 10px 0px;
+}
+
+#debug-tabs>li>ul>li>ul>li{
+    margin: 0px 0 0px 25px;
+    padding: 2px 0px;
+}
+
+#debug-tabs li a:focus,
+#debug-tabs li a:hover{
+	background-color: transparent;
+	outline: 0px;
+}

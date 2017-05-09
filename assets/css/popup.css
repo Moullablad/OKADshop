@@ -1,0 +1,43 @@
+.popup, .alert-popup, .cancel-popup {
+  position: relative;
+  background: #f7f6f5;
+  color: #665f5d;
+  margin: 20px auto;
+  padding: 44px 44px 15px;
+  max-width: 100%;
+  display: table;
+}
+
+.cancel-popup .mfp-close {
+  display: none;
+}
+
+.cancel-popup .message {
+  border: 2px solid #a1a09c;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  color: #a1a09c;
+  font-size: 16px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.cancel-popup .buttons a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+.cancel-popup .buttons a.btn-danger {
+  background-color: #e30613;
+  border-color: #e30613;
+}
+
+
+.cancel-popup .buttons a.btn-default,
+.cancel-popup .buttons a.btn-default:hover {
+  background-color: #665f5d !important;
+  border-color: #665f5d !important;
+  color: #fff !important;
+}

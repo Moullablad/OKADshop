@@ -1,0 +1,28 @@
+.wishlist-popup{
+	position: relative;
+    background: #FFF;
+    width: auto;
+    width: 450px;
+    margin: 20px auto;
+    padding: 15px 0px;
+    max-width: 100%;
+    display: table;
+    text-align: center;
+}
+
+.wishlist-popup .btn-wishlist {
+	background-color: #fdae44;
+    color: #fff;
+    border-color: #fdae44;
+}
+
+#wishlist-items .product .delete{
+    /*content: '\f057';
+    font-family: FontAwesome;*/
+    font-size: 25px;
+    position: absolute;
+    right: 4px;
+    top: -16px;
+    color: #ea2a2a;
+    /*cursor: pointer;*/
+}

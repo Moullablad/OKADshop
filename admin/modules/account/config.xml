@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>account</name>
+	<displayName>Account</displayName>
+	<description>Manage user account.</description>
+	<category>administration</category>
+	<version>1.0.0</version>
+	<author>Soft High Tech</author>
+	<website>http://softhighttech.com</website>
+</module>

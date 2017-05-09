@@ -1,0 +1,619 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Catalogs\n"
+"POT-Creation-Date: 2017-03-29 04:57+0000\n"
+"PO-Revision-Date: 2017-03-29 04:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+"X-Poedit-SearchPathExcluded-2: config.xml\n"
+
+#: includes/tabs/product.php:33
+msgid "Informations"
+msgstr ""
+
+#: includes/tabs/product.php:40
+msgid "Prices"
+msgstr ""
+
+#: includes/tabs/product.php:46
+msgid "Seo"
+msgstr ""
+
+#: includes/tabs/product.php:53
+msgid "Associations"
+msgstr ""
+
+#: includes/tabs/product.php:59
+msgid "Combinations"
+msgstr ""
+
+#: includes/tabs/product.php:65
+msgid "Quantities"
+msgstr ""
+
+#: includes/tabs/product.php:71
+msgid "Images"
+msgstr ""
+
+#: includes/tabs/product.php:77
+msgid "Features"
+msgstr ""
+
+#: includes/tabs/product.php:83
+msgid "Attachments"
+msgstr ""
+
+#: includes/tabs/product.php:110
+msgid "Unable to update Product, please try again."
+msgstr ""
+
+#: includes/tabs/product.php:112
+msgid "Product was Updated"
+msgstr ""
+
+#: includes/tabs/product.php:123
+msgid "Unable to create Product, please try again."
+msgstr ""
+
+#: includes/tabs/product.php:155
+msgid "Unable to update Prices, please try again."
+msgstr ""
+
+#: includes/tabs/product.php:157
+msgid "Prices was Updated"
+msgstr ""
+
+#: includes/tabs/product.php:185
+msgid "Unable to update Seo, please try again."
+msgstr ""
+
+#: includes/tabs/product.php:187
+msgid "Seo was Updated"
+msgstr ""
+
+#: includes/tabs/product.php:216
+msgid "associations was Updated"
+msgstr ""
+
+#: includes/tabs/product.php:219
+msgid "Unable to update associations, please try again."
+msgstr ""
+
+#: includes/tabs/product.php:265
+msgid "Quantities was Updated"
+msgstr ""
+
+#: includes/tabs/product.php:268
+msgid "Unable to update quantities, please try again."
+msgstr ""
+
+#: includes/tabs/product.php:310
+msgid "Features was Updated"
+msgstr ""
+
+#: includes/tabs/product.php:312
+msgid "Unable to update features, please try again."
+msgstr ""
+
+#: includes/tabs/product.php:341
+msgid "Attachment was Uploaded."
+msgstr ""
+
+#: includes/tabs/product.php:344
+msgid "Unable to upload attachment, please try again."
+msgstr ""
+
+#: index.php:31
+msgid "Catalogs"
+msgstr ""
+
+#: index.php:33 views/admin/product/index.php:19
+msgid "Products"
+msgstr ""
+
+#: index.php:34
+msgid "Catégories"
+msgstr ""
+
+#: index.php:36
+msgid "Product Attributes"
+msgstr ""
+
+#: index.php:37
+msgid "Product Values"
+msgstr ""
+
+#: index.php:38
+msgid "Characteristics"
+msgstr ""
+
+#: index.php:39
+msgid "Keywords (Tags)"
+msgstr ""
+
+#: views/admin/product/add.php:18
+msgid "Add new product"
+msgstr ""
+
+#: views/admin/product/edit.php:18
+msgid "Edit:"
+msgstr ""
+
+#: views/admin/product/edit.php:21
+msgid "View Product"
+msgstr ""
+
+#: views/admin/product/index.php:22
+msgid "Add a Product"
+msgstr ""
+
+#: views/admin/product/index.php:31
+msgid "ID"
+msgstr ""
+
+#: views/admin/product/index.php:32 views/admin/tabs/product/comb-form.php:104
+#: views/admin/tabs/product/images.php:16
+msgid "Image"
+msgstr ""
+
+#: views/admin/product/index.php:33 views/admin/tabs/product/infos.php:16
+msgid "Name"
+msgstr ""
+
+#: views/admin/product/index.php:34
+#: views/admin/tabs/product/combinations.php:19
+msgid "Reference"
+msgstr ""
+
+#: views/admin/product/index.php:35
+msgid "Default Category"
+msgstr ""
+
+#: views/admin/product/index.php:36
+msgid "Sell price"
+msgstr ""
+
+#: views/admin/product/index.php:37
+msgid "Buy price"
+msgstr ""
+
+#: views/admin/product/index.php:38 views/admin/tabs/product/comb-form.php:81
+msgid "Quantity"
+msgstr ""
+
+#: views/admin/product/index.php:39
+msgid "Status"
+msgstr ""
+
+#: views/admin/product/index.php:40 views/admin/tabs/product/attachments.php:43
+#: views/admin/tabs/product/combinations.php:23
+#: views/admin/tabs/product/features.php:22
+msgid "Actions"
+msgstr ""
+
+#: views/admin/product/index.php:66
+#: views/admin/tabs/product/combinations.php:69
+msgid "Edit"
+msgstr ""
+
+#: views/admin/product/index.php:69
+msgid "Preview"
+msgstr ""
+
+#: views/admin/product/index.php:72 views/admin/tabs/product/attachments.php:53
+#: views/admin/tabs/product/comb-form.php:29
+#: views/admin/tabs/product/combinations.php:74
+msgid "Delete"
+msgstr ""
+
+#: views/admin/product/index.php:86
+msgid "No item found."
+msgstr ""
+
+#: views/admin/product/index.php:88
+msgid "There is no product."
+msgstr ""
+
+#: views/admin/product/index.php:89
+msgid "Create a product"
+msgstr ""
+
+#: views/admin/tabs/product/associations.php:5
+msgid "Radio Button"
+msgstr ""
+
+#: views/admin/tabs/product/associations.php:24
+msgid "You must save this product before adding associations."
+msgstr ""
+
+#: views/admin/tabs/product/attachments.php:7
+msgid "Filename *"
+msgstr ""
+
+#: views/admin/tabs/product/attachments.php:12
+#: views/admin/tabs/product/attachments.php:42
+#: views/admin/tabs/product/infos.php:69
+msgid "Description"
+msgstr ""
+
+#: views/admin/tabs/product/attachments.php:18
+msgid "File"
+msgstr ""
+
+#: views/admin/tabs/product/attachments.php:21
+msgid "Upload a file from your computer"
+msgstr ""
+
+#: views/admin/tabs/product/attachments.php:21
+msgid "max."
+msgstr ""
+
+#: views/admin/tabs/product/attachments.php:22
+msgid "Authorized formats :"
+msgstr ""
+
+#: views/admin/tabs/product/attachments.php:27
+msgid "Upload attachment"
+msgstr ""
+
+#: views/admin/tabs/product/attachments.php:35
+msgid "Attached file list."
+msgstr ""
+
+#: views/admin/tabs/product/attachments.php:41
+msgid "Filename"
+msgstr ""
+
+#: views/admin/tabs/product/attachments.php:61
+msgid "No attachment found."
+msgstr ""
+
+#: views/admin/tabs/product/attachments.php:79
+msgid "You must save this product before adding attachments."
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:4
+msgid "Attribute"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:15
+msgid "Value"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:20
+msgid "Add"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:34
+#: views/admin/tabs/product/infos.php:23
+msgid "Reference code"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:40
+#: views/admin/tabs/product/infos.php:30
+msgid "EAN-13 or JAN barcode"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:46
+#: views/admin/tabs/product/infos.php:37
+msgid "UPC barcode"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:53
+#: views/admin/tabs/product/combinations.php:17
+msgid "Impact on price"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:56
+#: views/admin/tabs/product/comb-form.php:70
+#: views/admin/tabs/product/combinations.php:43
+#: views/admin/tabs/product/combinations.php:52
+msgid "None"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:57
+#: views/admin/tabs/product/comb-form.php:71
+msgid "Increase"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:58
+#: views/admin/tabs/product/comb-form.php:72
+msgid "Decrease"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:67
+#: views/admin/tabs/product/combinations.php:18
+msgid "Impact on weight"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:76
+msgid "KG"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:87
+msgid "Minimum quantity"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:93
+msgid "Availability date"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:126
+#: views/admin/tabs/product/combinations.php:22
+msgid "Default"
+msgstr ""
+
+#: views/admin/tabs/product/comb-form.php:131
+msgid "Make this combination the default combination for this product."
+msgstr ""
+
+#: views/admin/tabs/product/combinations.php:6
+msgid "The star icon indicates the default combination."
+msgstr ""
+
+#: views/admin/tabs/product/combinations.php:7
+msgid "Each product that has combinations must have one default combination."
+msgstr ""
+
+#: views/admin/tabs/product/combinations.php:9
+#: views/admin/tabs/product/combinations.php:88
+msgid "Add new combination"
+msgstr ""
+
+#: views/admin/tabs/product/combinations.php:16
+msgid "Attribute - value pair"
+msgstr ""
+
+#: views/admin/tabs/product/combinations.php:20
+msgid "EAN-13"
+msgstr ""
+
+#: views/admin/tabs/product/combinations.php:21
+msgid "UPC"
+msgstr ""
+
+#: views/admin/tabs/product/combinations.php:99
+msgid "ADD OR MODIFY COMBINATIONS FOR THIS PRODUCT"
+msgstr ""
+
+#: views/admin/tabs/product/combinations.php:114
+msgid "Cancel modification"
+msgstr ""
+
+#: views/admin/tabs/product/combinations.php:115
+msgid "Save and Close"
+msgstr ""
+
+#: views/admin/tabs/product/combinations.php:128
+#: views/admin/tabs/product/quantities.php:54
+msgid "You must save this product before adding combinations."
+msgstr ""
+
+#: views/admin/tabs/product/features.php:11
+msgid "Assign features to this product"
+msgstr ""
+
+#: views/admin/tabs/product/features.php:12
+msgid "Select Predefined values or set your Customized values."
+msgstr ""
+
+#: views/admin/tabs/product/features.php:19
+msgid "Feature"
+msgstr ""
+
+#: views/admin/tabs/product/features.php:20
+msgid "Pre-defined value"
+msgstr ""
+
+#: views/admin/tabs/product/features.php:21
+msgid "or"
+msgstr ""
+
+#: views/admin/tabs/product/features.php:21
+msgid "Customized value"
+msgstr ""
+
+#: views/admin/tabs/product/features.php:47
+msgid "Reset"
+msgstr ""
+
+#: views/admin/tabs/product/features.php:63
+msgid "You must save this product before adding features."
+msgstr ""
+
+#: views/admin/tabs/product/images.php:5
+msgid "Upload Images"
+msgstr ""
+
+#: views/admin/tabs/product/images.php:17
+msgid "Position"
+msgstr ""
+
+#: views/admin/tabs/product/images.php:18
+msgid "Cover Image"
+msgstr ""
+
+#: views/admin/tabs/product/images.php:19
+msgid "Action"
+msgstr ""
+
+#: views/admin/tabs/product/images.php:41
+msgid "Delete this image"
+msgstr ""
+
+#: views/admin/tabs/product/images.php:141
+msgid "You must save this product before adding images."
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:5
+msgid "Type"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:8
+msgid "Standard product"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:9
+msgid "Pack of existing products"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:10
+msgid "Virtual product (services, booking, downloadable products, etc.)"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:44
+msgid "Condition"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:47
+msgid "New"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:48
+msgid "Used"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:49
+msgid "Refurbished"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:55 views/admin/tabs/product/prices.php:38
+msgid "Enabled"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:57
+msgid "Yes"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:57
+msgid "No"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:62
+msgid "Short description"
+msgstr ""
+
+#: views/admin/tabs/product/infos.php:76
+msgid "Date"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:4
+msgid "Buy price (unit)"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:11
+msgid "Sell price (unit)"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:18
+msgid "Unit price (tax excl.)"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:24
+msgid "Per"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:26
+msgid "(unit)"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:32
+msgid "Loyalty points"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:39
+msgid "Disabled"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:47
+msgid "Tax rule"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:50
+msgid "No Tax"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:61
+msgid "Discount"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:76
+msgid "Weight"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:80
+msgid "Kg"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:86
+msgid "Height"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:90
+#: views/admin/tabs/product/prices.php:100
+msgid "cm"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:96
+msgid "Width"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:106
+msgid "Depth"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:110
+msgid "m"
+msgstr ""
+
+#: views/admin/tabs/product/prices.php:120
+msgid "You must save this product before adding specific pricing."
+msgstr ""
+
+#: views/admin/tabs/product/quantities.php:6
+msgid "Available quantities"
+msgstr ""
+
+#: views/admin/tabs/product/quantities.php:12
+msgid "Min quantity"
+msgstr ""
+
+#: views/admin/tabs/product/quantities.php:53
+msgid "There is 1 warning."
+msgstr ""
+
+#: views/admin/tabs/product/seo.php:5
+msgid "Meta title"
+msgstr ""
+
+#: views/admin/tabs/product/seo.php:14
+msgid "Meta description"
+msgstr ""
+
+#: views/admin/tabs/product/seo.php:23
+msgid "Meta keywords"
+msgstr ""
+
+#: views/admin/tabs/product/seo.php:29
+msgid "Friendly URL"
+msgstr ""
+
+#: views/admin/tabs/product/seo.php:33
+msgid "The product link will look like this"
+msgstr ""
+
+#: views/admin/tabs/product/seo.php:44
+msgid "You must save this product before adding seo."
+msgstr ""

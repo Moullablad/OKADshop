@@ -1,0 +1,212 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Modules\n"
+"POT-Creation-Date: 2017-03-29 05:00+0000\n"
+"PO-Revision-Date: 2017-03-29 05:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+"X-Poedit-SearchPathExcluded-2: config.xml\n"
+
+#: includes/ajax/bulk-actions.php:24
+msgid "Action was executed."
+msgstr "L'action a été exécuté."
+
+#: includes/ajax/bulk-actions.php:30
+msgid "Modules was activated."
+msgstr "Les modules ont été activés."
+
+#: includes/ajax/bulk-actions.php:32
+msgid "Unable to activate modules."
+msgstr "Incapable d'activer les modules."
+
+#: includes/ajax/bulk-actions.php:37
+msgid "Modules was disabled."
+msgstr "Modules a été désactivé."
+
+#: includes/ajax/bulk-actions.php:39
+msgid "Unable to disable modules."
+msgstr "Impossible de désactiver les modules."
+
+#: includes/ajax/bulk-actions.php:44
+msgid "Modules was deleted."
+msgstr "Les modules ont été supprimés."
+
+#: includes/ajax/bulk-actions.php:46
+msgid "Unable to delete Modules."
+msgstr "Impossible de supprimer les modules."
+
+#: includes/ajax/delete.php:25
+msgid "Module was deleted."
+msgstr "Module a été supprimé."
+
+#: includes/ajax/delete.php:27
+msgid "Unable to delete Module."
+msgstr "Impossible de supprimer le module."
+
+#: includes/ajax/disable.php:25
+msgid "Module was disabled."
+msgstr "Module a été désactivé."
+
+#: includes/ajax/disable.php:27
+msgid "Unable to disable module."
+msgstr "Impossible de désactiver le module."
+
+#: includes/ajax/enable.php:25
+msgid "Module was activated."
+msgstr "Module a été activé."
+
+#: includes/ajax/enable.php:27
+msgid "Unable to activate module."
+msgstr "Impossible d'activer le module."
+
+#: includes/ajax/filter.php:56
+msgid "Version"
+msgstr "Version"
+
+#: includes/ajax/filter.php:56
+msgid "By"
+msgstr "Par"
+
+#: includes/ajax/filter.php:56
+msgid "Category"
+msgstr "Catégorie"
+
+#: includes/ajax/filter.php:59
+msgid "Website"
+msgstr "Site Internet"
+
+#: includes/ajax/filter.php:67 includes/ajax/filter.php:85
+msgid "Configuration"
+msgstr "Configuration"
+
+#: includes/ajax/filter.php:69 includes/ajax/filter.php:78
+msgid "Disable"
+msgstr "désactiver"
+
+#: includes/ajax/filter.php:72
+msgid "Enable"
+msgstr "Activer"
+
+#: includes/ajax/filter.php:80
+msgid "Uninstall"
+msgstr "Désinstaller"
+
+#: includes/ajax/filter.php:82 views/admin/manage.php:96
+msgid "Delete"
+msgstr "Effacer"
+
+#: includes/ajax/hook-add.php:40
+msgid "Hook was added."
+msgstr "Crochet a été ajouté."
+
+#: includes/ajax/hook-add.php:42
+msgid "Unable to add hook."
+msgstr "Impossible d'ajouter le crochet."
+
+#: includes/ajax/hook-delete.php:24
+msgid "Hook was deleted."
+msgstr "Crochet a été supprimé."
+
+#: includes/ajax/hook-delete.php:26
+msgid "Unable to delete hook."
+msgstr "Impossible de supprimer le crochet."
+
+#: includes/ajax/hook-sort.php:30
+msgid "Positions was updated."
+msgstr "Les positions ont été mis à jour."
+
+#: includes/ajax/hook-sort.php:32
+msgid "Unable to update positions."
+msgstr "Impossible de mettre à jour des positions."
+
+#: includes/ajax/sections.php:30 views/admin/positions.php:85
+msgid "There is no hook in this section."
+msgstr "Il n'y a pas de crochet dans cette section."
+
+#: includes/ajax/uninstall.php:25
+msgid "Module was uninstalled."
+msgstr "Module a été désinstallée."
+
+#: includes/ajax/uninstall.php:27
+msgid "Unable to uninstall Module."
+msgstr "Impossible de désinstaller le module."
+
+#: index.php:27 index.php:29
+msgid "Modules"
+msgstr "Modules"
+
+#: index.php:30 views/admin/positions.php:18
+msgid "Positions"
+msgstr "positions"
+
+#: index.php:84
+msgid "We accept"
+msgstr "Nous acceptons"
+
+#: views/admin/manage.php:35
+msgid "Manage"
+msgstr "Gérer"
+
+#: views/admin/manage.php:41
+msgid "Here you can manage modules."
+msgstr "Ici, vous pouvez gérer les modules."
+
+#: views/admin/manage.php:49
+msgid "Show administration modules"
+msgstr "Afficher les modules d'administration"
+
+#: views/admin/manage.php:55
+msgid "Choose a category"
+msgstr "Choisissez une catégorie"
+
+#: views/admin/manage.php:66
+msgid "Activated & deactivated"
+msgstr "Activé et désactivé"
+
+#: views/admin/manage.php:67
+msgid "Enabled modules"
+msgstr "modules activés"
+
+#: views/admin/manage.php:68
+msgid "Disabled modules"
+msgstr "modules handicapés"
+
+#: views/admin/manage.php:73
+msgid "Choose an author"
+msgstr "Choisissez un auteur"
+
+#: views/admin/manage.php:80
+msgid "Search..."
+msgstr "Chercher..."
+
+#: views/admin/manage.php:93
+msgid "Bulk Actions"
+msgstr "Actions en vrac"
+
+#: views/admin/manage.php:94
+msgid "Activate"
+msgstr "Activer"
+
+#: views/admin/manage.php:95
+msgid "Deactivate"
+msgstr "Désactiver"
+
+#: views/admin/manage.php:98
+msgid "Apply"
+msgstr "Appliquer"
+
+#: views/admin/positions.php:25
+msgid "Search hooks and add them to selected section in right side."
+msgstr "crochets de recherche et les ajouter à la section sélectionnée dans le côté droit."

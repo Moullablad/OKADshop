@@ -1,0 +1,14 @@
+.block{background: #fff;padding: 20px;border: 0;margin-bottom: 15px;}
+.block-title{
+	border: none;
+	font-size: 1.2em;
+	line-height: 2.2em;
+	height: 2.2em;
+	text-transform: uppercase;
+	border-bottom: solid 1px #eee;
+	padding: 0 0 0 5px;
+	margin: -20px -16px 15px -16px;
+}
+
+
+

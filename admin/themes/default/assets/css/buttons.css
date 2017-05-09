@@ -1,0 +1,4 @@
+button.btn{border: 1px solid #d3dbe2;}
+button.btn-primary{background-color: #479ccf;color: #ffffff !important;border: 1px solid #479ccf;}
+button.btn-primary:hover{background-color: #479CCF;}
+.btn.disabled {cursor: default;box-shadow: none;background: #fafbfc;color: #c3cfd8 !important;border: 1px solid #d3dbe2;}

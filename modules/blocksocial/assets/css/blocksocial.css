@@ -1,0 +1,14 @@
+/* social icons */
+#blocksocial li{
+	display: inline;
+}
+
+#blocksocial li a {
+    display: inline-block;
+    margin-left: 10px;
+} 
+
+#blocksocial li a i{
+	font-size: 14px;
+    color: #fff;
+}

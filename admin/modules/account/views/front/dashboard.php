@@ -1,0 +1,1 @@
+<?php get_tabs(__FILE__, 'account', ['ajax' => false]);?>

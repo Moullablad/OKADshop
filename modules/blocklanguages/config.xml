@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>blocklanguages</name>
+	<displayName>Language block</displayName>
+	<category>translation</category>
+	<version>1.0.0</version>
+	<description>Display language block.</description>
+	<author>Soft High Tech</author>
+	<website>http://softhighttech.com</website>
+</module>

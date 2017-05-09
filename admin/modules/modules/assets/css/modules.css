@@ -1,0 +1,193 @@
+.posBox{
+	background-color: #fff;
+	margin-bottom: 40px;
+	margin-top: 0px !important;
+}
+
+#modulesHooks thead{
+    display: none;
+}
+
+#modulesHooks tbody td{
+	vertical-align: middle;
+	/*cursor: move;*/
+}
+
+#modulesHooks tbody td:first-child {
+    padding-left: 12px;
+}
+
+#modulesHooks tbody td p{
+	margin-bottom: 0px;
+}
+
+/*#modulesHooks tbody td.move,*/
+#themePositions tbody td.move{
+	cursor: move;
+	font-size: 18px;
+}
+
+
+
+#modulesHooks tbody td .btn-default{
+	background-color: #fafafa !important;
+    color: #666 !important;
+}
+
+#modulesHooks_filter{
+    padding: 10px 10px 0px 10px;
+}
+
+#modulesHooks_wrapper div.dataTables_filter input{
+    margin-left: 0px;
+    width: 100%;
+    outline: 0px;
+    height: 35px;
+}
+
+#modulesHooks_wrapper div.dataTables_filter input:focus{
+	box-shadow: none;
+}
+
+#modulesHooks_wrapper div.dataTables_filter label{
+	width: 100%;
+}
+
+#modulesHooks_wrapper div.dataTables_paginate {
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#modulesHooks_wrapper div.dataTables_info {
+    padding-top: 20px;
+    margin-left: 12px;
+}
+
+#themePositions{
+	margin-bottom: 0px;
+}
+
+#themePositions thead tr th{
+	border-bottom: 0px;
+}
+
+#themePositions thead tr th:hover{
+	background: transparent;
+}
+
+#themePositions select{
+    line-height: 26px !important;
+	margin: 1px 10px 0px 2px;
+    max-width: 99.5% !important;
+    height: 38px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+#themePositions select:focus{
+	outline: 0px;
+}
+
+#themePositions tbody td{
+	cursor: move;
+}
+
+#themePositions tbody td p{
+	margin-bottom: 0px;
+}
+
+#themePositions tbody td .btn-danger{
+	background-color: #f05050 !important;
+}
+
+.loadHook{
+	position: absolute;
+    top: 48%;
+    left: 48%;
+}
+
+.table>tbody>tr.norecord:hover{
+	background-color: transparent !important;
+}
+
+
+/* filter */
+#moduleFilter{
+    background-color: #fff;
+    min-height: 55px;
+    padding: 10px;
+    border-bottom: 2px solid #dedede;
+}
+
+#moduleFilter select {
+    margin-right: 10px;
+}
+
+#moduleFilter .btn {
+    padding: 5px 10px;
+}
+
+#moduleList table td:not(:first-child){
+    border-right-width: 0px !important;    
+}
+
+/*#moduleList table td:last-child{
+
+}*/
+
+#moduleList{
+    margin-top: 10px;
+}
+
+
+#moduleList .dataTables_wrapper .row:first-child{
+    display: none;
+}
+
+#moduleList .table-striped>tbody>tr>td.dataTables_empty {
+    background-color: #fff;
+    border: 1px solid #4d90fd;
+    border-bottom-width: 1px !important;
+    border-right-width: 1px !important;
+    color: #4d90fd;
+}
+
+.module-info{
+    margin-bottom: 0px;
+}
+
+.module-info li{
+    display: inline;
+}
+
+.module-info li:not(:last-child):after{
+    content: '\f111';
+    font-size: 5px;
+    font-family: FontAwesome;
+    margin: 0 5px 0 8px;
+    vertical-align: middle;
+    color: #3a8ace;
+}
+
+
+#bulk-actions #checkall {
+    padding: 5px 8px !important;
+    border-radius: 0px !important;
+}
+
+
+/* payment_methodes */
+#payment_methodes{
+    margin-top: 7px;
+}
+
+#payment_methodes li{
+    display: inline;
+    text-align: center;
+    margin-left: 5px;
+    cursor: help;
+    color: #fff;
+}

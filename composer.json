@@ -1,0 +1,22 @@
+{
+    "name": "softhightech/okadshop",
+    "description": "Open source ecommerce software",
+    "authors": [
+        {
+            "name": "Soft High Tech",
+            "email": "contact@softhightech.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "classes",
+            "Core\\": "controllers"
+        }
+    },
+    "require": {
+        "omnipay/paypal": "~2.0",
+        "sybio/image-workshop": "^2.0",
+        "alexshelkov/simpleacl": "2.*",
+        "gburtini/acl": "0.0.3"
+    }
+}

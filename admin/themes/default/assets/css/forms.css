@@ -1,0 +1,139 @@
+label{
+	/*display: block;*/
+	margin-bottom: 5px;
+	color: #31373d;
+	font-size: 13px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+fieldset{
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  color: #31373d;
+  padding: 15px 10px;
+}
+fieldset td{padding-right: 20px;} 
+/*.form-horizontal .form-group {
+    margin: 0px;
+}*/
+.control-label {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+
+input{border-radius: 0 !important;}
+hr {
+    border-top: 1px solid #e6e6e6;
+}
+
+
+h2{
+	color: #31373d;
+	margin: 0 0 20px 0;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.2em;
+ }
+ .image-preview-input {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+/*input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}*/
+.image-preview-input-title {
+    margin-left:2px;
+}
+.upload-info{text-align: center;
+  color: #c3cfd8;
+  font-size: 15px;
+  padding-top: 130px;
+  padding-bottom: 40px;
+}
+.list-group-item {border: 0;padding-left: 0;}
+/*input[type=checkbox]{margin-right: 15px;}*/
+
+input[type=radio] {
+  margin-right: 0px;
+  vertical-align: sub;
+}
+
+
+.list-group-item i{color: #479CCF;float: right;}
+select {
+	appearance: none;
+	-moz-appearance: none; /* Firefox */
+	-webkit-appearance: none; /* Safari and Chrome */
+	background-image: url(../img/select-icon.png) !important;
+	background-position: center right;
+	background-repeat: no-repeat !important;
+	line-height: 16px !important;
+	padding-right: 40px !important;
+	width: 100%;
+	padding-left: 15px;
+	border: 1px solid #d3dbe2;
+	border-radius: 0 !important;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+
+textarea.form-control {
+  border-radius: 0px;
+}
+
+
+/* tags */
+.bootstrap-tagsinput {
+    box-shadow: 0px none;
+    display: inline-block;
+    padding: 4px 6px;
+    color: #555;
+    vertical-align: middle;
+    border-radius: 0px;
+    width: 100%;
+}
+
+/*images*/
+.list-inline > label {
+	display: inline-block;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0px !important;
+}
+
+.jFiler-theme-default .jFiler-input {
+  margin: 0px !important;
+}
+
+.jFiler-theme-default .jFiler-input {
+  min-width: 100%;
+  width: 100%;
+}
+
+
+
+.input-group-btn select {border-color: #ccc; margin-top: 0px; margin-bottom: 0px; padding-top: 7px; padding-bottom: 7px; background-image: none !important; padding-right: 10px !important; line-height: 18px !important; width:auto; }
+
+
+#lang_list{
+	line-height: 25px !important;
+	margin-top: 8px;
+}
+    

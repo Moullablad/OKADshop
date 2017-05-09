@@ -1,0 +1,200 @@
+<style type="text/css">
+#sortable li{
+  display: list-item;
+  padding: 15px;
+  border: 1px solid rgb(217, 217, 217);
+  background: rgb(250, 250, 250);
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+}
+#sortable li:hover{
+  border: 1px solid #000;
+  cursor: move;
+}
+#sListsHint{
+  background-color: initial !important;
+  border: 1px dotted #000 !important;
+}
+</style>
+ 
+<div class="top-menu padding0">
+  <div class="top-menu-title">
+    <h3> <i class="fa fa-bars"></i> <?=l("Menus - Gérer les menus de votre boutique.", "menu");?></h3>
+  </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Créer un nouveau menu</h3>
+      </div>
+      <div class="panel-body">
+        <form action="" method="post" class="form-inline">
+          <div class="form-group">
+            <label for="name">Nom du Menu</label>
+            <input type="text" name="name" class="form-control">
+            <input type="submit" name="addmenu" class="btn btn-default" value="Ajouter menu">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default" role="tab" id="heading4">
+      <div class="panel-heading">
+        <form method="post" action="" class="form-inline">
+          <div class="form-group">
+            <label for="menu_name">Selectioner un menu</label>
+            <select name="menu_list" id="menu_list">
+              <option>  </option>
+              <option>Menu1</option>
+              <option>Menu2</option>
+              <option>Menu3</option>
+            </select>
+            <input type="submit" name="submit" class="btn btn-primary" value="Enregistrer le menu"/>
+          </div>
+          
+          
+        </form>
+      </div>
+      <div class="panel-body">
+        <div class="add-element">
+          <h3>Ajouter des éléments au menu</h3>
+          <form class="form-horizontal" method="post" action="">
+            <div class="form-group">
+              <label class="control-label col-lg-3"><?=l("Titre *", "menu");?></label>
+              <div class="col-lg-4">
+                <input type="text" name="title" id="title" value="" class="form-control" required autofocus>     
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-lg-3"><?=l("Type d'element *", "menu");?></label>
+              <div class="col-lg-4">
+                <select name="type" class="form-control" id="type">
+                  <option value="0">Selectionner un type de menu</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group" id="element_content"></div>
+              
+            <div class="form-group">
+              <input type="submit" class="btn btn-default" value="<?=l("Ajouter", "menu");?>">
+            </div>
+          </form>
+          <!-- <form class="form-inline" action="" method="post">
+            <form class="form-group">
+              <label for="page">Pages</label>
+              <select class="form-control">
+                <option>page1</option>
+              </select>
+              <input type="submit" name="submit" class="btn btn-primary" value="Ajouter au menu">
+            </form>
+          </form> -->
+          
+
+<!--           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+
+
+            <div class="panel panel-default"  role="tab" id="heading2">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">Articles</a></h3>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse in" role="tabpane2" aria-labelledby="heading2">
+                <div class="panel-body">
+                  <select></select>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="panel panel-default"  role="tab" id="heading3">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">Liens personnalisés</a></h3>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse in" role="tabpane3" aria-labelledby="heading3">
+                <div class="panel-body">
+                  <select></select>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="panel panel-default" role="tab" id="heading4">
+              <div class="panel-heading">
+                <h3 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">Catégories</a></h3>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse in" role="tabpane4" aria-labelledby="heading4">
+                <div class="panel-body">
+                  <select></select>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+        <hr>
+        <form class="form-horizontal">
+          <h3>Structure du menu</h3>
+          <p>Glissez chaque élément pour les placer dans l’ordre que vous préférez. Cliquez sur la flèche à droite de l’élément pour afficher d’autres options de configuration.</p>
+            
+
+          <ul id="sortable" class="menu-list">
+          </ul>
+
+          <hr>
+          <h3>Réglages du menu</h3>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="section">Emplacements du thème</label>
+            <div class="col-md-8">
+              <div class="checkbox">
+                <label for="grp1-0">
+                  <p><input type="checkbox" name="section[]" id="" value="1"> Menu principal</p>
+                  <p><input type="checkbox" name="section[]" id="" value="2"> Menu des liens de réseaux sociaux</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="panel-footer">
+        <a href="#"> Supprimer le menu</a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+<script type="text/javascript">
+   $(function()
+    {
+      var options = {
+        currElClass: 'red',
+        placeholderClass: 'bgC2',
+        listsClass:'',
+        isAllowed: function(cEl, hint, target)
+          {
+            hint.css('background-color', '#99ff99');
+            return true;
+          }
+      };
+      $('#sortable').sortableLists(options);
+/*
+      console.log($('#sortable').sortableListsToArray());
+      console.log($('#sortable').sortableListsToHierarchy());
+      console.log($('#sortable').sortableListsToString());*/
+
+ 
+
+    });
+  </script> 

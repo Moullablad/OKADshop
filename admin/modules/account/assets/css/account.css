@@ -1,0 +1,131 @@
+#addresses th, 
+#addresses td,
+#orders th,
+#orders td{
+	text-align: left;
+}
+
+#addresses td, #orders td{
+	padding: 15px 5px;
+}
+
+#account.os-tab-container{
+	background: #7e883a;
+}
+
+#account #os-tabs ul{
+	border-bottom: none; 
+}
+
+#account #os-tabs a{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#account #os-tabs li.active a, 
+#account #os-tabs a:focus, 
+#account #os-tabs a:hover{
+	background-color: #1f1f1f;
+	border-color: #1f1f1f;
+	border-radius: 0px;
+	text-decoration: none;
+}
+
+#account #os-tabs li.active a:after{
+	content: ' ';
+	position: absolute;
+    bottom: 0;
+    left: 44%;
+    width: 0;
+    height: 0;
+    border: 6px solid #fff;
+    border-color: transparent transparent #fff transparent;
+    bottom: -1px;
+}
+
+#account-content .panel-body {
+    padding: 0px;
+}
+
+#account-content .panel{
+	border: none;
+}
+
+
+/* dashboard */
+#dashboard .info{
+	border: 1px solid #e5e5e5;
+	padding: 10px;
+}
+
+#dashboard .info img{
+	margin-top: 7px;
+}
+
+#dashboard .info h3{
+	color: #2c2b29;
+	font-size: 14px;
+    margin: 12px 0 24px;
+}
+
+#dashboard .info ul{
+	margin-bottom: 0px;
+}
+
+
+#dashboard .info ul li{
+    padding: 6px 0px;
+}
+
+#dashboard .info ul li .badge{
+	background-color: #fe980f;
+}
+
+#dashboard .general-infos{
+	border: 1px solid #e5e5e5;
+}
+
+#dashboard .welcome h3{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #696763;
+}
+
+
+#dashboard .welcome p{
+	margin-bottom: 0px;
+	font-size: 12px;
+	color: #696763;
+}
+
+#dashboard .welcome .signout{
+    margin-top: 15px;
+    display: block;
+}
+
+#dashboard .states .box{
+    background-color: #f0f0e9;
+    padding: 27px 0;
+    text-align: center;
+}
+
+#dashboard .states .box:not(:first-child){
+	border-left: 1px solid #fff;
+}
+
+
+#dashboard .states .box strong{
+	font-size: 24px;
+	color: #fe980f;
+	font-weight: 600;
+}
+
+#dashboard .states .box p{
+	font-size: 14px;
+	color: #696763;
+	font-weight: 600;
+}
+
+

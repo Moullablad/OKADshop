@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Paypal\n"
+"POT-Creation-Date: 2016-12-15 11:28+0000\n"
+"PO-Revision-Date: 2016-12-15 11:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.Com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: views/admin/configure.php:3
+msgid "Configure"
+msgstr "Configurer"
+
+#: views/admin/configure.php:9
+msgid "Pay with Paypal"
+msgstr "Payer avec PayPal"
+
+#: views/admin/configure.php:23
+msgid "Username *"
+msgstr "Nom d'utilisateur *"
+
+#: views/admin/configure.php:29
+msgid "Password *"
+msgstr "Mot de passe *"
+
+#: views/admin/configure.php:35
+msgid "Signature *"
+msgstr "Signature *"
+
+#: views/admin/configure.php:41
+msgid "Test mode"
+msgstr "Mode d'essai"
+
+#: views/admin/configure.php:43
+msgid "YES"
+msgstr "OUI"
+
+#: views/admin/configure.php:43
+msgid "NO"
+msgstr "NON"
+
+#: views/admin/configure.php:48
+msgid "Save credentials"
+msgstr "Enregistrer les informations d'identification"

@@ -1,0 +1,84 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Contact Form\n"
+"POT-Creation-Date: 2016-12-15 10:04+0000\n"
+"PO-Revision-Date: 2016-12-15 10:09+0000\n"
+"Last-Translator: \n"
+"Language-Team: OKADshop <contact@okadshop.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: trans;trans_e;l\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+"X-Poedit-SearchPathExcluded-2: config.xml\n"
+
+#: ajax/form.php:56
+msgid "Message successfully sent, Thanks."
+msgstr "رسالة أرسلت بنجاح، شكرا."
+
+#: ajax/form.php:58
+msgid "Message delivery failed..."
+msgstr "فشل توصيل الرسالة..."
+
+#: ajax/form.php:61
+msgid "Function mail() has been disabled."
+msgstr "تم تعطيل وظيفة البريد الإلكتروني ()."
+
+#: index.php:25
+msgid "Contact"
+msgstr "اتصال"
+
+#: views/front/contact.php:5 views/front/contact.php:8
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+#: views/front/contact.php:7
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+#: views/front/contact.php:21
+msgid "contact informations"
+msgstr "معلومات الاتصال"
+
+#: views/front/contact.php:25
+msgid "Connect with us"
+msgstr "اتصل بنا"
+
+#: views/front/contact.php:33
+msgid "Phone:"
+msgstr "هاتف:"
+
+#: views/front/contact.php:46
+msgid "Leave message"
+msgstr "اترك رسالة"
+
+#: views/front/contact.php:52
+msgid "Name"
+msgstr "اسم"
+
+#: views/front/contact.php:58
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: views/front/contact.php:64
+msgid "Website"
+msgstr "موقع الكتروني"
+
+#: views/front/contact.php:68
+msgid "Subject"
+msgstr "موضوع"
+
+#: views/front/contact.php:72
+msgid "Content"
+msgstr "محتوى"
+
+#: views/front/contact.php:76
+msgid "Send message"
+msgstr "إرسال رسالة"
